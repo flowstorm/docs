@@ -14,7 +14,7 @@ Some useful hint
 | :--- | :--- |
 | Text 1 | Text 2 |
 
-> some quote
+> some quote BLAS BLA
 
 ```kotlin
 val temperature by client
