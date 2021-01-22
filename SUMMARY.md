@@ -1,16 +1,20 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [What is Promethist AI](README.md)
+
+## Application <a id="app"></a>
+
+* [Welcome](app/welcome.md)
 
 ## Core
 
 * [About Project](core/about-project.md)
 
-## App
-
-* [Welcome](app/welcome.md)
-
 ## Clients
 
 * [Introduction to Platform Clients](clients/introduction-to-platform-clients.md)
+
+## Interaction Design
+
+* [Introduction](interaction-design/introduction.md)
 
