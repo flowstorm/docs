@@ -25,3 +25,7 @@
 
 * [Introduction](interaction-design/introduction.md)
 
+---
+
+* [Tests](tests.md)
+
