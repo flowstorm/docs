@@ -3,9 +3,9 @@
 Access menu section provides list of features for managing access to the current space and its content. That includes user invitations and assignments, user groups, devices and applications.
 
 ## **Collaboration – Space** <a id="collaboration-%E2%80%93-space"></a>
-
+<!-- start voicebot description -->
 The Promethist Platform expects that several developers will collaborate: they will share dialogue models in the same “Space”. The creator of the initial Space needs to invite the collaborators.
-
+<!-- end voicebot description -->
 ## User Invitations <a id="user-invitations"></a>
 
 In the main menu: Access → User Invitations: it will open a window to send the invitation to the collaborators’ e-mails.
