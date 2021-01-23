@@ -1,13 +1,12 @@
 # Access Management
-[//]: <> (voicebotid=1This is also a comment.)
-Access menu section provides list of features for managing access to the current space and its content. That includes user invitations and assignments, user groups, devices and applications.
-[//]: <> (/voicebotid=1 Comment end)
 
-### **Collaboration – Space**  <a id="collaboration-%E2%80%93-space"></a>
+Access menu section provides list of features for managing access to the current space and its content. That includes user invitations and assignments, user groups, devices and applications.
+
+## **Collaboration – Space** <a id="collaboration-%E2%80%93-space"></a>
 
 The Promethist Platform expects that several developers will collaborate: they will share dialogue models in the same “Space”. The creator of the initial Space needs to invite the collaborators.
 
-### User Invitations  <a id="user-invitations"></a>
+## User Invitations <a id="user-invitations"></a>
 
 In the main menu: Access → User Invitations: it will open a window to send the invitation to the collaborators’ e-mails.
 
@@ -19,7 +18,7 @@ In the main menu: Access → User Invitations: it will open a window to send the
 
 When he or she clicks the link and logs in the platform you can see a change permissions of the user in User Assignments.
 
-### User Assignments  <a id="user-assignments"></a>
+## User Assignments <a id="user-assignments"></a>
 
 The list of assigned users and their roles.
 
@@ -29,11 +28,11 @@ You can change the user's permissions in the detailed view after clicking on the
 
 ![](https://promethist.myjetbrains.com/youtrack/api/files/145-204?sign=MTYxMTYyNDkwMDAwMHwxLTEwfDE0NS0yMDR8OUdINzlIR19qcFQxLXJtUlBEUk1XYjlLakhaYS1v%0D%0AZ2tqYjBKS2laNk1iZw0K%0D%0A&updated=1611319780317)
 
-### User Groups  <a id="user-groups"></a>
+## User Groups <a id="user-groups"></a>
 
 Users can be grouped.
 
-### Applications  <a id="applications"></a>
+## Applications <a id="applications"></a>
 
 Create and administer applications.
 
@@ -42,7 +41,7 @@ Each application can be set as
 * anonymously accessed - if you want to let anyone to try your app via the share link anonymously
 * public - any user with the native mobile will see your app in the list
 
-### Devices  <a id="devices"></a>
+## Devices <a id="devices"></a>
 
 Devices paired to the applications.  
 A specific user can be assigned to the application in the device detail view.
