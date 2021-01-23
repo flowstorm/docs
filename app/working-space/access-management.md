@@ -1,6 +1,7 @@
 # Access Management
-
+[//]: <> (voicebotid=1This is also a comment.)
 Access menu section provides list of features for managing access to the current space and its content. That includes user invitations and assignments, user groups, devices and applications.
+[//]: <> (/voicebotid=1 Comment end)
 
 ### **Collaboration – Space**  <a id="collaboration-%E2%80%93-space"></a>
 
