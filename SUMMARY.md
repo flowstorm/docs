@@ -5,6 +5,7 @@
 ## Application <a id="app"></a>
 
 * [Welcome](app/welcome.md)
+* [How to Sign Up](app/untitled.md)
 
 ## Core
 
