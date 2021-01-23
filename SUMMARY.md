@@ -7,6 +7,8 @@
 * [Welcome](app/welcome.md)
 * [How to Sign Up](app/untitled.md)
 * [How to Log In](app/how-to-log-in.md)
+* [Working Space](app/working-space/README.md)
+  * [Home Dashboard](app/working-space/home-dashboard.md)
 
 ## Core
 
