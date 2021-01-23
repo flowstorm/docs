@@ -30,5 +30,5 @@
 ---
 
 * [Tests](tests/README.md)
-  * [Tables](tests/untitled.md)
+  * [Tables](tests/tables.md)
 
