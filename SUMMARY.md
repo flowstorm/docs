@@ -6,6 +6,7 @@
 
 * [Welcome](app/welcome.md)
 * [How to Sign Up](app/untitled.md)
+* [How to Log In](app/how-to-log-in.md)
 
 ## Core
 
