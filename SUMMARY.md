@@ -2,7 +2,7 @@
 
 * [What is Promethist AI](README.md)
 
-## Application <a id="app"></a>
+## Promethist.app <a id="app"></a>
 
 * [Welcome](app/welcome.md)
 * [How to Sign Up](app/untitled.md)
@@ -15,7 +15,7 @@
   * [Access Management](app/working-space/access-management.md)
   * [Runtime Data](app/working-space/runtime-data.md)
 
-## Core
+## Core Project <a id="core"></a>
 
 * [About Project](core/about-project.md)
 
