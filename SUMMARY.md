@@ -19,7 +19,7 @@
 
 * [About Project](core/about-project.md)
 
-## Clients
+## Platform Clients <a id="clients"></a>
 
 * [Introduction to Platform Clients](clients/introduction-to-platform-clients.md)
 
@@ -31,4 +31,8 @@
 
 * [Tests](tests/README.md)
   * [Tables](tests/tables.md)
+
+## Programming Model
+
+* [About DialogueScript](programming-model/about-dialoguescript.md)
 
