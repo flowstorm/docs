@@ -1,6 +1,7 @@
 # Table of contents
 
 * [What is Promethist AI](README.md)
+* [How to start](how-to-start.md)
 
 ## Promethist.app <a id="app"></a>
 
@@ -26,11 +27,6 @@
 ## Interaction Design
 
 * [Introduction](interaction-design/introduction.md)
-
----
-
-* [Tests](tests/README.md)
-  * [Tables](tests/tables.md)
 
 ## Programming Model
 
