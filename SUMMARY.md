@@ -13,6 +13,7 @@
   * [Home Dashboard](app/working-space/home-dashboard.md)
   * [Access Management](app/working-space/access-management.md)
   * [Runtime Data](app/working-space/runtime-data.md)
+* [User Settings](app/user-settings.md)
 * [Account Management](app/account-management.md)
 * [Keyboard Shortcuts](app/keyboard-shortcuts.md)
 
