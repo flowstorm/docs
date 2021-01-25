@@ -1,7 +1,7 @@
 # Table of contents
 
 * [What is Promethist AI](README.md)
-* [Quick Start](quick-start.md)
+* [Quick Start Guide](quick-start.md)
 * [Video Tutorials](video-tutorials.md)
 
 ## Promethist.app <a id="app"></a>
