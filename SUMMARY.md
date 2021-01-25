@@ -15,6 +15,7 @@
   * [Home Dashboard](app/working-space/home-dashboard.md)
   * [Access Management](app/working-space/access-management.md)
   * [Runtime Data](app/working-space/runtime-data.md)
+* [Account Management](app/account-management.md)
 * [Keyboard Shortcuts](app/keyboard-shortcuts.md)
 
 ## Core Project <a id="core"></a>
@@ -37,6 +38,7 @@
   * [Twilio](core/client-connectors/twilio/README.md)
     * [Inbound \(Web Socket\)](core/client-connectors/twilio/inbound-web-socket.md)
     * [Outbound \(TwiML\)](core/client-connectors/twilio/outbound-twiml.md)
+* [How to deploy](core/how-to-deploy.md)
 
 ## Platform Clients <a id="clients"></a>
 
