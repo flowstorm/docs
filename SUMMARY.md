@@ -19,7 +19,7 @@
 
 ## Core Project <a id="core"></a>
 
-* [About](core/about-project.md)
+* [About Project](core/about-project.md)
 * [Core Components](core/core-components/README.md)
   * [Runner](core/core-components/runner.md)
   * [Builder](core/core-components/builder.md)
