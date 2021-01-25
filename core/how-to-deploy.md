@@ -1,2 +1,2 @@
-# How to deploy
+# How To Deploy
 

@@ -36,15 +36,18 @@
   * [Twilio](core/client-connectors/twilio/README.md)
     * [Inbound \(Web Socket\)](core/client-connectors/twilio/inbound-web-socket.md)
     * [Outbound \(TwiML\)](core/client-connectors/twilio/outbound-twiml.md)
-* [How to deploy](core/how-to-deploy.md)
+* [Project Setup](core/project-setup.md)
+* [How To Deploy](core/how-to-deploy.md)
 
 ## Platform Clients <a id="clients"></a>
 
 * [Introduction to Platform Clients](clients/introduction-to-platform-clients.md)
 * [Standalone \(Java\)](clients/standalone-java.md)
-* [Android](clients/android.md)
-* [iOS](clients/ios.md)
-* [Web](clients/web.md)
+* [Android Application](clients/android.md)
+* [iOS Application](clients/ios.md)
+* [Web Client](clients/web.md)
+* [Amazon Alexa](clients/amazon-alexa.md)
+* [Google Assistant App](clients/google-assistant-app.md)
 
 ## Interaction Design <a id="design"></a>
 
@@ -57,9 +60,10 @@
 
 ## Programming Model <a id="programming"></a>
 
-* [Introduction](programming/introduction/README.md)
-  * [Supported Data Types](programming/introduction/supported-data-types.md)
-  * [Programmable Nodes](programming/introduction/programmable-nodes.md)
+* [Introduction](programming/introduction.md)
+* [Supported Data Types](programming/supported-data-types.md)
+* [Initialization Code](programming/initialization-code.md)
+* [Functional Nodes](programming/programmable-nodes.md)
 * [Context](programming/context/README.md)
   * [Turn](programming/context/turn.md)
   * [Session](programming/context/session.md)
@@ -91,8 +95,8 @@
   * [Quantification](programming/data-to-speech/quantification.md)
   * [Date and Time](programming/data-to-speech/date-and-time.md)
   * [Paraphrasing](programming/data-to-speech/paraphrasing.md)
-* [Logging](programming/logging.md)
-* [API Calls](programming/api-calls.md)
+* [Contextual Logging](programming/logging.md)
+* [External API Calls](programming/api-calls.md)
 * [Client Integration](programming/client-configuration/README.md)
   * [Configuration](programming/client-configuration/configuration.md)
   * [Events](programming/client-configuration/events.md)

@@ -1,2 +1,2 @@
-# API Calls
+# External API Calls
 
