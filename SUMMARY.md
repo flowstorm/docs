@@ -34,9 +34,8 @@
   * [Web Socket](core/client-connectors/web-socket.md)
   * [Amazon Alexa REST](core/client-connectors/amazon-alexa-rest.md)
   * [Google App REST](core/client-connectors/google-app-rest.md)
-  * [Twilio](core/client-connectors/twilio/README.md)
-    * [Inbound \(Web Socket\)](core/client-connectors/twilio/inbound-web-socket.md)
-    * [Outbound \(TwiML\)](core/client-connectors/twilio/outbound-twiml.md)
+  * [Twilio Web Socket](core/client-connectors/inbound-web-socket.md)
+  * [Twilio TwiML](core/client-connectors/twilio.md)
 * [Project Setup](core/project-setup.md)
 * [How To Deploy](core/how-to-deploy.md)
 * [Boilerplate Project](core/boilerplate-project.md)
@@ -50,6 +49,7 @@
 * [Web Client](clients/web.md)
 * [Amazon Alexa](clients/amazon-alexa.md)
 * [Google Assistant App](clients/google-assistant-app.md)
+* [Phone Calls via Twilio.com](clients/phone-calls-via-twilio.com.md)
 
 ## Interaction Design <a id="design"></a>
 
@@ -98,7 +98,7 @@
     * [Paraphrasing](programming/dialoguescript/data-to-speech/paraphrasing.md)
   * [Contextual Logging](programming/dialoguescript/logging.md)
   * [External API Calls](programming/dialoguescript/api-calls.md)
-* [Dialogue Model Coding](programming/dialogue-model-coding/README.md)
+* [Dialogue Code](programming/dialogue-model-coding/README.md)
   * [Initialization Code](programming/dialogue-model-coding/initialization-code.md)
   * [Programmable Nodes](programming/dialogue-model-coding/programmable-nodes/README.md)
     * [Function](programming/dialogue-model-coding/programmable-nodes/function.md)
