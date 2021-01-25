@@ -1,2 +1,2 @@
-# Standalone \(Java\)
+# Standalone Java Application
 

@@ -43,7 +43,7 @@
 ## Platform Clients <a id="clients"></a>
 
 * [Introduction to Platform Clients](clients/introduction-to-platform-clients.md)
-* [Standalone \(Java\)](clients/standalone-java.md)
+* [Standalone Java Application](clients/standalone-java.md)
 * [Android Application](clients/android.md)
 * [iOS Application](clients/ios.md)
 * [Web Client](clients/web.md)
