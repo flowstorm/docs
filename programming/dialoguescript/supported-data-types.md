@@ -1,2 +1,2 @@
-# Supported Data Types
+# Data Types
 

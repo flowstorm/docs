@@ -70,7 +70,7 @@
   * [User](programming/context/user.md)
   * [Community](programming/context/community.md)
 * [DialogueScript](programming/dialoguescript/README.md)
-  * [Supported Data Types](programming/dialoguescript/supported-data-types.md)
+  * [Data Types](programming/dialoguescript/supported-data-types.md)
   * [Attributes](programming/dialoguescript/attributes/README.md)
     * [Contextual Attributes](programming/dialoguescript/attributes/contextual-attributes.md)
     * [Client Attributes](programming/dialoguescript/attributes/client-attributes.md)
