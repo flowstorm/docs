@@ -56,9 +56,9 @@
 
 ## Programming Model <a id="programming"></a>
 
-* [Introduction](programming/about-dialoguescript/README.md)
-  * [Supported Data Types](programming/about-dialoguescript/supported-data-types.md)
-  * [Programmable Nodes](programming/about-dialoguescript/programmable-nodes.md)
+* [Introduction](programming/introduction/README.md)
+  * [Supported Data Types](programming/introduction/supported-data-types.md)
+  * [Programmable Nodes](programming/introduction/programmable-nodes.md)
 * [Context](programming/context/README.md)
   * [Turn](programming/context/turn.md)
   * [Session](programming/context/session.md)
