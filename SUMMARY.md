@@ -36,3 +36,7 @@
 
 * [About DialogueScript](programming-model/about-dialoguescript.md)
 
+## Organization
+
+* [Continuous Delivery Process](organization/continuous-delivery-process.md)
+
