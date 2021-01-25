@@ -28,11 +28,15 @@
 ## Interaction Design
 
 * [Introduction](interaction-design/introduction.md)
+* [Situations](interaction-design/situations/README.md)
+  * [User Actions](interaction-design/situations/user-actions.md)
+  * [Silence and Reprompting](interaction-design/situations/silence-and-reprompting.md)
+  * [Error Handling](interaction-design/situations/error-handling.md)
 * [Voice](interaction-design/voice.md)
 
 ## Programming Model
 
-* [Introduction to DialogueScript](programming-model/about-dialoguescript/README.md)
+* [Introduction](programming-model/about-dialoguescript/README.md)
   * [Supported Data Types](programming-model/about-dialoguescript/supported-data-types.md)
   * [Programmable Nodes](programming-model/about-dialoguescript/programmable-nodes.md)
 * [Context](programming-model/context/README.md)
@@ -45,8 +49,8 @@
   * [Contextual Attributes](programming-model/attributes/contextual-attributes.md)
   * [Client Attributes](programming-model/attributes/client-attributes.md)
   * [Map Attributes](programming-model/attributes/map-attributes.md)
-  * [Entity Collections](programming-model/attributes/entity-collections.md)
   * [Sequence Attributes](programming-model/attributes/sequence-attributes.md)
+  * [Entity Collections](programming-model/attributes/entity-collections.md)
 * [User Input](programming-model/user-input/README.md)
   * [Locale](programming-model/user-input/locale.md)
   * [Transcript](programming-model/user-input/transcript.md)
@@ -56,7 +60,8 @@
 * [Data Properties](programming-model/data-properties/README.md)
   * [Data Loading](programming-model/data-properties/data-loading.md)
 * [Data Processing](programming-model/data-processing/README.md)
-  * [Filtering and Mapping](programming-model/data-processing/filtering-and-mapping.md)
+  * [Filtering and Mapping](programming-model/data-processing/filtering-and-mapping/README.md)
+    * [Filtering by Date and Time](programming-model/data-processing/filtering-and-mapping/filtering-by-date-and-time.md)
   * [Tokenization](programming-model/data-processing/tokenization.md)
   * [Similarity](programming-model/data-processing/similarity.md)
 * [Data to Speech](programming-model/data-to-speech/README.md)
@@ -67,6 +72,7 @@
   * [Paraphrasing](programming-model/data-to-speech/paraphrasing.md)
 * [Logging](programming-model/logging.md)
 * [API Calls](programming-model/api-calls.md)
+* [Client Configuration](programming-model/client-configuration.md)
 * [Request and Response](programming-model/request-and-response.md)
 
 ## Organization
