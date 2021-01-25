@@ -9,7 +9,6 @@
 * [How to Sign Up](app/untitled.md)
 * [How to Log In](app/how-to-log-in.md)
 * [Working Space](app/working-space/README.md)
-  * [Conversational Design](app/working-space/conversational-design.md)
   * [Home Dashboard](app/working-space/home-dashboard.md)
   * [Access Management](app/working-space/access-management.md)
   * [Runtime Data](app/working-space/runtime-data.md)
