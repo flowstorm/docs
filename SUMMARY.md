@@ -6,7 +6,7 @@
 
 ## Promethist.app <a id="app"></a>
 
-* [About](app/welcome.md)
+* [About Application](app/welcome.md)
 * [How to Sign Up](app/untitled.md)
 * [How to Log In](app/how-to-log-in.md)
 * [Working Space](app/working-space/README.md)
