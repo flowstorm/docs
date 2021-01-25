@@ -20,10 +20,31 @@
 ## Core Project <a id="core"></a>
 
 * [About Project](core/about-project.md)
+* [Core Components](core/core-components/README.md)
+  * [Runner](core/core-components/runner.md)
+  * [Builder](core/core-components/builder.md)
+* [Integrated NLP Services](core/integrated-nlp-services/README.md)
+  * [V2 Dialogue Manager](core/integrated-nlp-services/v2-dialogue-manager.md)
+  * [Intent and Named Entity Recognition](core/integrated-nlp-services/intent-and-named-entity-recognition/README.md)
+    * [Illusionist](core/integrated-nlp-services/intent-and-named-entity-recognition/illusionist.md)
+    * [Ducking](core/integrated-nlp-services/intent-and-named-entity-recognition/ducking.md)
+  * [ASR \(Speech-To-Text\)](core/integrated-nlp-services/asr-speech-to-text.md)
+  * [TTS \(Text-To-Speech\)](core/integrated-nlp-services/tts-text-to-speech.md)
+* [Client Connectors](core/client-connectors/README.md)
+  * [Web Socket](core/client-connectors/web-socket.md)
+  * [Amazon Alexa REST](core/client-connectors/amazon-alexa-rest.md)
+  * [Google App REST](core/client-connectors/google-app-rest.md)
+  * [Twilio](core/client-connectors/twilio/README.md)
+    * [Inbound \(Web Socket\)](core/client-connectors/twilio/inbound-web-socket.md)
+    * [Outbound \(TwiML\)](core/client-connectors/twilio/outbound-twiml.md)
 
 ## Platform Clients <a id="clients"></a>
 
 * [Introduction to Platform Clients](clients/introduction-to-platform-clients.md)
+* [Standalone \(Java\)](clients/standalone-java.md)
+* [Android](clients/android.md)
+* [iOS](clients/ios.md)
+* [Web](clients/web.md)
 
 ## Interaction Design
 
@@ -72,8 +93,10 @@
   * [Paraphrasing](programming-model/data-to-speech/paraphrasing.md)
 * [Logging](programming-model/logging.md)
 * [API Calls](programming-model/api-calls.md)
-* [Client Configuration](programming-model/client-configuration.md)
-* [Request and Response](programming-model/request-and-response.md)
+* [Client Integration](programming-model/client-configuration/README.md)
+  * [Configuration](programming-model/client-configuration/configuration.md)
+  * [Events](programming-model/client-configuration/events.md)
+  * [Request and Response](programming-model/client-configuration/request-and-response.md)
 
 ## Organization
 
