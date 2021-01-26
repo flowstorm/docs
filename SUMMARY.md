@@ -42,14 +42,14 @@
 
 ## Platform Clients <a id="clients"></a>
 
-* [Introduction to Platform Clients](clients/introduction-to-platform-clients.md)
-* [Standalone Java Application](clients/standalone-java.md)
+* [Introduction to Platform Clients](clients/introduction.md)
+* [Standalone Java Application](clients/standalone.md)
 * [Android Application](clients/android.md)
 * [iOS Application](clients/ios.md)
 * [Web Client](clients/web.md)
-* [Amazon Alexa](clients/amazon-alexa.md)
-* [Google Assistant App](clients/google-assistant-app.md)
-* [Phone Calls via Twilio.com](clients/phone-calls-via-twilio.com.md)
+* [Amazon Alexa](clients/alexa.md)
+* [Google Assistant App](clients/google.md)
+* [Phone Calls via Twilio.com](clients/phone.md)
 
 ## Interaction Design <a id="design"></a>
 
