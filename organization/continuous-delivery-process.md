@@ -36,7 +36,7 @@ In general, only bugs can have priority Critical or Show-stopper. Other types of
 
 ### B.  Staged into delivery
 
-Issues can be staged into delivery only be **members of Platform team** \(@pavel.ducho@promethist.ai currently does that for issues created by non-members of Platform team\). They can have one of following _delivery_ states
+Issues can be staged into delivery only be **members of Platform team** \(pavel.ducho@promethist.ai currently does that for issues created by non-members of Platform team\). They can have one of following _delivery_ states
 
 * **Open**
 * **In Progress**

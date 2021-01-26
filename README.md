@@ -1,24 +1,18 @@
 ---
-description: some description
+description: Test description
 ---
 
 # What is Promethist AI
 
-OK some text... some text in span
+Test text
 
-{% hint style="info" %}
-Some useful hint
-{% endhint %}
-
-| Col 1 | Col 2 |  |
-| :--- | :--- | :--- |
-| Text 1 | Text 2 |  |
-
-> some quote BLAS BLA
+> test quote
 
 ```kotlin
 val temperature by client
 ```
 
-![](.gitbook/assets/pai-bgrnd2.png)
+{% embed url="https://www.youtube.com/watch?v=Tv8CQrJoeKI" %}
+
+
 
