@@ -27,8 +27,6 @@ Now you can invite collaborators or start designing your first dialogue and voic
 * Test the application as a whole
 * Publish and share the application
 
-### 
-
 ### Collaboration – Space
 
 The Promethist Platform is ready for collaborative design: developers will share dialogue models in the same “Space”. The creator of the Space must invite the collaborators. In the main menu: Access → User Invitations: it will open a window to send the invitation to the collaborators’ e-mails. 
@@ -36,7 +34,7 @@ The Promethist Platform is ready for collaborative design: developers will share
 * Fill in an e-mail address.
 * Choose a role for the user.
 * Confirm by clicking on the “Create” button
-* An invitation will be generated and the invited user will receive a notification.  
+* An invitation will be generated and the invited user will receive a notification.
 
 ![Modal window: User invitation](.gitbook/assets/image%20%2812%29.png)
 
@@ -48,28 +46,17 @@ Open the **“Design” section in the top panel** and choose **Dialogue Designe
 
 We will create a simple prototype with the question offering two possible answers. 
 
-Let’s say we want our assistant to ask a question: “Do you prefer fruits or vegetables?“, then wait for the response and react to it.  
+Let’s say we want our assistant to ask a question: “Do you prefer fruits or vegetables?“, then wait for the response and react to it.
 
-
-So let’s start designing. We represent the dialogue as a graph of interconnected nodes. These nodes have different types: you can see the list in the left panel. Our first dialogue will only use the basic node types: Enter, Exit, Speech, UserInput and Intent.  
-
+So let’s start designing. We represent the dialogue as a graph of interconnected nodes. These nodes have different types: you can see the list in the left panel. Our first dialogue will only use the basic node types: Enter, Exit, Speech, UserInput and Intent.
 
 1. First, we must show the assistant where to start – where to **Enter** the graph. Drag the Enter node from the left panel and drop it into the canvas.
-2. We know that the assistant should then **ask a question** – to make the assistant speak; we will use the **“Speech”** node. Connect Enter + Speech node to show our assistant the path. Type the question to the right upper panel with the Tab **Texts**. 
-3. 
-  
-  
-  
-  
-  
-  
-  
-After uttering the question, the assistant starts listening and waits for user input. We will indicate this by connecting the **User Input node**.
-
-1. Now, we will try to **estimate** what will be the **user’s response?** What are the possible so-called **intents**? Users can answer they prefer fruits, vegetables. They can also say other things – but for now, let’s expect three „intents“ – fruits, vegetables, and I don’t care. Each **intent needs some example phrases** – the assistant will deduce the intents’ meaning from these examples.
-2. Since we want the **assistant to react** differently to each intent, we can now connect three Speech nodes and write the desired responses.
-3. We might also want the **assistant to say goodbye**, no matter what path we took before. So let’s connect one **last Speech node** and write the utterance.
-4. And **finally**, we saw that the graph had an entrance, so there should also be an **Exit**.
+2. We know that the assistant should then **ask a question** – to make the assistant speak; we will use the **“Speech”** node. Connect Enter + Speech node to show our assistant the path. Type the question to the right upper panel with the Tab **Texts**.
+3. After uttering the question, the assistant starts listening and waits for user input. We will indicate this by connecting the **User Input node**.
+4. Now, we will try to **estimate** what will be the **user’s response?** What are the possible so-called **intents**? Users can answer they prefer fruits, vegetables. They can also say other things – but for now, let’s expect three „intents“ – fruits, vegetables, and I don’t care. Each **intent needs some example phrases** – the assistant will deduce the intents’ meaning from these examples.
+5. Since we want the **assistant to react** differently to each intent, we can now connect three Speech nodes and write the desired responses.
+6. We might also want the **assistant to say goodbye**, no matter what path we took before. So let’s connect one **last Speech node** and write the utterance.
+7. And **finally**, we saw that the graph had an entrance, so there should also be an **Exit**.
 
 **Voilà!** Your first dialogue model is ready. Now, the only thing you have to do is build it and run it. Click the **run button** in the bottom right panel and see if everything works correctly.
 
@@ -101,8 +88,6 @@ Note global intents execute these situations. We placed the Global intents in th
 For details on how to use the snippet designer, see the documentation page.
 
 ### Subdialogues
-
-
 
 The platform allows breaking every dialog to sub-dialogues. Sub-dialogues help structure the whole application and allow multiple developers to cooperate on the same project. Think about a sub-dialog as a function in a programming language. You can call the sub-dialogs, and they return after completion. 
 
