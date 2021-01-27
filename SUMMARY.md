@@ -16,8 +16,8 @@
 ## Promethist.app <a id="app"></a>
 
 * [About Application](app/welcome.md)
-* [How to Sign Up](app/untitled.md)
-* [How to Log In](app/how-to-log-in.md)
+* [How to Sign Up](app/sign-up.md)
+* [How to Log In](app/log-in.md)
 * [Working Space](app/working-space/README.md)
   * [Home Dashboard](app/working-space/home-dashboard.md)
   * [Access Management](app/working-space/access-management.md)
