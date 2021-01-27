@@ -123,6 +123,8 @@ Choose and test the existing application or
 * Create a new application
 * Specify the main dialogue
 
-Check the “Allow anonymous access,” save the new properties, and now you can run the application here and share the web bot URL to the audience.  
+![](.gitbook/assets/image%20%2815%29.png)
+
+Check the “Allow anonymous access,” save the new properties, and now you can run the application here and finally **share the web bot URL** to the audience.  
 
 
