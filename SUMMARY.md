@@ -4,6 +4,15 @@
 * [Quick Start Guide](quick-start.md)
 * [Video Tutorials](video-tutorials.md)
 
+## Interaction Design <a id="design"></a>
+
+* [Introduction](design/introduction.md)
+* [Situations](design/situations/README.md)
+  * [User Actions](design/situations/user-actions.md)
+  * [Silence and Reprompting](design/situations/silence-and-reprompting.md)
+  * [Error Handling](design/situations/error-handling.md)
+* [Voice](design/voice.md)
+
 ## Promethist.app <a id="app"></a>
 
 * [About Application](app/welcome.md)
@@ -16,6 +25,17 @@
 * [User Settings](app/user-settings.md)
 * [Account Management](app/account-management.md)
 * [Keyboard Shortcuts](app/keyboard-shortcuts.md)
+
+## Platform Clients <a id="clients"></a>
+
+* [Introduction to Platform Clients](clients/introduction.md)
+* [Standalone Java Application](clients/standalone.md)
+* [Android Application](clients/android.md)
+* [iOS Application](clients/ios.md)
+* [Web Client](clients/web.md)
+* [Amazon Alexa](clients/alexa.md)
+* [Google Assistant App](clients/google.md)
+* [Phone Calls via Twilio.com](clients/phone.md)
 
 ## Core Project <a id="core"></a>
 
@@ -39,26 +59,6 @@
 * [Project Setup](core/project-setup.md)
 * [How To Deploy](core/how-to-deploy.md)
 * [Boilerplate Project](core/boilerplate-project.md)
-
-## Platform Clients <a id="clients"></a>
-
-* [Introduction to Platform Clients](clients/introduction.md)
-* [Standalone Java Application](clients/standalone.md)
-* [Android Application](clients/android.md)
-* [iOS Application](clients/ios.md)
-* [Web Client](clients/web.md)
-* [Amazon Alexa](clients/alexa.md)
-* [Google Assistant App](clients/google.md)
-* [Phone Calls via Twilio.com](clients/phone.md)
-
-## Interaction Design <a id="design"></a>
-
-* [Introduction](design/introduction.md)
-* [Situations](design/situations/README.md)
-  * [User Actions](design/situations/user-actions.md)
-  * [Silence and Reprompting](design/situations/silence-and-reprompting.md)
-  * [Error Handling](design/situations/error-handling.md)
-* [Voice](design/voice.md)
 
 ## Programming Model <a id="programming"></a>
 
