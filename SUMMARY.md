@@ -7,6 +7,14 @@
 ## Interaction Design <a id="design"></a>
 
 * [Introduction](design/introduction.md)
+* [Building Blocks](design/building-blocks/README.md)
+  * [Dialogue Models](design/building-blocks/dialogue-models.md)
+  * [Mixins](design/building-blocks/mixins.md)
+  * [Snippets](design/building-blocks/snippets.md)
+  * [File Assets](design/building-blocks/file-assets.md)
+  * [Voices](design/building-blocks/voice.md)
+  * [Personas](design/building-blocks/personas.md)
+  * [Applications](design/building-blocks/applications.md)
 * [Basic Concepts](design/basic-use-cases/README.md)
   * [Entering Conversation](design/basic-use-cases/entering-conversation.md)
   * [Leaving Conversation](design/basic-use-cases/leaving-conversation.md)
@@ -20,7 +28,6 @@
   * [Silence Treating](design/advanced-concepts/silence-and-reprompting.md)
   * [Error Handling](design/advanced-concepts/error-handling.md)
   * [Client Commands](design/advanced-concepts/client-commands.md)
-* [Voice Configuration](design/voice.md)
 * [Tips for Conversational UX](design/tips-for-conversational-ux.md)
 
 ## Promethist.app <a id="app"></a>
