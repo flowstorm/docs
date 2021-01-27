@@ -3,6 +3,7 @@
 * [What is Promethist AI](README.md)
 * [Quick Start Guide](quick-start.md)
 * [Video Tutorials](video-tutorials.md)
+* [How-To Guides](how-to-guides.md)
 
 ## Interaction Design <a id="design"></a>
 
@@ -37,8 +38,10 @@
   * [Silence Treating](design/advanced-concepts/silence-and-reprompting.md)
   * [Out of Domain](design/advanced-concepts/out-of-domain.md)
   * [Error Handling](design/advanced-concepts/error-handling.md)
-  * [Client Attributes](design/advanced-concepts/client-attributes.md)
-  * [Client Commands](design/advanced-concepts/client-commands.md)
+  * [Signals](design/advanced-concepts/client-attributes.md)
+  * [Commands](design/advanced-concepts/client-commands.md)
+  * [Calling Sub-dialogue with Parameters](design/advanced-concepts/calling-sub-dialogue-with-parameters.md)
+  * [Topic Switching](design/advanced-concepts/topic-switching.md)
 * [Tips for Best UX](design/tips-for-conversational-ux.md)
 
 ## Promethist.app <a id="app"></a>
