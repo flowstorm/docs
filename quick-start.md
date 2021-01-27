@@ -38,7 +38,7 @@ The Promethist Platform is ready for collaborative design: developers will share
 * Confirm by clicking on the “Create” button
 * An invitation will be generated and the invited user will receive a notification.  
 
-![](https://lh3.googleusercontent.com/5SMqW31uV5-rTUgiXKJZXUquqVeuW40J8jLVFof3OihafwpfvflfFwzLBta0ptFzekDAX3Mdv6qAIaDYk2ixwuCqJ1VQg4QXThK47jiFrBBTtloz2nRUHNXfRB_1oW41Our2SntA)
+![Modal window: User invitation](.gitbook/assets/image%20%2811%29.png)
 
 ### How to start prototyping – open the Dialogue Designer
 
@@ -55,12 +55,22 @@ So let’s start designing. We represent the dialogue as a graph of interconnect
 
 
 1. First, we must show the assistant where to start – where to **Enter** the graph. Drag the Enter node from the left panel and drop it into the canvas.
-2. We know that the assistant should then **ask a question** – to make the assistant speak; we will use the **“Speech”** node. Connect Enter + Speech node to show our assistant the path. Type the question to the right upper panel with the Tab **Texts**.        ![](https://lh3.googleusercontent.com/GdGGWhjnWNxtoJVQptoqinCV-lixi__tvBitLnIwv4QPcrWSw6sEua01RSj_pk0i3-ywhNx6Q-XeDEJPD2Nk6z2VaaVpjSLZdDwWcDxAMLymyehEfakvzxN1xUkN8ffVRq5pxypm)
-3. After uttering the question, the assistant starts listening and waits for user input. We will indicate this by connecting the **User Input node**.
-4. Now, we will try to estimate what will be the user’s response? What are the possible so-called intents? Users can answer they prefer fruits, vegetables. They can also say other things – but for now, let’s expect three „intents“ – fruits, vegetables, and I don’t care. Each **intent needs some example phrases** – the assistant will deduce the intents’ meaning from these examples.
-5. Since we want the **assistant to react** differently to each intent, we can now connect three Speech nodes and write the desired responses.
-6. We might also want the **assistant to say goodbye**, no matter what path we took before. So let’s connect one **last Speech node** and write the utterance.
-7. And **finally**, we saw that the graph had an entrance, so there should also be an **Exit**.
+2. We know that the assistant should then **ask a question** – to make the assistant speak; we will use the **“Speech”** node. Connect Enter + Speech node to show our assistant the path. Type the question to the right upper panel with the Tab **Texts**. 
+3. 
+  
+  
+  
+  
+  
+  
+  
+![](https://lh3.googleusercontent.com/GdGGWhjnWNxtoJVQptoqinCV-lixi__tvBitLnIwv4QPcrWSw6sEua01RSj_pk0i3-ywhNx6Q-XeDEJPD2Nk6z2VaaVpjSLZdDwWcDxAMLymyehEfakvzxN1xUkN8ffVRq5pxypm)
+
+1. After uttering the question, the assistant starts listening and waits for user input. We will indicate this by connecting the **User Input node**.
+2. Now, we will try to estimate what will be the user’s response? What are the possible so-called intents? Users can answer they prefer fruits, vegetables. They can also say other things – but for now, let’s expect three „intents“ – fruits, vegetables, and I don’t care. Each **intent needs some example phrases** – the assistant will deduce the intents’ meaning from these examples.
+3. Since we want the **assistant to react** differently to each intent, we can now connect three Speech nodes and write the desired responses.
+4. We might also want the **assistant to say goodbye**, no matter what path we took before. So let’s connect one **last Speech node** and write the utterance.
+5. And **finally**, we saw that the graph had an entrance, so there should also be an **Exit**.
 
 **Voilà!** Your first dialogue model is ready. Now, the only thing you have to do is build it and run it. Click the **run button** in the bottom right panel and see if everything works correctly.  
 
