@@ -38,7 +38,7 @@ The Promethist Platform is ready for collaborative design: developers will share
 * Confirm by clicking on the “Create” button
 * An invitation will be generated and the invited user will receive a notification.  
 
-![Modal window: User invitation](.gitbook/assets/image%20%2811%29.png)
+![Modal window: User invitation](.gitbook/assets/image%20%2812%29.png)
 
 ### How to start prototyping – open the Dialogue Designer
 
@@ -64,24 +64,31 @@ So let’s start designing. We represent the dialogue as a graph of interconnect
   
   
   
-![](https://lh3.googleusercontent.com/GdGGWhjnWNxtoJVQptoqinCV-lixi__tvBitLnIwv4QPcrWSw6sEua01RSj_pk0i3-ywhNx6Q-XeDEJPD2Nk6z2VaaVpjSLZdDwWcDxAMLymyehEfakvzxN1xUkN8ffVRq5pxypm)
+After uttering the question, the assistant starts listening and waits for user input. We will indicate this by connecting the **User Input node**.
 
-1. After uttering the question, the assistant starts listening and waits for user input. We will indicate this by connecting the **User Input node**.
-2. Now, we will try to estimate what will be the user’s response? What are the possible so-called intents? Users can answer they prefer fruits, vegetables. They can also say other things – but for now, let’s expect three „intents“ – fruits, vegetables, and I don’t care. Each **intent needs some example phrases** – the assistant will deduce the intents’ meaning from these examples.
-3. Since we want the **assistant to react** differently to each intent, we can now connect three Speech nodes and write the desired responses.
-4. We might also want the **assistant to say goodbye**, no matter what path we took before. So let’s connect one **last Speech node** and write the utterance.
-5. And **finally**, we saw that the graph had an entrance, so there should also be an **Exit**.
+1. Now, we will try to **estimate** what will be the **user’s response?** What are the possible so-called **intents**? Users can answer they prefer fruits, vegetables. They can also say other things – but for now, let’s expect three „intents“ – fruits, vegetables, and I don’t care. Each **intent needs some example phrases** – the assistant will deduce the intents’ meaning from these examples.
+2. Since we want the **assistant to react** differently to each intent, we can now connect three Speech nodes and write the desired responses.
+3. We might also want the **assistant to say goodbye**, no matter what path we took before. So let’s connect one **last Speech node** and write the utterance.
+4. And **finally**, we saw that the graph had an entrance, so there should also be an **Exit**.
 
-**Voilà!** Your first dialogue model is ready. Now, the only thing you have to do is build it and run it. Click the **run button** in the bottom right panel and see if everything works correctly.  
+**Voilà!** Your first dialogue model is ready. Now, the only thing you have to do is build it and run it. Click the **run button** in the bottom right panel and see if everything works correctly.
+
+  
 
 
-![](https://lh4.googleusercontent.com/KQgnBlueLkgS5cejupRDBLuVFvt1JOqiI9gfGWA8JhJtXfYSJBYMKhsWx9VIfPv7N2F8zr0k8PF5Vhv9rFZUJbU9WW8pcEkmTcnBTKbZeXjgP9Q--nzz8kh6tsolCt46pFTLPcMF)
+![](.gitbook/assets/example-pre-example.gif)
 
-Promethist will save the dialogue, build it, and run it. You will have to name the dialogue. The convention is namespace/dialogue-name.
+Promethist will save the dialogue, build it, and run it. You will have to name the dialogue. The convention is namespace/dialogue-name. 
 
-### An advanced dialogue![](https://lh4.googleusercontent.com/z1hqG6CUdHkoL7MfCJ_QX4U55L3F-SfOaIZNQaa-p-Kt4lcf3zkb_eOMM_sCLKPAhVH-YhRXyW008Ffm_mS1Lonn4zLlKJ6LzhZbLgjiIEB0HdjHLdpl9Yfett5ZMiBKSw_-LtB1)
+### Create an Advanced Dialogue Quickly
 
-The Promethist Platform comes with a set of sample dialogue structures called **Snippets**. Click on the circled icon in the figure, and you will find the Snippets list. We recommend looking at the Main dialogue EN snippet. Drag and drop it to the canvas, and you can immediately run it. It demonstrates the essential elements making the dialogue **robust**. The **Main dialogue EN** snippet handles the following situations gracefully:
+### Use Snippets
+
+![](https://lh5.googleusercontent.com/Tavn5P1Q105kN8lECBMdbQZbkhKEr4D3FKEU54tJmh0HSiS0UPXtpp54tTYktZrjiT-A1RA4IaoZSzvaTOOWq9yRek61xF3-xOsPFnS6I9kweNRkGV-yjKGHa8ZriL0XQFaSRR8C)
+
+The Promethist Platform comes with a set of sample dialogue structures called **Snippets**. Click on the icon suggesting a _**branched structure**_, and you will find the Snippets list. You can see the typical structure for the closed question and its typical answers in the animation above. You will need something like often.
+
+However, we recommend looking at the Main dialogue EN snippet. Drag and drop it to the canvas, and you can immediately run it. It demonstrates the essential elements making the dialogue **robust**. The **Main dialogue EN** snippet handles the following situations gracefully:
 
 * The user wants to stop,
 * The user asks for help.
@@ -89,22 +96,15 @@ The Promethist Platform comes with a set of sample dialogue structures called **
 * The user is not responding.
 * Etc.
 
-Note global intents execute these situations. We placed the Global intents in the upper left corner of the snippet graph.  
+Note global intents execute these situations. We placed the Global intents in the upper left corner of the snippet graph.
 
-
-For details on how to use the snippet designer, see the [documentation page](https://promethist.myjetbrains.com/youtrack/articles/APP-A-31/Snippet-Designer).  
-  
-  
-  
-
-
-### Example of Use
-
-![](https://lh5.googleusercontent.com/Tavn5P1Q105kN8lECBMdbQZbkhKEr4D3FKEU54tJmh0HSiS0UPXtpp54tTYktZrjiT-A1RA4IaoZSzvaTOOWq9yRek61xF3-xOsPFnS6I9kweNRkGV-yjKGHa8ZriL0XQFaSRR8C)
+For details on how to use the snippet designer, see the documentation page.
 
 ### Subdialogues
 
-The platform allows breaking every dialog to sub-dialogs. Sub-dialogs help structure the whole application and allow multiple developers to cooperate on the same project. Think about a sub-dialog as a function in a programming language. You can call the sub-dialogs, and they return after completion. 
+
+
+The platform allows breaking every dialog to sub-dialogues. Sub-dialogues help structure the whole application and allow multiple developers to cooperate on the same project. Think about a sub-dialog as a function in a programming language. You can call the sub-dialogs, and they return after completion. 
 
 #### When to use this feature?
 
@@ -120,16 +120,16 @@ Just explaining how to start the created dialog and how to observe in the window
 
 We have a finished dialog, and we want a tester to try it. We need to create the application URL to send it over. The publication workflow goes like this: 
 
-1. Create an application - In the top panel &gt; **Access &gt; Applications** &gt; Click the **plus button** **\(+\)** located in the **top right corner**  
+* Create an application - In the top panel &gt; **Access &gt; Applications** &gt; Click the **plus button** **\(+\)** located in the **top right corner**
 
-![](https://lh5.googleusercontent.com/nlARlq5xNU3w0Kmsr0KE_PM6Aqhzhei6vYHbkhI1icFdntbtSMvSvsjijAmZKPX3m61gjhPf-hlY4r26oU4aFpiVrJrckJ7-zX50oeZgjcAHq5_k-WY-ycFBMrynISYEFfdPAfeJ)
+![](.gitbook/assets/image%20%2811%29.png)
 
-1. Name & Description - name and describe your application
-2. Link the main dialogue to the application
-3. Make the application anonymously accessible
-4. Save
-5. Test the Web Bot URL - click the “open in the new window” Arrow icon
-6. Copy and share the link to the world
+* Name & Description - name and describe your application
+* Link the main dialogue to the application
+* Make the application anonymously accessible
+* Save
+* Test the Web Bot URL - click the “open in the new window” Arrow icon
+* Copy and share the link to the world
 
 Open Access section &gt; Applications
 
