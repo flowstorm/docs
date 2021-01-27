@@ -4,11 +4,25 @@ description: The Power of Spoken Word
 
 # What is Promethist AI
 
-**The Promethist platform provides you with everything you need to create a modern conversational application.**
+The Promethist AI Platform is a set of SaaS development tools and software components for creating smart Conversational & Multimodal AI applications. The Platform has two major components: the [Web Application](app/welcome.md) \([promethist.app](./)\) and the [Core](core/about-project.md). Creators will use the web app to author the dialogues, and administrators will use it to manage the applications. The Core contains all runtime components. 
+
+The critical elements are the built-in Voice First development workflow and reusability. We guide the developer through all stages, starting from the scenario to the analytics. For fast application authoring, the Platform introduces the following reusable components: [sub-dialogues](design/basic-use-cases/sub-dialogues.md), [mixins](design/building-blocks/mixins.md) and [snippets](design/building-blocks/snippets.md).
+
+The principal part of a conversational application are dialogues, and the [Dialogue Designer](app/working-space/design/dialogue-designer.md) is an essential tool to create and visualise them as graphs of nodes. The nodes contain [speech](design/basic-use-cases/speech-output.md) prompts, nodes with expected replies, and code including nodes. Domain-Specific Language \(DSL\) [DialogueScript](programming/dialoguescript/) controls the dialog flow, access to data and APIs, natural language generation, etc.
+
+The [Core](core/about-project.md) executes the [dialogue models](design/building-blocks/dialogue-models.md). It may run in the cloud or on-premise. The internet-connected [platform clients](clients/introduction.md) use a selection of ASR and TTS \(Microsoft, Google, and Amazon\). The Core also collects the sessions to support analytics.
+
+We offer a variety of  Clients for mobile, web, Alexa, and Google Hub. Also, we provide a [standalone client](clients/standalone.md) to voice-enable any HW with a microphone and speaker. Platform customers have designed clients for in-car, Virtual Reality headset, and other devices. 
+
+The Platform also support access to sensors and actuators. The context stores the sensors’ states. Sensors may invoke a conversation or issue commands to actuators.
+
+To create advanced, adaptive, and personalised Voice First applications, the rich context is essential. We provide different scopes of automatically maintained context: The [Session](design/context-scopes/session.md) Context variables persist during a session. The [User](design/context-scopes/user.md) Context stores users’ profile values. The [Community](design/context-scopes/community.md) Context allows sharing between communities of users. 
+
+Platform web application comes with a robust set of administration tools. Administrators manage spaces with users and devices. Users can be organised into groups with defined sets of supported applications. The web application also provides analytics. 
+
+An essential part of the Core is the NLP pipeline. It is a state-of-the-art set of algorithms implemented as set of web services. The NLP pipeline offers different algorithms, such as intent, named entity recognition, etc. Developers may easily add custom NLP services.
 
 [Get started for free!](https://promethist.app/#!/signup)
-
-### The platform is multi-channel ready!  <a id="the-platform-is-multi-channel-ready!"></a>
 
 Your applications can run on \(almost\) any voice device on the Earth.
 

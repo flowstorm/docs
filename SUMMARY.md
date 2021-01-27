@@ -52,6 +52,7 @@
 * [Working Space](app/working-space/README.md)
   * [Home Dashboard](app/working-space/home.md)
   * [Interaction Design](app/working-space/design/README.md)
+    * [Dialogue Designer](app/working-space/design/dialogue-designer.md)
     * [Dialogue Mixin](app/working-space/design/dialogue-mixin.md)
     * [Snippet Designer](app/working-space/design/snippet-designer.md)
     * [File Assets](app/working-space/design/file-assets.md)
