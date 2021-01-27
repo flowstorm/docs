@@ -1,4 +1,4 @@
-# Tips for Conversational UX
+# Tips for Best UX
 
 To design a well-functioning conversational application, we must follow certain rules that help us achieve **the best possible user experience**. We like to call the following rules **"The Decalogue"**.
 

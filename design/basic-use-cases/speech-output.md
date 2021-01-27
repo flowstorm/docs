@@ -4,5 +4,5 @@ description: >-
   synthetized.
 ---
 
-# Speech Output
+# Speech
 

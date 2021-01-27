@@ -1,2 +1,2 @@
-# Using Images and Sounds
+# Images and Sounds
 
