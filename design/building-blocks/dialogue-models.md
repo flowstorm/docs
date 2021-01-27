@@ -4,9 +4,9 @@
 
 ### Speech  <a id="speech"></a>
 
-As the name suggests the node provides user with a speech read by a defined voice.
+The text in the node will be sent to the Text To Speech converting the text to voice. 
 
-A node can be set as repeatable. If true, the text in this node will be included when the bots repeats a response. See [Repeating responses](https://promethist.myjetbrains.com/youtrack/articles/APP-A-9/Repeating-responses) for detailed explanation.
+A node can be set as repeatable. If true, the text in this node will be included when the bots repeat a response. See [Repeating responses](https://promethist.myjetbrains.com/youtrack/articles/APP-A-9/Repeating-responses) for the detailed explanation.
 
 ### Intent  <a id="intent"></a>
 

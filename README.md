@@ -4,7 +4,7 @@ description: The Power of Spoken Word
 
 # What is Promethist AI
 
-**The Promethist platform provides you with with everything you need to create a modern conversational application.**
+**The Promethist platform provides you with everything you need to create a modern conversational application.**
 
 [Get started for free!](https://promethist.app/#!/signup)
 
