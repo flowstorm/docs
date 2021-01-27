@@ -42,7 +42,7 @@ The Promethist Platform is ready for collaborative design: developers will share
 
 ### How to start prototyping – open the Dialogue Designer
 
-Open the “Design” section in the top panel and choose Dialogue Designer or just press the key "d" as a keyboard shortcut. You can start designing!
+Open the **“Design” section in the top panel** and choose **Dialogue Designer** or just press the key **"d" as a keyboard shortcut**. You can start designing!
 
 ### Your first simple dialogue
 
@@ -54,15 +54,15 @@ Let’s say we want our assistant to ask a question: “Do you prefer fruits or 
 So let’s start designing. We represent the dialogue as a graph of interconnected nodes. These nodes have different types: you can see the list in the left panel. Our first dialogue will only use the basic node types: Enter, Exit, Speech, UserInput and Intent.  
 
 
-1. First, we must show the assistant where to start – where to Enter the graph. Drag the Enter node from the left panel and drop it into the canvas.
-2. We know that the assistant should then ask a question – to make the assistant speak; we will use the “Speech” node. Connect Enter + Speech node to show our assistant the path. Type the question to the right upper panel with the Tab Texts.        ![](https://lh3.googleusercontent.com/GdGGWhjnWNxtoJVQptoqinCV-lixi__tvBitLnIwv4QPcrWSw6sEua01RSj_pk0i3-ywhNx6Q-XeDEJPD2Nk6z2VaaVpjSLZdDwWcDxAMLymyehEfakvzxN1xUkN8ffVRq5pxypm)
-3. After uttering the question, the assistant starts listening and waits for user input. We will indicate this by connecting the User Input node.
-4. Now, we will try to estimate what will be the user’s response? What are the possible so-called intents? Users can answer they prefer fruits, vegetables. They can also say other things – but for now, let’s expect three „intents“ – fruits, vegetables, and I don’t care. Each intent needs some example phrases – the assistant will deduce the intents’ meaning from these examples.
-5. Since we want the assistant to react differently to each intent, we can now connect three Speech nodes and write the desired responses.
-6. We might also want the assistant to say goodbye, no matter what path we took before. So let’s connect one last Speech node and write the utterance.
-7. And finally, we saw that the graph had an entrance, so there should also be an Exit.
+1. First, we must show the assistant where to start – where to **Enter** the graph. Drag the Enter node from the left panel and drop it into the canvas.
+2. We know that the assistant should then **ask a question** – to make the assistant speak; we will use the **“Speech”** node. Connect Enter + Speech node to show our assistant the path. Type the question to the right upper panel with the Tab **Texts**.        ![](https://lh3.googleusercontent.com/GdGGWhjnWNxtoJVQptoqinCV-lixi__tvBitLnIwv4QPcrWSw6sEua01RSj_pk0i3-ywhNx6Q-XeDEJPD2Nk6z2VaaVpjSLZdDwWcDxAMLymyehEfakvzxN1xUkN8ffVRq5pxypm)
+3. After uttering the question, the assistant starts listening and waits for user input. We will indicate this by connecting the **User Input node**.
+4. Now, we will try to estimate what will be the user’s response? What are the possible so-called intents? Users can answer they prefer fruits, vegetables. They can also say other things – but for now, let’s expect three „intents“ – fruits, vegetables, and I don’t care. Each **intent needs some example phrases** – the assistant will deduce the intents’ meaning from these examples.
+5. Since we want the **assistant to react** differently to each intent, we can now connect three Speech nodes and write the desired responses.
+6. We might also want the **assistant to say goodbye**, no matter what path we took before. So let’s connect one **last Speech node** and write the utterance.
+7. And **finally**, we saw that the graph had an entrance, so there should also be an **Exit**.
 
-Voilà! Your first dialogue model is ready. Now, the only thing you have to do is build it and run it. Click the run button in the bottom right panel and see if everything works correctly.  
+**Voilà!** Your first dialogue model is ready. Now, the only thing you have to do is build it and run it. Click the **run button** in the bottom right panel and see if everything works correctly.  
 
 
 ![](https://lh4.googleusercontent.com/KQgnBlueLkgS5cejupRDBLuVFvt1JOqiI9gfGWA8JhJtXfYSJBYMKhsWx9VIfPv7N2F8zr0k8PF5Vhv9rFZUJbU9WW8pcEkmTcnBTKbZeXjgP9Q--nzz8kh6tsolCt46pFTLPcMF)
@@ -71,7 +71,7 @@ Promethist will save the dialogue, build it, and run it. You will have to name t
 
 ### An advanced dialogue![](https://lh4.googleusercontent.com/z1hqG6CUdHkoL7MfCJ_QX4U55L3F-SfOaIZNQaa-p-Kt4lcf3zkb_eOMM_sCLKPAhVH-YhRXyW008Ffm_mS1Lonn4zLlKJ6LzhZbLgjiIEB0HdjHLdpl9Yfett5ZMiBKSw_-LtB1)
 
-The Promethist Platform comes with a set of sample dialogue structures called Snippets. Click on the circled icon in the figure, and you will find the Snippets list. We recommend looking at the Main dialogue EN snippet. Drag and drop it to the canvas, and you can immediately run it. It demonstrates the essential elements making the dialogue robust. The Main dialogue EN snippet handles the following situations gracefully:
+The Promethist Platform comes with a set of sample dialogue structures called **Snippets**. Click on the circled icon in the figure, and you will find the Snippets list. We recommend looking at the Main dialogue EN snippet. Drag and drop it to the canvas, and you can immediately run it. It demonstrates the essential elements making the dialogue **robust**. The **Main dialogue EN** snippet handles the following situations gracefully:
 
 * The user wants to stop,
 * The user asks for help.
@@ -110,7 +110,7 @@ Just explaining how to start the created dialog and how to observe in the window
 
 We have a finished dialog, and we want a tester to try it. We need to create the application URL to send it over. The publication workflow goes like this: 
 
-1. Create an application - In the top panel &gt; Access &gt; Applications &gt; Click the plus button \(+\) located in the top right corner  
+1. Create an application - In the top panel &gt; **Access &gt; Applications** &gt; Click the **plus button** **\(+\)** located in the **top right corner**  
 
 ![](https://lh5.googleusercontent.com/nlARlq5xNU3w0Kmsr0KE_PM6Aqhzhei6vYHbkhI1icFdntbtSMvSvsjijAmZKPX3m61gjhPf-hlY4r26oU4aFpiVrJrckJ7-zX50oeZgjcAHq5_k-WY-ycFBMrynISYEFfdPAfeJ)
 
