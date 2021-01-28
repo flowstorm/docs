@@ -252,7 +252,7 @@ Client can generate or set`sessionId` so it can attach to existing / previous se
 ```
 
 {% hint style="info" %}
-Request can contain attributes describing client current state, e.g. client type, location, temperature, etc. To understand better how these client attributes can be used please visit [Client Attributes](../../programming/dialoguescript/attributes/client-attributes.md) page.
+Request can contain attributes describing client current state, e.g. client type, location, temperature, etc. To understand better how these client attributes can be used in server part of Platform programming model please visit [Client Attributes](../../programming/dialoguescript/attributes/client-attributes.md) page.
 {% endhint %}
 
 ### **Conversation Response**
