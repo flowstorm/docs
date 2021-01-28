@@ -346,5 +346,5 @@ Client can generate or set`sessionId` so it can attach to existing / previous se
 
 ```
 
-As `sessionEnded` is set to `true`, client goes do `Sleeping` mode
+As `sessionEnded` is set to `true`, client goes do `Sleeping` mode and sessionId is discarded. If sleepTimeout is non zero, then client also goes to Sleeping mode but keeps sessionId until sleep timeout expires. This allows to get back into the same session and have multiple conversations in the same session context.
 
