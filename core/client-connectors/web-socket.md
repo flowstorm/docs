@@ -191,28 +191,23 @@ The logic of client to server interaction is following
 
 ## Example of client-server communication
 
-### Initialisation
+### Connection Initiation
 
-Client established web socket connection and is in `Open` state, so it can initiate it for future communication by `Init` event containing config parameters.
+Client establishes web socket connection and is in `Open` state, so it can initiate it for future communication by `Init` event containing config parameters describing how STT \(Speech-To-Text\) and STT \(Text-To-Speech\) will be treated.
 
 ```javascript
 {
   "type": "Init",
   "key": "5ea05091a7a6757defffa479",
   "deviceId": "standalone_3C22FBBBAD22",
-  "token": null,
   "config": {
     "locale": "en",
-    "zoneId": "Europe/Paris",
-    "stt": false,
+    "zoneId": "Europe/Prague",
     "sttMode": "SingleUtterance",
     "sttSampleRate": 16000,
     "tts": "RequiredLinks",
-    "ttsConfig": null,
-    "voice": null,
     "returnSsml": false,
-    "silenceTimeout": 5000,
-    "test": false
+    "silenceTimeout": 5000
   }
 }
 ```
@@ -267,7 +262,7 @@ Client can generate or set`sessionId` so it can attach to existing / previous se
     "locale": "en",
     "items": [
       {
-        "text": "What can I do for you, Tomas? ",
+        "text": "What can I do for you, Tomas?",
         "ssml": null,
         "confidence": 1.0,
         "audio": "https://core.promethist.com/file/tts/18e77858dc3701a543732d0962c9b5bf.mp3",
@@ -356,5 +351,5 @@ Client can generate or set`sessionId` so it can attach to existing / previous se
 
 ### Conversation End
 
-As `sessionEnded` is set to `true`, client goes do `Sleeping` mode and sessionId is discarded. If sleepTimeout is non zero, then client also goes to Sleeping mode but keeps sessionId until sleep timeout expires. This allows to get back into the same session and have multiple conversations in the same session context.
+As `sessionEnded` is set `true`, client goes do `Sleeping` mode and `sessionId` value is discarded \(e.g. set to `null`\) so new value will have to be created for new conversation. If `sleepTimeout` is non zero, then client also goes to `Sleeping` mode but keeps `sessionId` until sleep timeout expires. This allows to get back into the same session and have multiple conversations in the same session context.
 
