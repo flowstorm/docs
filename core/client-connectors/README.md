@@ -1,2 +1,2 @@
-# Client Connectors
+# Client Integrations
 

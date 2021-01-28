@@ -86,7 +86,7 @@
     * [Ducking](core/integrated-nlp-services/intent-and-named-entity-recognition/ducking.md)
   * [ASR \(Speech-To-Text\)](core/integrated-nlp-services/asr-speech-to-text.md)
   * [TTS \(Text-To-Speech\)](core/integrated-nlp-services/tts-text-to-speech.md)
-* [Client Connectors](core/client-connectors/README.md)
+* [Client Integrations](core/client-connectors/README.md)
   * [Web Socket](core/client-connectors/web-socket.md)
   * [Amazon Alexa REST](core/client-connectors/amazon-alexa-rest.md)
   * [Google App REST](core/client-connectors/google-app-rest.md)
