@@ -64,9 +64,9 @@ Following event types are emitted by **server**
 | `SessionStarted` | to pass valid session ID to the client |
 | `SessionEnded` | to inform client that session has ended and session ID is no more valid and should be forget |
 
-## Flow
+## Communication Flow
 
-The logic of client to server interaction is following
+The logic of client to server communication is following
 
 <table>
   <thead>
@@ -162,7 +162,7 @@ The logic of client to server interaction is following
       <td style="text-align:left"></td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>Audio input (for ASR)</b>
+      <td style="text-align:left"><b>Audio Input for Speech-To-Text</b>
       </td>
       <td style="text-align:left"></td>
     </tr>
@@ -310,19 +310,6 @@ Client can generate or set`sessionId` so it can attach to existing / previous se
   "response": {
     "locale": "en",
     "items": [
-      {
-        "text": "",
-        "ssml": null,
-        "confidence": 1.0,
-        "ttsConfig": {
-          "provider": "Amazon",
-          "locale": "en_US",
-          "gender": "Female",
-          "name": "Joanna",
-          "engine": "neural"
-        },
-        "repeatable": false
-      },
       {
         "text": "Sorry, I can't see where you are located.",
         "ssml": null,
