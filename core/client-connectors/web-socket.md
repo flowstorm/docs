@@ -191,6 +191,8 @@ The logic of client to server interaction is following
 
 ## Example of client-server communication
 
+### Initialisation
+
 Client established web socket connection and is in `Open` state, so it can initiate it for future communication by `Init` event containing config parameters.
 
 ```javascript
@@ -221,7 +223,9 @@ Server confirms that it is ready for communication by `Ready` event, client goes
 {"type": "Ready"}
 ```
 
-**Client** introduces conversation upon user activity \(e.g. pressing talk button\) by `Request` event containing `#intro` action
+### **Conversation Request**
+
+**Client** initiates conversation upon user activity \(e.g. pressing talk button\) by `Request` event containing `#intro` action
 
 {% hint style="info" %}
 Client can generate or set`sessionId` so it can attach to existing / previous session.
@@ -252,6 +256,8 @@ Client can generate or set`sessionId` so it can attach to existing / previous se
 }
 ```
 
+### **Conversation Response**
+
 **Server** responds by `Response` event and client goes to `Responding` state, playing output audio
 
 ```javascript
@@ -281,13 +287,15 @@ Client can generate or set`sessionId` so it can attach to existing / previous se
 }
 ```
 
+### Speech Recognition
+
 **Client** finished playing audio, it opens input audio by sending `InputAudioStreamOpen` event
 
 ```javascript
 {"type": "InputAudioStreamOpen"}
 ```
 
-**Server** confirms that audio stream is open by sending `InputAudioStreamOpen` event in return. Client goes to `Listening` state
+**Server** confirms that audio stream is open by sending `InputAudioStreamOpen` event in return. Client goes to `Listening` state and starts to send binary audio packets to the sockets.
 
 ```javascript
 {"type": "InputAudioStreamOpen"}
@@ -345,6 +353,8 @@ Client can generate or set`sessionId` so it can attach to existing / previous se
 }
 
 ```
+
+### Conversation End
 
 As `sessionEnded` is set to `true`, client goes do `Sleeping` mode and sessionId is discarded. If sleepTimeout is non zero, then client also goes to Sleeping mode but keeps sessionId until sleep timeout expires. This allows to get back into the same session and have multiple conversations in the same session context.
 
