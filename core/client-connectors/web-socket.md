@@ -223,6 +223,14 @@ Server confirms that it is ready for communication by `Ready` event, client goes
 
 **Client** introduces conversation upon user activity \(e.g. pressing talk button\) by `Request` event containing `#intro` action
 
+{% hint style="info" %}
+Client can generate or set`sessionId` so it can attach to existing / previous session.
+{% endhint %}
+
+{% hint style="info" %}
+`deviceId` should be unique per hardware + software client combination \(e.g. browser type with unique ID stored in local storage for web application, application ID + mobile phone ID for mobile clients, client software name combined with MAC address for standalone client appliances etc.\)
+{% endhint %}
+
 ```javascript
 {
   "type": "Request",
