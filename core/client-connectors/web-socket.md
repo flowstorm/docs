@@ -7,9 +7,13 @@ description: >-
 
 # Web Socket
 
+Web Socket is provided by [Core Runner](../core-components/runner.md) service on URI `/socket/` 
+
+Promethist Cloud Core Runner service provides web socket on URL address  [wss://core.promethist.com/socket/](wss://core.promethist.com/socket/) 
+
 ## States 
 
-Client has defined following states \(defined by enumeration [BotClient.State](https://develop.promethist.ai/apidoc/client-app-common/ai.promethist.client/-bot-client/-state/index.html)\)
+Client has defined following states
 
 | Name | Description |
 | :--- | :--- |
@@ -23,7 +27,24 @@ Client has defined following states \(defined by enumeration [BotClient.State](h
 
 ## Events
 
-Client exchanges with server JSON messages representing event objects of class [BotEvent](https://develop.promethist.ai/apidoc/client-app-common/ai.promethist.client/-bot-event/index.html). If defines following event types to be used by **client**
+Client exchanges with server JSON messages representing event objects of class `BotEvent`
+
+```kotlin
+open class BotEvent {
+    data class Init(val key: String, val deviceId: String, val token: String? = null, val config: BotConfig) : BotEvent()
+    class Ready : BotEvent()
+    data class Error(val text: String) : BotEvent()
+    data class Request(val request: CoreRequest) : BotEvent()
+    data class Response(val response: CoreResponse) : BotEvent()
+    data class Recognized(val text: String) : BotEvent()
+    data class SessionStarted(val sessionId: String) : BotEvent()
+    class SessionEnded : BotEvent()
+    class InputAudioStreamOpen : BotEvent()
+    class InputAudioStreamClose : BotEvent()
+}
+```
+
+If defines following event types to be used by **client**
 
 | Name | Description |
 | :--- | :--- |
@@ -136,7 +157,7 @@ The logic of client to server interaction is following
         </p>
         <p>Server can also actively send <code>BotEvent.Response</code> when client
           is <code>Sleeping</code> to initiate conversation triggered by external circumstances
-          (e.g. certain scheduled time, webhook etc.)</p>
+          (e.g. certain scheduled time, web hook etc.)</p>
       </td>
       <td style="text-align:left"></td>
     </tr>
@@ -167,4 +188,155 @@ The logic of client to server interaction is following
     </tr>
   </tbody>
 </table>
+
+## Example of client-server communication
+
+Client established web socket connection and is in `Open` state, so it can initiate it for future communication by `Init` event containing config parameters.
+
+```javascript
+{
+  "type": "Init",
+  "key": "5ea05091a7a6757defffa479",
+  "deviceId": "standalone_3C22FBBBAD22",
+  "token": null,
+  "config": {
+    "locale": "en",
+    "zoneId": "Europe/Paris",
+    "stt": false,
+    "sttMode": "SingleUtterance",
+    "sttSampleRate": 16000,
+    "tts": "RequiredLinks",
+    "ttsConfig": null,
+    "voice": null,
+    "returnSsml": false,
+    "silenceTimeout": 5000,
+    "test": false
+  }
+}
+```
+
+Server confirms that it is ready for communication by `Ready` event, client goes to `Sleeping` state
+
+```javascript
+{"type": "Ready"}
+```
+
+**Client** introduces conversation upon user activity \(e.g. pressing talk button\) by `Request` event containing `#intro` action
+
+```javascript
+{
+  "type": "Request",
+  "request": {
+    "appKey": "5ea05091a7a6757defffa479",
+    "deviceId": "standalone_3C22FBBBAD22",
+    "sessionId": "abe55b84-2b6a-47bb-9e71-e12da1252321",
+    "input": {
+      "locale": "en_US",
+      "zoneId": "Europe/Prague",
+      "transcript": {
+        "text": "#intro"
+      }
+    },
+    "attributes": {
+      "clientType": "standalone:1.0.0-SNAPSHOT"
+    }
+  }
+}
+```
+
+**Server** responds by `Response` event and client goes to `Responding` state, playing output audio
+
+```javascript
+{
+  "type": "Response",
+  "response": {
+    "locale": "en",
+    "items": [
+      {
+        "text": "What can I do for you, Tomas? ",
+        "ssml": null,
+        "confidence": 1.0,
+        "audio": "https://core.promethist.com/file/tts/18e77858dc3701a543732d0962c9b5bf.mp3",
+        "ttsConfig": {
+          "provider": "Amazon",
+          "locale": "en_US",
+          "gender": "Female",
+          "name": "Joanna",
+          "engine": "neural"
+        },
+        "repeatable": true
+      }
+    ],
+    "sessionEnded": false,
+    "sleepTimeout": 0
+  }
+}
+```
+
+**Client** finished playing audio, it opens input audio by sending `InputAudioStreamOpen` event
+
+```javascript
+{"type": "InputAudioStreamOpen"}
+```
+
+**Server** confirms that audio stream is open by sending `InputAudioStreamOpen` event in return. Client goes to `Listening` state
+
+```javascript
+{"type": "InputAudioStreamOpen"}
+```
+
+**Server** recognises speech in the input audio and sends it back to the client in `Recognized` event \(so it can display input transcript to the user\), client goes to `Processing` state
+
+```javascript
+{"type": "Recognized", "text": "tell me about this place"}
+```
+
+**Server** generates response and sends it in `Response` event, client goes to `Responding` state, plays response audio \(and optionally also displays response text\)
+
+```javascript
+{
+  "type": "Response",
+  "response": {
+    "locale": "en",
+    "items": [
+      {
+        "text": "",
+        "ssml": null,
+        "confidence": 1.0,
+        "ttsConfig": {
+          "provider": "Amazon",
+          "locale": "en_US",
+          "gender": "Female",
+          "name": "Joanna",
+          "engine": "neural"
+        },
+        "repeatable": false
+      },
+      {
+        "text": "Sorry, I can't see where you are located.",
+        "ssml": null,
+        "confidence": 1.0,
+        "image": null,
+        "video": null,
+        "audio": "http://core.promethist.com/file/tts/83afc721a3c36afd8acd12f027a19023.mp3",
+        "code": null,
+        "background": "",
+        "ttsConfig": {
+          "provider": "Amazon",
+          "locale": "en_US",
+          "gender": "Female",
+          "name": "Joanna",
+          "engine": "neural"
+        },
+        "repeatable": true
+      }
+    ],
+    "sessionEnded": true,
+    "sleepTimeout": 0
+  }
+}
+
+```
+
+As `sessionEnded` is set to `true`, client goes do `Sleeping` mode
 
