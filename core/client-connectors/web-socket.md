@@ -251,6 +251,10 @@ Client can generate or set`sessionId` so it can attach to existing / previous se
 }
 ```
 
+{% hint style="info" %}
+Request can contain attributes describing client current state, e.g. client type, location, temperature, etc. To understand better how these client attributes can be used please visit [Client Attributes](../../programming/dialoguescript/attributes/client-attributes.md) page.
+{% endhint %}
+
 ### **Conversation Response**
 
 **Server** responds by `Response` event and client goes to `Responding` state, playing output audio
