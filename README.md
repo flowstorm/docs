@@ -26,5 +26,5 @@ Platform web application comes with a robust set of administration tools. Admini
 
 An essential part of the Core is the NLP pipeline. It is a state-of-the-art set of algorithms implemented as set of web services. The NLP pipeline offers different algorithms, such as intent, named entity recognition, etc. Developers may easily add custom NLP services.
 
-[Get started for free!](https://promethist.app/#!/signup)
+[Get started for free](https://promethist.app/#!/signup) and [make your first steps](quick-start.md) with Promethist.
 
