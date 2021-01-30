@@ -1,2 +1,2 @@
-# Integrated NLP Services
+# NLP Services
 

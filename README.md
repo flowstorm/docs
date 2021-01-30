@@ -14,7 +14,7 @@ The principal part of a conversational application are dialogues, and the [Dialo
 
 The [Core](core/about-project.md) executes [dialogue models](design/building-blocks/dialogue-models.md). It may run in the cloud or on-premise. The internet-connected [platform clients](clients/introduction.md) use a selection of ASR and TTS \(Microsoft, Google, and Amazon\). The Core also collects the sessions to support analytics.
 
-We offer a variety of  Clients for mobile, web, Alexa, and Google Hub. Also, we provide a [standalone client](clients/standalone.md) to voice-enable any HW with a microphone and speaker. Platform customers have designed clients for in-car, Virtual Reality headset, and other devices. 
+We offer a variety of  Clients for mobile, web, Alexa, and Google Hub. Also, we provide a [standalone client](clients/standalone/) to voice-enable any HW with a microphone and speaker. Platform customers have designed clients for in-car, Virtual Reality headset, and other devices. 
 
 ![](.gitbook/assets/image%20%287%29.png)
 

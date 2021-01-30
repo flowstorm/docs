@@ -62,10 +62,12 @@
 * [Account Management](app/account-management.md)
 * [Keyboard Shortcuts](app/keyboard-shortcuts.md)
 
-## Platform Clients <a id="clients"></a>
+## Clients and Channels <a id="clients"></a>
 
-* [Introduction to Platform Clients](clients/introduction.md)
-* [Standalone Java Application](clients/standalone.md)
+* [Introduction to Clients](clients/introduction.md)
+* [Client Configuration](clients/client-configuration.md)
+* [Standalone Java Application](clients/standalone/README.md)
+  * [Command Line Interface](clients/standalone/command-line-interface.md)
 * [Android Application](clients/android.md)
 * [iOS Application](clients/ios.md)
 * [Web Client](clients/web.md)
@@ -79,14 +81,14 @@
 * [Core Components](core/core-components/README.md)
   * [Runner](core/core-components/runner.md)
   * [Builder](core/core-components/builder.md)
-* [Integrated NLP Services](core/nlp-services/README.md)
+* [NLP Services](core/nlp-services/README.md)
   * [V2 Dialogue Manager](core/nlp-services/v2-dialogue-manager.md)
   * [Intent and Named Entity Recognition](core/nlp-services/intent-and-named-entity-recognition/README.md)
     * [Illusionist](core/nlp-services/intent-and-named-entity-recognition/illusionist.md)
     * [Ducking](core/nlp-services/intent-and-named-entity-recognition/ducking.md)
   * [ASR \(Speech-To-Text\)](core/nlp-services/asr-speech-to-text.md)
   * [TTS \(Text-To-Speech\)](core/nlp-services/tts-text-to-speech.md)
-* [Client Integrations](core/client-integrations/README.md)
+* [Integrations](core/client-integrations/README.md)
   * [Web Socket](core/client-integrations/web-socket.md)
   * [Amazon Alexa REST](core/client-integrations/amazon-alexa-rest.md)
   * [Google App REST](core/client-integrations/google-app-rest.md)

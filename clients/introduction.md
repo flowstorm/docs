@@ -1,2 +1,2 @@
-# Introduction to Platform Clients
+# Introduction to Clients
 
