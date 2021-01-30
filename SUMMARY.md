@@ -66,7 +66,7 @@
 
 * [Introduction to Clients](clients/introduction.md)
 * [Client Configuration](clients/client-configuration.md)
-* [Standalone Java Application](clients/standalone/README.md)
+* [Standalone Application](clients/standalone/README.md)
   * [Command Line Interface](clients/standalone/command-line-interface.md)
 * [Android Application](clients/android.md)
 * [iOS Application](clients/ios.md)
@@ -78,9 +78,9 @@
 ## Core Project <a id="core"></a>
 
 * [About Project](core/about-project.md)
-* [Core Components](core/core-components/README.md)
-  * [Runner](core/core-components/runner.md)
-  * [Builder](core/core-components/builder.md)
+* [Core Services](core/core-services/README.md)
+  * [Runner](core/core-services/runner.md)
+  * [Builder](core/core-services/builder.md)
 * [NLP Services](core/nlp-services/README.md)
   * [V2 Dialogue Manager](core/nlp-services/v2-dialogue-manager.md)
   * [Intent and Named Entity Recognition](core/nlp-services/intent-and-named-entity-recognition/README.md)

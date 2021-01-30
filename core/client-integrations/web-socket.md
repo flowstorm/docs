@@ -7,7 +7,7 @@ description: >-
 
 # Web Socket
 
-Web Socket is provided by [Core Runner](../core-components/runner.md) service on URI `/socket/` 
+Web Socket is provided by [Core Runner](../core-services/runner.md) service on URI `/socket/` 
 
 Promethist Cloud Core Runner service provides web socket on URL address  [wss://core.promethist.com/socket/](wss://core.promethist.com/socket/) 
 
