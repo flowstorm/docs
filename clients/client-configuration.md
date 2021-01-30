@@ -31,8 +31,6 @@ key=5ea17702d28fd40eec1e9076
 autoStart=true
 ```
 
-or
-
 ```javascript
 {
   "environment": "local",
