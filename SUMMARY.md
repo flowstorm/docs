@@ -93,7 +93,8 @@
   * [Amazon Alexa REST](core/client-integrations/amazon-alexa-rest.md)
   * [Google App REST](core/client-integrations/google-app-rest.md)
   * [Twilio Calls](core/client-integrations/twilio.md)
-* [Project Setup](core/project-setup.md)
+* [Project Setup](core/project-setup/README.md)
+  * [How to Run Core Services from IntelliJ IDEA](core/project-setup/how-to-run-core-services-from-intellij-idea.md)
 * [Deployment](core/deployment.md)
 * [Boilerplate Project](core/boilerplate-project.md)
 

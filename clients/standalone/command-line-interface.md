@@ -75,15 +75,15 @@ promethist client -scr fullscreen
 
 ### `call`
 
-| Option\(s\) | Default value | Description |
-| :--- | :--- | :--- |
-| `-u, --url` |  | Custom Core URL |
-| `-a, --account` |  | Twilio Account SID |
-| `-t, --token` |  | Twilio Auth Token |
-| `-f, --from` |  | Call from number |
-| `-o, --to` |  | Call to number |
-| `-k, --key` |  | Application key |
-| `-l, --language` |  | Preferred language |
+| Option\(s\) | Description |
+| :--- | :--- |
+| `-u, --url` | Custom Core URL |
+| `-a, --account` | Twilio Account SID |
+| `-t, --token` | Twilio Auth Token |
+| `-f, --from` | Call from number |
+| `-o, --to` | Call to number |
+| `-k, --key` | Application key |
+| `-l, --language` | Preferred language |
 
 ### `tool`
 
@@ -99,7 +99,8 @@ promethist client -scr fullscreen
     <tr>
       <td style="text-align:left"><code>-a, --action</code>
       </td>
-      <td style="text-align:left">audio</td>
+      <td style="text-align:left"><code>audio</code>
+      </td>
       <td style="text-align:left">
         <p>Action</p>
         <p><code>play</code>, <code>sample</code>, <code>audio</code>, <code>respeaker2</code>, <code>nmea</code>, <code>signal</code>, <code>props</code>
@@ -115,6 +116,25 @@ promethist client -scr fullscreen
 </table>
 
 ```bash
+# play MP3 file
 promethist tool -a play -i test.mp3
+
+# list audio devices
+promethist tool -a audio
+
+# list java properties
+promethist tool -a props
+
+# respeaker2 test, showing speech detection and angle
+promethist tool -a respeaker2
+
+# test signal processing
+promethist -l INFO tool -a signal -i promethist.json
+
+# test reading of NMEA data from local file
+promethist tool -a nmea -i /dev/path-to-nmea-input
+
+# test reading of NMEA data from network socket
+promethist tool -a nmea -i 10.0.1.45:11123
 ```
 
