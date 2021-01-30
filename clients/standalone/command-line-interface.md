@@ -1,6 +1,6 @@
 # Command Line Interface
 
-## Syntax
+## Command Syntax
 
 `java -jar promethist.jar <command> (options)`
 
@@ -8,6 +8,8 @@
 If you are using Linux or Mac you can create executable script `/usr/local/bin/promethist`   
 `#!/bin/bash  
 java -jar ~/promethist.jar $@`
+
+Following command line examples will use simple command `promethist`.
 {% endhint %}
 
 ## Available Commands
