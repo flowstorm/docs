@@ -22,11 +22,11 @@ When he or she clicks the link and logs in the [platform](https://promethist.app
 
 The list of assigned users and their roles.
 
-![](https://promethist.myjetbrains.com/youtrack/api/files/145-203?sign=MTYxMTYyNDkwMDAwMHwxLTEwfDE0NS0yMDN8eWhLUVBDSjVrVEx1T3BpeTl4bVNmRktGQlJ6N0tG%0D%0AeVBfa1Q1TWlZdTZlRQ0K%0D%0A&updated=1611319780317)
+![](../../.gitbook/assets/image%20%2822%29.png)
 
-You can change the user's permissions in the detailed view after clicking on the user .
+You can change the user's permissions in the detailed view after clicking on the user.
 
-![](https://promethist.myjetbrains.com/youtrack/api/files/145-204?sign=MTYxMTYyNDkwMDAwMHwxLTEwfDE0NS0yMDR8OUdINzlIR19qcFQxLXJtUlBEUk1XYjlLakhaYS1v%0D%0AZ2tqYjBKS2laNk1iZw0K%0D%0A&updated=1611319780317)
+![](../../.gitbook/assets/image%20%2825%29.png)
 
 ## User Groups <a id="user-groups"></a>
 
@@ -46,5 +46,7 @@ Each application can be set as
 Devices paired to the applications.  
 A specific user can be assigned to the application in the device detail view.
 
-![](https://promethist.myjetbrains.com/youtrack/api/files/145-206?sign=MTYxMTYyNDkwMDAwMHwxLTEwfDE0NS0yMDZ8YkU5YUhQY1YtTnRyU1dDdFhSMHZKcjRRZGRaRU5k%0D%0AclR5Yjc4X3pNWGxTUQ0K%0D%0A&updated=1611321132098)
+![](../../.gitbook/assets/image%20%2824%29.png)
+
+
 

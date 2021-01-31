@@ -2,7 +2,7 @@
 
 Open **Design section in the top panel** and choose **Dialogue Designer** or just press key **"d"** as a **keyboard shortcut**.
 
-![](../../../.gitbook/assets/image%20%2823%29.png)
+![](../../../.gitbook/assets/image%20%2826%29.png)
 
 The most used and powerful part of the platform is the dialogue designer.
 
@@ -52,7 +52,7 @@ Overview of the dialogue model structure in JSON format.
 
 It contains everything from model ID to used intents and mixins.
 
-![](../../../.gitbook/assets/image%20%2824%29.png)
+![](../../../.gitbook/assets/image%20%2827%29.png)
 
 #### Workflow
 
@@ -60,7 +60,7 @@ As the name suggests an editor can publish or archive the dialogue model. The op
 
 If someone else left the window with editor open you can **Force unlock** on this tab. 
 
-![](../../../.gitbook/assets/image%20%2822%29.png)
+![](../../../.gitbook/assets/image%20%2823%29.png)
 
 
 
