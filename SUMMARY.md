@@ -1,6 +1,6 @@
 # Table of contents
 
-* [What is Promethist AI](README.md)
+* [What is PromethistAI](README.md)
 * [Quick Start Guide](quick-start.md)
 * [Video Tutorials](video-tutorials.md)
 
@@ -12,9 +12,9 @@
     * [Create it](design/how-to/design/create-dialogue.md)
     * [Design it](design/how-to/design/design-dialogue/README.md)
       * [Speed up the designing process](design/how-to/design/design-dialogue/speed-up-design.md)
+    * [Make it robust](design/how-to/design/robustness.md)
     * [Build it and test it](design/how-to/design/build-and-test.md)
     * [Link it to other dialogues](design/how-to/design/dialogue-linking.md)
-    * [Make it robust](design/how-to/design/robustness.md)
     * [Understand better](design/how-to/design/understanding.md)
     * [Speak flexibly](design/how-to/design/speaking.md)
     * [Work with context](design/how-to/design/context/README.md)

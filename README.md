@@ -2,7 +2,7 @@
 description: Unleash The Power of Spoken Word
 ---
 
-# What is Promethist AI
+# What is PromethistAI
 
 The Promethist AI Platform is a set of SaaS development tools and software components for creating smart Conversational & Multimodal AI applications. The Platform has two major components: the [Web Application](app/welcome.md) and the [Core](core/about-project.md) open source project. Creators will use the web application provided at URL [promethist.app](./) to author the dialogues, and administrators will use it to manage the applications. The Core contains all runtime components. 
 
