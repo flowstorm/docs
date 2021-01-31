@@ -1,4 +1,4 @@
 # Introduction
 
-\(original text moved to [What is Promethist AI](../)\)
+This page will be ready soon!
 

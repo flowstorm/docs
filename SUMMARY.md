@@ -6,8 +6,8 @@
 
 ## Interaction Design <a id="design"></a>
 
-* [Get ready](design/get-ready.md)
-* [How to...](design/how-to/README.md)
+* [Introduction](design/introduction.md)
+* [Create – share – analyze!](design/how-to/README.md)
   * [Design a dialogue](design/how-to/design/README.md)
     * [Create it](design/how-to/design/create-dialogue.md)
     * [Design it](design/how-to/design/design-dialogue/README.md)
