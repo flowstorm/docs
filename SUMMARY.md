@@ -1,10 +1,11 @@
 # Table of contents
 
 * [What is PromethistAI](README.md)
+* [Basics](basics.md)
 * [Quick Start Guide](quick-start.md)
 * [Video Tutorials](video-tutorials.md)
 * [How To](how-to/README.md)
-  * [Design a dialogue](how-to/design/README.md)
+  * [Design a Dialogue](how-to/design/README.md)
     * [Create it](how-to/design/create-dialogue.md)
     * [Design it](how-to/design/design-dialogue/README.md)
       * [Speed up the designing process](how-to/design/design-dialogue/speed-up-design.md)
@@ -19,7 +20,7 @@
         * [About the user](how-to/design/context/remember-recall/user-context.md)
         * [About a user community](how-to/design/context/remember-recall/community-context.md)
       * [React to the current situation](how-to/design/context/situation-context.md)
-    * [Add sounds and images](how-to/design/multimedia.md)
+    * [Add Sounds and Images](how-to/design/multimedia.md)
     * [Design more complex logic](how-to/design/complex-functionality.md)
   * [Create an application](how-to/applications/README.md)
     * [Define it](how-to/applications/define-app.md)
