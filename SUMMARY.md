@@ -72,7 +72,6 @@
   * [Runner](core/core-services/runner.md)
   * [Builder](core/core-services/builder.md)
 * [NLP Services](core/nlp-services/README.md)
-  * [V2 Dialogue Manager](core/nlp-services/v2-dialogue-manager.md)
   * [Intent and Named Entity Recognition](core/nlp-services/intent-and-named-entity-recognition/README.md)
     * [Illusionist](core/nlp-services/intent-and-named-entity-recognition/illusionist.md)
     * [Ducking](core/nlp-services/intent-and-named-entity-recognition/ducking.md)
