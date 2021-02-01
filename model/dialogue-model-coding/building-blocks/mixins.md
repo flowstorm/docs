@@ -19,7 +19,7 @@ Lambda should be the last statement of mixin. Function or UserInput using such m
 
 ![](../../../.gitbook/assets/image%20%2839%29.png)
 
-_Remember, whenever using mixin lambdas, they must contain \(end\) with lambda definition of form \({ .. }\) and consuming node code must call immediately on the first and the only line in form \(par1, par2, …\) \(otherwise source code composed from dialogue model node code and referenced mixin won’t be valid\)_
+_**Remember, whenever using mixin lambdas, they must contain \(end\) with lambda definition of form \({ .. }\) and consuming node code must call immediately on the first and the only line in form \(par1, par2, …\) \(otherwise source code composed from dialogue model node code and referenced mixin won’t be valid\)**_
 
 Mixin text \(code\) are always prepend to dialogue model text \(code\). It is fully on mixin designer to ensure that it is defined valid - it is strongly recommended to create test dialogue model using defined mixins to ensure that model can be built using them.
 
