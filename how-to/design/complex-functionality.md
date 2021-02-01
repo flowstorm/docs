@@ -1,4 +1,4 @@
 # Design more complex logic
 
-This page will be ready soon!
+While this documentation is still being created, we will be glad to answer your questions on info@promethist.ai
 

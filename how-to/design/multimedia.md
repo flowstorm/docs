@@ -7,7 +7,7 @@ description: >-
 
 # Add Sounds and Images
 
-Conveniently, each sound or image has its own node, so it can easily become part of the graph structure. A simple example of what it can look like:
+Conveniently, each sound or image has its own node, so it can easily become part of the graph structure. An example of what the structure can look like:
 
 ![](../../.gitbook/assets/image%20%2831%29.png)
 
