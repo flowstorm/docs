@@ -33,8 +33,6 @@
   * [Good and bad formulations](tips/formulations.md)
 * [FAQ](faq.md)
 
-## Interaction Design <a id="design"></a>
-
 ## Promethist.app <a id="app"></a>
 
 * [About Application](app/welcome.md)
