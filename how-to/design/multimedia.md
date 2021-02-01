@@ -1,6 +1,6 @@
 ---
 description: >-
-  Sometimes, one picture or sound say more than a thousand words! Adding
+  Sometimes, one picture or sound can say more than a thousand words! Adding
   multimedia files like sounds or images can make your bot more informative and
   clear – and definitely more fun to talk to!
 ---
