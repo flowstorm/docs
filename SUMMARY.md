@@ -90,12 +90,6 @@
 ## Interaction Model <a id="model"></a>
 
 * [Introduction](model/introduction.md)
-* [Context](model/context/README.md)
-  * [Turn](model/context/turn.md)
-  * [Session](model/context/session.md)
-  * [Device](model/context/device.md)
-  * [User](model/context/user.md)
-  * [Community](model/context/community.md)
 * [Dialogue Design](model/dialogue-model-coding/README.md)
   * [Building Blocks](model/dialogue-model-coding/building-blocks/README.md)
     * [Dialogue Models](model/dialogue-model-coding/building-blocks/dialogue-models.md)
