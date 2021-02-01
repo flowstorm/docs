@@ -103,7 +103,7 @@ Just explaining how to start the created dialog and how to observe in the window
 
 ### Sharing - Sending a link
 
-We have a finished dialog, and we want a tester to try it. We need to create the application URL to send it over. The publication workflow goes like this: 
+Once the first dialog works, you want to share it with testers. We need to create the application URL to send it over. The publication workflow goes like this: 
 
 * Create an application - In the top panel &gt; **Access &gt; Applications** &gt; Click the **plus button** **\(+\)** located in the **top right corner**
 
