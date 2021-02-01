@@ -34,7 +34,7 @@ Client command support full range of [client configuration](../client-configurat
 | `-d, --device` | `desktop` | Device type `desktop`, `model1`, `model2`, `model3` |
 | `-ex, --exitOnError` | `false` | Exit client on exception |
 | `-nol, --noOutputLogs` | `false` | No output logs \(e.g. `{Ready}`, `{Sleeping > Responding}` etc.\) |
-| `-log, --showLogs` | `false` | Show [contextual logs](../../programming/dialoguescript/logging.md) |
+| `-log, --showLogs` | `false` | Show [contextual logs](../../model/dialoguescript/logging.md) |
 | `-nc, --noCache` | `false` | Do not cache anything \(audio and image files\) |
 | **Audio related** |  |  |
 | `-nia, --noInputAudio` | `false` | No input audio \(text input only\) |

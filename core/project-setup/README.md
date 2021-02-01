@@ -115,7 +115,7 @@ You need also create `app.local.properties` configuration file and put it into w
     <tr>
       <td style="text-align:left"><b>MailGun</b>
       </td>
-      <td style="text-align:left">Optional service for sending e-mails from <a href="../../programming/dialoguescript/">DialogueScript</a>
+      <td style="text-align:left">Optional service for sending e-mails from <a href="../../model/dialoguescript/">DialogueScript</a>
       </td>
     </tr>
     <tr>
