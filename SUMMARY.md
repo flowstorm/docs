@@ -6,7 +6,7 @@
 * [Video Tutorials](video-tutorials.md)
 * [How To](how-to/README.md)
   * [Design a Dialogue](how-to/design/README.md)
-    * [Create it](how-to/design/create-dialogue.md)
+    * [Create It](how-to/design/create-dialogue.md)
     * [Design it](how-to/design/design-dialogue/README.md)
       * [Speed up the designing process](how-to/design/design-dialogue/speed-up-design.md)
     * [Make it robust](how-to/design/robustness.md)

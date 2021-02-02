@@ -1,4 +1,4 @@
 # Basics
 
-This page will be ready soon!
+Therefore, you don't have to be a programming expert to be able to work with our tools. 
 
