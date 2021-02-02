@@ -1,16 +1,22 @@
 # Working Space
 
-### Home panel  <a id="home-panel"></a>
+Let's start with the overview of the main menu and controls. 
+
+{% hint style="info" %}
+Save the time with the keyboard shortcuts. The "k" shortcut will show you the commands/operations available on the current screen.
+{% endhint %}
+
+Let's have a look at the admin UI and quickly go through the main menu first.
+
+![](../../.gitbook/assets/image%20%2841%29.png)
+
+### Home panel <a id="home-panel"></a>
 
 **Home panel** is the default panel displayed right after login, showing conversations run data overview, related to the currently selected space or to you in person. See [Home dashboard](https://promethist.myjetbrains.com/youtrack/articles/APP-A-45/Home-Dashboard?edit=true) for details.
 
-### Bot button  <a id="bot-button"></a>
+### Space \(dropdown\) <a id="space"></a>
 
-You can find a digital assistant in the top right corner. Use **bot button** to show or hide bot web user interface \(UI\) for interaction with integrated platform **digital assistant** or with any **application or dialogue** model conversation run.
-
-### Space  <a id="space"></a>
-
-**Space panel** allows to manage spaces where you are the admin. Admins of the ROOT space are allowed to manage any space created in the platform.
+**Space** allows to switch between spaces you have been assigned in.
 
 ### Access  <a id="access"></a>
 
@@ -26,9 +32,9 @@ You can find a digital assistant in the top right corner. Use **bot button** to 
 
 **Model is a context menu section** under design providing developers by a set of panels supporting development and testing of conversation content, including **dialogue models, snippets, mixins** and **file assets**.
 
-### Quick Create - New Button  <a id="quick-create---new-button"></a>
+### Quick Create - New... Button  <a id="quick-create---new-button"></a>
 
-**New button** contains the list of shortcuts to start creation of different types of data, including **dialogue model, file asset, user invitation** and **assignments**, new **device pairing** or conversation **session initiation**.
+**New... button** contains the list of shortcuts to start creation of different types of data, including **dialogue model, file asset, user invitation** and **assignments**, new **device pairing** or conversation **session initiation**.
 
 **User menu** gives access to the set of user related functions, including user **settings**, **space** access, platform **account** management and **log out**.
 
