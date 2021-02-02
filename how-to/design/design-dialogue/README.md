@@ -1,7 +1,7 @@
 ---
 description: >-
-  There is nothing more sad than an empty dialogue model. Let's fill it with
-  some content!
+  There is nothing more sad than an empty dialogue model. So how do you fill it
+  with some content?
 ---
 
 # Design It
@@ -30,6 +30,10 @@ If you want to begin the conversation differently depending on the context, **En
 
 TODO
 
+Just like the **Enter** node, the **Exit** node is necessary to make the dialogue work. At the end of every dialogue, there must be an Exit node whose functionality is not editable in the dialogue designer.
+
+So you have just created the simplest functional dialogue possible but another very important part of the conversation is missing – the user.
+
 Unlike the Enter node, 
 
 ### Make the bot speak
@@ -49,11 +53,7 @@ In order to include the user speech in the conversation, use two following nodes
 
 Předpřipravit na Global Intent
 
-### Exit the dialogue
 
-Just as the **Enter** node, the **Exit** node is necessary to make the dialogue work. At the end of every dialogue, there must be an Exit node whose functionality is not editable in the dialogue designer.
-
-So you have just created the simplest functional dialogue possible but another very important part of the conversation is missing – the user.
 
 ### 
 
