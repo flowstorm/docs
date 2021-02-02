@@ -117,7 +117,7 @@ Client is represented by [`BotClient`](https://github.com/PromethistAI/core/blob
 
 #### State
 
-It has always on following states accessible in public property `state`
+It is always in one of following states accessible via public property `state`
 
 | State | Description |
 | :--- | :--- |
