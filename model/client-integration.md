@@ -121,6 +121,7 @@ It is always in one of following states accessible via public property `state`
 
 | State | Description |
 | :--- | :--- |
+| `Sleeping` | No conversation is going on |
 | `Listening` | Waiting for user input \(if input audio device is available as described below, sending input audio to the server; otherwise waiting for text input by calling `doText` method\) |
 | `Processing` | User text input send or server recognized text in input audio, waiting for response |
 | `Responding` | Processing server response = display response text\(s\)/images and playing audio\(s\). As soon as the last audio play is finished it will go back to `Listening` state IF the response have not finished session \(in that case client goes immediately to `Sleeping` state\) |
