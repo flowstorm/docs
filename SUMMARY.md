@@ -160,7 +160,7 @@
     * [Paraphrasing](model/dialoguescript/data-to-speech/paraphrasing.md)
   * [Contextual Logging](model/dialoguescript/logging.md)
   * [External API Calls](model/dialoguescript/api-calls.md)
-* [Client Integration](model/client-configuration.md)
+* [Client Integration](model/client-integration.md)
 
 ## Organization
 
