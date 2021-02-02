@@ -60,7 +60,7 @@
   * [Command Line Interface](clients/standalone/command-line-interface.md)
 * [Android Application](clients/android.md)
 * [iOS Application](clients/ios.md)
-* [Web Client](clients/web.md)
+* [Web client](clients/web.md)
 * [Amazon Alexa](clients/alexa.md)
 * [Google Assistant App](clients/google.md)
 * [Phone Calls via Twilio.com](clients/phone.md)
