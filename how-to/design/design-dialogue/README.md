@@ -1,24 +1,36 @@
 ---
 description: >-
-  There is nothing more sad than an empty dialogue model. Let's fill it up with
+  There is nothing more sad than an empty dialogue model. Let's fill it with
   some content!
 ---
 
-# Design it
+# Design It
 
-### Overall concept
+## The graph representation
 
-The dialogue NĚCO in the form of a graph, nodes = dialogue flow, propojujou se pomocí small arrows we call transitions
+A [dialogue model](../create-dialogue.md) can be represented as a **graph structure**, which can be viewed and edited in the [Dialogue Designer](../../../app/working-space/design/dialogue-designer.md). The structure consists of different types of **nodes**, which represent the stuff that happens during a conversation, such as speaking, listening, or decision-making. Nodes are interconnected by small arrows or "**transitions**", which define the possible paths of a dialogue. Such a visual structure will help you understand clearly the flow of the dialogue.
 
-Nodes říkají, kdy má bot mluvit, poslouchat, čemu má rozumět, na základě čeho se má rozhodovat, co si má pamatovat
+{% hint style="info" %}
+Before we continue, it must be mentioned that **dialogue models can be interconnected** \(a model can be nested inside another\) and create complex conversational structures. We will talk about this in [another article](../dialogue-linking.md). Here, we describe the designing process inside **one dialogue model**.
+{% endhint %}
 
-After [creating](https://docs.promethist.ai/how-to/design/create-dialogue) the dialogue model, in the main editing area of the dialogue designer you will see a basic default structure of built-in nodes. Uvidíte 3 nody \(enter, speech defaultně prázdné, exit\). Let's take a look at všechno, co se tam dá dělat
+## Uncover the mystery of nodes
 
-![](../../../.gitbook/assets/snimek-obrazovky-2021-02-02-v-10.54.52.png)
+Whenever a new dialogue model is [created](https://docs.promethist.ai/how-to/design/create-dialogue), it will open in the Dialogue Designer. In the main editing area, you will see a default built-in structure: Enter—Speech—Exit. But there are many more types of nodes. Let's see how you can use them to achieve particular designing goals.
 
-### Enter the dialogue
+![](../../../.gitbook/assets/image%20%2842%29.png)
 
-In order to start the dialogue, you need to use the \(pink\) **Enter** node. – okopírovat z quick start guidu, musí tam být vždycky jen jeden \(since ten dialogue musí vědět, kde začít\)
+### Begin the dialogue flow
+
+Any model must always start with an **Enter** node. This is where the bot will _enter_ the dialogue model and begin the conversational adventure. It goes without saying that each dialogue model must have _exactly one_ Enter node, otherwise the bot wouldn't know where to start!
+
+If you want to begin the conversation differently depending on the context, **Enter** will have to be followed by a **Function**, where you will define the decision process, according to which the flow will branch into multiple paths.
+
+### Leave the dialogue flow
+
+TODO
+
+Unlike the Enter node, 
 
 ### Make the bot speak
 
