@@ -53,13 +53,21 @@ If you want to **suspend the conversation but stay in the context** of the sessi
 Unlike the Enter node, **multiple Exit/End/Sleep nodes** can be inserted into the **same graph**.
 {% endhint %}
 
-### Make the bot speak
+### Speak
 
-The \(blue\) **Speech** node is one of the most important nodes in your dialogue. Here you can specify what your chatbot will say to the user. Click on the node and write the chatbot speech in the **Texts** field in the right panel \(the red circle in the screenshot below\). – co řádka, to je varianta \(tohle basic, pokud víc  –&gt; odkaz na speak flexibliy\)
+What the bot says is usually defined in **Speech** nodes. So as you can guess, you will use these nodes **A LOT**. Using them is pretty straightforward:
 
-![To be replaced by a more representative one](../../../.gitbook/assets/snimek-obrazovky-2021-02-02-v-11.08.57.png)
+1. Click on a Speech node inserted in the graph.
+2. In the right panel, choose the tab Texts.
+3. Type what the bot should say. Each line = one variant. \(During a conversation, one of the variants will be selected randomly.\)
 
-### Make the bot listen
+![](../../../.gitbook/assets/speech.gif)
+
+{% hint style="info" %}
+"Each line = one variant" is just a basic way to achieve flexible speaking abilities. We will talk about other more sophisticated tools [here](../speaking.md).
+{% endhint %}
+
+### Listen and understand
 
 In order to include the user speech in the conversation, use two following nodes: \(green\) **User Input** node and **Intent** node. \(dva obrázky\)
 
@@ -69,6 +77,14 @@ In order to include the user speech in the conversation, use two following nodes
 4. Link it to other nodes in the graph by using the **transition** line – hover above the Speech node inside graph and choose one of ports to connect node to another one by dragging **transition**
 
 Předpřipravit na Global Intent
+
+
+
+### Remember, recall, search for information, decide which path to take...
+
+We will talk about these abilities in other sections \([Work with context](../context/), [Design more complex logic](../complex-functionality.md)\).
+
+Spoiler: for most of these tasks, you will work with the **Function** node. It might seem almost frightening – such a powerful node! But believe us, it will eventually become one of your best node friends.
 
 
 
