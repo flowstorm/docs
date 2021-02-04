@@ -18,5 +18,5 @@ description: >-
 
 ![](../.gitbook/assets/image%20%282%29.png)
 
-5. After confirming the e-mail you can click "Back to Promethist.app" to access the platform and start designing your first dialogue \(voice application\).
+5. After confirming the e-mail you can click "Back to Promethist.app" and [**log in to access**](https://promethist.app/#!/login) the platform and start designing your first dialogue \(voice application\).
 

@@ -40,7 +40,7 @@ The Promethist Platform is ready for collaborative design: developers will share
 
 ### How to start prototyping – open the Dialogue Designer
 
-Open the **“Design” section in the top panel** and choose **Dialogue Designer** or just press the key **"d" as a keyboard shortcut**. You can start designing!
+Open the **“Design” section in the top panel** and choose [**Dialogue Designer**](https://promethist.app/#!/space/dialogue) ****or just press the key **"d" as a keyboard shortcut**. You can start designing!
 
 ### Your first simple dialogue
 
