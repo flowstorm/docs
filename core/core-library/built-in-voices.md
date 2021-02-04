@@ -4,16 +4,16 @@ Built-in voices are predefined in [`org.promethist.core.model.Voice`](https://gi
 
 | Name | Locale | Gender | Default For | Provider Name | Provider Voice | Provider Engine |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Audrey | en\_US | Female | en / en\_US | Amazon | Joanna | neural |
-| Anthony | en\_US | Male | en / en\_US | Amazon | Matthew | neural |
-| Grace | en\_US | Female |  | Google | en-US-Standard-C |  |
-| George | en\_US | Male |  | Google | en-US-Standard-B |  |
-| Mary | en\_GB | Female |  | Microsoft | en-US-AriaNeural |  |
-| Michael | en\_GB | Male |  | Microsoft | en-US-GuyNeural |  |
-| Amy | en\_GB | Female | en\_GB | Amazon | Amy | neural |
-| Arthur | en\_GB | Male | en\_GB | Amazon | Brian | neural |
-| Gwyneth | en\_GB | Female |  | Google | en-GB-Wavenet-C |  |
-| Gordon | en\_GB | Male |  | Google | en-GB-Wavenet-B |  |
-| Gabriela | cs\_CZ | Female | cs | Google | cs-CZ-Standard-A |  |
-| Milan | cs\_CZ | Male | cs | Microsoft | cs-CZ-Jakub |  |
+| **Audrey** | en\_US | Female | en / en\_US | Amazon | Joanna | neural |
+| **Anthony** | en\_US | Male | en / en\_US | Amazon | Matthew | neural |
+| **Grace** | en\_US | Female |  | Google | en-US-Standard-C |  |
+| **George** | en\_US | Male |  | Google | en-US-Standard-B |  |
+| **Mary** | en\_GB | Female |  | Microsoft | en-US-AriaNeural |  |
+| **Michael** | en\_GB | Male |  | Microsoft | en-US-GuyNeural |  |
+| **Amy** | en\_GB | Female | en\_GB | Amazon | Amy | neural |
+| **Arthur** | en\_GB | Male | en\_GB | Amazon | Brian | neural |
+| **Gwyneth** | en\_GB | Female |  | Google | en-GB-Wavenet-C |  |
+| **Gordon** | en\_GB | Male |  | Google | en-GB-Wavenet-B |  |
+| **Gabriela** | cs\_CZ | Female | cs | Google | cs-CZ-Standard-A |  |
+| **Milan** | cs\_CZ | Male | cs | Microsoft | cs-CZ-Jakub |  |
 
