@@ -1,12 +1,14 @@
+---
+description: The most used and powerful part of the platform is the dialogue designer.
+---
+
 # Dialogue Designer
 
-Open **Design section in the top panel** and choose **Dialogue Designer** or just press key **"d"** as a **keyboard shortcut**.
+{% hint style="info" %}
+To get into Dialogue Designer, click on **Design** item in the top menu and choose **Dialogue Designer** or just press key **"d"** as a **keyboard shortcut**.
+{% endhint %}
 
-![](../../../.gitbook/assets/image%20%2826%29.png)
-
-The most used and powerful part of the platform is the dialogue designer.
-
-You can open as many models for editing \(or observing\) as you want in parralel. Anytime you create or open a new dialogue model you will get a new tab with a new independent editor.
+You can open as many models for editing \(or observing\) as you want in paralel. Anytime you create or open a new dialogue model you will get a new tab with a new independent editor.
 
 ![](../../../.gitbook/assets/image%20%2818%29.png)
 
