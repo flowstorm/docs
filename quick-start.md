@@ -85,7 +85,7 @@ However, we recommend looking at the Main dialogue EN snippet. Drag and drop it 
 
 Note global intents execute these situations. We placed the Global intents in the upper left corner of the snippet graph.
 
-For details on how to use the snippet designer, see the documentation page.
+You can edit the existing snippets via [Snippet designer](app/space/design/snippet-designer.md).
 
 ### Subdialogues
 
