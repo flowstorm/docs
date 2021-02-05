@@ -20,7 +20,7 @@ Now you can invite collaborators or start designing your first dialogue and voic
 ### Overview of the Collaboration Process
 
 * Sign-up \([Detailed page](app/sign-up.md)\)
-* [Invite your collaborators](app/working-space/#access) to your Space
+* [Invite your collaborators](app/space/#access) to your Space
 * Come up with a concept of the application \([Basic Concepts](model/dialogue-model-coding/basic-use-cases/) x [Advanced Concepts](model/dialogue-model-coding/advanced-concepts/)\)
 * Divide the concept into smaller parts \(main dialogue + [subdialogues](model/dialogue-model-coding/basic-use-cases/sub-dialogues.md)\)
 * Create dialogue models, start designing the subparts and testing them
@@ -29,7 +29,7 @@ Now you can invite collaborators or start designing your first dialogue and voic
 
 ### Collaboration – Space
 
-The Promethist Platform is ready for collaborative design: developers will share dialogue models in the same “[Space](app/working-space/#access)”. The creator of the Space must invite the collaborators. In the main menu: Access → User Invitations: it will open a window to send the invitation to the collaborators’ e-mails. 
+The Promethist Platform is ready for collaborative design: developers will share dialogue models in the same “[Space](app/space/#access)”. The creator of the Space must invite the collaborators. In the main menu: Access → User Invitations: it will open a window to send the invitation to the collaborators’ e-mails. 
 
 * Fill in an e-mail address.
 * Choose a role for the user.

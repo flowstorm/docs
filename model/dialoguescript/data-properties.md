@@ -40,5 +40,5 @@ You can also load lists of primitive values, e.g. of type `String`
 val countryNames by loader<List<String>>("https://core.promethist.com/file/assets/data/countries.json")
 ```
 
-You can also use [File Assets](../../app/working-space/design/file-assets.md) of type JSON. Just upload your file to it and get asset URL from its detail.
+You can also use [File Assets](../../app/space/design/file-assets.md) of type JSON. Just upload your file to it and get asset URL from its detail.
 
