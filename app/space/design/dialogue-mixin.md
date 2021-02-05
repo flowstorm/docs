@@ -13,7 +13,7 @@ Following types of mixins are supported:
 
 Lambda should be the last statement of mixin. Function or UserInput using such mixin should contain only calling expression in form \(par1, par2, …\) - see example using lambda function mixin defined above.
 
-![Intent for positive answer uses example utterances defined in mixin](../../../.gitbook/assets/image%20%2848%29.png)
+![Intent for positive answer uses example utterances defined in mixin](../../../.gitbook/assets/image%20%2851%29.png)
 
 {% hint style="info" %}
 Remember, whenever using mixin lambdas, they must contain \(end\) with lambda definition of form \({ .. }\) and consuming node code must call immediately on the first and the only line in form \(par1, par2, …\) \(otherwise source code composed from dialogue model node code and referenced mixin won’t be valid\)

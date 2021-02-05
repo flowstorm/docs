@@ -6,20 +6,20 @@ The snippet designer can help you. Prototype a node structure = snippet once and
 
 ### How to create a snippet
 
-![](../../../.gitbook/assets/image%20%285%29.png)
+![](../../../.gitbook/assets/snippet-question.jpg)
 
-* Open Design &gt; Snippet Designer
+* Open **Design** &gt; **Snippet Designer**
 * Create a structure or copy and paste a proven structure from existing dialogue
-* Switch from Graph to Properties tab
-* Save the snippet by the save button on the left
+* Switch from Graph to **Properties** tab and give it a name \(see example below\)
+* **Save** the snippet by the **save button** on the left
 
 ![](../../../.gitbook/assets/image%20%288%29.png)
 
 ### How to use existing snippet
 
-Created snippets can be placed into the graph via drag&drop feature from the snippet pallete when you are editing the dialogue.
+Created snippets can be placed **into the graph** in Dialogue designer via **drag&drop** feature from the snippet pallete when you are editing the dialogue.
 
-![](../../../.gitbook/assets/image%20%286%29.png)
+![](../../../.gitbook/assets/image%20%2850%29.png)
 
 ![](image1.png)
 
