@@ -52,7 +52,7 @@ Description tab is for the description and/or documentation of the dialog model.
 
 Overview of the dialogue model structure in JSON format. 
 
-It contains everything from model ID to used intents and mixins.
+It contains everything from model ID to used intents and [mixins](dialogue-mixin.md).
 
 ![](../../../.gitbook/assets/image%20%2827%29.png)
 
@@ -60,7 +60,7 @@ It contains everything from model ID to used intents and mixins.
 
 As the name suggests an editor can publish or archive the dialogue model. The operation changes the state of the version from editable to uneditable state.
 
-If someone else left the window with editor open you can **Force unlock** on this tab. 
+If someone else left the window with editor open this is the screen where you can **Force unlock** on this tab. 
 
 ![](../../../.gitbook/assets/image%20%2823%29.png)
 
