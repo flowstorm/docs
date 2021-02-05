@@ -29,7 +29,7 @@ Now you can invite collaborators or start designing your first dialogue and voic
 
 ### Collaboration – Space
 
-The Promethist Platform is ready for collaborative design: developers will share dialogue models in the same “Space”. The creator of the Space must invite the collaborators. In the main menu: Access → User Invitations: it will open a window to send the invitation to the collaborators’ e-mails. 
+The Promethist Platform is ready for collaborative design: developers will share dialogue models in the same “[Space](app/working-space/#access)”. The creator of the Space must invite the collaborators. In the main menu: Access → User Invitations: it will open a window to send the invitation to the collaborators’ e-mails. 
 
 * Fill in an e-mail address.
 * Choose a role for the user.
