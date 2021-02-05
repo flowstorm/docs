@@ -8,9 +8,9 @@ description: The most used and powerful part of the platform is the dialogue des
 To get into Dialogue Designer, click on **Design** item in the top menu and choose **Dialogue Designer** or just press key **"d"** as a **keyboard shortcut**.
 {% endhint %}
 
-You can open as many models for editing \(or observing\) as you want in paralel. Anytime you create or open a new dialogue model you will get a new tab with a new independent editor.
+You can open as many models for editing \(or observing\) as you want in paralel. Anytime you create or open a new dialogue model you will get a **new tab** with a new **independent editor**.
 
-![](../../../.gitbook/assets/image%20%2818%29.png)
+![](../../../.gitbook/assets/image%20%2844%29.png)
 
 Open the **Design section in the top panel** and choose **Dialogue Designer** or just press key **"d" as a keyboard shortcut** and you can start prototyping.
 
