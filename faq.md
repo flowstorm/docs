@@ -1,5 +1,9 @@
 # FAQ
 
+{% hint style="info" %}
+This article is just a stub. A much more detailed version is coming soon!
+{% endhint %}
+
 Here, you can find a list of some of the most frequently asked questions, a.k.a. FAQ. You might want to say that questions without answers are good for nothing. And you would be right! That's exactly why we will bring you exhaustive answers as soon as possible.
 
 ## Technical errors
