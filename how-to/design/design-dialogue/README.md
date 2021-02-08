@@ -41,7 +41,7 @@ Unlike the Enter node, **multiple Exit/End/Sleep nodes** can be inserted into th
 
 ## Speak
 
-What the bot says is usually defined in **Speech** nodes. So as you can guess, you will use these nodes **A LOT**. Using them is pretty straightforward:
+What the bot says is usually defined in **Speech** nodes. So as you can guess, you will be using these nodes **A LOT**. Using them is pretty straightforward:
 
 1. Click on a Speech node inserted in the graph.
 2. In the right panel, choose the tab Texts.
@@ -57,7 +57,7 @@ What the bot says is usually defined in **Speech** nodes. So as you can guess, y
 
 To indicate that it's time to **START LISTENING \(OR WAITING FOR WRITTEN INPUT\)**, connect a _**User Input**_ node.
 
-Now, you will have to decide **WHAT SHOULD HAPPEN AFTER THE USER RESPONSE**. The primary solution is to interpret the semantics of the user's message – our built-in AI will take care of that. However, since there are infinite possibilities of what they could say, it's necessary to define the most relevant semantic categories, or "intents", and indicate which path the flow should take based on the detected intent.
+Now, you will have to define **WHAT SHOULD HAPPEN AFTER THE USER RESPONSE**. The primary solution is to interpret the semantics of the user's message \(our built-in AI will take care of that\). But since there are infinite possibilities of what they could say, it's necessary to define _the most relevant semantic categories, or "intents"_, and indicate which path the flow should take based on the detected intent.
 
 So, to your User Input node, connect those _**Intents**_ that you want to detect at this particular point of the flow. \(These intents will be active only at the point of the flow where they are connected.\) But how do you define the semantics? Let's take it step by step:
 
