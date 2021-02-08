@@ -1,4 +1,4 @@
-# Link it to other dialogues
+# Interconnect Dialogue Models
 
 This page will be ready soon!
 

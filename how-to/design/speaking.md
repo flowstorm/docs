@@ -1,4 +1,6 @@
-# Speak flexibly
+# Speak Flexibly
 
-This page will be ready soon!
+## Synonymic Speech variants
+
+To 
 

@@ -4,7 +4,7 @@ description: >-
   designing "dialogue models". How do you create one?
 ---
 
-# Create It
+# Create a Dialogue Model
 
 1. **Go to** _**Design**_ **&gt;&gt;** _**Dialogue Designer**_ \(or use the [keyboard shortcut](https://docs.promethist.ai/app/keyboard-shortcuts) **d**\) to open the [Dialogue Designer](https://docs.promethist.ai/app/working-space/design/dialogue-designer).
 2. **Click on** _**Model**_ **&gt;&gt;** _**New**_**…** \(or use the keyboard shortcut **n**\) to create a new dialogue model. You will see the pop-up window depicted below.
