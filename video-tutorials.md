@@ -1,5 +1,5 @@
 ---
-description: The list of useful tips collected in video tutorials.
+description: The most useful tips collected in video tutorials.
 ---
 
 # Video Tutorials

@@ -7,3 +7,13 @@ description: >-
 
 # How To
 
+{% page-ref page="design/" %}
+
+{% page-ref page="applications/" %}
+
+{% page-ref page="analytics.md" %}
+
+{% page-ref page="collaborate.md" %}
+
+
+

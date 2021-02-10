@@ -23,7 +23,7 @@
       * [React to the current situation](how-to/design/context/situation-context.md)
     * [Add Sounds and Images](how-to/design/multimedia.md)
     * [Design more complex logic](how-to/design/complex-functionality.md)
-  * [Create an application](how-to/applications/README.md)
+  * [Create an Application](how-to/applications/README.md)
     * [Define it](how-to/applications/define-app.md)
     * [Share it](how-to/applications/share-app.md)
   * [Analyze your traffic](how-to/analytics.md)
