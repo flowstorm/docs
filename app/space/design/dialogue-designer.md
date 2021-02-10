@@ -1,5 +1,5 @@
 ---
-description: The most used and powerful part of the platform is the dialogue designer.
+description: 'The dialogue designer allows us to create, edit and publish dialogue models.'
 ---
 
 # Dialogue Designer
@@ -12,7 +12,7 @@ You can open as many models for editing \(or observing\) as you want in paralel.
 
 ![](../../../.gitbook/assets/image%20%2844%29.png)
 
-Open the **Design section in the top panel** and choose **Dialogue Designer** or just press key **"d" as a keyboard shortcut** and you can start prototyping.
+Open the **Design section in the top panel** and choose [**Dialogue Designer**](https://promethist.app/#!/space/dialogue) or just press key **"d" as a keyboard shortcut** and you can start prototyping.
 
 The Promethist editor is a tool which serves for creating, saving and building the dialogue models. It is available at [https://promethist.app](https://promethist.app/). You need a Google account to access it.
 
