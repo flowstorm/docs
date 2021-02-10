@@ -1,6 +1,6 @@
 # Dialogue Model
 
-## 
+
 
 ## Node Types
 

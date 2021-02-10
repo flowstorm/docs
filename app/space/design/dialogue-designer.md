@@ -18,8 +18,6 @@ The Promethist editor is a tool which serves for creating, saving and building t
 
 In the main editing area, the designer creates the dialogue tree by dragging nodes there from the palette, linking them and filling them with text. Images and text or JSON files can be added in the other tabs in the left column. The model can be saved, loaded or uploaded to the system using the “Model“ menu. In the “Testing“ menu, you can test the model in a web client or create a link to the model for sharing. In QA and Functions tab, you can add aspects to the model.
 
-Above the text area on the right side of the screen is a status bar which is used to display responses to designer’s actions such as saving and loading. It also displays a reminder that there are unsaved changes to the model. The model is **saved automatically** under the name temp-&lt;yourusername&gt; every 5 minutes.
-
 ### Basic controls  <a id="basic-controls"></a>
 
 Main area/canvas can be dragged by clicking and moving a mouse or zoomed by holding **Control** and scrolling the mouse wheel. Multiple nodes can be selected by holding a mouse button then dragging a select box over them. Nodes or groups of nodes and links can be duplicated by the shortcuts **Control + C** and **Control + V** \(**Command** on Mac\) ; however, note that the duplicated nodes will appear on top of the originals so they won’t be immediately visible. The designer can then drag them to a desired position. The copying can be done between open windows of the editor, but make sure you have focus on the main editing area. If the pasting does not work, try closing and reopening the tab or window you are attempting to paste to.
@@ -58,7 +56,16 @@ It contains everything from model ID to used intents and [mixins](dialogue-mixin
 
 #### Workflow
 
-As the name suggests an editor can publish or archive the dialogue model. The operation changes the state of the version from editable to uneditable state.
+{% hint style="info" %}
+The lifecycle of the dialogue: _New_ -&gt; _Draft_ -&gt; _Published_ -&gt; _Archived_
+{% endhint %}
+
+The workflow of your specific dialogue can be different. Let's have a look at each state.
+
+* New - unsaved
+* Draft - saved, editable, can be shared via an application
+* Published - saved, non-editable
+* Archived - saved, non-editable
 
 If someone else left the window with editor open this is the screen where you can **Force unlock** on this tab. 
 
