@@ -1,4 +1,4 @@
-# Good and bad formulations
+# Good and Bad Formulations
 
 This page will be ready soon!
 

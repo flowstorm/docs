@@ -1,4 +1,4 @@
-# How to structure an interaction
+# How to Structure an Interaction
 
 This page will be ready soon!
 

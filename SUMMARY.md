@@ -26,13 +26,13 @@
   * [Create an Application](how-to/applications/README.md)
     * [Define it](how-to/applications/define-app.md)
     * [Share it](how-to/applications/share-app.md)
-  * [Analyze your traffic](how-to/analytics.md)
-  * [Collaborate with other designers](how-to/collaborate.md)
+  * [Analyze Your Traffic](how-to/analytics.md)
+  * [Collaborate with other Designers](how-to/collaborate.md)
 * [Tips](tips/README.md)
   * [What is conversational UX \(CUX\)](tips/cux.md)
-  * [Principal principles](tips/principles.md)
-  * [How to structure an interaction](tips/interaction-structure.md)
-  * [Good and bad formulations](tips/formulations.md)
+  * [Principal Principles](tips/principles.md)
+  * [How to Structure an Interaction](tips/interaction-structure.md)
+  * [Good and Bad Formulations](tips/formulations.md)
 * [FAQ](faq.md)
 
 ## Promethist.app <a id="app"></a>
