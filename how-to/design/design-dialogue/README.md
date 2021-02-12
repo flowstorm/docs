@@ -4,7 +4,7 @@ description: >-
   with some content?
 ---
 
-# Design a Dialogue
+# Design the Flow
 
 Whenever a new dialogue model is [created](https://docs.promethist.ai/how-to/design/create-dialogue), it will open in the Dialogue Designer. In the main editing area, you will see a default built-in structure: _Enter --&gt; Speech --&gt; Exit_. But there are many more types of nodes. Let's see how you can use them to achieve particular designing goals.
 
@@ -20,10 +20,10 @@ If you want to begin the conversation differently depending on the context, **En
 
 To indicate that a particular path through the graph has come to an end, use **Exit** / **End** / **Sleep**. What's the difference?
 
-**To LEAVE THE THE CURRENT DIALOGUE MODEL**, use the node _**Exit**_. When the bot is running, it will behave like this:
+**To LEAVE THE CURRENT DIALOGUE MODEL**, use the node _**Exit**_. When the bot is running, it will behave like this:
 
 * If the current model is nested in another model, it will _emerge back to that higher level_.
-* If the current model is not nested in another model, it will behave like and End node: it will _end the session_.
+* If the current model is not nested in another model, it will behave like an End node: it will _end the session_.
 
 **If you want the bot to END THE RUNNING SESSION** \(i.e. end the whole conversation, stop talking and forget the session context\) no matter if the model is nested or not, use the node _**End**_.
 
@@ -45,25 +45,49 @@ What the bot says is usually defined in **Speech** nodes. So as you can guess, y
 
 1. Click on a Speech node inserted in the graph.
 2. In the right panel, choose the tab Texts.
-3. Type what the bot should say. Each line = one variant. \(During a conversation, one of the variants will be selected randomly.\)
+3. Type what the bot should say.
 
-![](../../../.gitbook/assets/speech.gif)
+![](../../../.gitbook/assets/hello-world.gif)
+
+If you don't want your bot to always repeat the same formulation, you can insert **MULTIPLE VARIANTS** into one Speech node. How?
+
+* **Lines.** Each line = a different variant.
+* **Brackets with vertical bars.** This is a very efficient way: vertical bars inside round brackets divide the brackets' content into equivalent alternatives. You can even nest brackets inside other brackets! An example:
+  * `(Hello|Hi there|(Nice|Good) to see you (|again)), my friend!` will result in 6 variants:
+    * `Hello, my friend!`
+    * `Hi there, my friend!`
+    * `Nice to see you , my friend!`
+    * `Nice to see you again, my friend!`
+    * `Good to see you , my friend!`
+    * `Good to see you again, my friend!`
+
+During a conversation, one of all the variants inside a Speech node **will be selected randomly**.
+
+{% hint style="warning" %}
+Always check for unintended "empty" variants! For example, an empty line also counts as a variant \(sometimes you will want to include it intentionally\).
+{% endhint %}
+
+![](../../../.gitbook/assets/image%20%2857%29.png)
 
 {% hint style="info" %}
-"Each line = one variant" is just a basic way to achieve flexible speaking abilities. We will talk about other more sophisticated tools [here](../speaking.md).
+These tactics are just one simple way of achieving flexible speaking abilities. We will talk about other more sophisticated tools [here](../speaking.md).
 {% endhint %}
 
 ## Listen and understand
 
-To indicate that it's time to **START LISTENING \(OR WAITING FOR WRITTEN INPUT\)**, connect a _**User Input**_ node.
+To indicate that it's time to **START LISTENING** \(or expecting written input\), connect a _**User Input**_ node to the flow.
 
-Now, you will have to define **WHAT SHOULD HAPPEN AFTER THE USER RESPONSE**. The primary solution is to interpret the semantics of the user's message \(our built-in AI will take care of that\). But since there are infinite possibilities of what they could say, it's necessary to define _the most relevant semantic categories, or "intents"_, and indicate which path the flow should take based on the detected intent.
+![](../../../.gitbook/assets/image%20%2858%29.png)
 
-So, to your User Input node, connect those _**Intents**_ that you want to detect at this particular point of the flow. \(These intents will be active only at the point of the flow where they are connected.\) But how do you define the semantics? Let's take it step by step:
+At this point, the user will respond. Then, the system will process the message and decide what should happen next. That's why you will have to define **HOW DIFFERENT USER MESSAGES WILL AFFECT THE FLOW**. In other words, **the User Input will serve as a fork, a "crossroads"**.
+
+Users could say literally _anything_, so how do you cope with this? In most cases, you will want to categorize the input using **recognition of intents**. Simply put, "intents" represent the meaning of the message: you can express the same intent \(e.g. "_yes_"\) by different synonymic utterances \("_yes / oh yeah / sure / absolutely / you bet / ..._"\). So for each User Input, you will need to **define the most relevant intents** —each will have its own green _**Intent**_ node— and indicate which path the flow should take based on the detected intent.
+
+So, to your User Input node, connect as many _**Intents**_ as you want the bot to detect at this point of the flow \(these "local" Intents will be active only where they are connected, unlike Global Intents\). But how do you define the meaning of the intent? Let's take it step by step:
 
 1. Insert an Intent node and connect it to the User Input node.
 2. Click on the Intent to see the node details in the right panel. Open the "Examples" tab.
-3. Write **example phrases** which will define the semantics of the node. Each line = one example phrase. **This is how the AI learns to distinguish between different user intents** which are active at this point of the flow.
+3. Write **example phrases** that will define the semantics of the node \(the meaning\). To create different variants, use the same tactics as described above \(lines + brackets with vertical bars\). **This is how the AI learns to distinguish between different user intents** which are active at this point of the flow.
 4. Continue designing the dialogue flow by connecting new nodes.
 
 {% hint style="info" %}
@@ -71,7 +95,7 @@ So, to your User Input node, connect those _**Intents**_ that you want to detect
 It's not about sheer quantity. To best represent the semantic range, try to think of different formulations and synonymic expressions, rather than to list a lot of nearly identical sentences. We will talk about this more in detail in [another article](../understanding.md).
 {% endhint %}
 
-![Designing a simple set of intents and reactions.](../../../.gitbook/assets/intents2.gif)
+![](../../../.gitbook/assets/intents-with-bar.gif)
 
 ### Globally expectable responses
 

@@ -8,7 +8,7 @@
   * [Design a Dialogue](how-to/design/README.md)
     * [Introduction](how-to/design/introduction.md)
     * [Create a Dialogue Model](how-to/design/create-dialogue.md)
-    * [Design a Dialogue](how-to/design/design-dialogue/README.md)
+    * [Design the Flow](how-to/design/design-dialogue/README.md)
       * [Speed up the designing process](how-to/design/design-dialogue/speed-up-design.md)
     * [Make Dialogues Robust](how-to/design/robustness.md)
     * [Build and Test Dialogues](how-to/design/build-and-test.md)
