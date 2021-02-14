@@ -47,6 +47,7 @@
     * [Snippet Designer](app/space/design/snippet-designer.md)
     * [Dialogue Mixins](app/space/design/dialogue-mixin.md)
     * [File Assets](app/space/design/file-assets.md)
+    * [Voices](app/space/design/voices.md)
   * [Runtime Data](app/space/data.md)
   * [Access Management](app/space/access.md)
 * [User Settings](app/user-settings.md)
