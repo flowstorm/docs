@@ -11,7 +11,7 @@ description: >-
 Add this line to the head of your `index.html` file:
 
 ```markup
-<script type="text/javascript" src=https://repository.promethist.ai/dist/bot/default/service.js></script>
+<script type="text/javascript" src=https://repository.promethist.ai/dist/bot-service.js></script>
 ```
 
 ## Instancing the bot
