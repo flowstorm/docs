@@ -34,13 +34,13 @@ Arguments:
 
 * **Port URL** - URL of the Promethist back-end
 * **Sender** - Identifier of the client
-* **Autostart** - Whether the bot should start the conversation immediately after opening the socket
+* **Autostart** - Whether the bot should start the conversation immediately after opening the socket. If `false`, the conversation must be started by dispatching `SLEEPINGClickEvent` on the document \(see the "Controlling the bot" section\).
 * **Kotlin** - whether the bot is linked from Kotlin code
-* **Token** - JWT token
+* **Token** - JWT token identifying the user. If `undefined`, the conversation will start in anonymous mode
 
 ## Implementing callbacks
 
-There are certain functions which are called in the bot code, but are not implemented there. They serve for allowing the front-end to react to certain events during the conversation. For the client to work correctly, they must be implemented in your web application code and attached to the bot variable. The attaching is done by calling e.g.
+There are certain functions which are called in the bot code, but are not implemented there. They serve for allowing the front-end to react to certain events during the conversation. For the client to work correctly, they must be implemented in your web application code and attached to the bot object before starting the conversation. The function attaching is done by calling e.g.
 
 ```javascript
 // With arguments
@@ -57,16 +57,16 @@ Below is the list of needed functions:
 
 | **Name** | **Parameters** | **Called** **when** | **What is handled** |
 | :--- | :--- | :--- | :--- |
-| setStatus | **newState** - object with String field status | Whenever the bot changes status | Whenever the bot changes status, this method is called so that the front end can reflect this. Inspect newState.status to see the current bot status |
+| setStatus | **newState** - object with String field status | Whenever the bot changes status | Whenever the bot changes status, this method is called so that the front end can reflect this. Inspect `newState.status` to see the current bot status |
 | getStatusString | **status** - object |  |  |
 | addMessage | **type** - String, “sent“ or “received”   **text** - String, content of the message **image** - optional String, URL of image **background** - optional String, URL of image | Whenever a message comes \(multiple times a turn from bot, once a turn from the user\) | In this callback, handle displaying the message and image if it is included. |
 | addLogs | **logs** - array of Strings | Once a turn | Print technical logs from the backend |
 | onError | **error** - object | If an error occurs on the backend | Handle the error |
 | onEnd |  | When the conversation ends | Reflect the end on the GUI |
 | getAttributes |  | In the beginning of the conversation | Send object with client attributes such as location or whether the client has a screen |
-| getUUID |  | In the beginning of the conversation | Return session ID in UUID format |
-| getVoice |  | In the beginning of the conversation | Return voice which should be used for the conversation \(undefined to use dialogue default\) |
-| focusOnNode |  | Once per bot message | Used in editor to track the conversation progress in the dialogue tree |
+| getUUID |  | In the beginning of the conversation | Return session ID \(String in UUID format\) |
+| getVoice |  | In the beginning of the conversation | Return voice name \(String\) which should be used for the conversation \(undefined to use dialogue default\) |
+| focusOnNode | **node** - Int, ID of node  | Once per bot message | Used in editor to track the conversation progress in the dialogue tree |
 | play | **sound** | When starting and ending listening, on error and on bot ready \(when autostart is false\) | Play indicator sounds |
 
 ## Launching the bot
@@ -87,13 +87,20 @@ Arguments:
 
 * **Application key** - Identifier of the dialogue which the client should conduct
 * **Language** - Two-letter code for the language for the conversation
-* **Default input audio** - Whether the bot should listen to audio input
-* **Default output audio** - Whether the bot should play its utterances as audio
-* **Starting message** - Initialising signal for the conversation
+* **Default input audio** - Whether the bot should listen to audio input. If `false`, the user will be able to communicate with the bot only by text.
+* **Default output audio** - Whether the bot should play its utterances as audio. If `false`, no audio will be played, including the status sounds.
+* **Starting message** - Initializing signal for the conversation
 
 ## Controlling the bot
 
 The bot can also be controlled by dispatching events on a document.
+
+```javascript
+// With parameters
+document.dispatchEvent(new Event('BotStopEvent'))
+// Without parameters
+document.dispatchEvent(new CustomEvent('TextInputEvent', { detail: { audioOn: audioOn, text: text } }))
+```
 
 | **Event name** | **Arguments** | **Purpose** |
 | :--- | :--- | :--- |
