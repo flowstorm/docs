@@ -22,7 +22,7 @@ In your JavaScript code, add this:
 const Bot = window.botService.default
 
 const bot = Bot(
-    'https://port.promethist.com',
+    'https://core.promethist.com',
     'sender',
     true,       // autostart
     false,      // called from Kotlin
