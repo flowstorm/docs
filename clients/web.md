@@ -6,6 +6,10 @@ description: >-
 
 # Web client
 
+## Prerequisites
+
+Please check out also [this article](https://docs.promethist.ai/core/client-integrations/web-socket) to better understand how the communication between client and server works.
+
 ## Linking the script
 
 Add this line to the head of your `index.html` file:
@@ -32,11 +36,11 @@ const bot = Bot(
 
 Arguments:
 
-* **Port URL** - URL of the Promethist back-end
-* **Sender** - Identifier of the client
-* **Autostart** - Whether the bot should start the conversation immediately after opening the socket. If `false`, the conversation must be started by dispatching `SLEEPINGClickEvent` on the document \(see the "Controlling the bot" section\).
-* **Kotlin** - whether the bot is linked from Kotlin code
-* **Token** - JWT token identifying the user. If `undefined`, the conversation will start in anonymous mode
+* **Port URL** \(Boolean\) - URL of the Promethist back-end
+* **Sender** \(String\)- Identifier of the client
+* **Autostart** \(Boolean\) - Whether the bot should start the conversation immediately after opening the socket. If `false`, the conversation must be started by dispatching `SLEEPINGClickEvent` on the document \(see the "Controlling the bot" section\).
+* **Kotlin** \(Boolean\) - whether the bot is linked from Kotlin code
+* **Token** \(String\) - JWT token identifying the user. If `undefined`, the conversation will start in anonymous mode
 
 ## Implementing callbacks
 
@@ -45,29 +49,139 @@ There are certain functions which are called in the bot code, but are not implem
 ```javascript
 // With arguments
 bot.setStatus = newState => {
-    setState(newState);
+    setState(newState); // Your method
 };
 // Without arguments
-bot.getVoice = this.getVoice;
+bot.getVoice = this.getVoice; // this.getVoice = your method
 ```
 
-The functions in your applications can have arbitrary name and may even be empty, but all “bot.x” properties listed below must be defined and callable.
+The functions in your applications can have arbitrary name and, with the exception of the three `get` methods, may even be empty, but all `bot.x` properties listed below must be defined and callable.
 
 Below is the list of needed functions:
 
-| **Name** | **Parameters** | **Called** **when** | **What is handled** |
-| :--- | :--- | :--- | :--- |
-| setStatus | **newState** - object with String field status | Whenever the bot changes status | Whenever the bot changes status, this method is called so that the front end can reflect this. Inspect `newState.status` to see the current bot status |
-| getStatusString | **status** - object |  |  |
-| addMessage | **type** - String, “sent“ or “received”   **text** - String, content of the message **image** - optional String, URL of image **background** - optional String, URL of image | Whenever a message comes \(multiple times a turn from bot, once a turn from the user\) | In this callback, handle displaying the message and image if it is included. |
-| addLogs | **logs** - array of Strings | Once a turn | Print technical logs from the backend |
-| onError | **error** - object | If an error occurs on the backend | Handle the error |
-| onEnd |  | When the conversation ends | Reflect the end on the GUI |
-| getAttributes |  | In the beginning of the conversation | Send object with client attributes such as location or whether the client has a screen |
-| getUUID |  | In the beginning of the conversation | Return session ID \(String in UUID format\) |
-| getVoice |  | In the beginning of the conversation | Return voice name \(String\) which should be used for the conversation \(undefined to use dialogue default\) |
-| focusOnNode | **node** - Int, ID of node  | Once per bot message | Used in editor to track the conversation progress in the dialogue tree |
-| play | **sound** | When starting and ending listening, on error and on bot ready \(when autostart is false\) | Play indicator sounds |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"><b>Name</b>
+      </th>
+      <th style="text-align:left"><b>Parameters</b>
+      </th>
+      <th style="text-align:left"><b>Called</b>  <b>when</b>
+      </th>
+      <th style="text-align:left"><b>What is handled</b>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">setStatus</td>
+      <td style="text-align:left"><b>newState</b> - object with String field status</td>
+      <td style="text-align:left">
+        <p>Whenever the bot</p>
+        <p>changes status</p>
+      </td>
+      <td style="text-align:left">
+        <p>Whenever the bot changes</p>
+        <p>status, this method is called</p>
+        <p>so that the front end can</p>
+        <p>reflect this.</p>
+        <p>Inspect <code>newState.status</code>
+        </p>
+        <p>to see the current bot status</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">addMessage</td>
+      <td style="text-align:left"><b>type</b> - String, &#x201C;sent&#x201C; or &#x201C;received&#x201D;
+        <br
+        /> <b>text</b> - String, content of the message
+        <br /><b>image</b> - optional String, URL of image
+        <br /><b>background</b> - optional String, URL of image</td>
+      <td style="text-align:left">
+        <p>Whenever a message</p>
+        <p>comes (multiple times</p>
+        <p>a turn from bot,</p>
+        <p>once a turn from the user)</p>
+      </td>
+      <td style="text-align:left">
+        <p>In this callback,</p>
+        <p>handle displaying</p>
+        <p>the message and image</p>
+        <p>if it is included.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">addLogs</td>
+      <td style="text-align:left"><b>logs</b> - array of Strings</td>
+      <td style="text-align:left">Once a turn</td>
+      <td style="text-align:left">
+        <p>Print technical logs</p>
+        <p>from the backend</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">onError</td>
+      <td style="text-align:left"><b>error</b> - object</td>
+      <td style="text-align:left">If an error occurs on the backend</td>
+      <td style="text-align:left">Handle the error</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">onEnd</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <p>When the</p>
+        <p>conversation ends</p>
+      </td>
+      <td style="text-align:left">Reflect the end on the GUI</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">getAttributes</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">In the beginning of the conversation</td>
+      <td style="text-align:left">
+        <p>Return object with</p>
+        <p>client attributes such as</p>
+        <p>location or whether</p>
+        <p>the client has a screen</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">getUUID</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">In the beginning of the conversation</td>
+      <td style="text-align:left">
+        <p>Return session ID</p>
+        <p>(String in UUID format)</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">getVoice</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">In the beginning of the conversation</td>
+      <td style="text-align:left">
+        <p>Return voice name (String)</p>
+        <p>which should be used for the conversation (<code>undefined</code> 
+        </p>
+        <p>to use dialogue default)</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">focusOnNode</td>
+      <td style="text-align:left"><b>node</b> - Int, ID of node</td>
+      <td style="text-align:left">Once per bot message</td>
+      <td style="text-align:left">Used in editor to track the conversation progress in the dialogue tree</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">play</td>
+      <td style="text-align:left"><b>sound</b>
+      </td>
+      <td style="text-align:left">On bot ready (if autostart is false)</td>
+      <td style="text-align:left">Play &quot;bot ready&quot; sound</td>
+    </tr>
+  </tbody>
+</table>
+
+
 
 ## Launching the bot
 
@@ -85,11 +199,13 @@ bot.init(
 
 Arguments:
 
-* **Application key** - Identifier of the dialogue which the client should conduct
-* **Language** - Two-letter code for the language for the conversation
-* **Default input audio** - Whether the bot should listen to audio input. If `false`, the user will be able to communicate with the bot only by text.
-* **Default output audio** - Whether the bot should play its utterances as audio. If `false`, no audio will be played, including the status sounds.
-* **Starting message** - Initializing signal for the conversation
+* **Application key** \(String\) - Identifier of the dialogue which the client should conduct
+* **Language** \(String\) - Two-letter code for the language for the conversation
+* **Default input audio** \(Boolean\) - Whether the bot should listen to audio input. If `false`, the user will be able to communicate with the bot only by text.
+* **Default output audio** \(Boolean\) - Whether the bot should play its utterances as audio. If `false`, no audio will be played, including the status sounds.
+* **Starting message** \(String\) - Initializing signal for the conversation
+
+After calling this, the bot will attempt to start the dialogue. After its first utterance, the browser will ask for microphone permission and if it is granted, it will listen for audio input. If the callbacks are empty, the communication will be only through audio.
 
 ## Controlling the bot
 
@@ -102,14 +218,71 @@ document.dispatchEvent(new Event('BotStopEvent'))
 document.dispatchEvent(new CustomEvent('TextInputEvent', { detail: { audioOn: audioOn, text: text } }))
 ```
 
-| **Event name** | **Arguments** | **Purpose** |
-| :--- | :--- | :--- |
-| BotStopEvent |  | Ends the conversation |
-| BotPauseEvent |  | Pauses current bot utterance \(if playing\) |
-| BotResumeEvent |  | Resumes current bot utterance \(if paused\) |
-| InputAudioEvent |  | Turns audio input on and off |
-| OutputAudioEvent |  | Turns audio output on and off |
-| TextInputEvent | text: text message from the user audioOn | Sends text input to the bot instead of audio |
-| SLEEPINGClickEvent |  | Launches the bot |
-| RESPONDINGClickEvent |  | Skips current bot utterances |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"><b>Event name</b>
+      </th>
+      <th style="text-align:left"><b>Arguments</b>
+      </th>
+      <th style="text-align:left"><b>Purpose</b>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">BotStopEvent</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Ends the conversation</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">BotPauseEvent</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <p>Pauses current bot</p>
+        <p>utterance (if playing)</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">BotResumeEvent</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <p>Resumes current bot</p>
+        <p>utterance (if paused)</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">InputAudioEvent</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Turns audio input on and off</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">OutputAudioEvent</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Turns audio output on and off</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">TextInputEvent</td>
+      <td style="text-align:left">text: text message from the user
+        <br />audioOn</td>
+      <td style="text-align:left">
+        <p>Sends text input to the bot</p>
+        <p>instead of audio</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">SLEEPINGClickEvent</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Launches the bot</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">RESPONDINGClickEvent</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <p>Skips current bot utterances</p>
+        <p>and goes to LISTENING state</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
