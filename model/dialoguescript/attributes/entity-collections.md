@@ -6,8 +6,8 @@ DialogueScript supports working with data entity collections \(lists and sets\) 
 
 Scopes turn, session and user are supported \(community not yet\). Following delegate functions are provided, requiring data entity collection as first and optional second namespace parameters
 
-* **turnEntityListAttribute**, **sessionEntityListAttribute** and **userEntityListAttribute**
-* **turnEntitySetAttribute**, **sessionEntitySetAttribute** and **userEntitySetAttribute**
+* **`turnEntityListAttribute`**, **`sessionEntityListAttribute`** and **`userEntityListAttribute`**
+* **`turnEntitySetAttribute`**, **`sessionEntitySetAttribute`** and **`userEntitySetAttribute`**
 
 #### Example <a id="Example"></a>
 
@@ -41,7 +41,7 @@ data class Person(val givenName: String, val surname: String, val birthPlace: St
 
 You can use attributes to store maps mapping String keys to values of Any type. Following delegate functions are available to do this
 
-* **turnMapAttribute**, **sessionMapAttribute** and **userMapAttribute**
+* **`turnMapAttribute`**, **`sessionMapAttribute`** and **`userMapAttribute`**
 
 #### Example <a id="Example.1"></a>
 
