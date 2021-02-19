@@ -78,5 +78,33 @@ The first intent node also needs the entity of type book to be recognized, other
 
 ![](../../../.gitbook/assets/image%20%2859%29.png)
 
+The intent examples need to be specified with the entity masked with its type, e.g.:
 
+_I think that PERSON really likes ORG._
+
+This method guarantees that the specified entity type\(s\) must be recognized to proceed in the corresponding branch of the dialogue. Then, you don’t need to check the presence of the entity like this `input.containsEntity("PERSON")`.
+
+The recognition process of the combination of the intents and entities is as follows:
+
+1. The most probable intent is recognized.
+2. If there are no required entities, the intent is selected and the dialogue goes on in that direction.
+3. Otherwise, the system checks whether there is AT LEAST ONE entity for each type recognized in the user utterance. If so, the intent is selected and the dialogue goes on in that direction.
+4. If any of the entities is missing, the system selects the next most probable intent and continues with step 2.
+5. It continues hierarchically through the contextual, local, and global intents respectively.
+6. If all the intents contain the required entity and none of them were recognized, it throws the error saying `No intent for the given input and recognized entities found`.
+
+## Duckling <a id="Duckling"></a>
+
+The duckling component recognizes the specific types of the entities and maps them to their structured values. The list of classes is available [here](https://develop.promethist.ai/apidoc/core-api/com.promethist.core.type.value/index.html). You can also click on each entity type to see the attributes available.
+
+For example, if you want to extract a date from the utterance, you can use the following snippet.
+
+```kotlin
+if (input.containsEntity<GrainedTime>()) {
+    input.entity<GrainedTime>().value
+    input.entity<GrainedTime>().grain
+}
+```
+
+The value contains a parsed DateTime object, and the grain contains a String representing how accurate the value is. The possible values are \(year, month, week, day, hour, minute, second\).
 
