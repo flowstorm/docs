@@ -1,3 +1,7 @@
+---
+description: 'DialogueScript, entity types, recognizing entities.'
+---
+
 # Entities
 
 You can access recognize entities form the user utterance in the input object. The entities are recognized using multiple models. The list of models may \(and it will\) change in the future:
