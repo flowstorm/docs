@@ -4,7 +4,7 @@ description: >-
   with some content?
 ---
 
-# Design the Flow
+# Design the Flow Graph
 
 Whenever a new dialogue model is [created](https://docs.promethist.ai/how-to/design/create-dialogue), it will open in the Dialogue Designer. In the main editing area, you will see a default built-in structure: _Enter --&gt; Speech --&gt; Exit_. But there are many more types of nodes. Let's see how you can use them to achieve particular designing goals.
 
@@ -66,7 +66,7 @@ If you don't want your bot to always repeat the same formulation, you can insert
 You can easily combine both tactics to achieve a much more varied Speech node.  
 During a conversation, one of all the variants inside a Speech node **will be selected randomly**.
 
-![An example of a varied Speech node. This one would generate 8 different variants.](../../../.gitbook/assets/image%20%2862%29.png)
+![An example of a varied Speech node. This one would generate 8 different variants.](../../../.gitbook/assets/image%20%2865%29.png)
 
 {% hint style="warning" %}
 Always check for unintended "empty" variants! For example, an empty line also counts as a variant \(because sometimes you might want to include it intentionally\).
@@ -84,17 +84,15 @@ To indicate that it's time to **START LISTENING** \(or expecting written input\)
 
 At this point, the user will respond. The system will then process the message and decide what should happen next. That's why you will have to define **HOW DIFFERENT USER MESSAGES WILL AFFECT THE FLOW**. In other words, **the User Input will serve as a fork, a "crossroads"**.
 
-Users can say literally anything, so how do you cope with this? In most cases, you will want to categorize the input using **recognition of intents**.
-
-Simply put, "intents" represent the meaning of the message \(you can express the same intent \[e.g. "yes"\] by many different synonymic utterances: _yes; oh yeah; sure; absolutely; you bet;_ ...\).
+Users can say literally anything, so how do you cope with this? In most cases, you will want to categorize the input using **recognition of intents**. Simply put, "intents" represent the meaning of the message \(you can express the same intent \[e.g. "yes"\] by many different synonymic utterances: _yes; oh yeah; sure; absolutely; you bet;_ ...\).
 
 For each _User Input_, you will need to define **the most relevant intents** \(each intent will have its own green _Intent_ node\) by typing in **some example phrases** and indicate what should be the reaction based on the detected intent.
 
-So, to your User Input node, connect as many _**Intents**_ as you want the bot to detect at this point of the flow \(these "local" Intents will be active only where they are connected, unlike Global Intents\). But how do you define the meaning of the intent? Let's take it step by step:
+So, to your User Input node, connect as many _**Intents**_ as you want the bot to detect at this point of the flow \(these "local" Intents will be active only where they are connected – unlike Global Intents\). But how do you define the meaning of the intent? Let's take it step by step:
 
-1. Insert an Intent node and connect it to the User Input node.
-2. Click on the Intent to see the node details in the right panel. Open the "Examples" tab.
-3. Write **example phrases** that will define the semantics of the node \(the meaning\). To create different variants, use the same tactics as described above \(lines + brackets with vertical bars\). **This is how the AI learns to distinguish between different user intents** which are active at this point of the flow.
+1. Insert an _Intent_ node and connect it to the _User Input_ node.
+2. Click on the _Intent_ to see the node details in the right panel. Open the "Examples" tab.
+3. Write **example phrases** that will define the semantics of the node \(the meaning\). To create different variants, use the same tactics as described above \(lines + brackets with vertical bars\). **This is how the AI learns to distinguish between different intents** that are active at this point of the flow.
 4. Continue designing the dialogue flow by connecting new nodes.
 
 {% hint style="info" %}
