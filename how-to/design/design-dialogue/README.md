@@ -8,7 +8,7 @@ description: >-
 
 Whenever a new dialogue model is [created](https://docs.promethist.ai/how-to/design/create-dialogue), it will open in the Dialogue Designer. In the main editing area, you will see a default built-in structure: _Enter --&gt; Speech --&gt; Exit_. But there are many more types of nodes. Let's see how you can use them to achieve particular designing goals.
 
-![The default structure of a new dialogue model. Your starting point.](../../../.gitbook/assets/image%20%2842%29.png)
+![The default structure of a new dialogue model &#x2013; your starting point.](../../../.gitbook/assets/image%20%2842%29.png)
 
 ## Begin the dialogue flow
 
@@ -49,25 +49,28 @@ What the bot says is usually defined in **Speech** nodes. So as you can guess, y
 
 ![](../../../.gitbook/assets/hello-world.gif)
 
-If you don't want your bot to always repeat the same formulation, you can insert **MULTIPLE VARIANTS** into one Speech node. How?
+### **Alternative text variants**
 
-* **Lines.** Each line = a different variant.
-* **Brackets with vertical bars.** This is a very efficient way: vertical bars inside round brackets divide the brackets' content into equivalent alternatives. You can even nest brackets inside other brackets! An example:
-  * `(Hello|Hi there|(Nice|Good) to see you (|again)), my friend!` will result in 6 variants:
-    * `Hello, my friend!`
-    * `Hi there, my friend!`
-    * `Nice to see you , my friend!`
-    * `Nice to see you again, my friend!`
-    * `Good to see you , my friend!`
-    * `Good to see you again, my friend!`
+If you don't want your bot to always repeat the same formulation, you can insert **multiple variants into one Speech node**. How?
 
+* **LINES.** Each new line means a new variant.
+* **BRACKETS WITH VERTICAL BARS.** Vertical bars inside round brackets divide the brackets' content into equivalent alternatives. You can even nest brackets inside other brackets! An example:
+  * **`(Hello|Hi there|(Nice|Good) to see you (|again)), my friend!`** will result in 6 variants:
+    * _`Hello, my friend!`_
+    * _`Hi there, my friend!`_
+    * _`Nice to see you, my friend!`_
+    * _`Nice to see you again, my friend!`_
+    * _`Good to see you, my friend!`_
+    * _`Good to see you again, my friend!`_
+
+You can easily combine both tactics to achieve a much more varied Speech node.  
 During a conversation, one of all the variants inside a Speech node **will be selected randomly**.
 
-{% hint style="warning" %}
-Always check for unintended "empty" variants! For example, an empty line also counts as a variant \(sometimes you will want to include it intentionally\).
-{% endhint %}
+![An example of a varied Speech node. This one would generate 8 different variants.](../../../.gitbook/assets/image%20%2862%29.png)
 
-![](../../../.gitbook/assets/image%20%2857%29.png)
+{% hint style="warning" %}
+Always check for unintended "empty" variants! For example, an empty line also counts as a variant \(because sometimes you might want to include it intentionally\).
+{% endhint %}
 
 {% hint style="info" %}
 These tactics are just one simple way of achieving flexible speaking abilities. We will talk about other more sophisticated tools [here](../speaking.md).
@@ -79,9 +82,13 @@ To indicate that it's time to **START LISTENING** \(or expecting written input\)
 
 ![](../../../.gitbook/assets/image%20%2858%29.png)
 
-At this point, the user will respond. Then, the system will process the message and decide what should happen next. That's why you will have to define **HOW DIFFERENT USER MESSAGES WILL AFFECT THE FLOW**. In other words, **the User Input will serve as a fork, a "crossroads"**.
+At this point, the user will respond. The system will then process the message and decide what should happen next. That's why you will have to define **HOW DIFFERENT USER MESSAGES WILL AFFECT THE FLOW**. In other words, **the User Input will serve as a fork, a "crossroads"**.
 
-Users could say literally _anything_, so how do you cope with this? In most cases, you will want to categorize the input using **recognition of intents**. Simply put, "intents" represent the meaning of the message: you can express the same intent \(e.g. "_yes_"\) by different synonymic utterances \("_yes / oh yeah / sure / absolutely / you bet / ..._"\). So for each User Input, you will need to **define the most relevant intents** —each will have its own green _**Intent**_ node— and indicate which path the flow should take based on the detected intent.
+Users can say literally anything, so how do you cope with this? In most cases, you will want to categorize the input using **recognition of intents**.
+
+Simply put, "intents" represent the meaning of the message \(you can express the same intent \[e.g. "yes"\] by many different synonymic utterances: _yes; oh yeah; sure; absolutely; you bet;_ ...\).
+
+For each _User Input_, you will need to define **the most relevant intents** \(each intent will have its own green _Intent_ node\) by typing in **some example phrases** and indicate what should be the reaction based on the detected intent.
 
 So, to your User Input node, connect as many _**Intents**_ as you want the bot to detect at this point of the flow \(these "local" Intents will be active only where they are connected, unlike Global Intents\). But how do you define the meaning of the intent? Let's take it step by step:
 
