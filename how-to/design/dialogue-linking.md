@@ -14,18 +14,15 @@ Why is designing multiple smaller dialogue models better than one large model? I
 
 ## Link a dialogue to another dialogue
 
+1. **Insert a** _**Subdialogue**_ node and connect it to the corresponding point of the flow.
+2. In the right panel, **click on the grey box** \("Dialogue"\).
+3. **Choose the dialogue model** that you want to connect to the original model.
 
+   \(To open the selected model in a new tab, click on the blue box with a white arrow.\)
 
-Usually, there will always be one main dialogue model that will contain more **subdialogues**. Each subdialogue represents one semantic unit and can contain other subdialogues \(which can also contain other subdialogues etc.\).
+4. Continue the flow by connecting a follow-up node.
 
-Interconnecting the dialogue models is very simple:
-
-1. Insert a _**Subdialogue**_ node.
-2. In the right panel, click on the grey bar called Dialogue.
-3. Choose the dialogue model you want to connect to the original model.
-4. If you want to open the chosen subdialogue in a new tab, click on the blue box with a white arrow.
-
-Having interconnected all dialogue models of the interaction, you can create your own [application](../applications/).
+![](../../.gitbook/assets/subdg.gif)
 
 ## **Hierarchical structure**
 
