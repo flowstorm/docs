@@ -41,7 +41,7 @@ When the user message is being processed, the available intents are analyzed in 
 
 Let's see an example. In the following illustration, the _**main dialogue**_ model has 3 global intents labeled _stop_, _repeat_, and _play quiz_. There are two subdialogues inside it: _**Movie Quiz**_ and _**Small Talk**_. In this scenario, they will both inherit the 3 global intents from the main dialogue, and _**Movie Quiz**_ will have 2 more global intents of its own. Inside _**Movie Quiz**_, the flow can still immerse into the _**Are You Sure**_ model, which would inherit all 2+3 global intents from the two superordinate models. But the designer decided to override the inherited _repeat_, so they created a new one, which would be prioritized over the inherited one.
 
-![](../../.gitbook/assets/image%20%2862%29.png)
+![](../../.gitbook/assets/image%20%2863%29.png)
 
 {% hint style="warning" %}
 The same dialogue model can be immersed into different other models \(e.g. if you want to include the same Movie Quiz into more voice apps\), and these often have different global intents. This is why **the inherited intents are always inferred from the particular path which led to the current model** - it's the flow that determines them.

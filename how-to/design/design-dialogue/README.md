@@ -66,7 +66,7 @@ If you don't want your bot to always repeat the same formulation, you can insert
 You can easily combine both tactics to achieve a much more varied Speech node.  
 During a conversation, one of all the variants inside a Speech node **will be selected randomly**.
 
-![An example of a varied Speech node. This one would generate 8 different variants.](../../../.gitbook/assets/image%20%2865%29.png)
+![An example of a varied Speech node. This one would generate 8 different variants.](../../../.gitbook/assets/image%20%2866%29.png)
 
 {% hint style="warning" %}
 Always check for unintended "empty" variants! For example, an empty line also counts as a variant \(because sometimes you might want to include it intentionally\).
