@@ -39,7 +39,7 @@ When the user message is being processed, the available intents are analyzed in 
 1. _local intents_ \(in the User Input\), 2. _global intents_ \(in the model\), 3. _inherited global intents_ \(from superordinate models, level by level\). So **if you want to override an inherited global intent**, **just define the same intent in the immersed model** and this new one will be prioritized!
 {% endhint %}
 
-Let's see an example. In the following illustration, the main dialogue model has 3 global intents labeled _stop_, _repeat_, and _play quiz_. There are two subdialogues inside it: Movie Quiz and Small Talk. In this scenario, they will both inherit the 3 global intents from the main dialogue, and Movie Quiz will have 2 more global intents of its own. Inside the Movie Quiz, the flow can still immerse into the Are You Sure model, which would inherit all 2+3 global intents from the two superordinate models. But the designer decided to override the inherited _"repeat"_, so they created a new one, which would be prioritized.
+Let's see an example. In the following illustration, the _**main dialogue**_ model has 3 global intents labeled _stop_, _repeat_, and _play quiz_. There are two subdialogues inside it: _**Movie Quiz**_ and _**Small Talk**_. In this scenario, they will both inherit the 3 global intents from the main dialogue, and _**Movie Quiz**_ will have 2 more global intents of its own. Inside _**Movie Quiz**_, the flow can still immerse into the _**Are You Sure**_ model, which would inherit all 2+3 global intents from the two superordinate models. But the designer decided to override the inherited _repeat_, so they created a new one, which would be prioritized over the inherited one.
 
 ![](../../.gitbook/assets/image%20%2862%29.png)
 
