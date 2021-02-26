@@ -1,6 +1,6 @@
 # Table of contents
 
-* [What is PromethistAI](README.md)
+* [What is Flowstorm AI](README.md)
 * [Basics](basics.md)
 * [Quick Start Guide](quick-start.md)
 * [Video Tutorials](video-tutorials.md)
@@ -35,7 +35,7 @@
   * [Good and Bad Formulations](tips/formulations.md)
 * [FAQ](faq.md)
 
-## Promethist.app <a id="app"></a>
+## Flowstorm.app <a id="app"></a>
 
 * [About Application](app/welcome.md)
 * [How to Sign Up](app/sign-up.md)

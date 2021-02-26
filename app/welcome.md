@@ -1,6 +1,6 @@
 ---
 description: >-
-  The application running at https://promethist.app is a platform as a service
+  The application running at https://flowstorm.app is a platform as a service
   (PaaS) allowing you to easily create personas (voice applications) for any
   purpose you might need.
 ---

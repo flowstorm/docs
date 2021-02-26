@@ -1,5 +1,5 @@
 ---
-description: A quick introduction to the Promethist platform. Make your first steps!
+description: A quick introduction to the Flowstorm platform. Make your first steps!
 ---
 
 # Quick Start Guide
