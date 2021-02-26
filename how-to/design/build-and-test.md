@@ -17,11 +17,11 @@ To build a model, just click the Build button – the cute little hammer.
 
 ![](../../.gitbook/assets/image%20%2867%29.png)
 
-{% hint style="info" %}
+{% hint style="success" %}
 _Build_ always **saves automatically the current state** of the model, so you don't need to extra-click on _Save_.
 {% endhint %}
 
-{% hint style="success" %}
+{% hint style="info" %}
 If you know that you will want to **run the model immediately after the build, just click on Run** – if the model has been changed since the last build, Run will automatically trigger a new build and then immediately start the conversation.
 {% endhint %}
 
