@@ -2,9 +2,9 @@
 description: Unleash The Power of Spoken Word
 ---
 
-# What is Flowstorm AI
+# What is Flowstorm
 
-The Flowstorm AI Platform is a set of SaaS development tools and software components for creating smart Conversational & Multimodal AI applications. The Platform has two major components: the [Web Application](app/welcome.md) and the [Core](core/about-project.md) open source project. Creators will use the web application provided at URL [promethist.app](./) to author the dialogues, and administrators will use it to manage the applications. The Core contains all runtime components. 
+The Flowstorm Platform is a set of SaaS development tools and software components for creating smart Conversational & Multimodal AI applications. The Platform has two major components: the [Web Application](app/welcome.md) and the [Core](core/about-project.md) open source project. Creators will use the web application provided at URL [promethist.app](./) to author the dialogues, and administrators will use it to manage the applications. The Core contains all runtime components. 
 
 The critical elements are the built-in Voice First development workflow and reusability. We guide the developer through all stages, starting from the scenario to the analytics. For fast application authoring, the Platform introduces the following reusable components: [sub-dialogues](model/dialogue-model-coding/basic-use-cases/sub-dialogues.md), [mixins]() and [snippets](model/dialogue-model-coding/building-blocks/snippets.md).
 

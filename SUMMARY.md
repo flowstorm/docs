@@ -1,6 +1,6 @@
 # Table of contents
 
-* [What is Flowstorm AI](README.md)
+* [What is Flowstorm](README.md)
 * [Basics](basics.md)
 * [Quick Start Guide](quick-start.md)
 * [Video Tutorials](video-tutorials.md)
