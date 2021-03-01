@@ -8,11 +8,11 @@ description: A quick introduction to the Flowstorm platform. Make your first ste
 
 You must sign up if you are a new user who wants to try the platform for the first time.
 
-1. Open [https://promethist.app/](https://promethist.app/)
+1. Open [app.flowstorm.ai](https://app.flowstorm.ai/)
 2. Click on “Sign Up” in the top right corner to open a sign-up form.
 3. Choose a preferred authentication provider \(Google, Apple, Facebook, Twitter, Slack\) or create an account using just your e-mail and a password.
 4. Check your inbox and click the confirmation link to approve that you are the owner of the address.
-5. After confirming the e-mail, the Promethist Platform will create your space.
+5. After confirming the e-mail, Flowstorm will create your space.
 6. From now on, you can easily [log in](https://promethist.app/#!/login) anytime.
 
 Now you can invite collaborators or start designing your first dialogue and voice applications.
@@ -29,7 +29,7 @@ Now you can invite collaborators or start designing your first dialogue and voic
 
 ### Collaboration – Space
 
-The Promethist Platform is ready for collaborative design: developers will share dialogue models in the same “[Space](app/space/#access)”. The creator of the Space must invite the collaborators. In the main menu: Access → User Invitations: it will open a window to send the invitation to the collaborators’ e-mails. 
+Flowstorm is ready for collaborative design: developers will share dialogue models in the same “[Space](app/space/#access)”. The creator of the Space must invite the collaborators. In the main menu: Access → User Invitations: it will open a window to send the invitation to the collaborators’ e-mails. 
 
 * Fill in an e-mail address.
 * Choose a role for the user.
@@ -65,7 +65,7 @@ So let’s start designing. We represent the dialogue as a graph of interconnect
 
 ![](.gitbook/assets/example-pre-example.gif)
 
-Promethist will save the dialogue, build it, and run it. You will have to name the dialogue. The convention is namespace/dialogue-name. 
+Flowstorm will save the dialogue, build it, and run it. You will have to name the dialogue. The convention is namespace/dialogue-name. 
 
 ### Create an Advanced Dialogue Quickly
 
@@ -73,7 +73,7 @@ Promethist will save the dialogue, build it, and run it. You will have to name t
 
 ![](https://lh5.googleusercontent.com/Tavn5P1Q105kN8lECBMdbQZbkhKEr4D3FKEU54tJmh0HSiS0UPXtpp54tTYktZrjiT-A1RA4IaoZSzvaTOOWq9yRek61xF3-xOsPFnS6I9kweNRkGV-yjKGHa8ZriL0XQFaSRR8C)
 
-The Promethist Platform comes with a set of sample dialogue structures called **Snippets**. Click on the icon suggesting a _**branched structure**_, and you will find the Snippets list. You can see the typical structure for the closed question and its typical answers in the animation above. You will need something like often.
+Flowstorm comes with a set of sample dialogue structures called **Snippets**. Click on the icon suggesting a _**branched structure**_, and you will find the Snippets list. You can see the typical structure for the closed question and its typical answers in the animation above. You will need something like often.
 
 However, we recommend looking at the Main dialogue EN snippet. Drag and drop it to the canvas, and you can immediately run it. It demonstrates the essential elements making the dialogue **robust**. The **Main dialogue EN** snippet handles the following situations gracefully:
 

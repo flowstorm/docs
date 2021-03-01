@@ -30,7 +30,7 @@
   * [Collaborate with other Designers](how-to/collaborate.md)
 * [Tips](tips/README.md)
   * [What is conversational UX \(CUX\)](tips/cux.md)
-  * [Principal Principles](tips/principles.md)
+  * [Principles of CUXD](tips/principles.md)
   * [How to Structure an Interaction](tips/interaction-structure.md)
   * [Good and Bad Formulations](tips/formulations.md)
 * [FAQ](faq.md)

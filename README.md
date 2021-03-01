@@ -4,9 +4,9 @@ description: Unleash The Power of Spoken Word
 
 # What is Flowstorm
 
-The Flowstorm Platform is a set of SaaS development tools and software components for creating smart Conversational & Multimodal AI applications. The Platform has two major components: the [Web Application](app/welcome.md) and the [Core](core/about-project.md) open source project. Creators will use the web application provided at URL [promethist.app](./) to author the dialogues, and administrators will use it to manage the applications. The Core contains all runtime components. 
+The **Flowstorm** platform is a set of SaaS development tools and software components for creating smart Conversational & Multimodal AI applications. The platform has two major components: the [Web Application](app/welcome.md) and the [Core](core/about-project.md) open source project. Creators will use the web application provided at URL [app.flowstorm.ai](https://app.flowstorm.ai/) to author the dialogues, and administrators will use it to manage the applications. The Core contains all runtime components.
 
-The critical elements are the built-in Voice First development workflow and reusability. We guide the developer through all stages, starting from the scenario to the analytics. For fast application authoring, the Platform introduces the following reusable components: [sub-dialogues](model/dialogue-model-coding/basic-use-cases/sub-dialogues.md), [mixins]() and [snippets](model/dialogue-model-coding/building-blocks/snippets.md).
+The critical elements are the built-in Voice First development workflow and reusability. We guide the developer through all stages, starting from the scenario to the analytics. For fast application authoring, Flowstorm introduces the following reusable components: sub-dialogues, mixins, and snippets.
 
 {% embed url="https://www.youtube.com/watch?v=Tv8CQrJoeKI" %}
 
@@ -26,5 +26,5 @@ Platform web application comes with a robust set of administration tools. Admini
 
 An essential part of the Core is the NLP pipeline. It is a state-of-the-art set of algorithms implemented as set of web services. The NLP pipeline offers different algorithms, such as intent, named entity recognition, etc. Developers may easily add custom NLP services.
 
-[Get started for free](https://promethist.app/#!/signup) and [make your first steps](quick-start.md) with Promethist.
+[Get started for free](https://promethist.app/#!/signup) and [make your first steps](quick-start.md) with Flowstorm.
 

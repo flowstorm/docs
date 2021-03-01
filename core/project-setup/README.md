@@ -1,7 +1,7 @@
 ---
 description: >-
   This page describes how to download, configure and start Core and NLP services
-  to run and develop Promethist Core.
+  to run and develop Flowstorm Core.
 ---
 
 # Project Setup

@@ -1,7 +1,7 @@
 ---
 description: >-
-  On the Promethist platform, the primary level of conversation design lies in
-  designing "dialogue models". How do you create one?
+  On Flowstorm, the primary level of conversation design lies in designing
+  "dialogue models". How do you create one?
 ---
 
 # Create a Dialogue Model

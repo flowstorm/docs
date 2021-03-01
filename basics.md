@@ -1,4 +1,6 @@
 # Basics
 
-Therefore, you don't have to be a programming expert to be able to work with our tools. 
+{% hint style="info" %}
+This article is just a stub. A much more detailed version is coming soon!
+{% endhint %}
 

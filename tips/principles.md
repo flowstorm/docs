@@ -2,7 +2,7 @@
 description: The "decalogue" of a CUX designer.
 ---
 
-# Principal Principles
+# Principles of CUXD
 
 To design a well-functioning conversational application, we must follow certain rules that help us achieve **the best possible user experience**. We like to call the following rules **"The Decalogue"**.
 
