@@ -26,7 +26,7 @@ In your JavaScript code, add this:
 const Bot = window.botService.default
 
 const bot = Bot(
-    'https://core.promethist.com',
+    'https://core.flowstorm.ai',
     'sender',
     true,       // autostart
     false,      // called from Kotlin
