@@ -4,7 +4,7 @@
 
 ## How Voices work on Amazon Alexa and Google Assistant
 
-If your dialogue is running on Amazon Alexa or Google Assistant then speech synthesis \(TTS\) is performed on their side instead of in Promethist Core[ runner](../../../core/core-services/runner.md). As they support only particular voice settings using SSML tag `voice`  we must do some some mapping logic to add this tag into the output and make speech sound as similar as possible to the voice TTS configuration. 
+If your dialogue is running on Amazon Alexa or Google Assistant then speech synthesis \(TTS\) is performed on their side instead of in the platform Core[ runner](../../../core/core-services/runner.md). As they support only particular voice settings using SSML tag `voice`  we must do some some mapping logic to add this tag into the output and make speech sound as similar as possible to the voice TTS configuration. 
 
 ### Amazon Alexa
 
