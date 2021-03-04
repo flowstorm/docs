@@ -20,7 +20,10 @@ The rectangle with the Promethist logo indicates the state which the bot is curr
 * Green means that the bot is open for your input. You can either speak or use the text input field. Both options are disabled if the bot is not listening
 * Blue means that the bot either processes your input or that it is paused
 
-When the bot is responding, you can skip the current response by tapping the area with Promethist logo or pause the response by long pressing it \(tap again to resume\). 
+When the bot is responding, you can 
+
+* **skip** the current response by **tapping the area with the logo** or 
+* **pause** the response by **long pressing** it \(tap again to resume\). 
 
 #### Settings
 
