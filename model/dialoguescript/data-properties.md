@@ -25,19 +25,19 @@ To load data into model data property from external source, use delegate `loader
 Example of loading data from external URL providing resource of type JSON with known structure defined as `data class`
 
 ```kotlin
-val countries by loader<List<Country>>("https://core.promethist.com/file/assets/data/CountryByRegionList.json")
+val countries by loader<List<Country>>("https://core.flowstorm.ai/file/assets/data/CountryByRegionList.json")
 ```
 
 If you don't know the exact structure, you can work with data as with `Map` objects
 
 ```kotlin
-val countries by loader<List<Map<String, Any>>>("https://core.promethist.com/file/assets/data/CountryByRegionList.json")
+val countries by loader<List<Map<String, Any>>>("https://core.flowstorm.ai/file/assets/data/CountryByRegionList.json")
 ```
 
 You can also load lists of primitive values, e.g. of type `String`
 
 ```kotlin
-val countryNames by loader<List<String>>("https://core.promethist.com/file/assets/data/countries.json")
+val countryNames by loader<List<String>>("hhttps://core.flowstorm.ai/file/assets/data/countries.json")
 ```
 
 You can also use [File Assets](../../app/space/design/file-assets.md) of type JSON. Just upload your file to it and get asset URL from its detail.
