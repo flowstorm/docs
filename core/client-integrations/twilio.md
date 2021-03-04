@@ -4,7 +4,7 @@ description: How to make inbound and outbound calls using Twilio.com service.
 
 # Twilio Calls
 
-Promethist supports both inbound and outbound phone calls via [Twilio.com](http://twilio.com/) platform.
+The platform supports both inbound and outbound phone calls via [Twilio.com](http://twilio.com/) platform.
 
 {% hint style="info" %}
 If you need to differentiate between inbound and outbound in main dialogue, use session.isInitiated property \(which indicated that session has been created from server initiative\) in functional code following `#intro` action
@@ -22,7 +22,7 @@ To redirect calls to particular application or specific dialogue, you have to al
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
   <Connect>
-    <Stream url="wss://core.promethist.com/call/">
+    <Stream url="wss://core.flowstorm.com/call/">
       <Parameter name="locale" value="en-US" />
       <Parameter name="sender" value="{{From}}" />
       <Parameter name="appKey" value="<key>" />
