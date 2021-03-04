@@ -4,7 +4,7 @@ Access menu section provides list of features for managing access to the current
 
 ## **Collaboration – Space** <a id="collaboration-%E2%80%93-space"></a>
 
-The Promethist Platform expects that several developers will collaborate: they will share dialogue models in the same “Space”. The creator of the initial Space needs to invite the collaborators. 
+The platform expects that several developers will collaborate: they will share dialogue models in the same “Space”. The creator of the initial Space needs to invite the collaborators. 
 
 ## User Invitations <a id="user-invitations"></a>
 
@@ -16,7 +16,7 @@ In the main menu: Access → User Invitations: it will open a window to send the
 
 **An invitation will be generated and the invited user will receive a notification.**
 
-When he or she clicks the link and logs in the [platform](https://promethist.app) you can see a change permissions of the user in User Assignments.
+When the user clicks the link and logs in the [platform](https://app.flowstorm.ai) you can see a change permissions of the user in User Assignments.
 
 ## User Assignments <a id="user-assignments"></a>
 
