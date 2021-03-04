@@ -55,7 +55,7 @@ Phone numbers have to start with + sign \(e.g. +420608123456\)
 
 ### Web
 
-[https://promethist.app](https://promethist.app/) &gt; New &gt; Session Initiation OR Data &gt; Sessions &gt; + Initiate![](blob:https://promethistai.atlassian.net/f8d6bbd9-053a-4cc2-b260-ab62a9ee4c9a#media-blob-url=true&id=ad263248-c80b-4fe2-bfe3-f16da61118c5&collection=contentId-834109451&contextId=834109451&mimeType=image%2Fpng&name=image-20200912-135646.png&size=81019&width=794&height=431)
+[app.flowstorm.ai](https://app.flowstorm.ai)[ ](https://app.flowstorm.ai/#!/space)&gt; New &gt; Session Initiation OR Data &gt; Sessions &gt; + Initiate![](blob:https://promethistai.atlassian.net/f8d6bbd9-053a-4cc2-b260-ab62a9ee4c9a#media-blob-url=true&id=ad263248-c80b-4fe2-bfe3-f16da61118c5&collection=contentId-834109451&contextId=834109451&mimeType=image%2Fpng&name=image-20200912-135646.png&size=81019&width=794&height=431)
 
 ![](../../.gitbook/assets/image%20%2817%29.png)
 
