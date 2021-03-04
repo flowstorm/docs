@@ -97,7 +97,7 @@ So, to your User Input node, connect as many _**Intents**_ as you want the bot t
 
 {% hint style="info" %}
 **How many example phrases should you type in?**  
-It's not about sheer quantity. To best represent the semantic range, try to think of different formulations and synonymic expressions, rather than to list a lot of nearly identical sentences. We will talk about this more in detail in [another article](../understanding.md).
+It's not about sheer quantity. To best represent the semantic range, try to think of different formulations and synonymic expressions, rather than to list a lot of nearly identical sentences. We will talk about this more in detail in [another article](../understanding/).
 {% endhint %}
 
 ![](../../../.gitbook/assets/intents-with-bar.gif)
