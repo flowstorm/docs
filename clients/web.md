@@ -8,7 +8,7 @@ description: >-
 
 ## Prerequisites
 
-Please check out also [this article](https://docs.promethist.ai/core/client-integrations/web-socket) to better understand how the communication between client and server works.
+Please check out also [this article](https://docs.flowstorm.ai/core/client-integrations/web-socket) to better understand how the communication between client and server works.
 
 ## Linking the script
 
@@ -36,7 +36,7 @@ const bot = Bot(
 
 Arguments:
 
-* **Port URL** \(Boolean\) - URL of the Promethist back-end
+* **Port URL** \(Boolean\) - URL of the back-end system
 * **Sender** \(String\)- Identifier of the client
 * **Autostart** \(Boolean\) - Whether the bot should start the conversation immediately after opening the socket. If `false`, the conversation must be started by dispatching `SLEEPINGClickEvent` on the document \(see the "Controlling the bot" section\).
 * **Kotlin** \(Boolean\) - whether the bot is linked from Kotlin code
