@@ -2,14 +2,14 @@
 
 ## Command Syntax
 
-`java -jar promethist.jar <command> (options)`
+`java -jar flowstorm.jar <command> (options)`
 
 {% hint style="info" %}
-If you are using Linux or Mac you can create executable script `/usr/local/bin/promethist`   
+If you are using Linux or Mac you can create executable script `/usr/local/bin/flowstorm`   
 `#!/bin/bash  
-java -jar ~/promethist.jar $@`
+java -jar ~/flowstorm.jar $@`
 
-Following command line examples will use simple command `promethist`.
+Following command line examples will use simple command `flowstorm`.
 {% endhint %}
 
 ## Available Commands
@@ -58,19 +58,19 @@ Client command support full range of [client configuration](../client-configurat
 
 ```bash
 # start conversation with any application available for me, immediately
-promethist client -as
+flowstorm client -as
 
 # conversation with specific application immediately
-promethist client -k 5ea17702d28fd40eec1e9076 -as
+flowstorm client -k 5ea17702d28fd40eec1e9076 -as
 
 # without input and output audio
-promethist client -k 5ea17702d28fd40eec1e9076 -as -nia -noa
+flowstorm client -k 5ea17702d28fd40eec1e9076 -as -nia -noa
 
 # using specific core
-promethist client -u https://core.promethist.server.com
+flowstorm client -u https://core.promethist.server.com
 
 # with fullscreen projection
-promethist client -scr fullscreen
+flowstorm client -scr fullscreen
 ```
 
 ### `call`
@@ -117,24 +117,24 @@ promethist client -scr fullscreen
 
 ```bash
 # play MP3 file
-promethist tool -a play -i test.mp3
+flowstorm tool -a play -i test.mp3
 
 # list audio devices
-promethist tool -a audio
+flowstorm tool -a audio
 
 # list java properties
-promethist tool -a props
+flowstorm tool -a props
 
 # respeaker2 test, showing speech detection and angle
-promethist tool -a respeaker2
+flowstorm tool -a respeaker2
 
 # test signal processing
-promethist -l INFO tool -a signal -i promethist.json
+flowstorm -l INFO tool -a signal -i flowstorm.json
 
 # test reading of NMEA data from local file
-promethist tool -a nmea -i /dev/path-to-nmea-input
+flowstorm tool -a nmea -i /dev/path-to-nmea-input
 
 # test reading of NMEA data from network socket
-promethist tool -a nmea -i 10.0.1.45:11123
+flowstorm tool -a nmea -i 10.0.1.45:11123
 ```
 
