@@ -1,18 +1,16 @@
 # Dialogue Model
 
-
-
 ## Node Types
 
 ### Speech  <a id="speech"></a>
 
 The text in the node will be sent to the Text To Speech converting the text to voice. 
 
-A node can be set as repeatable. If true, the text in this node will be included when the bots repeat a response. See [Repeating responses](https://promethist.myjetbrains.com/youtrack/articles/APP-A-9/Repeating-responses) for the detailed explanation.
+A node can be set as repeatable. If true, the text in this node will be included when the bots repeat a response.
 
 ### Intent  <a id="intent"></a>
 
-Intent nodes serve to represent the user’s **utterances**. These are similar to the intent node but they do not start a branch, they continue one. Usually, several nodes are connected to an input node. Several Contextual Intent nodes are provided with pre-filled common utterances. These nodes have a “Negate“ function \(available above the text editor\). It creates a new node with utterances which are negations of the original node utterances \(e.g. from node with utterance “I like that“ will be created a node containing an utterance “I don’t like that“\).
+**Intent nodes** serve to represent the user’s **utterances**. These are similar to the intent node but they do not start a branch, they continue one. Usually, several nodes are connected to an input node. Several Contextual Intent nodes are provided with pre-filled common utterances. These nodes have a “Negate“ function \(available above the text editor\). It creates a new node with utterances which are negations of the original node utterances \(e.g. from node with utterance “I like that“ will be created a node containing an utterance “I don’t like that“\).
 
 **NOTE**: The new nodes are created on top of the originals.
 
