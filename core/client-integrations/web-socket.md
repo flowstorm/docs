@@ -269,7 +269,7 @@ Request can contain attributes describing client current state, e.g. client type
         "text": "What can I do for you, Tomas?",
         "ssml": null,
         "confidence": 1.0,
-        "audio": "https://core.promethist.com/file/tts/18e77858dc3701a543732d0962c9b5bf.mp3",
+        "audio": "https://core.flowstorm.ai/file/tts/18e77858dc3701a543732d0962c9b5bf.mp3",
         "ttsConfig": {
           "provider": "Amazon",
           "locale": "en_US",
@@ -320,7 +320,7 @@ Request can contain attributes describing client current state, e.g. client type
         "confidence": 1.0,
         "image": null,
         "video": null,
-        "audio": "http://core.promethist.com/file/tts/83afc721a3c36afd8acd12f027a19023.mp3",
+        "audio": "http://core.flowstorm.ai/file/tts/83afc721a3c36afd8acd12f027a19023.mp3",
         "code": null,
         "background": "",
         "ttsConfig": {
