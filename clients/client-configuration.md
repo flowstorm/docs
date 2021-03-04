@@ -11,8 +11,8 @@ Configuration parameters represent set of properties which can be implemented by
 | Name | Shortcut\(s\) | Default value | Description |
 | :--- | :--- | :--- | :--- |
 | `environment` | `e` |  | Specific default core environment type  `local`,`preview` |
-| `serverConfig` | `sc` | `false` | Allow server configuration - it will be downloaded from URL `https://admin(.$environment).promethist.com/client/deviceConfig/$sender` upon client start. Parameters loaded from server will override parameters set by client. |
-| `url` | `u` |  | Custom core URL e.g. `https://core.promethist.my-company.com` |
+| `serverConfig` | `sc` | `false` | Allow server configuration - it will be downloaded from URL `https://admin(.$environment).flowstorm.ai/client/deviceConfig/$sender` upon client start. Parameters loaded from server will override parameters set by client. |
+| `url` | `u` |  | Custom core URL e.g. `https://core.flowstorm.my-company.com` |
 | `key` | `k` |  | Application key containing value `appId` or `:dialogueId` |
 | `secret` | `x` |  | Application secret \(optional - some may require it\) |
 | `sender` | `id, s` | \(depends on  client type\) | Unique device identification |
