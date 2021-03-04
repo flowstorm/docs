@@ -14,7 +14,7 @@ You can open as many models for editing \(or observing\) as you want in paralel.
 
 Open the **Design section in the top panel** and choose [**Dialogue Designer**](https://promethist.app/#!/space/dialogue) or just press key **"d" as a keyboard shortcut** and you can start prototyping.
 
-The Promethist editor is a tool which serves for creating, saving and building the dialogue models. It is available at [https://promethist.app](https://promethist.app/). You need a Google account to access it.
+The Flowstorm editor is a tool which serves for creating, saving and building the dialogue models. It is available at [https://app.flowstorm.ai](https://app.flowstorm.ai). 
 
 In the main editing area, the designer creates the dialogue tree by dragging nodes there from the palette, linking them and filling them with text. Images and text or JSON files can be added in the other tabs in the left column. The model can be saved, loaded or uploaded to the system using the “Model“ menu. In the “Testing“ menu, you can test the model in a web client or create a link to the model for sharing. In QA and Functions tab, you can add aspects to the model.
 

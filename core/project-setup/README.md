@@ -13,7 +13,7 @@ You must have Java JDK version 8 and Apache Maven version 3 installed before you
 {% endhint %}
 
 ```bash
-git clone git@github.com:PromethistAI/core.git
+git clone git@github.com:flowstorm/core.git
 cd core
 mvn install
 ```
@@ -71,9 +71,9 @@ You need also create `app.local.properties` configuration file and put it into w
       <td style="text-align:left"><code>illusionist.url</code>
       </td>
       <td style="text-align:left">
-        <p>URL of Illusionist (Promethist IR+NER Service). If not set following will
+        <p>URL of Illusionist (Flowstorm IR+NER Service). If not set following will
           be used</p>
-        <p><code>https://illusionist(.&lt;namespace&gt;).promethist.com</code>
+        <p><code>https://illusionist(.&lt;namespace&gt;).flowstorm.ai</code>
         </p>
       </td>
     </tr>
@@ -175,7 +175,7 @@ Finally you can start Core services by following commands to get runner availabl
 
 ```bash
 java -jar runner/app/target/app.jar
-java -jar builder/app/target/app.jar -Dorg.promethist.common.server.port=8081
+java -jar builder/app/target/app.jar -Dai.flowstorm.common.server.port=8081
 ```
 
 ## Docker images
@@ -183,8 +183,8 @@ java -jar builder/app/target/app.jar -Dorg.promethist.common.server.port=8081
 If you want to build your own Docker images instead of using generic ones available at `registry.gitlab.com` you can do that by following commands:
 
 ```bash
-docker build -t registry.your-server.com/promethist/runner/app runner/app
-docker build -t registry.your-server.com/promethist/builder/app builder/app
+docker build -t registry.your-server.com/flowstorm/runner/app runner/app
+docker build -t registry.your-server.com/flowstorm/builder/app builder/app
 ```
 
 ## NLP Services
@@ -192,7 +192,7 @@ docker build -t registry.your-server.com/promethist/builder/app builder/app
 TBD
 
 ```bash
-git clone git@github.com:PromethistAI/illusionist.git
-git clone git@github.com:PromethistAI/duckling.git
+git clone git@gitlab.com:promethistai/illusionist.git
+git clone git@gitlab.com:promethistai/duckling.git
 ```
 
