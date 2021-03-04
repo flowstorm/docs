@@ -12,7 +12,7 @@ Let's have a look at the admin UI and quickly go through the main menu first.
 
 ### Home panel <a id="home-panel"></a>
 
-**Home panel** is the default panel displayed right after login, showing conversations run data overview, related to the currently selected space or to you in person. See [Home dashboard](https://promethist.myjetbrains.com/youtrack/articles/APP-A-45/Home-Dashboard?edit=true) for details.
+**Home panel** is the default panel displayed right after login, showing conversations run data overview, related to the currently selected space or to you in person. See [Home dashboard](https://app.flowstorm.ai/#!/space) for details.
 
 ### Space \(dropdown\) <a id="space"></a>
 
