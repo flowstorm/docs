@@ -10,7 +10,7 @@ This article is just a stub. A much more detailed version is coming soon!
 
 ### Vertical lines
 
-## Functional code inside a Speech
+## Special code inside a Speech
 
 ### Read a variable value
 

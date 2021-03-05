@@ -45,7 +45,7 @@ The default Flowstorm snippets will not always be enough. To create your own dia
 4. From now on, you will see it in the snippet list - you can start using it immediately.
 
 {% hint style="success" %}
-Similar to other objects \(dialogue models, file assets...\), snippets are also created for your Space, so they will be shared with all your Space collaborators.
+Similar to other objects \(dialogue models, file assets...\), snippets are created "per Space", so they will be shared with all your Space collaborators.
 {% endhint %}
 
 ### Modify a snippet
