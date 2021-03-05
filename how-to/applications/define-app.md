@@ -1,4 +1,4 @@
-# Define it
+# Define It
 
 To define a new application:
 
