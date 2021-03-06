@@ -1,3 +1,9 @@
+---
+description: >-
+  Before sharing your app with the world, you must create the application
+  "object".
+---
+
 # Define It
 
 To define a new application:
