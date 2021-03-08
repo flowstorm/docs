@@ -1,7 +1,5 @@
 ---
-description: >-
-  Before sharing your app with the world, you must create the application
-  "object".
+description: 'Before sharing your app with the world, you must create it in Flowstorm.'
 ---
 
 # Define It
