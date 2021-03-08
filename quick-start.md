@@ -4,7 +4,7 @@ description: A quick introduction to the Flowstorm platform. Make your first ste
 
 # Quick Start Guide
 
-### How to sign up
+## How to sign up
 
 You must sign up if you are a new user who wants to try the platform for the first time.
 
@@ -12,12 +12,12 @@ You must sign up if you are a new user who wants to try the platform for the fir
 2. Click on “Sign Up” in the top right corner to open a sign-up form.
 3. Choose a preferred authentication provider \(Google, Apple, Facebook, Twitter, Slack\) or create an account using just your e-mail and a password.
 4. Check your inbox and click the confirmation link to approve that you are the owner of the address.
-5. After confirming the e-mail, Flowstorm will create your space.
+5. After confirming the e-mail, Flowstorm will create your _Space_.
 6. From now on, you can easily [log in](https://promethist.app/#!/login) anytime.
 
 Now you can invite collaborators or start designing your first dialogue and voice applications.
 
-### Overview of the Collaboration Process
+## Overview of the Collaboration Process
 
 * Sign-up \([Detailed page](app/sign-up.md)\)
 * [Invite your collaborators](app/space/#access) to your Space
@@ -27,7 +27,7 @@ Now you can invite collaborators or start designing your first dialogue and voic
 * Test the application as a whole
 * Publish and share the application
 
-### Collaboration – Space
+## Collaboration – Space
 
 Flowstorm is ready for collaborative design: developers will share dialogue models in the same “[Space](app/space/#access)”. The creator of the Space must invite the collaborators. In the main menu: Access → User Invitations: it will open a window to send the invitation to the collaborators’ e-mails. 
 
@@ -38,7 +38,7 @@ Flowstorm is ready for collaborative design: developers will share dialogue mode
 
 ![Modal window: User invitation](.gitbook/assets/image%20%2812%29.png)
 
-### How to start prototyping – open the Dialogue Designer
+## How to start prototyping – open the Dialogue Designer
 
 Open the **“Design” section in the top panel** and choose [**Dialogue Designer**](https://promethist.app/#!/space/dialogue) ****or just press the key **"d" as a keyboard shortcut**. You can start designing!
 
@@ -69,7 +69,7 @@ Flowstorm will save the dialogue, build it, and run it. You will have to name th
 
 ### Create an Advanced Dialogue Quickly
 
-### Use Snippets
+#### Use Snippets
 
 ![](https://lh5.googleusercontent.com/Tavn5P1Q105kN8lECBMdbQZbkhKEr4D3FKEU54tJmh0HSiS0UPXtpp54tTYktZrjiT-A1RA4IaoZSzvaTOOWq9yRek61xF3-xOsPFnS6I9kweNRkGV-yjKGHa8ZriL0XQFaSRR8C)
 
@@ -87,11 +87,11 @@ Note global intents execute these situations. We placed the Global intents in th
 
 You can edit the existing snippets via [Snippet designer](app/space/design/snippet-designer.md).
 
-### Subdialogues
+#### Subdialogues
 
 The platform allows breaking every dialog to sub-dialogues. Sub-dialogues help structure the whole application and allow multiple developers to cooperate on the same project. Think about a sub-dialog as a function in a programming language. You can call the sub-dialogs, and they return after completion. 
 
-#### When to use this feature?
+When to use this feature?
 
 * You need to collaborate with others in parallel. Each team member can work on a particular feature \(sub-dialog\).
 * Structure the dialog better. Divide a complex app into separated sub-dialogues.
