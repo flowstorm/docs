@@ -21,9 +21,9 @@ Author a complex VoiceFirst application with a simple drag & drop UI. Rely on pr
 
 The Flowstorm comes with built-in analytics. Analyze users' behavior and find problematic dialogs. Learn from the traffic. Enhance the performance of the app. Inspect the session details. Inspect the sessions, including confidence score. Tune the application.
 
-### Mobile, Desktop, VR... Build Once, Access Everywhere
+### Access Everywhere - Mobile, Desktop, VR...
 
-The platform provides integrations to **Alexa, Google Nest, iPhone, Android, WEB, Unreal Engine, POTS, and Twilio**. We also provide an open-source template to write custom integration to any device with a speaker and microphone. The Flowstorm also supports ASR and TTS from major providers \(Amazon, Google, Microsoft\).
+Just build once and access  The platform provides integrations to **Alexa, Google Nest, iPhone, Android, WEB, Unreal Engine, POTS, and Twilio**. We also provide an open-source template to write custom integration to any device with a speaker and microphone. The Flowstorm also supports ASR and TTS from major providers \(Amazon, Google, Microsoft\).
 
 ### Analytics - Understand Customers
 
