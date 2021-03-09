@@ -18,7 +18,7 @@ Why is designing multiple smaller dialogue models better than one large model? I
 2. In the right panel, **click on the grey box** \("Dialogue"\).
 3. **Choose the dialogue model** that you want to connect to the original model.
 
-   \(To open the selected model in a new tab, click on the blue box with a white arrow.\)
+   \(To open the selected model in a new tab, click on the blue-white arrowy button.\)
 
 4. Continue the flow by connecting a follow-up node.
 

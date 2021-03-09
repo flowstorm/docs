@@ -6,13 +6,13 @@ description: Unleash the power of spoken word!
 
 ## **Flowstorm is...**
 
-... a platform where _anyone_ can create, design, manage and analyze complex voice-first multimodal **conversational AI applications**. [Create your first app in a heartbeat](quick-start.md) and you'll be thrilled to [design more and more advanced AI personas](how-to/)!
+... a platform where _anyone_ can create, design, manage and analyze complex voice-first multimodal **conversational AI applications**. [Create your first app in a few minutes](quick-start.md) and you'll be thrilled to [design more and more advanced AI personas](how-to/)!
 
 {% embed url="https://www.youtube.com/watch?v=Tv8CQrJoeKI" %}
 
 ## Tell me more!
 
-The Flowstorm platform a set of SaaS development tools and software components. It has two major components: the [Web Application](app/welcome.md) and the [Core](core/about-project.md) open source project. Conversation designers and developers will use the web application provided at [app.flowstorm.ai](https://app.flowstorm.ai/) to design the dialogues, and administrators will use it to manage the applications. The Core contains all runtime components.
+The Flowstorm platform is a set of SaaS development tools and software components. It has two major components: the [Web Application](app/welcome.md) and the [Core](core/about-project.md) open source project. Conversation designers and developers will use the web application provided at [app.flowstorm.ai](https://app.flowstorm.ai/) to design the dialogues; administrators will use it to manage the applications. The Core contains all runtime components.
 
 The critical elements are the built-in Voice First development workflow and reusability. We guide the developer through all stages, from the dialogue draft to analytics. For fast application authoring, Flowstorm introduces the following reusable components: subdialogues, mixins, and snippets.
 
@@ -20,7 +20,7 @@ The principal components of a conversational application are dialogues, and the 
 
 The [Core](core/about-project.md) executes [dialogue models](model/dialogue-model-coding/building-blocks/dialogue-model.md). It can run in the cloud or on-premise. The internet-connected [platform clients](clients/introduction.md) use a selection of ASR and TTS \(Microsoft, Google, and Amazon\). The Core also collects the sessions to support analytics.
 
-We offer a variety of clients for mobile, web, Alexa, and Google Hub. We also provide a [standalone client](clients/standalone/) to voice-enable any hardware with a microphone and a speaker. "Flowstormers" have successfully designed clients for the in-car environment, virtual reality headsets, and other devices. 
+We offer a variety of clients for mobile, web, Alexa, and Google Hub. We also provide a [standalone client](clients/standalone/) to voice-enable any hardware with a microphone and a speaker. Flowstormers have successfully designed clients for the in-car environment, virtual reality headsets, and other devices. 
 
 ![](.gitbook/assets/image%20%287%29.png)
 

@@ -10,8 +10,11 @@ To define a new application:
 2. **Click on "+"** in the upper right corner of the screen.
 3. Type in the **name** \(you can change it anytime\) and the **description**.
 4. **Select the main dialogue**:
-   1. Click on the **grey box "Main Dialogue"**.
-   2. **Choose one of your dialogue models** from the list and click on Open.
+
+       a\) Click on the **grey box "Main Dialogue"**.
+
+       ****b\) **Choose one of your dialogue models** from the list and click on Open.
+
 5. If you want your app to be **public** \(visible in the Flowstorm mobile app\), tick the "Public" checkbox.
 6. If you want your app to be **runnable by end-users who are not logged in** with a Flowstorm account, tick the "Anonymous Access Allowed" checkbox.
 7. **Click on Save**. Your application will be created and it will be assigned an application ID.
