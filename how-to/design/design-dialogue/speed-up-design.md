@@ -33,7 +33,7 @@ If you _do_ want to modify the source snippet - or create a new one, use the [Sn
 
 Probably the most important structure is the "application main" snippet. It is intended for the main dialogue of an application \(where the app starts\) – it covers all the necessary actions and global intents and it is fully functional. It includes default reactions and 3 placeholder local intents.
 
-![Explanation of the &quot;Application-main\_EN&quot; snippet.](../../../.gitbook/assets/image%20%2871%29.png)
+![Explanation of the &quot;Application-main\_EN&quot; snippet \(03/2021\).](../../../.gitbook/assets/image%20%2871%29.png)
 
 ## Design your own reusable structure
 
