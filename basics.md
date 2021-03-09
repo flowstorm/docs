@@ -20,7 +20,7 @@ What happens when you're talking to someone? When they say something, your ears 
 * _**TTS**_ \(Text-To-Speech\) is the system's speech organ. It takes the written text and "reads it out loud", in a specific voice.
 * And, following this analogy, the whole architecture interconnecting all the other components would be like the _body_.
 
-It's important to keep this split in mind, especially when analyzing the mistakes of a bot. Problems may originate from any of these components. It's not always the fault of the brain – perhaps your partner just misheard what you said!
+It's important to keep this split in mind, especially when analyzing the mistakes of a bot. Problems may originate from any of these components. It's not always the fault of the brain - perhaps your partner just misheard what you said!
 
 ### **Conversations are based on the so-called "turn-taking principle".**
 
