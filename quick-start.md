@@ -105,18 +105,13 @@ Just explaining how to start the created dialog and how to observe in the window
 
 Once the first dialog works, you want to share it with testers. We need to create the application URL to send it over. The publication workflow goes like this: 
 
-* Create an application - In the top panel &gt; **Access &gt; Applications** &gt; Click the **plus button** **\(+\)** located in the **top right corner**
-
-![](.gitbook/assets/image%20%2811%29.png)
-
+* Create an application - In the top panel &gt; **Access &gt;** [**Applications**](https://app.flowstorm.ai/#!/space/applications) &gt; Click the **plus button** **\(+\)** located in the **top right corner** 
 * Name & Description - name and describe your application
 * Link the main dialogue to the application
 * Make the application anonymously accessible
 * Save
 * Test the Web Bot URL - click the “open in the new window” Arrow icon
 * Copy and share the link to the world
-
-Open Access section &gt; Applications
 
 Choose and test the existing application or 
 
@@ -125,6 +120,6 @@ Choose and test the existing application or
 
 ![](.gitbook/assets/image%20%2815%29.png)
 
-Check the “Allow anonymous access,” save the new properties, and now you can run the application here and finally **share the web bot URL** to the audience.  
+Check the “Allow anonymous access,” **save** the new properties, and now you can run the application here and finally **share the web bot URL** to the audience.  
 
 
