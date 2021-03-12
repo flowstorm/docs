@@ -4,5 +4,5 @@ If the main dialogue was a bus driver and subdialogues were passengers, then an 
 
 ![In case it wasn&apos;t clear enough.](../../.gitbook/assets/image%20%2873%29.png)
 
-How do you create it and along what roads can you send it to the world?
+How do you [create it](define-app.md) and along what roads can you [send it](share-app.md) to the world?
 
