@@ -168,6 +168,6 @@
 
 ## Organization
 
-* [Continuous Delivery Process](organization/continuous-delivery-process.md)
+* [Platform Continuous Delivery Process](organization/continuous-delivery-process.md)
 * [How to publish Core artifacts into Maven Central repository](organization/how-to-publish-core-artifacts-into-maven-central-repository.md)
 
