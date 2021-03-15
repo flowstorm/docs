@@ -91,7 +91,8 @@ related to predefined following _delivery_ stages:
         <ul>
           <li><b>In Progress</b>
           </li>
-          <li><b>On Hold</b> (can&apos;t continue, reaction/fix needed)</li>
+          <li><b>On Hold</b> = can&apos;t continue, reaction/update needed (see comments)</li>
+          <li><b>Fixed</b> = UX review done</li>
         </ul>
       </td>
       <td style="text-align:left">
