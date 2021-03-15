@@ -14,9 +14,9 @@ description: >-
 
 ## Platform issues and their stages
 
-### A. Out of delivery
+### A\) Out of delivery
 
-Such issues can be created by **any user of the Platform** and can have any of following _non-delivery_ states, which can be changed only by representatives of Platform team:
+Such issues can be created by **any user of the Flowstorm platform** and can have any of the following _non-delivery_ states, which can be changed only by representatives of the Platform team:
 
 * **Submitted** \(initial state of created issue\)
 * **Won't fix** \(terminal state of issue\)
@@ -24,19 +24,19 @@ Such issues can be created by **any user of the Platform** and can have any of f
 * **To be discussed** \(needs more information/specification\)
 * **Can't reproduce** \(temporary state - needs more information, otherwise we won't fix it\)
 
-Relevant issues are moved into Backlog as the initial stage _before delivery_ and change its state to **Open** automatically. Platform team prioritises issues when it's moving them forward from stage to stage and giving them work precedense inside every delivery stage applying following set of rules
+Relevant issues are moved into Backlog as the initial stage _before delivery_ and change its state to **Open** automatically. The platform team prioritizes issues when it's moving them forward from stage to stage and giving them work precedence inside every delivery stage applying the following set of rules:
 
-1. Bugs first
-2. Issues with more votes first \(except bugs having priority Critical or Show-stopper\)
-3. Higher priority takes precedense \(priority value is always confirmed by Team, not issue Reporter\)
+1. Bugs first.
+2. Issues with more votes first \(except bugs having priority Critical or Show-stopper\).
+3. Higher priority takes precedence \(priority value is always confirmed by Team, not issue Reporter\).
 
 #### Issue priority
 
 In general, only bugs can have priority Critical or Show-stopper. Other types of issues should use only priorities Major, Normal \(default\), Minor.
 
-### B.  Staged into delivery
+### B\) Staged into delivery
 
-Issues can be staged into delivery only be **members of Platform team** \(pavel.ducho@promethist.ai currently does that for issues created by non-members of Platform team\). They can have one of following _delivery_ states
+Issues can be staged into delivery only by **members of the Platform team** \(pavel.ducho@promethist.ai currently does that for issues created by non-members of the Platform team\). They can have one of the following _delivery_ states:
 
 * **Open**
 * **In Progress**
@@ -45,15 +45,107 @@ Issues can be staged into delivery only be **members of Platform team** \(pavel.
 
 related to predefined following _delivery_ stages:
 
-|  | Development | Reviewer | Done | Done |
-| :--- | :--- | :--- | :--- | :--- |
-| Description |  | Code review and user testing performed upon Merge Request | Code automatically deployed into **preview** environment after change request merged | Code deployed to **production** environment |
-| Responsible role | **Developer** | **Tech Reviewer**  **UX Reviewer** | **-** | **Senior member of TECH squad** |
-| Relevant state\(s\) | **Open** \(initial, set automatically by move from Backlog\) **In Progress** \(set by developer\) **On Hold** \(can't continue, reaction to comment needed\) | **In Progress** **On Hold** \(can't continue, reaction/fix needed\) | **Fixed** | **Fixed** |
-| Git reference | `APP-X-description` branch | Merge request from branch `APP-X-description` to `master` | `master` branch | `tag` on `master` branch |
-| Endpoint | Developer's `localhost` | `app-X.flowstorm.ai` | `app-preview.flowstorm.ai` | `app.flowstorm.ai` |
-| Database | develop | develop | production | production |
-| Namespace | - | X | preview | default |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"></th>
+      <th style="text-align:left">Development</th>
+      <th style="text-align:left">Review</th>
+      <th style="text-align:left">Done</th>
+      <th style="text-align:left">Done</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><em>Description</em>
+      </td>
+      <td style="text-align:left">Work on the issue</td>
+      <td style="text-align:left">Code review and user testing performed upon Merge Request</td>
+      <td style="text-align:left">Code automatically deployed into the <b>preview</b> environment after change
+        request merged</td>
+      <td style="text-align:left">Code deployed into the <b>production</b> environment</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><em>Responsible role</em>
+      </td>
+      <td style="text-align:left"><b>Developer</b>
+      </td>
+      <td style="text-align:left"><b>Tech Reviewer<br />UX Reviewer</b>
+      </td>
+      <td style="text-align:left"><b>-</b>
+      </td>
+      <td style="text-align:left"><b>Senior member of TECH squad</b>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><em>Relevant state(s)</em>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li><b>Open</b> (initial, set automatically by moving from Backlog)</li>
+          <li><b>In Progress</b> (set by developer)</li>
+          <li><b>On Hold</b> (can&apos;t continue, reaction to comment needed)</li>
+        </ul>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li><b>In Progress</b>
+          </li>
+          <li><b>On Hold</b> (can&apos;t continue, reaction/fix needed)</li>
+        </ul>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li><b>Fixed</b>
+          </li>
+        </ul>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li><b>Fixed</b>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><em>Git reference</em>
+      </td>
+      <td style="text-align:left"><code>APP-X-description</code> branch</td>
+      <td style="text-align:left">Merge request from branch <code>APP-X-description</code> to <code>master</code>
+      </td>
+      <td style="text-align:left"><code>master</code> branch</td>
+      <td style="text-align:left"><code>tag</code> on <code>master</code> branch</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><em>Endpoint</em>
+      </td>
+      <td style="text-align:left">Developer&apos;s <code>localhost</code>
+      </td>
+      <td style="text-align:left"><code>app-X.flowstorm.ai</code>
+      </td>
+      <td style="text-align:left"><code>app-preview.flowstorm.ai</code>
+      </td>
+      <td style="text-align:left"><code>app.flowstorm.ai</code>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><em>Database</em>
+      </td>
+      <td style="text-align:left">develop</td>
+      <td style="text-align:left">develop</td>
+      <td style="text-align:left">production</td>
+      <td style="text-align:left">production</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><em>Namespace</em>
+      </td>
+      <td style="text-align:left">-</td>
+      <td style="text-align:left">X</td>
+      <td style="text-align:left">preview</td>
+      <td style="text-align:left">default</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Changes related to Core project
 
