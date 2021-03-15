@@ -10,6 +10,8 @@ description: >-
 2. Clicking the [Sign Up](https://app.flowstorm.ai/#!/signup) in the top right corner to open a sign-up form  
 3. Choose a preferred authentication providers \(Google, Apple, Facebook, Twitter or Slack\) or create an account using a traditional e-mail & password.
 
+![](../.gitbook/assets/sign-up.jpg)
+
 ![](../.gitbook/assets/image%20%281%29.png)
 
 
