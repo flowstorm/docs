@@ -12,10 +12,6 @@ description: >-
 
 ![](../.gitbook/assets/sign-up.jpg)
 
-![](../.gitbook/assets/image%20%281%29.png)
-
-
-
 4. Check your e-mail and click the confirmation link to approve that you are the owner of the address.
 
 ![](../.gitbook/assets/image%20%282%29.png)
