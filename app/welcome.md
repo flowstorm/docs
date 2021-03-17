@@ -39,5 +39,5 @@ Context is the key to creating personalized and adaptive dialogs. We have introd
 
 ### Deploy Open Source Runtime On-Premise
 
-We provide open-source for the Core and a template for clients. The Core is the major runtime component. It can be installed in any cloud or on-premise. The client template is a starting point to write integrations for any device.
+We provide open-source for the Core and a template for clients. The **Core** is the **major runtime component**. It can be installed in any cloud or on-premise. The client template is a starting point to write integrations for any device.
 
