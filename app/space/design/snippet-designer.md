@@ -19,7 +19,7 @@ The snippet designer can help you. Prototype a node structure = snippet once and
 
 Created snippets can be placed **into the graph** in Dialogue designer via **drag&drop** feature from the snippet pallete when you are editing the dialogue.
 
-![](../../../.gitbook/assets/image%20%2850%29.png)
+![](../../../.gitbook/assets/screen-recording-2021-03-19-at-15.59.00.gif)
 
-![](image1.png)
+
 
