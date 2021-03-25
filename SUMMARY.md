@@ -54,6 +54,7 @@
 * [User Settings](app/user-settings.md)
 * [Account Management](app/account-management.md)
 * [Keyboard Shortcuts](app/keyboard-shortcuts.md)
+* [Platform assistant](app/platform-assistant.md)
 
 ## Clients and Channels <a id="clients"></a>
 
