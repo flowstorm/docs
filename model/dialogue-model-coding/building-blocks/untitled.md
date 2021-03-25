@@ -1,6 +1,4 @@
-# Untitled
-
-## Node Types
+# Node Types
 
 ### Speech  <a id="speech"></a>
 
