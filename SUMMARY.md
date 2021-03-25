@@ -98,7 +98,7 @@
 * [Dialogue Design](model/dialogue-model-coding/README.md)
   * [Building Blocks](model/dialogue-model-coding/building-blocks/README.md)
     * [Dialogue Model](model/dialogue-model-coding/building-blocks/dialogue-model.md)
-    * [Node Types](model/dialogue-model-coding/building-blocks/untitled.md)
+    * [Node Types](model/dialogue-model-coding/building-blocks/node-types.md)
     * [Mixins](model/dialogue-model-coding/building-blocks/mixins.md)
     * [Snippets](model/dialogue-model-coding/building-blocks/snippets.md)
     * [File Assets](model/dialogue-model-coding/building-blocks/file-assets.md)
