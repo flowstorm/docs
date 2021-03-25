@@ -29,11 +29,11 @@ A tabs reflect the statuses and changes of the dialogue models.
   * **Built - checkmark** next to the title
   * **Not edited** - title is not in **bold font**
 
-![Editor in the view mode](../../../.gitbook/assets/image%20%2877%29.png)
+![Editor in the view mode](../../../.gitbook/assets/image%20%2878%29.png)
 
 Compare the edit mode in the picture below
 
-![Editor in the edit mode](../../../.gitbook/assets/image%20%2878%29.png)
+![Editor in the edit mode](../../../.gitbook/assets/image%20%2879%29.png)
 
 ### Basic controls  <a id="basic-controls"></a>
 
