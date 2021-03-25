@@ -88,7 +88,6 @@ If someone else left the window with editor open this is the screen where you ca
 
 ![](../../../.gitbook/assets/image%20%2823%29.png)
 
+### Related articles
 
-
-
-
+* 
