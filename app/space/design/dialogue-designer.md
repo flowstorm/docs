@@ -12,6 +12,10 @@ To get into Dialogue Designer, click on **Design** item in the top menu and choo
 
 You can **open** as many **models for editing** \(or observing\) as you want in paralel. Anytime you create or open a new dialogue model you will get a **new tab** with a new **independent editor**.
 
+### Graphic User Interface
+
+The **Graph** view provides you with the powerful user interface that allows model creating & editing. Elements can be added and organized by drag & drop interface. The right panel allows you to fill the content, code \(where applicable\) and/or set the node preferences like Label, Name, references to Mixins and Entities.
+
 ### Tabs - Editors
 
 In the following picture you can see the admin with two editors opened.
@@ -90,4 +94,12 @@ If someone else left the window with editor open this is the screen where you ca
 
 ### Related articles
 
-* 
+* [Dialogue Model](../../../model/dialogue-model-coding/building-blocks/dialogue-model.md)
+* [Node Types](../../../model/dialogue-model-coding/building-blocks/node-types.md)
+* [Dialogue Mixins](dialogue-mixin.md)
+* [Snippets](../../../model/dialogue-model-coding/building-blocks/snippets.md)
+* [File Assets](file-assets.md)
+* [Voices](voices.md)
+* [Applications](../../../model/dialogue-model-coding/building-blocks/applications.md)
+* [Personas](../../../model/dialogue-model-coding/building-blocks/personas.md)
+
