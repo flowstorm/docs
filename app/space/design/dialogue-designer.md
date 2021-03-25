@@ -4,19 +4,36 @@ description: 'The dialogue designer allows us to create, edit and publish dialog
 
 # Dialogue Designer
 
+The Flowstorm editor is a tool which serves for creating, saving and building the dialogue models. It is available at [https://app.flowstorm.ai](https://app.flowstorm.ai). 
+
 {% hint style="info" %}
 To get into Dialogue Designer, click on **Design** item in the top menu and choose **Dialogue Designer** or just press key **"d"** as a **keyboard shortcut**.
 {% endhint %}
 
-You can open as many models for editing \(or observing\) as you want in paralel. Anytime you create or open a new dialogue model you will get a **new tab** with a new **independent editor**.
+You can **open** as many **models for editing** \(or observing\) as you want in paralel. Anytime you create or open a new dialogue model you will get a **new tab** with a new **independent editor**.
 
-![](../../../.gitbook/assets/image%20%2844%29.png)
+### Tabs - Editors
 
-Open the **Design section in the top panel** and choose [**Dialogue Designer**](https://promethist.app/#!/space/dialogue) or just press key **"d" as a keyboard shortcut** and you can start prototyping.
+In the following picture you can see the admin with two editors opened.
 
-The Flowstorm editor is a tool which serves for creating, saving and building the dialogue models. It is available at [https://app.flowstorm.ai](https://app.flowstorm.ai). 
+{% hint style="info" %}
+A tabs reflect the statuses and changes of the dialogue models.
+{% endhint %}
 
-In the main editing area, the designer creates the dialogue tree by dragging nodes there from the palette, linking them and filling them with text. Images and text or JSON files can be added in the other tabs in the left column. The model can be saved, loaded or uploaded to the system using the “Model“ menu. In the “Testing“ menu, you can test the model in a web client or create a link to the model for sharing. In QA and Functions tab, you can add aspects to the model.
+* **The first one** \(habits/relax\)
+  * **Active tab** - white background
+  * **Edited** - title is in **bold font**
+  * **User is not editing now** - the **edit icon** on the left is **inactive** & the **grid** behind the canvas is hidden
+  * **Not built** yet - missing checkmark
+* **The second one** \(pre-example/example\)
+  * **Built - checkmark** next to the title
+  * **Not edited** - title is not in **bold font**
+
+![Editor in the view mode](../../../.gitbook/assets/image%20%2877%29.png)
+
+Compare the edit mode in the picture below
+
+![Editor in the edit mode](../../../.gitbook/assets/image%20%2878%29.png)
 
 ### Basic controls  <a id="basic-controls"></a>
 
