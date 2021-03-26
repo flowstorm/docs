@@ -37,7 +37,7 @@ Let's have an application linked to the _**main dialogue**_ including _several *
 * user talking to the application wants to end the whole conversation
 * user went through the whole subdialogue and we want to allow him to jump back to the main dialogue
 
-The following example shows how the main dialogue for Lucid Lindia references the dialogue related to the music \(and many more topics\).
+The following example shows how the main dialogue for Lucid Lindia references the dialogue related to the music \(and many more topics\). After the discussion about music and reaching the exit node the conversation continues in the main dialogue.
 
 ![](../../../.gitbook/assets/subdialogue-nodes-4.png)
 
