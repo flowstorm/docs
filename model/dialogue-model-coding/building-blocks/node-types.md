@@ -84,6 +84,8 @@ What actions to cover on the global level?
 Save your time and use the prepared [snippet](snippets.md) _Global actions required_.
 {% endhint %}
 
+![](../../../.gitbook/assets/screenshot-from-2021-03-26-11-54-27.png)
+
 ### Go Back <a id="go-back"></a>
 
 A Go Back node follows typically after the \(global\) action + speech. See the [example for the global actions](node-types.md#global-action).
