@@ -1,5 +1,13 @@
 # Node Types
 
+All the node types are the following
+
+### Enter & Exit
+
+The principle is simple - when you want to talk to the conversational platform you must **enter** and **exit** each conversation. Entering the conversation is always through the **Enter** node. 
+
+Leaving the conversation 
+
 ### Speech  <a id="speech"></a>
 
 The text in the node will be sent to the Text To Speech converting the text to voice. 
@@ -44,21 +52,19 @@ This node can also be filled with code similarly to Function node.
 
 The node serves for adding a connection to a different dialogue model. Headline is the name of the subdialogue - must be valid existing dialogue in the system. Does not need to be unique \(same subdialogue can be called from different branches of the main dialogue\). Once the subdialogue finishes \(with StopDialogue node - see below\), the main dialogue continues with the branch linked to the lower port of this node.
 
-### Global Action  <a id="global-action"></a>
+### Action \(local\) <a id="action-(local)"></a>
 
-### Action \(local\)  <a id="action-(local)"></a>
+### Global Action  <a id="global-action"></a>
 
 ### Command  <a id="command"></a>
 
-### Image  <a id="image"></a>
+### Image <a id="image"></a>
+
+### Sound
 
 ### Enter  <a id="enter"></a>
 
 ### Go Back  <a id="go-back"></a>
 
-### Sleep  <a id="sleep"></a>
-
-### Exit  <a id="exit"></a>
-
-### End [\#](https://promethist.myjetbrains.com/youtrack/articles/APP-A-11/Node-Types#end) <a id="end"></a>
+###  <a id="sleep"></a>
 
