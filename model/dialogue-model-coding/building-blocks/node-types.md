@@ -1,3 +1,9 @@
+---
+description: >-
+  A dialogue model consists of nodes representing different steps in the
+  conversation.
+---
+
 # Node Types
 
 All the node types are the following
@@ -6,7 +12,11 @@ All the node types are the following
 
 The principle is simple - when you want to talk to the conversational platform you must **enter** and **exit** each conversation. Entering the conversation is always through the **Enter** node. 
 
-Leaving the conversation 
+Leaving the conversation - Exit, End, Sleep
+
+Sleep
+
+User can leave the conversation and come back.
 
 ### Speech  <a id="speech"></a>
 
