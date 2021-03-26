@@ -39,7 +39,7 @@ Let's have an application linked to the _**main dialogue**_ including _several *
 
 The following example shows how the main dialogue for Lucid Lindia references the dialogue related to the music \(and many more topics\).
 
-![](../../../.gitbook/assets/subdialogue-nodes.png)
+![](../../../.gitbook/assets/subdialogue-nodes-4.png)
 
 ## Subdialogue
 
