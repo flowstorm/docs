@@ -39,6 +39,10 @@ Let's have an application linked to the _**main dialogue**_ including _several *
 
 The following example shows how the main dialogue for Lucid Lindia references the dialogue related to the music \(and many more topics\). After the discussion about music and reaching the exit node the conversation continues in the main dialogue.
 
+* Entering the Subdialogue node Music activates the dialogue music/main we jump into this independent dialogue
+* A conversation goes from **Enter** to **Exit**
+* We jump back to the main dialogue and the conversation continues by Speech6.
+
 ![](../../../.gitbook/assets/subdialogue-nodes-4.png)
 
 ## Subdialogue
@@ -48,6 +52,8 @@ The independent dialogue model but used in the bigger application typically refe
 Hierarchy
 
 Subdialogue can include another subdialogue.
+
+
 
 ## Speech 
 
