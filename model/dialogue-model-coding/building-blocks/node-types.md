@@ -20,15 +20,15 @@ In our conversational platform entering the conversation is always through the *
 
 In a specific part of the conversation you might want to allow user to come back and continue. Use **Sleep node** in such situation. The conversation will be sleeping/waiting for an hour by default or you can specify how many minutes you want to left the conversation in sleep mode before the final termination.
 
-Use the end node for the exact end of the conversation and exit for the common dialogues. 
+Use the end node for the final end of the conversation. 
 
 When the application contains just one \(main\) dialogue then you can't recognize the difference between the exit and end nodes. But when using the subdialogues the situation becomes complex.
 
-End the Conversation
+### End the Conversation
 
 The End node terminates the **session** and that means the **conversation** with the user at any point.
 
-Exit the Dialogue Model
+### Exit the Dialogue Model
 
 Exiting the dialogue model means that the model represented by the graph and its logic behind is terminated but when the dialogue is used as a subdialogue in other dialogue than the conversation \(session\) continues. To be more clear let's have a look at the example.
 
@@ -77,9 +77,15 @@ This node can also be filled with code similarly to Function node.
 | :--- | :--- | :--- |
 | Disable global intents | boolean | If true, global intents will be disregarded when deciding the next state |
 
-### Image <a id="image"></a>
+### Image & Sound <a id="image"></a>
 
-### Sound
+Drag & drop an image or a sound from pane into your graph. 
+
+1. Upload files to your Space
+2. Open the multimedia tab \(assets\) in the dialogue designer
+3. Insert a file into a dialogue \(drag&drop\)
+
+For the step-by-step guide got to [Add Sounds and Images](../../../how-to/design/multimedia.md).
 
 ### Action \(local\) <a id="action-(local)"></a>
 
