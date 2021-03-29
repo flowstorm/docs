@@ -4,12 +4,6 @@
 * [Basics](basics.md)
 * [Quick Start Guide](quick-start.md)
 * [Video Tutorials](video-tutorials.md)
-* [Tips](tips/README.md)
-  * [What is conversational UX](tips/cux.md)
-  * [Principles of conversation design](tips/principles.md)
-  * [How to Structure an Interaction](tips/interaction-structure.md)
-  * [Good and Bad Formulations](tips/formulations.md)
-* [FAQ](faq.md)
 
 ## How To
 
@@ -37,6 +31,12 @@
     * [React to the current situation](how-to/design/context/situation-context.md)
   * [Add Sounds and Images](how-to/design/multimedia.md)
   * [Design more complex logic](how-to/design/complex-functionality.md)
+* [Tips](how-to/tips/README.md)
+  * [What is conversational UX](how-to/tips/cux.md)
+  * [Principles of conversation design](how-to/tips/principles.md)
+  * [How to Structure an Interaction](how-to/tips/interaction-structure.md)
+  * [Good and Bad Formulations](how-to/tips/formulations.md)
+* [FAQ](how-to/faq.md)
 
 ## Flowstorm.app <a id="app"></a>
 

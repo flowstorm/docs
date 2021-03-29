@@ -30,7 +30,7 @@ If you know that you will want to **run the model immediately after the build, j
 When the build fails, it means that there is something wrong with your dialogue model. What to do?
 
 1. Inspect thoroughly the **Build log**, which shows the problems that the system has encountered.
-2. If that doesn't help, check if your problem is covered in our [**FAQ**](../../faq.md).
+2. If that doesn't help, check if your problem is covered in our [**FAQ**](../faq.md).
 3. If you still have no idea what's gone wrong, refer to our **support**.
 
 ## Run the model
