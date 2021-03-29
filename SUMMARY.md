@@ -41,7 +41,6 @@
 
 ## Flowstorm App <a id="app"></a>
 
-* [About Application](app/welcome.md)
 * [Working Space](app/space/README.md)
   * [Home Dashboard](app/space/home.md)
   * [Interaction Design](app/space/design/README.md)
