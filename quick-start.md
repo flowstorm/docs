@@ -19,7 +19,7 @@ Now you can invite collaborators or start designing your first dialogue and voic
 
 ## Overview of the Collaboration Process
 
-* Sign-up \([Detailed page](app/sign-up.md)\)
+* Sign-up \([Detailed page](how-to/sign-up.md)\)
 * [Invite your collaborators](app/space/#access) to your Space
 * Come up with a concept of the application \([Basic Concepts](model/dialogue-model-coding/basic-use-cases/) x [Advanced Concepts](model/dialogue-model-coding/advanced-concepts/)\)
 * Divide the concept into smaller parts \(main dialogue + [subdialogues](model/dialogue-model-coding/basic-use-cases/sub-dialogues.md)\)

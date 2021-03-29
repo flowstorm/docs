@@ -7,6 +7,7 @@
 
 ## How To
 
+* [How to Sign Up & Login](how-to/sign-up.md)
 * [Design a Dialogue](how-to/design/README.md)
   * [Introduction](how-to/design/introduction.md)
   * [Create a Dialogue Model](how-to/design/create-dialogue.md)
@@ -41,8 +42,6 @@
 ## Flowstorm.app <a id="app"></a>
 
 * [About Application](app/welcome.md)
-* [How to Sign Up](app/sign-up.md)
-* [How to Log In](app/log-in.md)
 * [Working Space](app/space/README.md)
   * [Home Dashboard](app/space/home.md)
   * [Interaction Design](app/space/design/README.md)

@@ -4,7 +4,9 @@ description: >-
   time.
 ---
 
-# How to Sign Up
+# How to Sign Up & Login
+
+## Sign Up
 
 1. Open [https://app.flowstorm.ai](https://app.flowstorm.ai)  
 2. Clicking the [Sign Up](https://app.flowstorm.ai/#!/signup) in the top right corner to open a sign-up form  
@@ -17,4 +19,13 @@ description: >-
 ![](../.gitbook/assets/image%20%282%29.png)
 
 5. After confirming the e-mail you can click "Back to Promethist.app" and [**log in to access**](https://app.flowstorm.ai/#!/login) the platform and start designing your first dialogue \(voice application\).
+
+## Log In
+
+Open [https://app.flowstorm.ai/\#!/login](https://app.flowstorm.ai/#!/login) and you will be provided by the **login form**.  
+2. Dependent on what you haven **chosen during the Sign Up** process use the **authentication provider** \(Google, Apple, Facebook, Twitter or Slack\) **or e-mail & password**.
+
+![](../.gitbook/assets/image%20%284%29.png)
+
+3. After successful login you will be directed to the [Home dashboard](https://app.flowstorm.ai/#!/space).
 
