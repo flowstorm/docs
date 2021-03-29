@@ -39,7 +39,7 @@
   * [Good and Bad Formulations](how-to/tips/formulations.md)
 * [FAQ](how-to/faq.md)
 
-## Flowstorm.app <a id="app"></a>
+## Flowstorm App <a id="app"></a>
 
 * [About Application](app/welcome.md)
 * [Working Space](app/space/README.md)
