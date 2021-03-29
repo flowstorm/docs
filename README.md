@@ -6,7 +6,7 @@ description: Unleash the power of spoken word!
 
 ## **Flowstorm is...**
 
-... a platform where _anyone_ can create, design, manage and analyze complex voice-first multimodal **conversational AI applications**. [Create your first app in a few minutes](quick-start.md) and you'll be thrilled to [design more and more advanced AI personas](how-to/)!
+... a platform where _anyone_ can create, design, manage and analyze complex voice-first multimodal **conversational AI applications**. [Create your first app in a few minutes](quick-start.md) and you'll be thrilled to [design more and more advanced AI personas]()!
 
 {% embed url="https://www.youtube.com/watch?v=Tv8CQrJoeKI" %}
 
