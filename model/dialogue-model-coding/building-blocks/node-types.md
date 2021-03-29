@@ -50,17 +50,11 @@ The following example shows how the main dialogue for Lucid Lindia references th
 
 ## Subdialogue
 
-## Subdialogue
-
 The independent dialogue model but used in the bigger application typically referenced in the main dialogue linked to the application. 
 
-Hierarchy
+### Hierarchy
 
 Subdialogue can include another subdialogue.
-
-
-
-
 
 ## Speech 
 
