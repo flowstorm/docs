@@ -7,11 +7,6 @@
 
 ## How To
 
-* [Collaborate with other Designers](how-to/collaborate.md)
-* [Analyze Your Traffic](how-to/analytics.md)
-* [Create an Application](how-to/applications/README.md)
-  * [Define It](how-to/applications/define-app.md)
-  * [Share It](how-to/applications/share-app.md)
 * [Design a Dialogue](how-to/design/README.md)
   * [Introduction](how-to/design/introduction.md)
   * [Create a Dialogue Model](how-to/design/create-dialogue.md)
@@ -31,6 +26,11 @@
     * [React to the current situation](how-to/design/context/situation-context.md)
   * [Add Sounds and Images](how-to/design/multimedia.md)
   * [Design more complex logic](how-to/design/complex-functionality.md)
+* [Create an Application](how-to/applications/README.md)
+  * [Define It](how-to/applications/define-app.md)
+  * [Share It](how-to/applications/share-app.md)
+* [Analyze Your Traffic](how-to/analytics.md)
+* [Collaborate with other Designers](how-to/collaborate.md)
 * [Tips](how-to/tips/README.md)
   * [What is conversational UX](how-to/tips/cux.md)
   * [Principles of conversation design](how-to/tips/principles.md)
