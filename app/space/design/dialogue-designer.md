@@ -47,9 +47,18 @@ Main area/canvas can be dragged by clicking and moving a mouse or zoomed by hold
 
 #### Graph - Main editing area and palette  <a id="graph---main-editing-area-and-palette"></a>
 
-The dialogue trees are created by dragging node from the palette to the main editing area and connecting them. The nodes without pre-filled utterances need to be edited. This is done by clicking the node whose contents then appear on the right in the text editor and the designer can update them. Headline of a node can be edited by double clicking it \(text editor is not involved\).
+A **dialogue graph** is created by dragging node \(or a group of nodes\) from the palette on the left to the main editing area. 
 
-Links can be created by holding a mouse over a port \(small circle visible when putting the mouse cursor over a node\) and dragging the link to another port. Links can only be created from a bottom or side \(in case of function node\) port to a top port.
+Transitions between nodes can be created by holding a mouse over a port \(small squeare visible when putting the mouse cursor over a node\) and dragging the link to another port.
+
+![](../../../.gitbook/assets/drag-and-drop%20%284%29.gif)
+
+Would you like to know how to create a complex and/or a robust dialogue? See articles in the categories reflecting the process of the application creation and maintenance
+
+* [Design a Dialogue](../../../how-to/design/)
+* [Create an Application](../../../how-to/applications/)
+* [Analyze Your Traffic](../../../how-to/analytics.md)
+* [Collaborate with other Designers](../../../how-to/collaborate.md)
 
 #### Code  <a id="code"></a>
 
