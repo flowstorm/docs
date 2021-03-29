@@ -66,6 +66,8 @@ In this tab, you can implement the code that will be run before starting the con
 
 ![](../../../.gitbook/assets/image%20%2820%29.png)
 
+More about [DialogueScript](../../../model/dialoguescript/)
+
 #### Properties  <a id="properties"></a>
 
 Configure the dialogue settings typically voice used for the dialogue pronunciation - choose Language and one of the Voices available in the prefered language.
