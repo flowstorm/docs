@@ -1,8 +1,8 @@
 ---
 description: >-
   The application running at https://app.flowstorm.ai is a platform as a service
-  (PaaS) allowing you to easily create personas (voice applications) for any
-  purpose you might need.
+  (PaaS) allowing you to easily create voice applications with digital personas
+  for any purpose you might need.
 ---
 
 # What is Flowstorm
