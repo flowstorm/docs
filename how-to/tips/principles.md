@@ -34,7 +34,7 @@ If possible, design dialogues that can **adapt** on all levels \(see point I.\) 
 
 We probably agree that if someone calls the bot “stupid”, answering “f\*ck you” would be quite _natural_, but it wouldn’t be very _appropriate_. Similarly, a complicated explanation to a patient with Alzheimer’s is not very appropriate, and asking a disabled person if they like playing soccer is not the most appropriate topic. This can also relate to prosodic features or dialogue management.
 
-### IV. KISS  <a id="iv.-kiss"></a>
+### IV. K.I.S.S.  <a id="iv.-kiss"></a>
 
 **K**eep **I**t **S**hort and **S**imple. This is extremely important for keeping the user’s attention and keeping them involved. The more interactive the dialogue, the better!
 
