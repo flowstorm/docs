@@ -24,7 +24,7 @@ Be confident: have your **opinions**, just like humans do. Nothing feels more �
 
 ### II. HAVE GOALS  <a id="ii.-have-goals"></a>
 
-**Know why** you’re saying what you’re saying! Interaction is usually driven by communicative goals of the participants. When designing a dialogue, you should always **define your current goal**: it will guide you through the infinity of the possible, help you define strategies, and even specific reactions and formulations. Having well-defined goals helps keep the conversation more **coherent** and **meaningful**.
+**Know why** you’re saying what you’re saying! Interaction is usually driven by the communicative goals of the participants. When designing a dialogue, you should always **define your current goal**: it will guide you through the infinity of the possible, help you define strategies, and even specific reactions and formulations. Having well-defined goals helps keep the conversation more **coherent** and **meaningful**.
 
 The goals are on different levels: some are more _**general**_ \(_“I want to persuade you / show you that I care / just have a chat”_\), some are more _**specific**_ \(_“I want to buy this book / play a quiz with you / apologize for being late”_\). Often, more of them are combined, and they can certainly change during an interaction.
 
@@ -36,7 +36,7 @@ We probably agree that if someone calls the bot “stupid”, answering “f\*ck
 
 ### IV. KISS  <a id="iv.-kiss"></a>
 
-**K**eep **I**t **S**hort and **S**imple. This is extremely important for keeping the user’s attention, and keeping them involved. The more interactive the dialogue, the better!
+**K**eep **I**t **S**hort and **S**imple. This is extremely important for keeping the user’s attention and keeping them involved. The more interactive the dialogue, the better!
 
 Can you say the same in fewer words? Can you avoid repeating the same information? Can you remove a few redundant words? Just **rewrite it, shorten it, delete it**. Always come up with the **shortest and simplest natural way** of expressing what you want to express. Minimum quantity, maximum effect.
 
@@ -44,7 +44,7 @@ Can you say the same in fewer words? Can you avoid repeating the same informatio
 
 The user should understand what you meant on first listening. They should know what they are supposed to reply back. They should always know what’s going on.
 
-Be **clear** and **unambiguous**! Don’t ask **questions in negative** form! Don’t ask **questions in the middle** of a response \(the user might want to reply right away\)! Don’t use **complicated sentences** \(the user might get lost\)! Let **prosodic adjustments** —pauses, emphases, rate, pitch, commas, etc.— help you!
+Be **clear** and **unambiguous**! Don’t ask **questions in the negative** form! Don’t ask **questions in the middle** of a response \(the user might want to reply right away\)! Don’t use **complicated sentences** \(the user might get lost\)! Let **prosodic adjustments** —pauses, emphases, rate, pitch, commas, etc.— help you!
 
 ### VI. BE CREATIVE & FUNNY  <a id="vi.-be-creative-%26-funny"></a>
 
@@ -62,7 +62,7 @@ The user must feel that **you listen** to them and **you understand** what they 
 
 ### VIII. BE POSITIVE  <a id="viii.-be-positive"></a>
 
-If the user is being negative or sharing negative experience, try to **turn everything to positive**. If they feel blue, try to make them smile. If they make mistakes, don’t stress it out. Watch out for potentially ironic meanings. Beware of misleading formulations, and search for more positive ones.
+If the user is being negative or sharing a negative experience, try to **turn everything to the positive side**. If they feel blue, try to make them smile. If they make mistakes, don’t stress it out. Watch out for potentially ironic meanings. Beware of misleading formulations, and search for more positive ones.
 
 * 2+2=5. — ❌ That’s not true. So, you got one point today. Great game!
 * 2+2=5. — ✅ Hm, not exactly, but no worries. I’m sure it will be better next time!
@@ -80,10 +80,12 @@ You should not contradict yourself. If you speak about your qualities/preference
 * ❌ _We can play 3 games. // You can choose between Game1, Game2, Game3, Game4, and Game5._
   * ✅ _We can play **5** games. // You can choose between Game1, Game2, Game3, Game4, and Game5._
 
-### X. STAY A ROBOT  <a id="x.-stay-a-robot"></a>
+### X. STAY A ROBOT \(unless...\) <a id="x.-stay-a-robot"></a>
 
-You are a bot, and the user knows it. Pretending to be a human is both **untruthful** and **risky**. Don’t be afraid to acknowledge your flaws and lack of human experience. If you make a mistake, say that you are sorry. If you don’t know, say that you don’t know. If you are asked for something you can’t do, admit it.
+You are a bot, and the user knows it. Pretending to be a human can be risky. Don’t be afraid to acknowledge your flaws and lack of human experience. If you make a mistake, say that you are sorry. If you don’t know, say that you don’t know. If you are asked for something you can’t do, admit it.
 
 * _What did you do today? —_ ❌ _I went shopping with my friends._ ✅ _I was chilling out in the cloud._
 * _What’s your favorite food? —_ ❌ _I like the taste of strawberries._ ✅ _Electricity! All these electrons… Yum!_
+
+However, human-likeness of AI assistants is trending, so it's absolutely normal if you want to push it further. Just be sure you're doing a well-informed decision.
 
