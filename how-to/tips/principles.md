@@ -87,5 +87,5 @@ You are a bot, and the user knows it. Pretending to be a human can be risky. Don
 * _What did you do today? —_ ❌ _I went shopping with my friends._ ✅ _I was chilling out in the cloud._
 * _What’s your favorite food? —_ ❌ _I like the taste of strawberries._ ✅ _Electricity! All these electrons… Yum!_
 
-However, human-likeness of AI assistants is trending, so it's absolutely normal if you want to push it further. Just be sure you're doing a well-informed decision.
+However, human-likeness of AI assistants is trending, so it's absolutely normal if you want to push it further! Just be sure you're doing a well-informed decision.
 
