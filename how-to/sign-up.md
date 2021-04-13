@@ -4,7 +4,7 @@ description: >-
   time.
 ---
 
-# How to Sign Up & Login
+# Sign Up & Login
 
 ## Sign Up
 
