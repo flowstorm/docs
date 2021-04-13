@@ -33,7 +33,7 @@ This means that the bot and the user _take turns_ in saying stuff. Each line ent
 * _The bot stops listening, analyzes the response, then says something, and then starts listening._
 * etc.
 
-Most current voice systems work with the so-called _half-duplex_ \(_semiduplex_\) mode: the bot is either speaking or listening, usually signaling somehow the transition between the states. Another listening mode is the _full-duplex_: the bot is listening to you even while it is speaking, so you can barge in just by starting talking. Full-duplex can be used also on certain clients in Flowstorm.
+Most current voice systems work with the so-called _half-duplex_ \(_semiduplex_\) mode: the bot is either speaking or listening, usually signaling somehow the transition between the states. Another listening mode is the _full-duplex_: the bot is listening to you even while it is speaking, so you can barge in just by starting talking. Full-duplex can be used also on certain devices that run Flowstorm apps.
 
 ### The interaction can be multimodal. 
 
