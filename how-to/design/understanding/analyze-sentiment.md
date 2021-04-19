@@ -7,11 +7,6 @@ description: >-
 
 # Analyze Sentiment
 
-{% hint style="danger" %}
-**This feature is not in production yet! But it's coming soon...  
-Read here what you can look forward to.**
-{% endhint %}
-
 Imagine you would like to branch the flow based on what memories the user has of their hometown. More specifically, you don't care about what the memories are precisely about. You would just like to continue the "positive" flow if they have positive memories, the "sad" flow if they have negative memories, or the "neutral" flow if they don't have any particularly strong negative nor positive memories. For this purpose, you can use **sentiment analysis**.
 
 Sentiment analysis classifies text into three categories: **positive**, **neutral**, and **negative**. We can use those categories to branch the dialogue flow.
