@@ -77,7 +77,7 @@ Always check for unintended "empty" variants! For example, an empty line also co
 {% endhint %}
 
 {% hint style="info" %}
-These tactics are just one simple way of achieving flexible speaking abilities. We will talk about other more sophisticated tools [here](../speaking.md).
+These tactics are just one simple way of achieving flexible speaking abilities. We will talk about other more sophisticated tools [here]().
 {% endhint %}
 
 ## Listen and understand
@@ -101,7 +101,7 @@ So, to your User Input node, connect as many _**Intents**_ as you want the bot t
 
 {% hint style="info" %}
 **How many example phrases should you type in?**  
-It's not about sheer quantity. To best represent the semantic range, try to think of different formulations and synonymic expressions, rather than to list a lot of nearly identical sentences. We will talk about this more in detail in [another article](../understanding/).
+It's not about sheer quantity. To best represent the semantic range, try to think of different formulations and synonymic expressions, rather than to list a lot of nearly identical sentences. We will talk about this more in detail in [another article]().
 {% endhint %}
 
 ![](../../../.gitbook/assets/intents-with-bar.gif)
@@ -123,12 +123,12 @@ The following gif shows how to do it:
 ![](../../../.gitbook/assets/intents212.gif)
 
 {% hint style="warning" %}
-There are some **global intents that you should never forget** to include in your application, like "stop", "repeat", or "help". We will talk about them [here](../robustness.md).
+There are some **global intents that you should never forget** to include in your application, like "stop", "repeat", or "help". We will talk about them [here]().
 {% endhint %}
 
 ## Remember, recall, make decisions, search for information...
 
-We will talk about these advanced abilities in other sections \([Work with context](../context/), [Design more complex logic](../complex-functionality.md)\).
+We will talk about these advanced abilities in other sections \([Work with context](), [Design more complex logic]()\).
 
 Spoiler: to complete such tasks, you will use primarily the **Function** node. It might seem almost frightening – such a powerful node! But believe us, it will eventually become one of your best node friends.
 

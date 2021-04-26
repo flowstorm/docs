@@ -10,7 +10,7 @@ description: >-
 Why is designing multiple smaller dialogue models better than one large model? Interconnecting models ensures:
 
 * a **better orientation** in the whole structure \(a group of nodes will be represented by a single node\);
-* the independence of the models: multiple [conversation designers](../collaborate.md) can **collaborate simultaneously**, each one working on a different model.
+* the independence of the models: multiple [conversation designers]() can **collaborate simultaneously**, each one working on a different model.
 
 ## Link a dialogue to another dialogue
 

@@ -2,7 +2,12 @@
 description: The "decalogue" of a conversation designer.
 ---
 
-# Principles of conversation design
+# Principles of CxD
+
+{% hint style="info" %}
+**What is CxD?**  
+CxD is a widely used abbreviation for "conversation design".
+{% endhint %}
 
 To design a well-functioning conversational application, we must follow certain rules that help us achieve **the best possible user experience**. We like to call the following rules **"The Decalogue"**.
 

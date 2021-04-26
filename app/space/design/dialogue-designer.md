@@ -57,8 +57,8 @@ Would you like to know how to create a complex and/or a robust dialogue? See art
 
 * [Design a Dialogue](../../../how-to/design/)
 * [Create an Application](../../../how-to/applications/)
-* [Analyze Your Traffic](../../../how-to/analytics.md)
-* [Collaborate with other Designers](../../../how-to/collaborate.md)
+* [Analyze Your Traffic]()
+* [Collaborate with other Designers]()
 
 #### Code  <a id="code"></a>
 

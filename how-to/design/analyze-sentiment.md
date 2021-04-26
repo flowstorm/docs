@@ -21,7 +21,7 @@ _"I hated the street I lived on"_ and _"I don't enjoy loud music"_ have a **nega
 
 ## Sentiment snippet <a id="sentiment-snippet"></a>
 
-The easiest way to employ sentiment analysis is by using the predefined **Sentiment** [snippet](../../../model/dialogue-model-coding/building-blocks/snippets.md). Drag-and-drop it from the snippet palette into your dialogue.
+The easiest way to employ sentiment analysis is by using the predefined **Sentiment** [snippet](../../model/dialogue-model-coding/building-blocks/snippets.md). Drag-and-drop it from the snippet palette into your dialogue.
 
 ![Using a predefined &quot;dialogue snippet&quot; for sentiment analysis. ](https://gblobscdn.gitbook.com/assets%2F-MUs26EFFf_IPxqoQh7r%2F-MUtDdbdhGN8LU4cXQWo%2F-MUtNeNW78y7FzFTElRW%2Fsentiment.gif?alt=media&token=a4476432-b396-4880-bbc1-45c79a4beb5e)
 
