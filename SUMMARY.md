@@ -20,8 +20,7 @@
 * [Create an Application](how-to/applications/README.md)
   * [Define It](how-to/applications/define-app.md)
   * [Share It](how-to/applications/share-app.md)
-* [Principles of CxD](how-to/principles.md)
-* [FAQ](how-to/faq.md)
+* [Tips for conversation design](how-to/principles.md)
 
 ## Flowstorm App <a id="app"></a>
 
