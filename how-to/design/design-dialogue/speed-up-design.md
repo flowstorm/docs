@@ -4,7 +4,7 @@ description: >-
   of nodes is way cooler!
 ---
 
-# Insert a Group of Nodes at Once
+# Insert a Group of Nodes
 
 Nobody wants to spend their time designing the same structure again and again node by node. That's why Flowstorm offers you a simple tool to speed up your designing process: introducing **dialogue snippets** - reusable node structures which will boost your productivity!
 

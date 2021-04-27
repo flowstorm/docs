@@ -12,7 +12,7 @@
   * [Introduction](how-to/design/introduction.md)
   * [Create a Dialogue Model](how-to/design/create-dialogue.md)
   * [Design the Flow Graph](how-to/design/design-dialogue/README.md)
-    * [Insert a Group of Nodes at Once](how-to/design/design-dialogue/speed-up-design.md)
+    * [Insert a Group of Nodes](how-to/design/design-dialogue/speed-up-design.md)
   * [Build and Test Dialogues](how-to/design/build-and-test.md)
   * [Interconnect Dialogue Models](how-to/design/dialogue-linking.md)
   * [Analyze Sentiment](how-to/design/analyze-sentiment.md)
