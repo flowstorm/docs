@@ -21,7 +21,8 @@ DialogueScript has several 3rd party API integration preconfigured so you don’
 
 #### Words API <a id="Words-API"></a>
 
-to get list of words use method`1api.words(word, type)`
+to get list of words use method  
+`api.words(word, type)`
 
 to get all results for word \(or response of dynamic structure\)`api.words<ResponseType>(word, type = "")`
 
@@ -32,7 +33,8 @@ where
 
 **Examples**
 
-Getting list of antonyms`1 api.words("good", "antonyms")`
+Getting list of antonyms  
+`api.words("good", "antonyms")`
 
 Processing all available results`api.words<Dynamic>("hatchback")<List<PropertyMap>>("results") {   
   value.forEach {   
