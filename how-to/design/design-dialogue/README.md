@@ -33,7 +33,7 @@ To indicate that a particular path through the graph has come to an end, use **E
 
 * Note: This node is actually not used that much. You will probably want to use it only in quite specific situations \(e.g. when the user says "stop!"\).
 
-**If you want to SUSPEND THE CONVERSATION but STAY IN THE CONTEXT** of the session \(so that the user can resume the conversation after a while\), use the node _**Sleep**_. How long should it keep the context? You can set this in the Properties of the node: just type the number of minutes that the bot should wait for session re-start. When the time is out, the session will end in the background.
+**If you want to SUSPEND THE CONVERSATION but STAY IN THE CONTEXT** of the session \(so that the user can resume the conversation after a while\), use the node _**Sleep**_. How long should it keep the context? You can set this in the Properties of the node: just type the **number of seconds** that the bot should wait for session re-start. When the time is out, the session will end in the background.
 
 * Note: Since _Sleep_ doesn't really leave the dialogue flow, it must be always followed by another node. The flow must go on!
 
