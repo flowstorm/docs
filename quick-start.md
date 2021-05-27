@@ -49,7 +49,7 @@ In the blue speeches, type what the persona should respond. You can again write 
 
 ![Answers](.gitbook/assets/speechessss.gif)
 
-Once you fill all the nodes, just click the **Test run** button.
+Once you fill all the nodes, just click the **Test run button**.
 
 ![Test run button](.gitbook/assets/testrun.gif)
 
