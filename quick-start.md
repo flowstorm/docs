@@ -49,7 +49,11 @@ In the blue speeches, type what the persona should respond. You can again write 
 
 ![Answers](.gitbook/assets/speechessss.gif)
 
-Once you fill all the nodes, just click the **Test run** button. The model of your app will be built in a few seconds, and you can try right away your first Flowstorm voice app!
+Once you fill all the nodes, just click the **Test run** button.
+
+![Test run button](.gitbook/assets/testrun.gif)
+
+The model of your app will be built in a few seconds, and you can try right away your first Flowstorm voice app!
 
 
 
