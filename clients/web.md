@@ -37,7 +37,7 @@ const bot = Bot(
 Arguments:
 
 * **Port URL** \(Boolean\) - URL of the back-end system
-* **Sender** \(String\)- Identifier of the client
+* **Device ID** \(String\)- Identifier of the client
 * **Autostart** \(Boolean\) - Whether the bot should start the conversation immediately after opening the socket. If `false`, the conversation must be started by dispatching `SLEEPINGClickEvent` on the document \(see the "Controlling the bot" section\).
 * **Kotlin** \(Boolean\) - whether the bot is linked from Kotlin code
 * **Token** \(String\) - JWT token identifying the user. If `undefined`, the conversation will start in anonymous mode
@@ -120,6 +120,15 @@ Below is the list of needed functions:
       </td>
     </tr>
     <tr>
+      <td style="text-align:left">addVideo</td>
+      <td style="text-align:left">
+        <p><b>video</b> - String, URL of the video</p>
+        <p><b>callback</b> - function to execute once the video finishes</p>
+      </td>
+      <td style="text-align:left">If the turn contains a video</td>
+      <td style="text-align:left">Display a video in the UI</td>
+    </tr>
+    <tr>
       <td style="text-align:left">onError</td>
       <td style="text-align:left"><b>error</b> - object</td>
       <td style="text-align:left">If an error occurs on the backend</td>
@@ -173,8 +182,7 @@ Below is the list of needed functions:
     </tr>
     <tr>
       <td style="text-align:left">play</td>
-      <td style="text-align:left"><b>sound</b>
-      </td>
+      <td style="text-align:left"><b>sound</b> - String</td>
       <td style="text-align:left">On bot ready (if autostart is false)</td>
       <td style="text-align:left">Play &quot;bot ready&quot; sound</td>
     </tr>
@@ -190,10 +198,13 @@ Start the conversation by calling
 ```javascript
 bot.init(
     'xxxxxxxxxxxxxxxxxxxxxxx', 
-    'xy',       // language
-    true,       // input audio
-    true,       // output audio
-    '#intro'    // starting message
+    'xy',        // language
+    true,        // input audio
+    true,        // output audio
+    '#intro',    // starting message
+    true,        // mask signals
+    ['error'],   // allowed sounds
+    false,       // save session
 )
 ```
 
@@ -204,24 +215,27 @@ Arguments:
 * **Default input audio** \(Boolean\) - Whether the bot should listen to audio input. If `false`, the user will be able to communicate with the bot only by text.
 * **Default output audio** \(Boolean\) - Whether the bot should play its utterances as audio. If `false`, no audio will be played, including the status sounds.
 * **Starting message** \(String\) - Initializing signal for the conversation
+* **Mask signals** \(Boolean\) - Whether the signals from user \(such as `#intro` or `#silence`\) should be displayed in the conversation log.
+* **Allowed sounds** \(Array of Strings\) - List of status sounds which are allowed to play during the conversation. The available sounds are `intro`, `error`, `listening`, `recognized` and `sleep`.
+* **Save session** \(Boolean\) - If the recording fails, the client might \(based on this setting\) save the session by turning off the input audio. The conversation then continues in text-only mode.
 
 After calling this, the bot will attempt to start the dialogue. After its first utterance, the browser will ask for microphone permission and if it is granted, it will listen for audio input. If the callbacks are empty, the communication will be only through audio.
 
 ## Controlling the bot
 
-The bot can also be controlled by dispatching events on a document.
+The bot can also be controlled by calling certain methods
 
 ```javascript
 // With parameters
-document.dispatchEvent(new Event('BotStopEvent'))
+bot.click('LISTENING');
 // Without parameters
-document.dispatchEvent(new CustomEvent('TextInputEvent', { detail: { audioOn: audioOn, text: text } }))
+bot.pause();
 ```
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b>Event name</b>
+      <th style="text-align:left"><b>Method name</b>
       </th>
       <th style="text-align:left"><b>Arguments</b>
       </th>
@@ -231,12 +245,12 @@ document.dispatchEvent(new CustomEvent('TextInputEvent', { detail: { audioOn: au
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">BotStopEvent</td>
+      <td style="text-align:left">onStopClick</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Ends the conversation</td>
     </tr>
     <tr>
-      <td style="text-align:left">BotPauseEvent</td>
+      <td style="text-align:left">pause</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">
         <p>Pauses current bot</p>
@@ -244,7 +258,7 @@ document.dispatchEvent(new CustomEvent('TextInputEvent', { detail: { audioOn: au
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">BotResumeEvent</td>
+      <td style="text-align:left">resume</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">
         <p>Resumes current bot</p>
@@ -252,36 +266,30 @@ document.dispatchEvent(new CustomEvent('TextInputEvent', { detail: { audioOn: au
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">InputAudioEvent</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">inAudio</td>
+      <td style="text-align:left"><b>state</b> - current bot state (String)</td>
       <td style="text-align:left">Turns audio input on and off</td>
     </tr>
     <tr>
-      <td style="text-align:left">OutputAudioEvent</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">outAudio</td>
+      <td style="text-align:left"><b>state</b> - current bot state (String)</td>
       <td style="text-align:left">Turns audio output on and off</td>
     </tr>
     <tr>
-      <td style="text-align:left">TextInputEvent</td>
-      <td style="text-align:left">text: text message from the user
-        <br />audioOn</td>
+      <td style="text-align:left">handleOnTextInput</td>
+      <td style="text-align:left">
+        <p><b>text</b> - text to send (String)</p>
+        <p><b>audioOn</b> - true (boolean)</p>
+      </td>
       <td style="text-align:left">
         <p>Sends text input to the bot</p>
         <p>instead of audio</p>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">SLEEPINGClickEvent</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">Launches the bot</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">RESPONDINGClickEvent</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">
-        <p>Skips current bot utterances</p>
-        <p>and goes to LISTENING state</p>
-      </td>
+      <td style="text-align:left">click</td>
+      <td style="text-align:left"><b>state</b> - current bot state (String)</td>
+      <td style="text-align:left">Simulates button click, acts differretly based on state</td>
     </tr>
   </tbody>
 </table>
