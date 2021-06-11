@@ -9,7 +9,7 @@ description: >-
 ## Sign Up
 
 1. Open [https://app.flowstorm.ai](https://app.flowstorm.ai)  
-2. Clicking the [Sign Up](https://app.flowstorm.ai/#!/signup) in the top right corner to open a sign-up form  
+2. Clicking the [Sign Up](https://app.flowstorm.ai/#!/signup) in the top right corner will open a sign-up form  
 3. Choose a preferred authentication providers \(Google, Apple, Facebook, Twitter or Slack\) or create an account using a traditional e-mail & password.
 
 ![](../.gitbook/assets/sign-up.jpg)
