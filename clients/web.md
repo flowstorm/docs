@@ -12,19 +12,43 @@ Please check out also [this article](https://docs.flowstorm.ai/core/client-integ
 
 ## Linking the script
 
-Add this line to the head of your `index.html` file:
+There are two ways to link the library to your application. For simpler apps, add this line to the head of your `index.html` file:
 
 ```markup
-<script type="text/javascript" src=https://repository.promethist.ai/dist/bot-service.js></script>
+<script type="text/javascript" src=https://bot.flowstorm.ai/service.js></script>
+```
+
+Alternatively, you can use a package manager such as Yarn or NPM. Create a file named `.npmrc` containing this \(or add to your existing one\):
+
+```javascript
+@flowstorm:registry=https://gitlab.com/api/v4/projects/23512224/packages/npm/
+```
+
+Then, add the dependency:
+
+```bash
+yarn add @flowstorm/bot-service
+# or
+npm install @flowstorm/bot-service
 ```
 
 ## Instancing the bot
 
-In your JavaScript code, add this:
+If you linked the package, in your HTML, add this to your JavaScript code:
 
 ```javascript
 const Bot = window.botService.default
+```
 
+or if you used NPM/Yarn, add this:
+
+```javascript
+import Bot from '@flowstorm/bot-service';
+```
+
+Then, instantiate the bot object:
+
+```javascript
 const bot = Bot(
     'https://core.flowstorm.ai',
     'sender',
@@ -36,9 +60,9 @@ const bot = Bot(
 
 Arguments:
 
-* **Port URL** \(Boolean\) - URL of the back-end system
+* **Core URL** \(String\) - URL of the back-end system
 * **Device ID** \(String\)- Identifier of the client
-* **Autostart** \(Boolean\) - Whether the bot should start the conversation immediately after opening the socket. If `false`, the conversation must be started by dispatching `SLEEPINGClickEvent` on the document \(see the "Controlling the bot" section\).
+* **Autostart** \(Boolean\) - Whether the bot should start the conversation immediately after opening the socket. If `false`, the conversation must be started manually by calling `bot.handleOnTextInput('#intro', false)` \(see the "Controlling the bot" section\).
 * **Kotlin** \(Boolean\) - whether the bot is linked from Kotlin code
 * **Token** \(String\) - JWT token identifying the user. If `undefined`, the conversation will start in anonymous mode
 
@@ -87,7 +111,9 @@ Below is the list of needed functions:
         <p>reflect this.</p>
         <p>Inspect <code>newState.status</code>
         </p>
-        <p>to see the current bot status</p>
+        <p>to see the current bot status.</p>
+        <p>Note that you should keep track of the status on your app&apos;s level
+          to use it in certain functions.</p>
       </td>
     </tr>
     <tr>
@@ -219,7 +245,7 @@ Arguments:
 * **Allowed sounds** \(Array of Strings\) - List of status sounds which are allowed to play during the conversation. The available sounds are `intro`, `error`, `listening`, `recognized` and `sleep`.
 * **Save session** \(Boolean\) - If the recording fails, the client might \(based on this setting\) save the session by turning off the input audio. The conversation then continues in text-only mode.
 
-After calling this, the bot will attempt to start the dialogue. After its first utterance, the browser will ask for microphone permission and if it is granted, it will listen for audio input. If the callbacks are empty, the communication will be only through audio.
+After calling this, the bot will open a socket to the server. If `autoStart` was set to true, the conversation will begin. After its first utterance, the browser will ask for microphone permission and if it is granted, it will listen for audio input. If the callbacks are empty, the communication will be only through audio.
 
 ## Controlling the bot
 
@@ -289,7 +315,10 @@ bot.pause();
     <tr>
       <td style="text-align:left">click</td>
       <td style="text-align:left"><b>state</b> - current bot state (String)</td>
-      <td style="text-align:left">Simulates button click, acts differretly based on state</td>
+      <td style="text-align:left">
+        <p>Simulates button click, acts differretly based on state.</p>
+        <p>RESPONDING - skips the current utterances</p>
+      </td>
     </tr>
   </tbody>
 </table>
