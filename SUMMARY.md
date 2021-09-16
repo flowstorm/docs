@@ -57,6 +57,7 @@
 * [About Project](core/about-project.md)
 * [Core Library](core/core-library/README.md)
   * [Built-In Voices](core/core-library/built-in-voices.md)
+  * [Text-to-speech Limits for Cloud Providers](core/core-library/text-to-speech-limits-for-cloud-providers.md)
 * [Core Services](core/core-services/README.md)
   * [Runner](core/core-services/runner.md)
   * [Builder](core/core-services/builder.md)
