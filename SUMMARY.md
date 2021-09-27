@@ -65,6 +65,7 @@
   * [Intent and Named Entity Recognition](core/nlp-services/intent-and-named-entity-recognition/README.md)
     * [Illusionist](core/nlp-services/intent-and-named-entity-recognition/illusionist.md)
     * [Ducking](core/nlp-services/intent-and-named-entity-recognition/ducking.md)
+    * [Skimmer](core/nlp-services/intent-and-named-entity-recognition/skimmer.md)
   * [ASR \(Speech-To-Text\)](core/nlp-services/asr-speech-to-text.md)
   * [TTS \(Text-To-Speech\)](core/nlp-services/tts-text-to-speech.md)
 * [Integrations](core/client-integrations/README.md)
