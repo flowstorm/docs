@@ -13,7 +13,7 @@ Imagine that your digital persona has the following conversation with a user:
 `Persona: Do you like movies?  
 User: Yes, I love movies. My sister and I organize movie nights every Friday.`
 
-You might notice multiple pieces of information that we can learn about the user from what they said. The first is that they _love movies_. This information can be saved into the user profile simply using dialogue design. You can branch the dialogue with two local intents and connect the functional nodes that save the corresponding values into the user profile \(e.g. `userProfile.movies.isMovieFan = true`\):
+You might notice multiple pieces of information that we can learn about the user from what they said. The first is that they _love movies_. This information can be saved into the user profile simply using dialogue design. You can branch the dialogue with two local intents and connect the functional nodes that save the corresponding values into the user profile \(e.g. `profile.userProfile.movies.isMovieFan = true`\):
 
 ![Saving information about the user into the user profile using conversation design.](https://lh4.googleusercontent.com/uWKY-9vuQL7VrEo3GBa_s3qgmbOwtZXjciIrmdvPS7B6QgjVj-FfVU5ueUL5EZL7bMjTD_d8rrv0pzGktN1DUVa0hjITEEpEk9TI4Wz19_jXDtrXeELQMlJdFmCxV5n6EM7uNm_I=s0)
 
@@ -38,7 +38,7 @@ Skimmer looks for information defined in a JSON file. It has the folowing struct
       {
         "type": "regex",
         "pattern": "((?<!death of )(my (sister|sis|stepsister|half-sister))(?!( died| passed away| is dead)))",
-        "path": "userProfile.family.sisterMentioned",
+        "path": "profile.userProfile.family.sisterMentioned",
         "value": true
       },
       {
@@ -50,7 +50,7 @@ Skimmer looks for information defined in a JSON file. It has the folowing struct
       {
         "type": "regex",
         "pattern": "((?<!death of )(my (?<pet>dog|cat|rabbit))(?!( died| passed away| is dead)))",
-        "path": "userProfile.pets.petMentioned",
+        "path": "profile.userProfile.pets.petMentioned",
         "value": "?<pet>"
       }
 ]
@@ -71,7 +71,7 @@ You might want to save a predefined value into the user profile. The example can
 {
    "type": "regex",
    "pattern": "((?<!death of )(my (sister|sis|stepsister|half-sister))(?!( died| passed away| is dead)))",
-   "path": "userProfile.family.sisterMentioned",
+   "path": "profile.userProfile.family.sisterMentioned",
    "value": true
 }
 ```
@@ -89,7 +89,7 @@ We can also save string values as in the following example.
 {
    "type": "regex",
    "pattern": "I grow up in city",
-   "path": "userProfile.person.grewUpPlace",
+   "path": "profile.userProfile.person.grewUpPlace",
    "value": "city"
 }
 ```
@@ -106,7 +106,7 @@ Skimmer has recently started to support one named group in the rule only.
 {
    "type": "regex",
    "pattern": "((?<!death of )(my (?<pet>dog|cat|rabbit))(?!( died| passed away| is dead)))",
-   "path": "userProfile.pets.petMentioned",
+   "path": "profile.userProfile.pets.petMentioned",
    "value": "?<pet>"
 }
 ```
@@ -126,5 +126,9 @@ To start using Skimmer in your application, follow these steps:
 
 ![Set the URL of the JSON file containing rules in Access &amp;gt;&amp;gt; Applications &amp;gt;&amp;gt; Skimmer.](https://lh5.googleusercontent.com/qGRi-5eel2RRhHimq1IcVyKh1yOoUAbbIOnqFtxU85jdjryEkGdlnJ2gW3z4C64d_QAgX5GWnLmlKkz4gWZ2tKd8ctYSD0tO6wTY0B9Mummn8xAKHGIj-FztLlv-u2MjHZEd6WGO=s0)
 
+{% hint style="warning" %}
+To test Skimmer directly in Flowstorm, you have to **run the session from the detail of the Application** \(_Access &gt;&gt; Applications &gt;&gt; select your Application &gt;&gt; run it_\), not the specific dialogue. This is because Skimmer is defined per application.
+{% endhint %}
 
+![Test Skimmer in Access &amp;gt;&amp;gt; Applications.](../../.gitbook/assets/image%20%2880%29.png)
 
