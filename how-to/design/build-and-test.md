@@ -15,7 +15,7 @@ When you are editing a model, you can continuously save your changes, but it's n
 
 To build a model, just click the Build button – the cute little hammer.
 
-![](../../.gitbook/assets/image%20%2867%29.png)
+![](<../../.gitbook/assets/image (67).png>)
 
 {% hint style="success" %}
 _Build_ always **saves automatically the current state** of the model, so you don't need to extra-click on _Save_.
@@ -30,23 +30,23 @@ If you know that you will want to **run the model immediately after the build, j
 When the build fails, it means that there is something wrong with your dialogue model. What to do?
 
 1. Inspect thoroughly the **Build log**, which shows the problems that the system has encountered.
-2. If that doesn't help, check if your problem is covered in our [**FAQ**]().
+2. If that doesn't help, check if your problem is covered in our [**FAQ**](broken-reference).
 3. If you still have no idea what's gone wrong, refer to our **support**.
 
 ## Run the model
 
 To run a model to test it inside the Dialogue Designer, you have two basic options:
 
-### **Without initial input \(the bot will start\)**
+### **Without initial input (the bot will start)**
 
 You can just initiate the interaction without any input and let the bot start.
 
-* To do this, just click the Run button \("play"\).
+* To do this, just click the Run button ("play").
 * In this case, `#intro` is sent – meaning "the user has initiated the interaction".
 
 ![](../../.gitbook/assets/intro.gif)
 
-### With initial input \(the user starts\)
+### With initial input (the user starts)
 
 You can also initiate the interaction by directly asking something.
 
@@ -59,4 +59,3 @@ You can also initiate the interaction by directly asking something.
 {% hint style="info" %}
 _Run_ always runs the current state of the model: if there have been changes to the model since the last build, **Run will first save these changes and re-build the model**, then it will automatically start the interaction.
 {% endhint %}
-

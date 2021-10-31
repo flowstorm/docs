@@ -14,7 +14,6 @@ Save time, read less, videos can show you more.
 
 {% embed url="https://youtu.be/R-KoszgvajY" %}
 
-### The **other** Videos Related to the Flowstorm
+### The** other** Videos Related to the Flowstorm
 
 [Flowstorm youtube Channel](https://www.youtube.com/channel/UCMuvPwdskGcPHKs2UduaECg)
-

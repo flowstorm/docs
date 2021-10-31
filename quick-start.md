@@ -8,9 +8,9 @@ description: A quick introduction to the Flowstorm platform. Make your first ste
 
 You must sign up if you are a new user who wants to try the platform for the first time.
 
-1. Open [app.flowstorm.ai](https://app.flowstorm.ai/)
+1. Open [app.flowstorm.ai](https://app.flowstorm.ai)
 2. Click on **Sign Up** in the top right corner to open a sign-up form.
-3. Choose a preferred authentication provider \(Google, Apple, Facebook, Twitter, Slack\) or create an account using just your e-mail and a password.
+3. Choose a preferred authentication provider (Google, Apple, Facebook, Twitter, Slack) or create an account using just your e-mail and a password.
 4. Check your inbox and click on the confirmation link to approve that you are the owner of the address.
 5. After confirming the e-mail, Flowstorm will create your _Space_.
 6. From now on, you can easily [log in](https://promethist.app/#!/login) anytime.
@@ -23,7 +23,7 @@ Now you can invite your collaborators or start designing your first dialogue and
 
 You are in the Dialogue Designer now and you should see the following structure.
 
-![](.gitbook/assets/screenshot-from-2021-06-11-09-24-25.png)
+![](<.gitbook/assets/Snímek obrazovky 2021-10-19 v 14.27.00.png>)
 
 It is the default structure of your new application. It already covers all the necessary basic features, and it is fully functional. As you can see, it is a structure of nodes with different colors, interconnected by little arrows that we call transitions.
 
@@ -35,7 +35,9 @@ There is no need to dive into all types of nodes at this point. For now, you jus
 
 
 
-Let's focus on the lower right quadrant of the graph. Try clicking on the green intents, then on the blue speeches. In the right panel, you can see the node content. Now it's time to start customizing the content. For that, you must first activate the edit mode by clicking on this button.
+Let's focus on the lower right quadrant of the graph. Try clicking on the green intents, then on the blue speeches. In the right panel, you can see the node content. Now it's time to start customizing the content.&#x20;
+
+_NOTE: If you cannot make changes to the content, the editing mode might not be activated. In that case, activate it by clicking on this button:_
 
 ![](.gitbook/assets/edit.gif)
 
@@ -54,6 +56,4 @@ Once you fill all the nodes, just click the **Test run button**.
 ![Test run button](.gitbook/assets/testrun.gif)
 
 The model of your app will be built in a few seconds, and you can try right away your first Flowstorm voice app!
-
-
 
