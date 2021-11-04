@@ -20,9 +20,9 @@
 * [Create an Application](how-to/applications/README.md)
   * [Define It](how-to/applications/define-app.md)
   * [Share It](how-to/applications/share-app.md)
-* [Tips for conversation design](how-to/principles.md)
+* [Tips for Conversation Design](how-to/principles.md)
 
-## Flowstorm App <a id="app"></a>
+## Flowstorm App <a href="app" id="app"></a>
 
 * [Working Space](app/space/README.md)
   * [Home Dashboard](app/space/home.md)
@@ -39,7 +39,7 @@
 * [Keyboard Shortcuts](app/keyboard-shortcuts.md)
 * [Platform assistant](app/platform-assistant.md)
 
-## Clients and Channels <a id="clients"></a>
+## Clients and Channels <a href="clients" id="clients"></a>
 
 * [Introduction to Clients](clients/introduction.md)
 * [Client Configuration](clients/client-configuration.md)
@@ -52,7 +52,7 @@
 * [Google Assistant App](clients/google.md)
 * [Phone Calls via Twilio.com](clients/phone.md)
 
-## Core Project <a id="core"></a>
+## Core Project <a href="core" id="core"></a>
 
 * [About Project](core/about-project.md)
 * [Core Library](core/core-library/README.md)
@@ -66,8 +66,8 @@
     * [Illusionist](core/nlp-services/intent-and-named-entity-recognition/illusionist.md)
     * [Duckling](core/nlp-services/intent-and-named-entity-recognition/ducking.md)
   * [Skimmer](core/nlp-services/skimmer.md)
-  * [ASR \(Speech-To-Text\)](core/nlp-services/asr-speech-to-text.md)
-  * [TTS \(Text-To-Speech\)](core/nlp-services/tts-text-to-speech.md)
+  * [ASR (Speech-To-Text)](core/nlp-services/asr-speech-to-text.md)
+  * [TTS (Text-To-Speech)](core/nlp-services/tts-text-to-speech.md)
 * [Integrations](core/client-integrations/README.md)
   * [Web Socket](core/client-integrations/web-socket.md)
   * [Amazon Alexa REST](core/client-integrations/amazon-alexa-rest.md)
@@ -78,7 +78,7 @@
 * [Deployment](core/deployment.md)
 * [Boilerplate Project](core/boilerplate-project.md)
 
-## Interaction Model <a id="model"></a>
+## Interaction Model <a href="model" id="model"></a>
 
 * [Introduction](model/introduction.md)
 * [Dialogue Design](model/dialogue-model-coding/README.md)
@@ -157,4 +157,3 @@
 
 * [Platform Continuous Delivery Process](organization/continuous-delivery-process.md)
 * [How to publish Core artifacts into Maven Central repository](organization/how-to-publish-core-artifacts-into-maven-central-repository.md)
-
