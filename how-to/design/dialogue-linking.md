@@ -21,7 +21,7 @@ Why is designing multiple smaller dialogue models better than one large model? I
     (To open the selected model in a new tab, click on the blue-white arrowy button.)
 4. Continue the flow by connecting a follow-up node.
 
-![](../../.gitbook/assets/subdg.gif)
+![Connecting a subdialogue node and linking it to a different dialogue model.](../../.gitbook/assets/subdg.gif)
 
 ## **Hierarchical structure**
 
@@ -29,7 +29,7 @@ When the flow goes into a _Subdialogue_ node, the connected model (the "subdialo
 
 ### Inherited global intents
 
-The bot will always remember all the superordinate models through which the flow has immersed. Why is this important? Because **global intents of a dialogue model are always inherited by all models immersed in it** (at all levels).
+The bot will always remember all the superordinate models through which the flow has immersed. Why is this important? Because the **global intents of a dialogue model are always inherited by all models immersed in it** (at all levels).
 
 Although it might seem confusing, it's actually **great news**: you don't need to define general global intents everywhere; a "repeat" global intent would typically be defined only at the highest level (your main dialogue), and all of the immersed models will inherit it.
 
@@ -47,3 +47,13 @@ In the following illustration, the _**main **_dialogue model has 3 global intent
 {% hint style="warning" %}
 The same dialogue model can be immersed into different other models (e.g. if you want to include the same Movie Quiz into more voice apps), and these often have different global intents. This is why **the inherited intents are always inferred from the particular path which led to the current model **- it's the flow that determines them.
 {% endhint %}
+
+## Share the same init code across dialogues
+
+* Create an "**init mixin**". Go to _**Design >> Mixins**_, click on "+", select the type "init", fill in the rest of the details, and in the "Text" box, write the init code you want to reuse across multiple dialogues (e.g. declare variables).
+
+![](<../../.gitbook/assets/image (99).png>)
+
+* Then open the dialogue models where you want to link the init mixin, and in each of them, link it by selecting it in the _**Properties **tab** >> Mixins**_.
+
+![](<../../.gitbook/assets/image (97).png>)

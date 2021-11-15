@@ -13,13 +13,17 @@
   * [Create a Dialogue Model](how-to/design/create-dialogue.md)
   * [Design the Flow Graph](how-to/design/design-dialogue/README.md)
     * [Insert a Group of Nodes](how-to/design/design-dialogue/speed-up-design.md)
+  * [Define More Properties](how-to/design/define-more-properties.md)
   * [Build and Test Dialogues](how-to/design/build-and-test.md)
   * [Interconnect Dialogue Models](how-to/design/dialogue-linking.md)
-  * [Analyze Sentiment](how-to/design/analyze-sentiment.md)
+  * [Detect Sentiment](how-to/design/analyze-sentiment.md)
   * [Add Sounds and Images](how-to/design/multimedia.md)
+  * [Design Complex Logic Using Code](how-to/design/design-complex-logic-using-code/README.md)
+    * [Remember, Recall, Reuse](how-to/design/design-complex-logic-using-code/remember-recall-reuse.md)
 * [Create an Application](how-to/applications/README.md)
   * [Define It](how-to/applications/define-app.md)
   * [Share It](how-to/applications/share-app.md)
+* [Analyze the traffic](how-to/analyze-the-traffic.md)
 * [Tips for Conversation Design](how-to/principles.md)
 
 ## Flowstorm App <a href="app" id="app"></a>
