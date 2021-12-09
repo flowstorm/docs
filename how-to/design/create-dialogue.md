@@ -6,11 +6,10 @@ description: >-
 
 # Create a Dialogue Model
 
-1. **Go to **_**Design **_**>>**_** Dialogue Designer **_(or use the [keyboard shortcut](https://docs.promethist.ai/app/keyboard-shortcuts) **d**) to open the [Dialogue Designer](https://docs.promethist.ai/app/working-space/design/dialogue-designer).
-2. **Click on **_**Model **_**>>**_** New**_**…** (or use the keyboard shortcut **n**) to create a new dialogue model. You will see the pop-up window depicted below.
-3. **Select** **the** _**Space**_ where you want to save your dialogue model.
-4. **Type a unique **_**Model name**_. It must correspond to the format _`project-name/model-name`_.
-5. **Click on** _**Create**_.
-6. You can start [designing](https://docs.promethist.ai/how-to/design/design-dialogue)!
-
-![](<../../.gitbook/assets/image (43).png>)
+1. Go to _**Design**_** >> **_**Dialogues**_ (or use the [keyboard shortcut](https://docs.promethist.ai/app/keyboard-shortcuts) **d**).
+2. A new default dialogue model should **open automatically** in a tab.\
+   ****If you were already inside the editor, click on _**Model**_** >> **_**New**_**…** and a new dialogue model will open in a new tab.
+3. To **change the name** of the dialogue model, open the tab _**Properties**_, find the "_**Name**_" box and write the name in the format _**`xxx/yyy`**_ (no spaces or special characters).
+4. Make sure to **Save** your dialogue model\
+   by clicking on the ![](<../../.gitbook/assets/image (95).png>) button in the left panel.
+5. You can start [designing](https://docs.promethist.ai/how-to/design/design-dialogue)!

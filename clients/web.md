@@ -61,7 +61,7 @@ const bot = Bot(
 
 Arguments:
 
-* **Core URL **(String) - URL of the back-end system
+* **Core URL** (String) - URL of the back-end system
 * **Device ID** (String)- Identifier of the client
 * **Autostart** (Boolean) - Whether the bot should start the conversation immediately after opening the socket. If `false`, the conversation must be started manually by calling `bot.handleOnTextInput('#intro', false)` (see the "Controlling the bot" section).
 * **Callback provider** (object) - contains functions which the bot executes in certain situations. See the "Implementing callbacks" section for complete specification.
@@ -82,7 +82,7 @@ clientCallback.setStatus = newState => {
 clientCallback.getVoice = this.getVoice; // this.getVoice = your method
 ```
 
-The functions in your applications can have arbitrary name and, with the exception of the three `get `methods, may even be empty, but all the properties listed below must be defined and callable.
+The functions in your applications can have arbitrary name and, with the exception of the three `get` methods, may even be empty, but all the properties listed below must be defined and callable.
 
 Below is the list of needed functions:
 

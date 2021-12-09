@@ -4,14 +4,14 @@ description: Create a text or function once, re-use them for several times in ma
 
 # Mixins
 
-Dialogue mixins allow conversation developers to **pre-define **unique texts / codes for specific parts of dialogue models and** re-use** them across multiple dialogues within organization (in near future, also share them across multiple organizations). Mixin (or trait) id pattern used in several object oriented programming language, allowing developers to include code from multiple different sources into their class.
+Dialogue mixins allow conversation developers to **pre-define** unique texts / codes for specific parts of dialogue models and **re-use** them across multiple dialogues within organization (in near future, also share them across multiple organizations). Mixin (or trait) id pattern used in several object oriented programming language, allowing developers to include code from multiple different sources into their class.
 
 Following types of mixins are currently supported:
 
-* _**Intent **_to define example phrases. Can be used by both contextual and global intents. Use them to pre-define sets of phrases for repeating types of intents (e.g. expressing yes, no, not sure intents)
-* _**Speech**_** **to define speech variations.
-* _**Init **_to define init code. Useful to declare contextual attributes and/or data properties used by set of dialogues within one or more applications.
-* _**Function **_and _**UserInput **_to define functional code. Can contain imperative code (e.g. logging or metric counting) and/or lambda function - such lambda can work with set of parameters, including those defining possible transitions and should always express one of such transition - see example below:
+* _**Intent**_ to define example phrases. Can be used by both contextual and global intents. Use them to pre-define sets of phrases for repeating types of intents (e.g. expressing yes, no, not sure intents)
+* _**Speech**_** ** to define speech variations.
+* _**Init**_ to define init code. Useful to declare contextual attributes and/or data properties used by set of dialogues within one or more applications.
+* _**Function**_ and _**UserInput**_ to define functional code. Can contain imperative code (e.g. logging or metric counting) and/or lambda function - such lambda can work with set of parameters, including those defining possible transitions and should always express one of such transition - see example below:
 
 ![](<../../../.gitbook/assets/image (40).png>)
 

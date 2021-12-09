@@ -33,13 +33,13 @@ The Function and User Input nodes allow you, among other things, to:
 
 ### Simple conditions in Functions
 
-Here's an example of a simple if-then-else structure in a Function (note: the variables `condition1` and `condition2` would have to be [defined](remember-recall-reuse.md) in the init code, otherwise it would cause a build error):
+Here's an example of a simple if-then-else structure in a Function node (note: the variables `condition1` and `condition2` would have to be [defined](remember-recall-reuse.md) in the init code, otherwise it would cause a build error):
 
 ![](<../../../.gitbook/assets/image (88).png>)
 
 Functions typically **return transitions.** In other words, the "result" of the function is always the **name of the transition where the flow should continue**.
 
-For example, in the following image, the three transitions leading from the Function are called `toSpeech1`, `toSpeech2`, and `toSpeech3`. You can view the name if you hover over the arrow, as seen in the image; clicking on the arrow will show the transition detail in the right panel, where you can also rename it (however, _**the name should always follow the format **_`toX`).
+For example, in the following image, the three transitions leading from the Function node are called `toSpeech1`, `toSpeech2`, and `toSpeech3`. You can view the name if you hover over the arrow, as seen in the image; clicking on the arrow will show the transition detail in the right panel, where you can also rename it (however, _**the name should always follow the format**_ `toX`).
 
 ![](<../../../.gitbook/assets/image (87).png>)
 
@@ -62,7 +62,7 @@ In the following simple example, the digital persona will first analyze the inpu
 You can also write code in Speech nodes if you want the digital persona to:
 
 * read the value of a variable,
-* or insert a simple condition without the need of a Function node.
+* or insert a simple condition without the need for a Function node.
 
 Code in Speeches is written **inside `${}`**, for example:
 

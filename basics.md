@@ -13,10 +13,10 @@ So what can you and your end users generally expect from a state-of-the-art conv
 
 ### **Different components take care of different tasks.**
 
-What happens when you're talking to someone? When they say something, your _ears_ catch the sound waves. Afterward, your _brain _analyzes the sound wave and interprets the meaning of the resulting words; then it comes up with the most suitable reaction. Finally, your _speech organs_ articulate the message. Conversational systems have these different organs/components, too, although they are a bit more independent:
+What happens when you're talking to someone? When they say something, your _ears_ catch the sound waves. Afterward, your _brain_ analyzes the sound wave and interprets the meaning of the resulting words; then it comes up with the most suitable reaction. Finally, your _speech organs_ articulate the message. Conversational systems have these different organs/components, too, although they are a bit more independent:
 
 * _**ASR**_ (Automatic Speech Recognition) is like the system's ears (and partially the brain). It's a component that detects the sound wave and transcribes it into words.
-* _**NLP **_(Natural Language Processing) algorithms are the brain. They analyze the meaning of the words and, based on the context, generate the most suitable reaction in the form of written text.
+* _**NLP**_ (Natural Language Processing) algorithms are the brain. They analyze the meaning of the words and, based on the context, generate the most suitable reaction in the form of written text.
 * _**TTS**_ (Text-To-Speech) is the system's speech organ. It takes the written text and "reads it out loud", in a specific voice.
 * And, following this analogy, the whole architecture interconnecting all the other components would be the _body_.
 

@@ -35,17 +35,17 @@ Although it might seem confusing, it's actually **great news**: you don't need t
 
 {% hint style="success" %}
 When the user message is being processed, the available intents are analyzed in this order:\
-1\. _local intents_ (in the User Input), 2. _global intents_ (in the model), 3. _inherited global intents_ (from superordinate models, level by level). So **if you want to override an inherited global intent**, **just define the same intent in the immersed model **and this new one will be prioritized!
+1\. _local intents_ (in the User Input), 2. _global intents_ (in the model), 3. _inherited global intents_ (from superordinate models, level by level). So **if you want to override an inherited global intent**, **just define the same intent in the immersed model** and this new one will be prioritized!
 {% endhint %}
 
 #### Example
 
-In the following illustration, the _**main **_dialogue model has 3 global intents labeled _stop_, _repeat_, and _play quiz_. There are two subdialogues inside it: _**quiz**_ and _**chat**_. In this scenario, they will both inherit the 3 global intents from _**main**_, and _**quiz **_will have 2 more global intents of its own (_next_, _end quiz_). Inside _**quiz**_, the flow can still immerse into the _**sure**_ model, which would inherit all 2+3 global intents from the two superordinate models. The creator decided to override the inherited _repeat_, so they designed a new one, which would be prioritized over the inherited one.
+In the following illustration, the _**main**_ dialogue model has 3 global intents labeled _stop_, _repeat_, and _play quiz_. There are two subdialogues inside it: _**quiz**_ and _**chat**_. In this scenario, they will both inherit the 3 global intents from _**main**_, and _**quiz**_ will have 2 more global intents of its own (_next_, _end quiz_). Inside _**quiz**_, the flow can still immerse into the _**sure**_ model, which would inherit all 2+3 global intents from the two superordinate models. The creator decided to override the inherited _repeat_, so they designed a new one, which would be prioritized over the inherited one.
 
 ![An illustrative visualization for the concept of inherited global intents (detailed explanation above). ](../../.gitbook/assets/untitled-presentation-1b-.png)
 
 {% hint style="warning" %}
-The same dialogue model can be immersed into different other models (e.g. if you want to include the same Movie Quiz into more voice apps), and these often have different global intents. This is why **the inherited intents are always inferred from the particular path which led to the current model **- it's the flow that determines them.
+The same dialogue model can be immersed into different other models (e.g. if you want to include the same Movie Quiz into more voice apps), and these often have different global intents. This is why **the inherited intents are always inferred from the particular path which led to the current model** - it's the flow that determines them.
 {% endhint %}
 
 ## Share the same init code across dialogues
@@ -54,6 +54,6 @@ The same dialogue model can be immersed into different other models (e.g. if you
 
 ![](<../../.gitbook/assets/image (99).png>)
 
-* Then open the dialogue models where you want to link the init mixin, and in each of them, link it by selecting it in the _**Properties **tab** >> Mixins**_.
+* Then open the dialogue models where you want to link the init mixin, and in each of them, link it by selecting it in the _**Properties** tab **>> Mixins**_.
 
 ![](<../../.gitbook/assets/image (97).png>)

@@ -10,7 +10,7 @@ In _**Data >> Sessions**_, you will find the transcripts of individual conversat
 
 * The list on the left shows, by default, the most recent sessions. To see a different group of sessions or to find a specific session, use the magnifying glass icon or the "Quick search" box.
 * In the list, find the session you are interested in, and click on it. The right panel will show its detail.
-* In the right panel, below the technical details, you can see the transcript. You can choose between different transcript types: **Utterances**,** Turns** (both with clickable items containing more details), **Run Log** (with runtime logs), or **Text** (simple text transcript).
+* In the right panel, below the technical details, you can see the transcript. You can choose between different transcript types: **Utterances**, **Turns** (both with clickable items containing more details), **Run Log** (with runtime logs), or **Text** (simple text transcript).
 
 ## Track errors in "Dialogue Events"
 

@@ -20,14 +20,14 @@ The properties include:
 
 ### **Voice**
 
-* Select the voice of the dialogue model. The default English voice is _Joanna (Amazon)_.
+* Select the voice of the dialogue model. The default English-speaking voice is _Joanna (Amazon)_.
   * If this box is **empty** and the dialogue is linked to another dialogue, the voice is **inherited** from the higher-level dialogue.
-* _Note: This is a general setting for the dialogue model; a different voice can be selected for any specific Speech node in the Speech node details._
+* _Note: This is a general setting for the dialogue model; a different voice can be selected for any specific Speech node in Speech node Properties._
 
 ### **Background**
 
-* If you want to use a custom background image, enter here the URL of your image.
-* Similar to the voice, if the box is **empty** and the dialogue is linked to another dialogue, the background will be **inherited** from a higher-level dialogue.
+* If you want to use a custom background image, enter the URL of your image here.
+* As with the voice setting, if the box is left **empty** and the dialogue is linked to another dialogue, the background will be **inherited** from the higher-level dialogue.
 
 ### **Mixins**
 

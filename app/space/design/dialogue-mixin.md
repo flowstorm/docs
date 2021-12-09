@@ -1,13 +1,13 @@
 # Dialogue Mixins
 
-Dialogue mixins allow conversation developers to **pre-define** unique texts / codes for specific parts of dialogue models and** re-use **them across multiple dialogues within [space](../). Mixin (or trait) id pattern used in several object oriented programming language, allowing developers to include code from multiple different sources into their class.
+Dialogue mixins allow conversation developers to **pre-define** unique texts / codes for specific parts of dialogue models and **re-use** them across multiple dialogues within [space](../). Mixin (or trait) id pattern used in several object oriented programming language, allowing developers to include code from multiple different sources into their class.
 
 Following types of mixins are supported:
 
-* `Intent `to define example phrases. Can be used by both contextual and global intents. Use them to pre-define sets of phrases for repeating types of intents (e.g. expressing yes, no, not sure intents)
-* `Speech `to define speech variations.
-* `Init `to define init code. Useful to declare contextual attributes and/or data properties used by set of dialogues within one or more applications.
-* `Function `and `UserInput `to define functional code. It can contain imperative code (e.g. logging or metric counting) and/or lambda function - such lambda can work with set of parameters, including those defining possible transitions and should always express one of such transition - see example below:
+* `Intent` to define example phrases. Can be used by both contextual and global intents. Use them to pre-define sets of phrases for repeating types of intents (e.g. expressing yes, no, not sure intents)
+* `Speech` to define speech variations.
+* `Init` to define init code. Useful to declare contextual attributes and/or data properties used by set of dialogues within one or more applications.
+* `Function` and `UserInput` to define functional code. It can contain imperative code (e.g. logging or metric counting) and/or lambda function - such lambda can work with set of parameters, including those defining possible transitions and should always express one of such transition - see example below:
 
 ![](<../../../.gitbook/assets/image (47).png>)
 

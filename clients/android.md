@@ -23,7 +23,7 @@ The rectangle with the Promethist logo indicates the state which the bot is curr
 When the bot is responding, you can&#x20;
 
 * **skip** the current response by **tapping the area with the logo** or&#x20;
-* **pause** the response by **long pressing **it (tap again to resume).&#x20;
+* **pause** the response by **long pressing** it (tap again to resume).&#x20;
 
 #### Settings
 

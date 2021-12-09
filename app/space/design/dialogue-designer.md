@@ -7,7 +7,7 @@ description: The dialogue designer allows us to create, edit and publish dialogu
 The Flowstorm editor is a tool which serves for creating, saving and building the dialogue models. It is available at [https://app.flowstorm.ai](https://app.flowstorm.ai).&#x20;
 
 {% hint style="info" %}
-To get into Dialogue Designer, click on **Design **item in the top menu and choose **Dialogue Designer** or just press key **"d"** as a **keyboard shortcut**.
+To get into Dialogue Designer, click on **Design** item in the top menu and choose **Dialogue Designer** or just press key **"d"** as a **keyboard shortcut**.
 {% endhint %}
 
 You can **open** as many **models for editing** (or observing) as you want in paralel. Anytime you create or open a new dialogue model you will get a **new tab** with a new **independent editor**.
@@ -39,13 +39,13 @@ Compare the edit mode in the picture below
 
 ![Editor in the edit mode](<../../../.gitbook/assets/image (79).png>)
 
-### Basic controls  <a href="basic-controls" id="basic-controls"></a>
+### Basic controls  <a href="#basic-controls" id="basic-controls"></a>
 
 Main area/canvas can be dragged by clicking and moving a mouse or zoomed by holding **Control** and scrolling the mouse wheel. Multiple nodes can be selected by holding a mouse button then dragging a select box over them. Nodes or groups of nodes and links can be duplicated by the shortcuts **Control + C** and **Control + V** (**Command** on Mac) ; however, note that the duplicated nodes will appear on top of the originals so they won’t be immediately visible. The designer can then drag them to a desired position. The copying can be done between open windows of the editor, but make sure you have focus on the main editing area. If the pasting does not work, try closing and reopening the tab or window you are attempting to paste to.
 
-### Working with designer editor tab  <a href="working-with-designer-editor-tab" id="working-with-designer-editor-tab"></a>
+### Working with designer editor tab  <a href="#working-with-designer-editor-tab" id="working-with-designer-editor-tab"></a>
 
-#### Graph - Main editing area and palette  <a href="graph---main-editing-area-and-palette" id="graph---main-editing-area-and-palette"></a>
+#### Graph - Main editing area and palette  <a href="#graph---main-editing-area-and-palette" id="graph---main-editing-area-and-palette"></a>
 
 A **dialogue graph** is created by dragging node (or a group of nodes) from the palette on the left to the main editing area.&#x20;
 
@@ -60,7 +60,7 @@ Would you like to know how to create a complex and/or a robust dialogue? See art
 * [Analyze Your Traffic](broken-reference)
 * [Collaborate with other Designers](broken-reference)
 
-#### Code  <a href="code" id="code"></a>
+#### Code  <a href="#code" id="code"></a>
 
 In this tab, you can implement the code that will be run before starting the conversation.
 
@@ -68,7 +68,7 @@ In this tab, you can implement the code that will be run before starting the con
 
 More about [DialogueScript](../../../model/dialoguescript/)
 
-#### Properties  <a href="properties" id="properties"></a>
+#### Properties  <a href="#properties" id="properties"></a>
 
 Configure the dialogue settings typically voice used for the dialogue pronunciation - choose Language and one of the Voices available in the prefered language.
 

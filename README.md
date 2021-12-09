@@ -13,7 +13,7 @@ description: >-
 
 {% embed url="https://www.youtube.com/watch?v=Tv8CQrJoeKI" %}
 
-The **Flowstorm** platform is provided as a** platform as a service (PaaS**) and consists of several SaaS development tools and software components for **creating smart conversational & multimodal AI **applications.
+The **Flowstorm** platform is provided as a **platform as a service (PaaS**) and consists of several SaaS development tools and software components for **creating smart conversational & multimodal AI** applications.
 
 ### Create Voice First App with Drag & Drop UI
 
@@ -25,7 +25,7 @@ The Flowstorm comes with built-in analytics. Analyze users' behavior and find pr
 
 ### Access Everywhere - Mobile, Desktop, VR...
 
-Just build once and access  The platform provides integrations to** Alexa, Google Nest, iPhone, Android, WEB, Unreal Engine, POTS, and Twilio**. We also provide an open-source template to write custom integration to any device with a speaker and microphone. The Flowstorm also supports ASR and TTS from major providers (Amazon, Google, Microsoft).
+Just build once and access  The platform provides integrations to **Alexa, Google Nest, iPhone, Android, WEB, Unreal Engine, POTS, and Twilio**. We also provide an open-source template to write custom integration to any device with a speaker and microphone. The Flowstorm also supports ASR and TTS from major providers (Amazon, Google, Microsoft).
 
 ### Analytics - Understand Customers
 
@@ -41,6 +41,6 @@ Context is the key to creating personalized and adaptive dialogs. We have introd
 
 ### Deploy Open Source Runtime On-Premise
 
-We provide open-source for the Core and a template for clients. The **Core **is the **major runtime component**. It can be installed in any cloud or on-premise. The client template is a starting point to write integrations for any device.
+We provide open-source for the Core and a template for clients. The **Core** is the **major runtime component**. It can be installed in any cloud or on-premise. The client template is a starting point to write integrations for any device.
 
 [Get started for free](https://app.flowstorm.ai) and [make your first steps](quick-start.md) with Flowstorm!

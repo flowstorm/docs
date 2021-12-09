@@ -29,7 +29,7 @@ To insert an item (usually a node) into the structure, just drag it from the lef
 * The connection point **at the bottom** of a node serves as the **way out of the node**.
   * Most node types have just one way-out point at the bottom.
   * _Functions_ and _UserInputs_, which can serve as forks, have two more way-out points **on the sides**. All 3 exiting points are equal, they can just help you design a more comprehensible structure.
-  * _Exit_, _End_, and _GoBack _interrupt the flow, so they don't have any way-out points.
+  * _Exit_, _End_, and _GoBack_ interrupt the flow, so they don't have any way-out points.
 
 Most often, you will design the flow "falling down" through the graph - but that's definitely not a necessary rule! **Your flow can move in any direction** (see the illustration). Just keep in mind that the connection points on the nodes always work as described above.
 
@@ -37,8 +37,8 @@ Most often, you will design the flow "falling down" through the graph - but that
 
 ### Move, remove, copy & paste nodes
 
-To **MOVE **a node, just drag it along the canvas.\
-To **REMOVE **a node, click on it and then press Delete or Backspace on your keyboard.\
+To **MOVE** a node, just drag it along the canvas.\
+To **REMOVE** a node, click on it and then press Delete or Backspace on your keyboard.\
 To **COPY** a node, select it and press Ctrl+C or click the Copy button.\
 To **PASTE** from the clipboard, press Ctrl+V or click the Paste button.
 

@@ -82,21 +82,21 @@ These tactics are just one simple way of achieving flexible speaking abilities. 
 
 ## Listen and understand
 
-To indicate that it's time to **START LISTENING **(or expecting written input), connect a _**User Input**_ node to the flow.
+To indicate that it's time to **START LISTENING** (or expecting written input), connect a _**User Input**_ node to the flow.
 
 ![](<../../../.gitbook/assets/image (58).png>)
 
 At this point, the user will respond. The system will then process the message and decide what should happen next. That's why you will have to define **HOW DIFFERENT USER MESSAGES WILL AFFECT THE FLOW**. In other words, **the User Input will serve as a fork, a "crossroads"**.
 
-Users can say literally anything, so how do you cope with this? In most cases, you will want to categorize the input using **recognition of intents**. Simply put, "intents" represent the meaning of the message (you can express the same intent \[e.g. "yes"] by many different synonymic utterances: _yes; oh yeah; sure; absolutely; you bet;_ ...).
+Users can say literally anything, so how do you cope with this? In most cases, you will want to categorize the input with the so-called **intent recognition**, which is using the **semantic similarity algorithm**. Simply put, "intents" represent the meaning of the message (you can express the same intent \[e.g. "yes"] by many different synonymic utterances: _yes; oh yeah; sure; absolutely; you bet;_ ...).
 
-For each _User Input_, you will need to define **the most relevant intents** (each intent will have its own green _Intent_ node) by typing in **some example phrases** and indicate what should be the reaction based on the detected intent.
+For each _User Input_, you will need to define **the most relevant intents** (each intent will have its own green _Intent_ node) by typing in **some example phrases**, and indicate what should be the reaction based on the detected intent.
 
-So, to your User Input node, connect as many _**Intents** _as you want the bot to detect at this point of the flow (these "local" Intents will be active only where they are connected – unlike Global Intents). But how do you define the meaning of the intent? Let's take it step by step:
+So, to your User Input node, connect as many _**Intents** _ as you want the bot to detect at this point of the flow (these "local" Intents will be active only where they are connected – unlike Global Intents). But how do you define the meaning of the intent? Let's take it step by step:
 
 1. Insert an _Intent_ node and connect it to the _User Input_ node.
 2. Click on the _Intent_ to see the node details in the right panel. Open the "Examples" tab.
-3. Write **example phrases** that will define the semantics of the node (the meaning). To create different variants, use the same tactics as described above (lines + brackets with vertical bars). **This is how the AI learns to distinguish between different intents** that are active at this point of the flow.
+3. Write **example phrases** that will define the semantics of the node (the meaning). To create different variants, use the same tactics as described above (lines + brackets with vertical bars). **This is how the AI learns to distinguish between different intents** that are active at this point of the flow. (Learn more about [semantic similarity](https://en.wikipedia.org/wiki/Semantic\_similarity).)
 4. Continue designing the dialogue flow by connecting new nodes.
 
 {% hint style="info" %}
@@ -108,7 +108,7 @@ So, to your User Input node, connect as many _**Intents** _as you want the bot t
 
 ### Globally expectable responses
 
-Some user intents can be expected only in a particular context (connected to a particular User Input), but some intents are more general – any requests/questions/remarks that the user can say _at any point_ of the conversation. You could connect such intents to every single User Input, but there's a better alternative: use the _**Global Intent**_ nodes. Global intents are automatically **detected throughout the whole dialogue model (and all **[**models nested inside it**](../dialogue-linking.md)**)**. There is no transition leading to them: it's as if they are connected to all User Inputs.
+Some user intents can be expected only in a particular context (connected to a particular User Input), but some intents are more general – any requests/questions/remarks that the user can say _at any point_ of the conversation. You could connect such intents to every single User Input, but there's a better alternative: use the _**Global Intent**_ nodes. Global intents are automatically **detected throughout the whole dialogue model (and all** [**models nested inside it**](../dialogue-linking.md)**)**. There is no transition leading to them: it's as if they are connected to all User Inputs.
 
 * After some global intents, you will want your bot to **jump back to the point from where the user "deviated"**, and resume the original flow. To do this, use the _**Go Back**_ node.
   * In most such cases, you will also want the bot to **repeat the last text before the global intent**, to indicate the previous context – for this, check the _**"Repeat after going back"**_ box in the Go Back node: the bot will repeat all nodes marked as "repeatable".
