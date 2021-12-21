@@ -20,13 +20,14 @@
   * [Add Sounds and Images](how-to/design/multimedia.md)
   * [Design Complex Logic Using Code](how-to/design/design-complex-logic-using-code/README.md)
     * [Remember, Recall, Reuse](how-to/design/design-complex-logic-using-code/remember-recall-reuse.md)
+  * [Use Generative Models](how-to/design/use-generative-models.md)
 * [Create an Application](how-to/applications/README.md)
   * [Define It](how-to/applications/define-app.md)
   * [Share It](how-to/applications/share-app.md)
 * [Analyze the traffic](how-to/analyze-the-traffic.md)
 * [Tips for Conversation Design](how-to/principles.md)
 
-## Flowstorm App <a href="app" id="app"></a>
+## Flowstorm App <a href="#app" id="app"></a>
 
 * [Working Space](app/space/README.md)
   * [Home Dashboard](app/space/home.md)
@@ -43,7 +44,7 @@
 * [Keyboard Shortcuts](app/keyboard-shortcuts.md)
 * [Platform assistant](app/platform-assistant.md)
 
-## Clients and Channels <a href="clients" id="clients"></a>
+## Clients and Channels <a href="#clients" id="clients"></a>
 
 * [Introduction to Clients](clients/introduction.md)
 * [Client Configuration](clients/client-configuration.md)
@@ -56,7 +57,7 @@
 * [Google Assistant App](clients/google.md)
 * [Phone Calls via Twilio.com](clients/phone.md)
 
-## Core Project <a href="core" id="core"></a>
+## Core Project <a href="#core" id="core"></a>
 
 * [About Project](core/about-project.md)
 * [Core Library](core/core-library/README.md)
@@ -82,7 +83,7 @@
 * [Deployment](core/deployment.md)
 * [Boilerplate Project](core/boilerplate-project.md)
 
-## Interaction Model <a href="model" id="model"></a>
+## Interaction Model <a href="#model" id="model"></a>
 
 * [Introduction](model/introduction.md)
 * [Dialogue Design](model/dialogue-model-coding/README.md)
