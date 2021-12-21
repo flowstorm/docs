@@ -20,6 +20,7 @@
   * [Add Sounds and Images](how-to/design/multimedia.md)
   * [Design Complex Logic Using Code](how-to/design/design-complex-logic-using-code/README.md)
     * [Remember, Recall, Reuse](how-to/design/design-complex-logic-using-code/remember-recall-reuse.md)
+  * [Retrieve and Implement Fun Facts and Trivia](how-to/design/retrieve-and-implement-fun-facts-and-trivia.md)
   * [Use Generative Models](how-to/design/use-generative-models.md)
 * [Create an Application](how-to/applications/README.md)
   * [Define It](how-to/applications/define-app.md)
