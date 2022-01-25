@@ -22,6 +22,7 @@
     * [Remember, Recall, Reuse](how-to/design/design-complex-logic-using-code/remember-recall-reuse.md)
   * [Retrieve and Implement Fun Facts and Trivia](how-to/design/retrieve-and-implement-fun-facts-and-trivia.md)
   * [Use Generative Models](how-to/design/use-generative-models.md)
+  * [Profanity Filter](how-to/design/profanity-filter.md)
 * [Create an Application](how-to/applications/README.md)
   * [Define It](how-to/applications/define-app.md)
   * [Share It](how-to/applications/share-app.md)
