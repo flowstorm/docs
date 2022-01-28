@@ -23,7 +23,7 @@ Now you can invite your collaborators or start designing your first dialogue and
 
 You are in the Dialogue Designer now and you should see the following structure.
 
-![](<.gitbook/assets/Snímek obrazovky 2021-10-19 v 14.27.00.png>)
+![](<.gitbook/assets/Snímek obrazovky 2021-10-19 v 14.27.00.png>)
 
 It is the default structure of your new application. It already covers all the necessary basic features, and it is fully functional. As you can see, it is a structure of nodes with different colors, interconnected by little arrows that we call transitions.
 
@@ -31,7 +31,7 @@ It is the default structure of your new application. It already covers all the n
 
 There is no need to dive into all types of nodes at this point. For now, you just need to know that the light-green nodes, called intents, represent categories of user messages, and the blue nodes, called speeches, represent what the digital persona says.
 
-![](.gitbook/assets/snimek-obrazovky-2021-05-27-v-16.09.31.png)
+![](<.gitbook/assets/Snímek obrazovky 2021-05-27 v 16.09.31.png>)
 
 
 

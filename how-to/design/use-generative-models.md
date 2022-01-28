@@ -30,9 +30,10 @@ The generative model consists of two components, the Generator and the Ranker. T
 
 Flowstorm supports the following Generators:
 
-| Generator      | Description                                                                                                        |
-| -------------- | ------------------------------------------------------------------------------------------------------------------ |
-| DialoGPT-large | DialoGPT-large model by [HuggingFace](https://huggingface.co/microsoft/DialoGPT-large) trained on Reddit comments  |
+| Generator           | Description                                                                                                         |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| DialoGPT\_large     | DialoGPT\_large model by [HuggingFace](https://huggingface.co/microsoft/DialoGPT-large) trained on Reddit comments  |
+| EmpatheticDialogues | DialoGPT\_large model fine-tuned on [EmpatheticDialogues](https://github.com/facebookresearch/EmpatheticDialogues)  |
 
 Flowstorm supports the following Rankers:
 
