@@ -34,4 +34,4 @@ You can pair your Flowstorm app with an Alexa skill. See [this article](../../cl
 
 ## Phone call (Twillio)
 
-It is possible to use a phone number to make and receive calls as your application. See [this article](../../core/client-integrations/twilio.md) for details.
+It is possible to use a phone number to make and receive calls as your application. See [this article](../../project/client-integrations/twilio.md) for details.

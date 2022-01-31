@@ -66,7 +66,7 @@ In this tab, you can implement the code that will be run before starting the con
 
 ![](<../../../.gitbook/assets/image (20).png>)
 
-More about [DialogueScript](../../../model/dialoguescript/)
+More about [DialogueScript](../../../development/dialoguescript/)
 
 #### Properties  <a href="#properties" id="properties"></a>
 
@@ -105,11 +105,11 @@ If someone else left the window with editor open this is the screen where you ca
 
 ### Related articles
 
-* [Dialogue Model](../../../model/dialogue-model-coding/building-blocks/dialogue-model.md)
-* [Node Types](../../../model/dialogue-model-coding/building-blocks/node-types.md)
+* [Dialogue Model](../../../development/dialogue-model-coding/building-blocks/dialogue-model.md)
+* [Node Types](../../../development/dialogue-model-coding/building-blocks/node-types.md)
 * [Dialogue Mixins](dialogue-mixin.md)
-* [Snippets](../../../model/dialogue-model-coding/building-blocks/snippets.md)
+* [Snippets](../../../development/dialogue-model-coding/building-blocks/snippets.md)
 * [File Assets](file-assets.md)
 * [Voices](voices.md)
-* [Applications](../../../model/dialogue-model-coding/building-blocks/applications.md)
-* [Personas](../../../model/dialogue-model-coding/building-blocks/personas.md)
+* [Applications](../../../development/dialogue-model-coding/building-blocks/applications.md)
+* [Personas](../../../development/dialogue-model-coding/building-blocks/personas.md)

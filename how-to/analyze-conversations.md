@@ -1,6 +1,6 @@
-# Analyze the traffic
+# Analyze Conversations
 
-You can easily track all traffic in your Space in the "Data" menu section.
+You can easily track all conversational traffic in your Space in the "Data" menu section.
 
 ![](<../.gitbook/assets/image (89).png>)
 

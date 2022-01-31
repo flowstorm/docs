@@ -26,7 +26,7 @@ To insert an existing dialogue snippet:
 {% hint style="success" %}
 It's important to emphasize that snippets are templates - once you insert a snippet, you can modify anything without modifying the source.
 
-If you _do_ want to modify the source snippet - or create a new one, use the [Snippet Designer](../../../app/space/design/snippet-designer.md). Also, see this page below.
+If you _do_ want to modify the source snippet - or create a new one, use the [Snippet Designer](../../../studio/space/design/snippet-designer.md). Also, see this page below.
 {% endhint %}
 
 ### "Application main" dialogue snippet
@@ -39,7 +39,7 @@ Probably the most important structure is the "application main" snippet. It is i
 
 The default Flowstorm snippets will not always be enough. To create your own dialogue snippet:
 
-1. Open the [**Snippet Designer**](../../../app/space/design/snippet-designer.md) **** (_Design_ >> _Snippet Designer_).
+1. Open the [**Snippet Designer**](../../../studio/space/design/snippet-designer.md) **** (_Design_ >> _Snippet Designer_).
 2. **Design your snippet model.** To set its name, visit the tab _Properties_.
 3. **Save** your snippet.
 4. From now on, you will see it in the snippet list - you can start using it immediately.
@@ -52,7 +52,7 @@ Similar to other objects (dialogue models, file assets...), snippets are created
 
 If you need to modify an existing snippet:
 
-1. Open the [**Snippet Designer**](../../../app/space/design/snippet-designer.md) (_Design_ >> _Snippet Designer_).
+1. Open the [**Snippet Designer**](../../../studio/space/design/snippet-designer.md) (_Design_ >> _Snippet Designer_).
 2. **Open** an existing **snippet model** (_Model_ >> _Open_).
 3. **Modify** it according to your needs.
 4. **Save** the changes.
