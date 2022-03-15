@@ -96,6 +96,12 @@ The context for generation is constructed automatically from previous turns. You
 ${nrg.generate(GeneratorModel.DialoGPT_large, RankerModel.updown, listOf("Hello!", "Hi! How are you?"))?:"No response"}
 ```
 
+You can also influence how the generated response will start by passing text into the `responseStart` parameter. The model will start with the text in the parameter, and generate the rest of the response. Thus, If you would like the generated response to start with _"I think",_ use the following:
+
+```kotlin
+${nrg.generate(GeneratorModel.DialoGPT_large, RankerModel.updown, responseStart = "I think")?:"No response"}
+```
+
 You can also influence the parameters of the Generator by passing generatorParameters. However, the default parameters should be sufficient in most cases. The default parameters used in Flowstorm are:
 
 ```
