@@ -23,7 +23,7 @@ Now you can invite your collaborators or start designing your first dialogue and
 
 You are in the Dialogue Designer now and you should see the following structure.
 
-![](<.gitbook/assets/Snímek obrazovky 2021-10-19 v 14.27.00.png>)
+<img src=".gitbook/assets/Snímek obrazovky 2021-10-19 v 14.27.00.png" alt="" data-size="original">
 
 It is the default structure of your new application. It already covers all the necessary basic features, and it is fully functional. As you can see, it is a structure of nodes with different colors, interconnected by little arrows that we call transitions.
 

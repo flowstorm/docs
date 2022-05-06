@@ -20,6 +20,10 @@ Or you can use the generative model to enhance the conversation. Imagine that yo
 
 ![Generative model handling conversation about the news](../../.gitbook/assets/ProAničku.PNG)
 
+The generative model can also be used in a hybrid way, which combines hand-designed dialogue trees and generated responses. For this purpose, you can influence the generated response by specifying a few words with which the response should start. Alternatively, some models support generation controllable by dialogue act specification where you can influence whether a response will be a statement, question or another supported dialogue act. This control option is essential in hybrid dialogues because the dialogue act of the generated response influences the structure of the dialogue flow. For example, if the generative model generates a question, you should give the user an opportunity to answer it by placing a user input node into the dialogue flow. If the generative model generates a statement, you can directly attach the following speech node.
+
+![Hybrid dialogue consists of hand-designed dialogue flow enhanced by a generative model.](<../../.gitbook/assets/image (12) (1).png>)
+
 Those were just a few possible applications of the generative model. To sum it up, the generative model is a versatile tool that increases the robustness and richness of the dialogue without the need for extensive human dialogue-designing labor.
 
 ## How the generative model works
@@ -30,10 +34,12 @@ The generative model consists of two components, the Generator and the Ranker. T
 
 Flowstorm supports the following Generators:
 
-| Generator           | Description                                                                                                         |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| DialoGPT\_large     | DialoGPT\_large model by [HuggingFace](https://huggingface.co/microsoft/DialoGPT-large) trained on Reddit comments  |
-| EmpatheticDialogues | DialoGPT\_large model fine-tuned on [EmpatheticDialogues](https://github.com/facebookresearch/EmpatheticDialogues)  |
+| Generator                         | Description                                                                                                                                                               |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| EmpatheticDialogues               | DialoGPT\_large model fine-tuned on [EmpatheticDialogues](https://github.com/facebookresearch/EmpatheticDialogues)                                                        |
+| EmpatheticDialogues\_DialogueActs | DialoGPT\_large model fine-tuned on [EmpatheticDialogues](https://github.com/facebookresearch/EmpatheticDialogues) with output controllable by dialogue act specification |
+| TheTherapyFanfic                  | DialoGPT\_small model fine-tuned on fictional transcripts of therapy sessions                                                                                             |
+| CCPE\_Movies                      | DialoGPT\_small model fine-tuned on movie-related dialogues                                                                                                               |
 
 Flowstorm supports the following Rankers:
 
@@ -49,23 +55,27 @@ The functions to invoke the generative model are:
 nrg.generate(generatorModel: GeneratorModel, 
         rankerModel: RankerModel, 
         contextLength: Int = 3, 
+        responseStart: String? = null, 
+        dialogueAct: DialogueAct? = null,
         generatorParameters: MutableMap<String, Any>? = null): String?
 
 nrg.generate(generatorModel: GeneratorModel, 
         rankerModel: RankerModel, 
         generatorContext: List<String>, 
+        responseStart: String? = null, 
+        dialogueAct: DialogueAct? = null,
         generatorParameters: MutableMap<String, Any>? = null): String?
 ```
 
 The most straightforward way to generate a response by the generative model is to write the following into a speech node:
 
 ```
-${nrg.generate(GeneratorModel.DialoGPT_large, RankerModel.updown)?:"No response"}
+${nrg.generate(GeneratorModel.EmpatheticDialogues, RankerModel.updown)?:"No response"}
 ```
 
-![Inserting code into a speech node to invoke the Generator](../../.gitbook/assets/speech.jpg)
+The first parameter specifies the generator, and the second specifies the ranker we want to use. If there is an error during the generation process, _"No response"_ is the fallback.
 
-The first parameter specifies the generator and the second specifies the ranker we want to use. If there is an error during the generation process, _"No response"_ is used as a fallback. You can name this speech node "Generative Model" for better orientation within your dialogue.
+### Context length
 
 You can also specify an optional parameter `contextLength` that specifies how many previous utterances will be used as context for the generator (`contextLength: Int = 3`). The following example demonstrates how context length is computed:
 
@@ -83,24 +93,57 @@ You can also specify an optional parameter `contextLength` that specifies how ma
 A longer context should lead to a more coherent generated response as the model has access to more information about the history of the dialogue. However, it also leads to a longer time of generation and thus longer latency. The length of `3` (previous utterances) is a reasonable value.
 
 ```
-${nrg.generate(GeneratorModel.DialoGPT_large, RankerModel.updown, 3)?:"No response"}
+${nrg.generate(GeneratorModel.EmpatheticDialogues, RankerModel.updown, 3)?:"No response"}
 ```
 
 {% hint style="info" %}
-You can mask a longer computational time by inserting a meaningless speech node containing _"Well."_ or _"You know."_ between the user input node and speech in which you generate a response. Such nodes contained in the last unfinished turn are not included in the context.
+You can mask a longer computational time by inserting a filler speech node containing _"Well."_ or _"You know."_ between the user input node and speech in which you generate a response. Such nodes contained in the last unfinished turn are not included in the context.
 {% endhint %}
+
+### Generator context
 
 The context for generation is constructed automatically from previous turns. You can also provide custom context by passing `generatorContext`:
 
 ```
-${nrg.generate(GeneratorModel.DialoGPT_large, RankerModel.updown, listOf("Hello!", "Hi! How are you?"))?:"No response"}
+${nrg.generate(GeneratorModel.EmpatheticDialogues, RankerModel.updown, listOf("Hello!", "Hi! How are you?"))?:"No response"}
 ```
 
-You can also influence how the generated response will start by passing text into the `responseStart` parameter. The model will start with the text in the parameter, and generate the rest of the response. Thus, If you would like the generated response to start with _"I think",_ use the following:
+### Response start
+
+You can also influence how the generated response will start by passing text into the `responseStart` parameter. The model will start with the text in the parameter, and generate the rest of the response. Thus, if you would like the generated response to start with _"I think",_ use the following:
 
 ```kotlin
-${nrg.generate(GeneratorModel.DialoGPT_large, RankerModel.updown, responseStart = "I think")?:"No response"}
+${nrg.generate(GeneratorModel.EmpatheticDialogues, RankerModel.updown, responseStart = "I think")?:"No response"}
 ```
+
+### Dialogue Act
+
+You can control the dialogue act of the generated response by the parameter `dialogueAct`. Only some models support this feature as the model has to be trained by a different training procedure to support this way of control. We appended `_DialogueActs` to the names of models that support this feature. The currently supported dialogue acts are:
+
+```
+open_question
+yes_no_question
+command
+opinion
+statement
+yes_answer
+no_answer
+other_answer
+```
+
+To use this feature, use the following:
+
+```
+${nrg.generate(GeneratorModel.EmpatheticDialogues, RankerModel.updown, dialogueAct = DialogueAct.statement)?:"No response"}
+```
+
+The generator will output a response in the form of a statement.
+
+{% hint style="warning" %}
+It might be challenging for a generative model to generate a selected dialogue act due to the nature of the conversation in some cases. Thus, the model can sometimes generate a different dialogue act than specified. To illustrate this with an example, imagine the user asking a yes-no question at a moment when we also want to generate a yes-no question. Two yes-no questions in succession rarely happen in real-world conversations. Thus, the model can have difficulty generating a yes-no question that fits the context. It might happen that the generative model either generates a response with a different dialogue act or the specified dialogue act will be correct but it will not fit the context entirely.
+{% endhint %}
+
+### Generator parameters
 
 You can also influence the parameters of the Generator by passing generatorParameters. However, the default parameters should be sufficient in most cases. The default parameters used in Flowstorm are:
 

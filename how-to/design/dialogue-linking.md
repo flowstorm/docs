@@ -56,4 +56,4 @@ The same dialogue model can be immersed into different other models (e.g. if you
 
 * Then open the dialogue models where you want to link the init mixin, and in each of them, link it by selecting it in the _**Properties** tab **>> Mixins**_.
 
-![](<../../.gitbook/assets/image (97).png>)
+![](<../../.gitbook/assets/image (97) (1).png>)
