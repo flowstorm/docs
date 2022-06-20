@@ -8,7 +8,7 @@ description: A quick introduction to the Flowstorm platform. Make your first ste
 
 You must sign up if you are a new user who wants to try the platform for the first time.
 
-1. Open [app.flowstorm.ai](https://app.flowstorm.ai)
+1. Open [app.flowstorm.ai](https://app.flowstorm.ai/)
 2. Click on **Sign Up** in the top right corner to open a sign-up form.
 3. Choose a preferred authentication provider (Google, Apple, Facebook, Twitter, Slack) or create an account using just your e-mail and a password.
 4. Check your inbox and click on the confirmation link to approve that you are the owner of the address.

@@ -3,7 +3,7 @@
 More complex logic needs to be designed in code. Code is typically written in the _**init code**_ of the dialogue model, in _**Function**_ nodes, _**User Input**_ nodes, and _**Speech**_ nodes.
 
 {% hint style="success" %}
-In Flowstorm, use the **KOTLIN** programming language: [https://kotlinlang.org/](https://kotlinlang.org)
+In Flowstorm, use the **KOTLIN** programming language: [https://kotlinlang.org/](https://kotlinlang.org/)
 {% endhint %}
 
 {% hint style="info" %}

@@ -23,7 +23,7 @@ The Dialogue Selector is a (function) node in a dialogue where the next node is 
 
 The Dialogue Selector node is a function where the actual selection is processed. Please note that only one selector per dialogue can be defined. It has no outgoing transitions and it is a good idea to choose a friendly name (without spaces) to reference it in the selectable nodes.
 
-![Dialogue Selector node](<../../.gitbook/assets/image (8) (1).png>)
+![Dialogue Selector node](<../../../.gitbook/assets/image (8) (1).png>)
 
 The most basic code example is to use the following code to call the Random Dialogue Selector.
 
@@ -37,7 +37,7 @@ When the conversation reaches the function with the code above, the Random Selec
 
 Currently, the only selectable nodes are the Subdialogue nodes. To mark the Subdialogue node as selectable, you need to provide the minimal "R-code".
 
-![R-Code tab](<../../.gitbook/assets/image (9) (1).png>)
+![R-Code tab](<../../../.gitbook/assets/image (9) (1).png>)
 
 The minimal code is shown below. For advanced usage of the "R-code", see the [Label Overlap Dialogue Selector](broken-reference).
 
@@ -51,7 +51,7 @@ The Dialogue Selector considers the Subdialogue nodes with the code above during
 
 As the Subdialogue nodes need to have an outgoing transition, it is a good practice to add a function node that transits back to the Dialogue Selector node using a piece of code. It makes the overall dialogue more readable as it does not require many transition edges to be visible.
 
-![Transition node](<../../.gitbook/assets/image (10) (1).png>)
+![Transition node](<../../../.gitbook/assets/image (10) (1).png>)
 
 ### Optional
 

@@ -6,7 +6,7 @@ description: >-
 
 # Twilio Stream Socket
 
-The platform supports both inbound and outbound phone calls via [Twilio.com](http://twilio.com) platform [streams](https://www.twilio.com/docs/voice/twiml/stream) via web socket endpoint `/call` provided by Core Application.
+The platform supports both inbound and outbound phone calls via [Twilio.com](http://twilio.com/) platform [streams](https://www.twilio.com/docs/voice/twiml/stream) via web socket endpoint `/call` provided by Core Application.
 
 {% hint style="info" %}
 If you need to differentiate between inbound and outbound in main dialogue, use session.isInitiated property (which indicated that session has been created from server initiative) in functional code following `#intro` action
