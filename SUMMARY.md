@@ -57,6 +57,7 @@
 * [Standalone Application](clients/standalone/README.md)
   * [Command Line Interface](clients/standalone/command-line-interface.md)
 * [Android Application](clients/android.md)
+* [Android library](clients/android-library.md)
 * [iOS Application](clients/ios.md)
 * [Web client](clients/web.md)
 * [Amazon Alexa](clients/alexa.md)
