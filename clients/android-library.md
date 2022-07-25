@@ -54,7 +54,7 @@ If you have your own Koin modules, you can add them in the `apply` block on line
 
 This example shows how to start a conversation activity in chat mode, with default settings. For more info about available activities, see the [Library contents](android-library.md#undefined) section.  In your Activity, simply add
 
-```
+```kotlin
 val intent = Intent(this, ChatActivity::class.java)
 startActivity(intent)
 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
@@ -66,7 +66,7 @@ Upon reaching this block of code, the conversation with Flowstorm will start.
 
 The `initializeApp()` function takes an argument `customDefaults` of type `FlowstormDefaults`. By creating your own class extending that one, you can configure the client for your needs. This is the structure of the class, along with the default parameters:
 
-```
+```kotlin
 open class FlowstormDefaults: Defaults {
     override val appKey = "624c00370cf9df6d5508c088"
     override val language = "en_US"
@@ -128,9 +128,35 @@ A screen where the info about the user is displayed.
 
 A screen where the user can configure the app.
 
-#### Other classes
+#### Speech recognition
 
 Each class of the library can of course be imported on its own. To name one example, the importing application can use the Android ASR in the class `FlowstormSpeechRecognizer`. To initialize it, you need to pass a `RecognitionListener` - for that, you can use the `FlowstormRecognitionListener`, or extend it. After that, call the `createSpeechRecognizer()` function. The function returns a boolean value which indicates whether the creation was successful. Afterwards, call `startListening()` to begin the ASR. You can also interrupt it by calling `stopListening()`.
+
+#### Service
+
+You can also make use only of the communication component, which is located in the `Service` class. To instantiate it, you need a pass a UI callback object and a configuration object. You can use the `Callback` class provided but for that you will need a class which will implement the `ClientUI` interface and will display the content received from the server on the screen. Alternatively, you can provide your own class implementing `ClientCallbackV1`. This is how you create the service:
+
+```kotlin
+val context = // android.content.Context
+val clientUI = MyClientUI() // class implementing ClientUI interface
+val zoneId = // ai.flowstorm.time.ZoneId
+val localConfig = LocalConfig(zoneId = zoneId)
+
+val service = Service(Callback(clientUI, context), localConfig)
+```
+
+The communication is started with
+
+```kotlin
+service.open()
+```
+
+To send an input from the user, add
+
+```kotlin
+val text: String = // obtain input from the user
+service.text(text)
+```
 
 ### Logging
 
@@ -169,6 +195,22 @@ To enable Sentry logging, add the following lines to the `AndroidManifest.xml` f
 <meta-data android:name="io.sentry.traces.sample-rate" android:value="1.0" />
 <meta-data android:name="io.sentry.sample-rate" android:value="1.0" />
 ```
+
+### Notifications
+
+The library contains support for receiving Firebase notifications. Add this to your `AndroidManifest.xml` file:
+
+```xml
+<service
+    android:name="ai.flowstorm.android.lib.FlowstormFirebaseMessagingService"
+    android:exported="false">
+    <intent-filter>
+        <action android:name="com.google.firebase.MESSAGING_EVENT" />
+    </intent-filter>
+</service>
+```
+
+Similarly to the [Firebase logging](android-library.md#firebase), you will need a `google-services.json` file.
 
 ### Styling
 
