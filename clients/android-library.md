@@ -4,17 +4,11 @@ description: Documentation for the Flowstorm Android library
 
 # Android library
 
-The Flowstorm Android library was create to allow easy creation of voice-enabled applications or adding a support for the Flowstorm communication into custom applications. This page describes how to import and use the library.
+The Flowstorm Android library was created to allow easy creation of voice-enabled applications or adding support for the Flowstorm communication into custom applications. This page describes how to import and use the library.
 
 ### Pre-requisites
 
-The library uses the [Koin library](https://insert-koin.io/) for module injection. Add the dependency to your `build.gradle.kts` file using
-
-```kts
-implementation("io.insert-koin:koin-android:3.2.0")
-```
-
-The library itself is imported using
+The library is imported using
 
 ```kts
 implementation("ai.flowstorm.client.shared:flowstorm-client-shared-android:1.0.0"){
@@ -22,33 +16,77 @@ implementation("ai.flowstorm.client.shared:flowstorm-client-shared-android:1.0.0
 }
 ```
 
-The attribute `isTransitive` is required, because the library is distributed in the AAR format which does not include the dependencies the library requires.
+The attribute `isTransitive` is required because the library is distributed in the AAR format which does not include the dependencies the library requires.
 
 #### Speech recognition
 
-Note that even though you don't need to define it yourself in your `AndroidManifest`, the app will require the microphone access rights from the user. Also, if the user has the "Google" application disabled on their phone, the ASR won't work.
+Note that even though you don't need to define it yourself in your `AndroidManifest`, the app will require microphone access rights from the user. Also, if the user has the "Google" application disabled on their phone, the ASR won't work.
 
 ### Importing the library
 
-In your application's `MainApplication` file, add the following to initialize the library:
+Create an `Application` file and make it extend the `MainApplication` class.
 
 ```kotlin
-import ai.flowstorm.android.lib.Preferences
-import ai.flowstorm.android.util.FlowstormInitializer
+import ai.flowstorm.android.MainApplication
 
-val appModule = FlowstormInitializer.initializeApp(this).apply { }
-
-startKoin {
-    androidLogger()
-    androidContext(this@MainApplication)
-    modules(appModule)
+class Application : MainApplication() {
 }
-
-val preferences: Preferences = getKoin().get()
-preferences.setupFromDefaultConfig()
 ```
 
-If you have your own Koin modules, you can add them in the `apply` block on line 1.
+Also, define it in the `AndroidManifest.xml` file with
+
+```xml
+<application
+    android:name=".Application"
+    android:allowBackup="false"
+    android:supportsRtl="true">
+</application>
+```
+
+In the `Application` file, add the following to initialize the library:
+
+```kotlin
+import ai.flowstorm.android.util.FlowstormInitializer
+
+override fun onCreate() {
+    super.onCreate()
+    FlowstormInitializer.initializeApp(this)
+}
+```
+
+#### Koin modules
+
+The library uses the [Koin library](https://insert-koin.io/) for module injection. Add the dependency to your `build.gradle.kts` file using
+
+```kts
+implementation("io.insert-koin:koin-android:3.2.0")
+```
+
+#### Custom preferences
+
+You can override the `Preferences` object to add your config options:
+
+```kotlin
+class CustomPreferences(application: Application) : Preferences(application) {
+    
+}
+```
+
+They should be loaded into Koin as a module:
+
+```kotlin
+var appModule = module {
+    single { CustomPreferences(get()) }
+}
+loadKoinModules(appModule)
+```
+
+If you have your own Koin modules, you can also add them using the `loadKoinModules` function. Also, you should load default values from your `Preferences` to the Android `SharedPreferences`:
+
+```kotlin
+val customPreferences: CustomPreferences = getKoin().get()
+customPreferences.setupFromDefaultConfig()
+```
 
 ### Running an activity from the library
 
@@ -64,7 +102,7 @@ Upon reaching this block of code, the conversation with Flowstorm will start.
 
 ### Configuring the client
 
-The `initializeApp()` function takes an argument `customDefaults` of type `FlowstormDefaults`. By creating your own class extending that one, you can configure the client for your needs. This is the structure of the class, along with the default parameters:
+The `initializeApp()` function takes an argument `customDefaults` of type `FlowstormDefaults`. By creating your class which extends that one, you can configure the client for your needs. This is the structure of the class, along with the default parameters:
 
 ```kotlin
 open class FlowstormDefaults: Defaults {
@@ -104,29 +142,25 @@ The most important/useful parameters are probably `appKey`, `language` and `name
 
 ### Library contents
 
-The main feature of the library are the two conversational and three other activities/screens. The activities are self-sufficient, the library contains everything to make them work - dependency definitions, user permissions, layouts (and other resources) and imported classes.
+The main features of the library are the two conversational and three other activities/screens. The activities are self-sufficient, the library contains everything to make them work - dependency definitions, user permission requests, layouts (and other resources), and imported classes.
 
 ![Menu activity](../.gitbook/assets/Screenshot\_20220722-134607.png) ![Voice activity](<../.gitbook/assets/Screenshot\_20220722-134626 (1).png>) ![Chat activity](<../.gitbook/assets/Screenshot\_20220722-134638 (1).png>)
 
 #### Voice activity
 
-The first conversation screen, implementing the "voice mode". The layout is designed to resemble a phone call. The red button ends the conversation. The speaker button turns off and on audio output. The bubble button turns on and off subtitles, both for the persona and for the user. The microphone icon will flash green when the user is supposed to speak, the persona image will flash white when the persona speaks.
+The first conversation screen, voice activity implements the "voice mode". The layout is designed to resemble a phone call. The red button ends the conversation. The speaker button turns off and on audio output. The bubble button turns on and off subtitles, both for the persona and for the user. The microphone icon will flash green when the user is supposed to speak, the persona image will flash white when the persona speaks.
 
 #### Chat activity
 
-The other conversation screen, implementing the "chat mode". The layout is designed to resemble an instant messaging application. The messages from the persona will appear on the left. The user can type their message using the input field, then send them.
+The other conversation screen chat activity implements the "chat mode". The layout is designed to resemble an instant messaging application. The messages from the persona will appear on the left. The user can type their message using the input field, then send them.
 
 #### Menu activity
 
-A screen that displays a selection of personas. Swiping the upper part changes between personas, swiping the lower part changes between topics the persona knows (if there is more than one). Clicking the phone receiver starts the voice mode, the bubble activity starts the chat mode. The user can also make the persona introduce themselves by clicking the video. The buttons in the upper part of the screen lead to settings (left) and profile (right).
+A screen that displays a selection of personas. Swiping the upper part changes between personas while swiping the lower part changes between topics the persona knows (if there is more than one). Clicking the phone receiver starts the voice mode, clicking the speech bubble starts the chat mode. The user can also make the persona introduce themselves by clicking the video. The buttons in the upper part of the screen lead to settings (left) and profile (right).
 
-#### Profile activity
+#### Profile activity and settings activity
 
-A screen where the info about the user is displayed.
-
-#### Settings activity
-
-A screen where the user can configure the app.
+The profile activity is a screen where the info about the user is displayed, in the settings, the user can configure the app.&#x20;
 
 #### Speech recognition
 
@@ -134,7 +168,7 @@ Each class of the library can of course be imported on its own. To name one exam
 
 #### Service
 
-You can also make use only of the communication component, which is located in the `Service` class. To instantiate it, you need a pass a UI callback object and a configuration object. You can use the `Callback` class provided but for that you will need a class which will implement the `ClientUI` interface and will display the content received from the server on the screen. Alternatively, you can provide your own class implementing `ClientCallbackV1`. This is how you create the service:
+You can also make use only of the communication component, which is located in the `Service` class. To instantiate it, you need a pass a UI callback object and a configuration object. You can use the `Callback` class provided but for that, you will need a class that will implement the `ClientUI` interface and will display the content received from the server on the screen. Alternatively, you can provide your class implementing `ClientCallbackV1`. This is how you create the service:
 
 ```kotlin
 val context = // android.content.Context
@@ -145,13 +179,13 @@ val localConfig = LocalConfig(zoneId = zoneId)
 val service = Service(Callback(clientUI, context), localConfig)
 ```
 
-The communication is started with
+Communication is started with
 
 ```kotlin
 service.open()
 ```
 
-To send an input from the user, add
+To send input from the user, add
 
 ```kotlin
 val text: String = // obtain input from the user
@@ -184,7 +218,7 @@ class MainApplication : Application() {
 }
 ```
 
-You also need to provide your own `google-services.json` file.
+You also need to provide your `google-services.json` file.
 
 #### Sentry
 
@@ -214,7 +248,7 @@ Similarly to the [Firebase logging](android-library.md#firebase), you will need 
 
 ### Styling
 
-The library allows changing strings, themes, colors, images, even layouts. Any resource can be overwritten by a file or element of the same name in your application. For example, to change the default loading animation, you need to provide a drawable file named `loading_spin_anim.xml`. You can check the original names in the library files.
+The library allows changing strings, themes, colors, images and even layouts. Any resource can be overwritten by a file or element of the same name in your application. For example, to change the default loading animation, you need to provide a drawable file named `loading_spin_anim.xml`. You can check the original names in the library files.
 
 #### Themes
 
@@ -254,4 +288,4 @@ android:theme="Theme.Custom"
 
 #### Layouts
 
-In theory, you can change even the layouts of the activities, if you provide a file named e.g. `voice_activity.xml`. However, your layout would need to contain elements with all ids which are present in the library layout, else the application would crash after trying to access UI elements whose elements would be missing.
+In theory, you can change even the layouts of the activities, if you provide a file named e.g. `voice_activity.xml`. However, your layout would need to contain elements with all ids which are present in the library layout, or else the application would crash after trying to access UI elements whose elements would be missing.
