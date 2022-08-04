@@ -49,10 +49,12 @@ In the `Application` file, add the following to initialize the library:
 import ai.flowstorm.android.util.FlowstormInitializer
 
 override fun onCreate() {
-    super.onCreate()
     FlowstormInitializer.initializeApp(this)
+    super.onCreate()
 }
 ```
+
+The `initializeApp()` function must be called before the `super.onCreate()` function if you use custom preferences (described in the [Configuring the client](android-library.md#configuring-the-client) section) because they would be overwritten by the default ones, which happens in the `super.onCreate()` function.
 
 #### Koin modules
 
