@@ -8,11 +8,34 @@ The Flowstorm Android library was created to allow easy creation of voice-enable
 
 ### Pre-requisites
 
-The library is imported using
+First, you need to define the repositories for the dependencies. Put the definition in your project's  `settings.gradle` file:
+
+```kotlin
+repositories {
+    google()
+    mavenCentral()
+    mavenLocal()
+    jcenter()
+    maven { url = uri("https://csspeechstorage.blob.core.windows.net/maven/") }
+    maven { url = uri("https://gitlab.com/api/v4/groups/5074098/-/packages/maven") }
+    maven { url = uri("https://jitpack.io") }
+    maven { url = uri("https://maven.pkg.jetbrains.space/public/p/compose/dev") }
+}
+```
+
+The library is imported by inserting the following code into your module `build.gradle.kts` file:
 
 ```kts
-implementation("ai.flowstorm.client.shared:flowstorm-client-shared-android:1.0.0"){
+implementation("ai.flowstorm.client.shared:flowstorm-client-shared-android:1.0.0-SNAPSHOT"){
     isTransitive = true
+}
+```
+
+Or if you use the Java syntax:
+
+```kotlin
+implementation "ai.flowstorm.client.shared:flowstorm-client-shared-android:1.0.0-SNAPSHOT" {
+    transitive = true;
 }
 ```
 
@@ -24,7 +47,7 @@ Note that even though you don't need to define it yourself in your `AndroidManif
 
 ### Importing the library
 
-Create an `Application` file and make it extend the `MainApplication` class.
+Create an `Application` file in your root package and make it extend the `MainApplication` class.
 
 ```kotlin
 import ai.flowstorm.android.MainApplication
@@ -92,7 +115,7 @@ customPreferences.setupFromDefaultConfig()
 
 ### Running an activity from the library
 
-This example shows how to start a conversation activity in chat mode, with default settings. For more info about available activities, see the [Library contents](android-library.md#undefined) section.  In your Activity, simply add
+This example shows how to start a conversation activity in chat mode, with default settings. For more info about available activities, see the [Library contents](android-library.md#undefined) section. In your Activity, simply add
 
 ```kotlin
 val intent = Intent(this, ChatActivity::class.java)
