@@ -23,7 +23,7 @@ repositories {
 }
 ```
 
-The library is imported by inserting the following code into your module `build.gradle.kts` file:
+The library is imported by inserting the following code into your **app's** `build.gradle.kts` file:
 
 ```kts
 implementation("ai.flowstorm.client.shared:flowstorm-client-shared-android:1.0.0-SNAPSHOT"){
@@ -31,11 +31,11 @@ implementation("ai.flowstorm.client.shared:flowstorm-client-shared-android:1.0.0
 }
 ```
 
-Or if you use the Java syntax:
+Or if you use the `build.gradle` file with the Java syntax:
 
 ```kotlin
-implementation "ai.flowstorm.client.shared:flowstorm-client-shared-android:1.0.0-SNAPSHOT" {
-    transitive = true;
+implementation("ai.flowstorm.client.shared:flowstorm-client-shared-android:1.0.0-SNAPSHOT") {
+    transitive(true)
 }
 ```
 
@@ -43,7 +43,9 @@ The attribute `isTransitive` is required because the library is distributed in t
 
 #### Speech recognition
 
-Note that even though you don't need to define it yourself in your `AndroidManifest`, the app will require microphone access rights from the user. Also, if the user has the "Google" application disabled on their phone, the ASR won't work.
+If you use the speech recognition function, you will need to obtain the user's permission to use the microphone. However, the library already includes the permission definition in its `AndroidManifest` file and it asks the user at an appropriate time, before the ASR is needed.
+
+Also, if the user has the "Google" application disabled on their phone, the ASR won't work.
 
 ### Importing the library
 
@@ -69,49 +71,15 @@ Also, define it in the `AndroidManifest.xml` file with
 In the `Application` file, add the following to initialize the library:
 
 ```kotlin
-import ai.flowstorm.android.util.FlowstormInitializer
-
 override fun onCreate() {
     FlowstormInitializer.initializeApp(this)
     super.onCreate()
 }
 ```
 
-The `initializeApp()` function must be called before the `super.onCreate()` function if you use custom preferences (described in the [Configuring the client](android-library.md#configuring-the-client) section) because they would be overwritten by the default ones, which happens in the `super.onCreate()` function.
+The `initializeApp()` function must be called before the `super.onCreate()` function. If you switch them, the app could overwrite your custom preferences (described in the [Configuring the client](android-library.md#configuring-the-client) section).
 
-#### Koin modules
 
-The library uses the [Koin library](https://insert-koin.io/) for module injection. Add the dependency to your `build.gradle.kts` file using
-
-```kts
-implementation("io.insert-koin:koin-android:3.2.0")
-```
-
-#### Custom preferences
-
-You can override the `Preferences` object to add your config options:
-
-```kotlin
-class CustomPreferences(application: Application) : Preferences(application) {
-    
-}
-```
-
-They should be loaded into Koin as a module:
-
-```kotlin
-var appModule = module {
-    single { CustomPreferences(get()) }
-}
-loadKoinModules(appModule)
-```
-
-If you have your own Koin modules, you can also add them using the `loadKoinModules` function. Also, you should load default values from your `Preferences` to the Android `SharedPreferences`:
-
-```kotlin
-val customPreferences: CustomPreferences = getKoin().get()
-customPreferences.setupFromDefaultConfig()
-```
 
 ### Running an activity from the library
 
@@ -314,3 +282,39 @@ android:theme="Theme.Custom"
 #### Layouts
 
 In theory, you can change even the layouts of the activities, if you provide a file named e.g. `voice_activity.xml`. However, your layout would need to contain elements with all ids which are present in the library layout, or else the application would crash after trying to access UI elements whose elements would be missing.
+
+### Custom settings options
+
+#### Koin modules
+
+The library uses the [Koin library](https://insert-koin.io/) for module injection. Add the dependency to your `build.gradle.kts` file using
+
+```kts
+implementation("io.insert-koin:koin-android:3.2.0")
+```
+
+#### Custom preferences
+
+You can override the `Preferences` object to add your config options:
+
+```kotlin
+class CustomPreferences(application: Application) : Preferences(application) {
+    
+}
+```
+
+They should be loaded into Koin as a module in your `Application`'s `onCreate` function:
+
+```kotlin
+var appModule = module {
+    single { CustomPreferences(get()) }
+}
+loadKoinModules(appModule)
+```
+
+If you have your own Koin modules, you can also add them using the `loadKoinModules` function. Also, you should load default values from your `Preferences` to the Android `SharedPreferences`:
+
+```kotlin
+val customPreferences: CustomPreferences = getKoin().get()
+customPreferences.setupFromDefaultConfig()
+```
