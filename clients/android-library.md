@@ -25,21 +25,29 @@ repositories {
 
 The library is imported by inserting the following code into your **app's** `build.gradle.kts` file:
 
-```kts
-implementation("ai.flowstorm.client.shared:flowstorm-client-shared-android:1.0.0-SNAPSHOT"){
+<pre class="language-kts"><code class="lang-kts">implementation("ai.flowstorm.client.shared:flowstorm-client-shared-android:1.0.0-SNAPSHOT"){
     isTransitive = true
-}
-```
+    exclude("org.jetbrains.kotlin", "kotlin-compiler-embeddable")
+<strong>    exclude("org.apache.tika", "tika-core")
+</strong>    exclude("javax.activation", "activation")
+    exclude("jakarta.ws.rs", "jakarta.ws.rs-api")
+    exclude("jakarta.xml.bind", "jakarta.xml.bind-api")
+}</code></pre>
 
 Or if you use the `build.gradle` file with the Java syntax:
 
 ```kotlin
 implementation("ai.flowstorm.client.shared:flowstorm-client-shared-android:1.0.0-SNAPSHOT") {
     transitive(true)
+    exclude group: "org.jetbrains.kotlin",  module: "kotlin-compiler-embeddable"
+    exclude group: "org.apache.tika", module: "tika-core"
+    exclude group: "javax.activation", module: "activation"
+    exclude group: "jakarta.ws.rs", module: "jakarta.ws.rs-api"
+    exclude group: "jakarta.xml.bind", module: "jakarta.xml.bind-api"
 }
 ```
 
-The attribute `isTransitive` is required because the library is distributed in the AAR format which does not include the dependencies the library requires.
+The attribute `isTransitive` is required because the library is distributed in the AAR format which does not include the dependencies the library requires. The excludes serve to avoid "duplicate classes" error.
 
 #### Speech recognition
 
@@ -64,7 +72,9 @@ Also, define it in the `AndroidManifest.xml` file with
 <application
     android:name=".Application"
     android:allowBackup="false"
-    android:supportsRtl="true">
+    android:supportsRtl="true"
+    android:theme="@style/Theme.Flowstorm"
+    tools:replace="android:theme">
 </application>
 ```
 
@@ -86,9 +96,11 @@ The `initializeApp()` function must be called before the `super.onCreate()` func
 This example shows how to start a conversation activity in chat mode, with default settings. For more info about available activities, see the [Library contents](android-library.md#undefined) section. In your Activity, simply add
 
 ```kotlin
-val intent = Intent(this, ChatActivity::class.java)
-startActivity(intent)
-overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+fun runChatActivity() {
+    val intent = Intent(this, ChatActivity::class.java)
+    startActivity(intent)
+    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+}
 ```
 
 Upon reaching this block of code, the conversation with Flowstorm will start.
