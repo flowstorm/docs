@@ -49,6 +49,20 @@ implementation("ai.flowstorm.client.shared:flowstorm-client-shared-android:1.0.0
 
 The attribute `isTransitive` is required because the library is distributed in the AAR format which does not include the dependencies the library requires. The excludes serve to avoid "duplicate classes" error.
 
+If you encounter the error
+
+```
+Duplicate class androidx.lifecycle.ViewModelLazy found in modules lifecycle-viewmodel-2.5.0-runtime (androidx.lifecycle:lifecycle-viewmodel:2.5.0) and lifecycle-viewmodel-ktx-2.4.0-alpha03-runtime (androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0-alpha03)
+Duplicate class androidx.lifecycle.ViewTreeViewModelKt found in modules lifecycle-viewmodel-2.5.0-runtime (androidx.lifecycle:lifecycle-viewmodel:2.5.0) and lifecycle-viewmodel-ktx-2.4.0-alpha03-runtime (androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0-alpha03)
+```
+
+try adding these dependencies:
+
+```
+implementation "androidx.lifecycle:lifecycle-viewmodel:2.5.0"
+implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0"
+```
+
 #### Speech recognition
 
 If you use the speech recognition function, you will need to obtain the user's permission to use the microphone. However, the library already includes the permission definition in its `AndroidManifest` file and it asks the user at an appropriate time, before the ASR is needed.
@@ -60,13 +74,25 @@ Also, if the user has the "Google" application disabled on their phone, the ASR 
 Create an `Application` file in your root package and make it extend the `MainApplication` class.
 
 ```kotlin
-import ai.flowstorm.android.MainApplication
-
 class Application : MainApplication() {
+    override fun onCreate() {
+        FlowstormInitializer.initializeApp(this)
+        super.onCreate()
+    }
 }
 ```
 
-Also, define it in the `AndroidManifest.xml` file with
+The `initializeApp()` function must be called before the `super.onCreate()` function. If you switch them, the app could overwrite your custom preferences (described in the [Configuring the client](android-library.md#configuring-the-client) section).
+
+Next, create an entry activity:
+
+```kotlin
+class MainActivity : AppCompatActivity() {
+
+}
+```
+
+Define the application and the activity it in the `AndroidManifest.xml` file with
 
 ```xml
 <application
@@ -75,25 +101,22 @@ Also, define it in the `AndroidManifest.xml` file with
     android:supportsRtl="true"
     android:theme="@style/Theme.Flowstorm"
     tools:replace="android:theme">
+    <activity
+        android:name=".MainActivity"
+        android:exported="true"
+        android:theme="@style/Theme.Flowstorm.SplashScreen"
+        >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
 </application>
 ```
 
-In the `Application` file, add the following to initialize the library:
-
-```kotlin
-override fun onCreate() {
-    FlowstormInitializer.initializeApp(this)
-    super.onCreate()
-}
-```
-
-The `initializeApp()` function must be called before the `super.onCreate()` function. If you switch them, the app could overwrite your custom preferences (described in the [Configuring the client](android-library.md#configuring-the-client) section).
-
-
-
 ### Running an activity from the library
 
-This example shows how to start a conversation activity in chat mode, with default settings. For more info about available activities, see the [Library contents](android-library.md#undefined) section. In your Activity, simply add
+This example shows how to start a conversation activity in chat mode, with default settings. For more info about available activities, see the [Library contents](android-library.md#undefined) section. In your activity, simply add
 
 ```kotlin
 fun runChatActivity() {
@@ -103,7 +126,21 @@ fun runChatActivity() {
 }
 ```
 
-Upon reaching this block of code, the conversation with Flowstorm will start.
+Upon reaching this block of code, the conversation with Flowstorm will start. You can, for example, add it to your `onCreate` function:
+
+```kotlin
+class MainActivity : AppCompatActivity() {
+    override fun onCreate() {
+        runChatActivity()
+    } 
+    
+    fun runChatActivity() {
+        val intent = Intent(this, ChatActivity::class.java)
+        startActivity(intent)
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+    }   
+}
+```
 
 ### Configuring the client
 
