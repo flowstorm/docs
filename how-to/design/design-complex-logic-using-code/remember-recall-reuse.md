@@ -111,5 +111,5 @@ Here is a definition of a class Pet:
 ```
 data class Pet (var name: String = "", var species: String = "", var age: Int = 0)
     var pet   by user  ("general")  { Pet() }
-    val pets  by user  ("general")  { mutableListOf() }
+    val pets  by user  ("general")  { mutableListOf<Pet>() }
 ```
