@@ -1,7 +1,7 @@
 # Table of contents
 
 * [What is Flowstorm](README.md)
-* [Basic principles](basics.md)
+* [What is Conversational AI](basics.md)
 * [Quick Start Guide](quick-start.md)
 * [Video Tutorials](video-tutorials.md)
 

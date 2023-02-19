@@ -5,7 +5,7 @@ description: >-
   creating!
 ---
 
-# Basics
+# What is Conversational AI
 
 When you talk to a machine, it's usually not (yet) the same experience as if you chatted with a good friend of yours. Even though AI researchers and developers all over the world strive for making conversational AI as human-like as possible, technology still has certain limitations that are reflected in the interaction. On the other hand, as the use of "talking machines" increases, people are getting used to the differences and constantly modify their expectations for future interactions.
 
@@ -37,4 +37,4 @@ Most current voice systems work with the so-called _half-duplex_ (_semiduplex_) 
 
 ### The interaction can be multimodal.&#x20;
 
-A conversational application doesn't have to be just about words. Very often, you can interact via voice, text, or touch; and you can expect to not only hear the voice but also listen to sounds, see images, watch videos, or even talk to a 3D avatar!
+A conversational application doesn't have to be just about written words. Very often, you can interact via voice, text, or touch; and you can expect to not only hear the voice but also listen to sounds, see images, watch videos, or even talk to a 3D avatar!
