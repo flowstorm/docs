@@ -4,24 +4,18 @@ description: A quick introduction to the Flowstorm platform. Make your first ste
 
 # Quick Start Guide
 
-## Open Flowstorm
+## How to sign up
 
-Open [app.flowstorm.ai](https://app.flowstorm.ai/). We recommend you to sign up but anonymous users can also use the platform (with limited features).
-
-<details>
-
-<summary>How to sign up</summary>
+You must sign up if you are a new user who wants to try the platform for the first time.
 
 1. Open [app.flowstorm.ai](https://app.flowstorm.ai/)
 2. Click on **Sign Up** in the top right corner to open a sign-up form.
-3. Choose a preferred authentication provider (Google, Apple, Slack) or create an account using just your e-mail and a password.
+3. Choose a preferred authentication provider (Google, Apple, Facebook, Twitter, Slack) or create an account using just your e-mail and a password.
 4. Check your inbox and click on the confirmation link to approve that you are the owner of the address.
 5. After confirming the e-mail, Flowstorm will create your _Space_.
 6. From now on, you can easily [log in](https://promethist.app/#!/login) anytime.
 
 Now you can invite your collaborators or start designing your first dialogue and voice applications.
-
-</details>
 
 ## How to start prototyping
 
