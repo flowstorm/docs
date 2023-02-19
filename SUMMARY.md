@@ -3,7 +3,7 @@
 * [\*What is Flowstorm](README.md)
 * [\*What is Conversational AI](basics.md)
 * [\*Quick Start Guide](quick-start.md)
-* [\*\*Video Tutorials](video-tutorials.md)
+* [-Video Tutorials](video-tutorials.md)
 
 ## How To
 
