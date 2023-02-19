@@ -7,7 +7,7 @@
 
 ## How To
 
-* [Sign Up & Login](how-to/sign-up.md)
+* [\*Sign Up & Login](how-to/sign-up.md)
 * [Design a Dialogue](how-to/design/README.md)
   * [Introduction](how-to/design/introduction.md)
   * [Create a Dialogue Model](how-to/design/create-dialogue.md)
