@@ -1,13 +1,12 @@
 # Table of contents
 
-* [\*What is Flowstorm](README.md)
-* [\*What is Conversational AI](basics.md)
-* [\*Quick Start Guide](quick-start.md)
-* [\*Video Tutorials](video-tutorials.md)
+* [What is Flowstorm](README.md)
+* [Basics of Conversational AI](basics.md)
+* [Quick start guide](quick-start.md)
 
 ## How To
 
-* [\*Sign Up & Login](how-to/sign-up.md)
+* [Sign up & Log in](how-to/sign-up.md)
 * [\*Design a Dialogue](how-to/design/README.md)
   * [\*Introduction](how-to/design/introduction.md)
   * [\*Create a Dialogue Model](how-to/design/create-dialogue.md)

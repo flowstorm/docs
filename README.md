@@ -1,46 +1,41 @@
 ---
 description: >-
-  The application running at https://app.flowstorm.ai is a platform as a service
-  (PaaS) allowing you to easily create voice applications with digital personas
-  for any purpose you might need.
+  Flowstorm is a platform as a service (PaaS) allowing you to create and
+  administer conversational voice applications with AI-powered digital personas.
 ---
 
 # What is Flowstorm
 
-{% hint style="success" %}
-## CREATE DIGITAL PERSONAS - NOT SIMPLE BOTS!
-{% endhint %}
-
 {% embed url="https://www.youtube.com/watch?v=Tv8CQrJoeKI" %}
 
-The **Flowstorm** platform is provided as a **platform as a service (PaaS**) and consists of several SaaS development tools and software components for **creating smart conversational & multimodal AI** applications.
+The **Flowstorm** conversational platform is provided as a **platform as a service (PaaS)** and consists of several SaaS development tools and software components for creating **conversational & multimodal applications** with **AI-powered digital personas**.
 
-### Create Voice First App with Drag & Drop UI
+### Design via drag\&drop and code
 
-Author a complex VoiceFirst application with a simple drag & drop UI. Rely on predefined, tested, and proven dialog parts. Sub-dialogs, mixins, snippets, and topics are like Lego parts designed for fast and easy development. Includes pictures and recorded voices. Use Kotlin to control the application logic.
+Flowstorm allows you to create smart voice applications in a **drag & drop UI** (predefined nodes or complex dialogue elements) combined with a code-editing environment to control more sophisticated application logic using the programming language **Kotlin**.&#x20;
 
-### Test It in a Minute
+### Easily test and analyze
 
-The Flowstorm comes with built-in analytics. Analyze users' behavior and find problematic dialogs. Learn from the traffic. Enhance the performance of the app. Inspect the session details. Inspect the sessions, including confidence score. Tune the application.
+You can test your apps **seconds after you've created them** and detect problems immediately. Flowstorm also comes with **built-in analytics**: analyze the users' behavior and find what works and what doesn't. Learn from the traffic and enhance the performance of the app. Inspect each conversation, including technical details.
 
-### Access Everywhere - Mobile, Desktop, VR...
+### Access from different environments
 
-Just build once and access  The platform provides integrations to **Alexa, Google Nest, iPhone, Android, WEB, Unreal Engine, POTS, and Twilio**. We also provide an open-source template to write custom integration to any device with a speaker and microphone. The Flowstorm also supports ASR and TTS from major providers (Amazon, Google, Microsoft).
+Flowstorm provides integrations to different **channels and clients**. We also provide an open-source template to write custom integration to any device with a speaker and microphone. Flowstorm also supports ASR and TTS from major providers (Amazon, Google, Microsoft).
 
-### Analytics - Understand Customers
+### Collaborate and share
 
-The Flowstorm platform comes with built-in analytics. Analyze users' behavior and find problematic dialogs. Learn from the traffic. Enhance the performance of the app. Inspect the session details. Inspect the sessions, including confidence score. Tune the application.
+Flowstorm is ready for collaborative design. Share your dialogues and conversational elements **with your team**. Different team members can work on different pieces of the app. Distribute the app to testers and analyze their feedback.
 
-### Collaboration and Sharing
+### Combine flow control with generative AI
 
-The Flowstorm is ready for collaborative design. Share and copy the dialogs with your team. Take advantage of sub-dialogs to enable team members to work on separate pieces of code and letting them add his/her part to the entire artwork. Distribute the app to testers and analyze the feedback.
+In Flowstorm, you can seamlessly combine predetermined conversation flows with state-of-the-art generative models. The former gives you **control** over your personas' behavior, the latter enables personas to talk **freely and flexibly**.
 
-### Use Knowledge - Use Rich Context
+### Work with context
 
-Context is the key to creating personalized and adaptive dialogs. We have introduced attributes with different scopes. The user attribute is the best for building the user profile. The session dialog suits the application context. We offer the Kotlin programing language to process and manipulate any parts of the dialog.
+Context is the key to creating **personalized and adaptive dialogues**. Your Flowstorm app will be able to adapt to the context of the session, the user, or even a community of users.
 
-### Deploy Open Source Runtime On-Premise
+### Deploy open-source runtime on-premise
 
 We provide open-source for the Core and a template for clients. The **Core** is the **major runtime component**. It can be installed in any cloud or on-premise. The client template is a starting point to write integrations for any device.
 
-[Get started for free](https://app.flowstorm.ai/) and [make your first steps](quick-start.md) with Flowstorm!
+## ****[**Get started for free**](https://app.flowstorm.ai/) **and** [**make your first steps**](quick-start.md) **with Flowstorm!**
