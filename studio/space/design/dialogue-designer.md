@@ -1,37 +1,32 @@
 ---
-description: The dialogue designer allows us to create, edit and publish dialogue models.
+description: >-
+  The main editing environment for conversation designers. This is where you
+  create, test, and modify your dialogues – the node graphs as well as the
+  related code.
 ---
 
-# Dialogue Designer
-
-The Flowstorm editor is a tool which serves for creating, saving and building the dialogue models. It is available at [https://app.flowstorm.ai](https://app.flowstorm.ai).&#x20;
+# \*Dialogues (editor)
 
 {% hint style="info" %}
-To get into Dialogue Designer, click on **Design** item in the top menu and choose **Dialogue Designer** or just press key **"d"** as a **keyboard shortcut**.
+You can work with multiple dialogues **** at once. Anytime you create/open a new dialogue, it will open in a **new tab**.
 {% endhint %}
 
-You can **open** as many **models for editing** (or observing) as you want in paralel. Anytime you create or open a new dialogue model you will get a **new tab** with a new **independent editor**.
-
-### Graphic User Interface
+## Graphical user interface
 
 The **Graph** view provides you with the powerful user interface that allows model creating & editing. Elements can be added and organized by drag & drop interface. The right panel allows you to fill the content, code (where applicable) and/or set the node preferences like Label, Name, references to Mixins and Entities.
 
-### Tabs - Editors
+## Tabs
 
-In the following picture you can see the admin with two editors opened.
+In the following picture, you can see the editor with two dialogues opened.
 
-{% hint style="info" %}
-A tabs reflect the statuses and changes of the dialogue models.
-{% endhint %}
-
-* **The first one** (habits/relax)
-  * **Active tab** - white background
-  * **Edited** - title is in **bold font**
-  * **User is not editing now** - the **edit icon** on the left is **inactive** & the **grid** behind the canvas is hidden
-  * **Not built** yet - missing checkmark
-* **The second one** (pre-example/example)
-  * **Built - checkmark** next to the title
-  * **Not edited** - title is not in **bold font**
+* `[#examples]habits/relax:1`
+  * **active tab** (white background)
+  * **unsaved changes** (the title is in bold)
+  * **editing mode is off** (the Edit icon on the left <img src="../../../.gitbook/assets/Screenshot 2023-02-21 at 18.46.23.png" alt="" data-size="line"> is inactive & the grid behind the canvas is hidden)
+* `[#examples]pre-example/example:1`
+  * **inactive tab** (blue background)
+  * **all changes saved** (title not in bold)
+  * **current version is built** (checkmark next to the title)
 
 ![Editor in the view mode](<../../../.gitbook/assets/image (78).png>)
 
@@ -39,11 +34,11 @@ Compare the edit mode in the picture below
 
 ![Editor in the edit mode](<../../../.gitbook/assets/image (79).png>)
 
-### Basic controls  <a href="#basic-controls" id="basic-controls"></a>
+## Basic controls  <a href="#basic-controls" id="basic-controls"></a>
 
 Main area/canvas can be dragged by clicking and moving a mouse or zoomed by holding **Control** and scrolling the mouse wheel. Multiple nodes can be selected by holding a mouse button then dragging a select box over them. Nodes or groups of nodes and links can be duplicated by the shortcuts **Control + C** and **Control + V** (**Command** on Mac) ; however, note that the duplicated nodes will appear on top of the originals so they won’t be immediately visible. The designer can then drag them to a desired position. The copying can be done between open windows of the editor, but make sure you have focus on the main editing area. If the pasting does not work, try closing and reopening the tab or window you are attempting to paste to.
 
-### Working with designer editor tab  <a href="#working-with-designer-editor-tab" id="working-with-designer-editor-tab"></a>
+## Working with designer editor tab  <a href="#working-with-designer-editor-tab" id="working-with-designer-editor-tab"></a>
 
 #### Graph - Main editing area and palette  <a href="#graph---main-editing-area-and-palette" id="graph---main-editing-area-and-palette"></a>
 
@@ -103,13 +98,13 @@ If someone else left the window with editor open this is the screen where you ca
 
 ![](<../../../.gitbook/assets/image (23).png>)
 
-### Related articles
+## Related articles
 
 * [Dialogue Model](../../../development/dialogue-model-coding/building-blocks/dialogue-model.md)
 * [Node Types](../../../development/dialogue-model-coding/building-blocks/node-types.md)
 * [Dialogue Mixins](dialogue-mixin.md)
 * [Snippets](../../../development/dialogue-model-coding/building-blocks/snippets.md)
-* [File Assets](file-assets.md)
-* [Voices](voices.md)
+* [File Assets](broken-reference)
+* [Voices](broken-reference)
 * [Applications](../../../development/dialogue-model-coding/building-blocks/applications.md)
 * [Personas](../../../development/dialogue-model-coding/building-blocks/personas.md)

@@ -12,7 +12,7 @@ The **Flowstorm** conversational platform is provided as a **platform as a servi
 
 ### Design via drag\&drop and code
 
-Flowstorm allows you to create smart voice applications in a **drag & drop UI** (predefined nodes or complex dialogue elements) combined with a code-editing environment to control more sophisticated application logic using the programming language **Kotlin**.&#x20;
+Flowstorm allows you to create smart voice applications in a **drag & drop UI** (predefined nodes or complex dialogue assets) combined with a code-editing environment to control more sophisticated application logic using the programming language **Kotlin**.&#x20;
 
 ### Easily test and analyze
 
@@ -24,7 +24,7 @@ Flowstorm provides integrations to different **channels and clients**. We also p
 
 ### Collaborate and share
 
-Flowstorm is ready for collaborative design. Share your dialogues and conversational elements **with your team**. Different team members can work on different pieces of the app. Distribute the app to testers and analyze their feedback.
+Flowstorm is ready for collaborative design. Share your dialogues and conversational assets **with your team**. Different team members can work on different pieces of the app. Distribute the app to testers and analyze their feedback.
 
 ### Combine flow control with generative AI
 

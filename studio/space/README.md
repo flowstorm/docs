@@ -1,14 +1,12 @@
-# Working Space
+# Main menu
 
 Let's start with the overview of the main menu and controls.&#x20;
 
-{% hint style="info" %}
-Save the time with the keyboard shortcuts. The "k" shortcut will show you the commands/operations available on the current screen.
+{% hint style="success" %}
+Save time with keyboard shortcuts. The "k" shortcut will show you the commands/operations available on the current screen. Or read [this article](../keyboard-shortcuts.md).
 {% endhint %}
 
-Let's have a look at the admin UI and quickly go through the main menu first.
-
-![](<../../.gitbook/assets/image (41).png>)
+Let's have a look at the default UI and quickly go through the main menu first.
 
 ### Home panel <a href="#home-panel" id="home-panel"></a>
 

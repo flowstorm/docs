@@ -40,4 +40,4 @@ You can also load lists of primitive values, e.g. of type `String`
 val countryNames by loader<List<String>>("hhttps://core.flowstorm.ai/file/assets/data/countries.json")
 ```
 
-You can also use [File Assets](../../studio/space/design/file-assets.md) of type JSON. Just upload your file to it and get asset URL from its detail.
+You can also use [File Assets](broken-reference) of type JSON. Just upload your file to it and get asset URL from its detail.
