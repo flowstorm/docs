@@ -16,6 +16,8 @@ Create, train, and modify **entities** and **entity datasets**.
 
 An entity refers to a specific object, concept, or element in a text that is recognized and classified based on its relevance to a particular domain or task. Entities can be anything from people, locations, and organizations to dates, times, and numerical values.
 
+More about entities [here](https://docs.flowstorm.ai/development/dialoguescript/user-input/entities).
+
 ## [Snippets](https://app.flowstorm.ai/#!/space/snippets)
 
 Create and modify reusable dialogue graph snippets. Snippets can save you time as you won't need to create the same structure again and again – you can just easily drag\&drop a copy of a pre-made snippet into any dialogue.
