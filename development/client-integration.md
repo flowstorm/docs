@@ -7,7 +7,7 @@ Client integration is based on [web socket](../project/client-integrations/flows
 If you want to create your own client in Java or Android platforms, you can use **Promethist Common Client library** for that. The whole source code of it is a part of Promethist Core project and can be found on [GitHub](https://github.com/PromethistAI/core/tree/master/client).&#x20;
 
 {% hint style="warning" %}
-We recommend using Java version 8 (Oracle or OpenJDK). Newer version can have certain problems with specific functionalities (e.g. screen visualisations based on JavaFX technology) therefore we do not officially support them yet.&#x20;
+We recommend using Java version 11 (OpenJDK).
 {% endhint %}
 
 First, add PromethistAI artifact repository to your project
