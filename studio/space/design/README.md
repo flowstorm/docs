@@ -6,7 +6,7 @@ description: Tools for designing different types of assets.
 
 ## [Dialogues](https://app.flowstorm.ai/#!/space/dialogue)
 
-The main editing environment for conversation designers. This is where you create, test, and modify your dialogues – the node graphs as well as the related code.
+The **main editing environment** **for** **conversation design**. This is where you create, test, and modify your dialogues – the node graphs as well as the related code.
 
 Read [this article](dialogue-designer.md) for more details.
 
