@@ -34,19 +34,19 @@
 
 ## Flowstorm Studio <a href="#studio" id="studio"></a>
 
-* [Main menu](studio/space/README.md)
-  * [Flowstorm](studio/space/flowstorm.md)
-  * [Design](studio/space/design/README.md)
-    * [\*Dialogues (editor)](studio/space/design/dialogue-designer.md)
-    * [\*Snippets (editor)](studio/space/design/snippet-designer.md)
-    * [\*Mixins (editor)](studio/space/design/dialogue-mixin.md)
-  * [Model](studio/space/model.md)
-  * [Access](studio/space/access.md)
-  * [Data](studio/space/data.md)
-  * [Tools](studio/space/tools.md)
+* [Main menu](studio/main-menu/README.md)
+  * [Flowstorm](studio/main-menu/flowstorm.md)
+  * [Design](studio/main-menu/design/README.md)
+    * [Dialogues (editor)](studio/main-menu/design/dialogue-designer.md)
+    * [Snippets (editor)](studio/main-menu/design/snippet-designer.md)
+    * [Mixins (editor)](studio/main-menu/design/dialogue-mixin.md)
+  * [Model](studio/main-menu/model.md)
+  * [Access](studio/main-menu/access.md)
+  * [Data](studio/main-menu/data.md)
+  * [Tools](studio/main-menu/tools.md)
 * [Space switcher](studio/space-switcher.md)
 * [User menu](studio/user-menu.md)
-* [Interactive side-panel](studio/platform-assistant.md)
+* [Interactive side-panel](studio/interactive-side-panel.md)
 * [Keyboard Shortcuts](studio/keyboard-shortcuts.md)
 
 ## Clients and Channels <a href="#clients" id="clients"></a>

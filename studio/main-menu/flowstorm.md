@@ -16,4 +16,4 @@ An overview of all activity in the current Space.
 
 Opens a pop-up window displaying the basic settings of the current Space.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>

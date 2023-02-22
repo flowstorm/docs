@@ -2,11 +2,11 @@
 description: What you need to know beforehand.
 ---
 
-# Introduction
+# \*Introduction
 
 ## The graph representation
 
-A [dialogue model](create-dialogue.md) can be represented as a **graph structure**, which can be viewed and edited in the [Dialogue Designer](../../studio/space/design/dialogue-designer.md). The structure consists of different types of **nodes**, which represent the stuff that happens during a conversation, such as speaking, listening, or decision-making. Nodes are interconnected by small arrows or "**transitions**", which define the possible paths of a dialogue. Such a visual structure will help you understand clearly the flow of the dialogue.
+A [dialogue model](create-dialogue.md) can be represented as a **graph structure**, which can be viewed and edited in the [Dialogue Designer](../../studio/main-menu/design/dialogue-designer.md). The structure consists of different types of **nodes**, which represent the stuff that happens during a conversation, such as speaking, listening, or decision-making. Nodes are interconnected by small arrows or "**transitions**", which define the possible paths of a dialogue. Such a visual structure will help you understand clearly the flow of the dialogue.
 
 {% hint style="info" %}
 Before we continue, it must be mentioned that **dialogue models can be interconnected** (a model can be nested in another model) and create complex conversational structures. We will talk about this in [another article](dialogue-linking.md). Here, we will describe the designing process within **one dialogue model**.
@@ -15,7 +15,7 @@ Before we continue, it must be mentioned that **dialogue models can be interconn
 ## Work in the Dialogue Designer – basics
 
 {% hint style="info" %}
-These are just the basics. If you want to know more about working with the Dialogue Designer, read [this article](../../studio/space/design/dialogue-designer.md).
+These are just the basics. If you want to know more about working with the Dialogue Designer, read [this article](../../studio/main-menu/design/dialogue-designer.md).
 {% endhint %}
 
 ### Drag and drop & connect nodes

@@ -2,7 +2,7 @@
 description: Profanity filter searches and filters out profane words.
 ---
 
-# Profanity Filter
+# \*Profanity Filter
 
 ## Why do you need a Profanity filter?
 
@@ -47,7 +47,7 @@ if (input.isProfane){
 }
 ```
 
-![Example of how to handle profanities in user input](<../../.gitbook/assets/image (3) (1).png>)
+![Example of how to handle profanities in user input](<../../.gitbook/assets/image (3) (1) (1).png>)
 
 ### Profanities in responses
 
@@ -87,7 +87,7 @@ The two following codes show an example in which you want to read one of the Red
 val funfacts = listOf("Did you know that Pennsylvania grass spiders are more likely to approach a female for sex if she has recently killed and eaten another male.", "Did you know that James Webb telescope is so powerful it could see a bumblebee 240,000 miles away?")
 ```
 
-![List of fun facts in init code. In reality, those fun facts would be crawled automatically from the web or retrieved from a database.](<../../.gitbook/assets/image (5) (1).png>)
+![List of fun facts in init code. In reality, those fun facts would be crawled automatically from the web or retrieved from a database.](<../../.gitbook/assets/image (5) (1) (1).png>)
 
 The second code is from the content of the speech node:
 
@@ -109,7 +109,7 @@ The `profanityFilter.bleepProfanities(text: String): String` function takes a te
 ${profanityFilter.bleepProfanities("Boys have a penis and girls have a vagina.")}
 ```
 
-![Example of bleepProfanities function](<../../.gitbook/assets/image (7) (1).png>)
+![Example of bleepProfanities function](<../../.gitbook/assets/image (7) (1) (1).png>)
 
 
 
