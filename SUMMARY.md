@@ -26,10 +26,10 @@
     * [\*Random Dialogue Selector](how-to/design/dialogue-selector/random-dialogue-selector.md)
     * [\*Label Overlap Dialogue Selector](how-to/design/dialogue-selector/label-overlap-dialogue-selector.md)
     * [\*Custom Dialogue Selector](how-to/design/dialogue-selector/custom-dialogue-selector.md)
-* [\*Create an Application](how-to/applications/README.md)
-  * [\*Define It](how-to/applications/define-app.md)
-  * [\*Share It](how-to/applications/share-app.md)
-* [\*Analyze Conversations & Errors](how-to/analyze-conversations-and-errors.md)
+* [Create an Application](how-to/applications/README.md)
+  * [Define It](how-to/applications/define-app.md)
+  * [Share It](how-to/applications/share-app.md)
+* [Analyze Conversations & Errors](how-to/analyze-conversations-and-errors.md)
 * [Tips for Conversation Design](how-to/principles.md)
 
 ## Flowstorm Studio <a href="#studio" id="studio"></a>

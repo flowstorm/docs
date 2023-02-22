@@ -1,4 +1,8 @@
-# Analyze Conversations
+# Analyze Conversations & Errors
+
+{% hint style="info" %}
+**Also check out** [**this article**](../studio/main-menu/data.md)**.**
+{% endhint %}
 
 You can easily track all conversational traffic in your Space in the "Data" menu section.
 

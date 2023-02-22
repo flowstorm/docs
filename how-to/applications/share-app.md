@@ -1,6 +1,6 @@
 # Share It
 
-You can share your app with end users through multiple channels. We are constantly trying to make it easier for developers to publish and share their apps, so the availability of the following options and their user-friendliness will often change. Stay tuned!
+You can share your app with end users through multiple channels.
 
 {% hint style="warning" %}
 To communicate with the app via **voice**, it will be necessary, in most cases, to **enable the microphone** on the first run by clicking a pop-up notification. Keep in mind that ignoring it can lead to the app turning off or crashing.
@@ -11,7 +11,7 @@ To communicate with the app via **voice**, it will be necessary, in most cases, 
 The easiest way to share your app is by sending your end users a URL link, which they can open in any browser.
 
 * You will find the link in the "**Web Bot URL**" box. It is generated automatically, as explained in the [previous article](define-app.md). See the following gif.
-* You can also open the web bot inside Flowstorm, if you click on the blue-white arrowy button next to the box (see the gif).
+* You can also open the web bot inside Flowstorm if you click on the blue-white arrowy button next to the box (see the gif).
 
 ![](../../.gitbook/assets/webboturl.gif)
 
@@ -25,7 +25,7 @@ There are Flowstorm mobile applications for both [Android](https://play.google.c
    3. In the opened window, select your application in the Applications dropdown and click Save.
    4. Log in to that account in the mobile app and you should see the app on the list.
 2. **Open a Flowstorm link.**
-   1. Click on the link from section [URL link](share-app.md#web-bot-url-link) on your mobile device while you have the app installed. An option to open the link should appear. Open the link with the app.
+   1. Click on the link from the section [URL link](share-app.md#web-bot-url-link) on your mobile device while you have the app installed. An option to open the link should appear. Open the link with the app.
    2. The app will launch and also will be added to the "Recent" app list from where you can launch it again.
 
 ## Alexa skill

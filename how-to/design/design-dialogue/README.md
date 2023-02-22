@@ -4,15 +4,13 @@ description: >-
   with some content?
 ---
 
-# Design the Flow Graph
+# \*Design the Flow Graph
 
-{% hint style="info" %}
 Before you go on, make sure you have read the [Introduction](../introduction.md) to the designing process.
-{% endhint %}
 
 Whenever a new dialogue model is [created](https://docs.promethist.ai/how-to/design/create-dialogue), it will open in the Dialogue Designer. In the main editing area, you will see a default built-in structure: _Enter --> Speech --> Exit_. But there are many more types of nodes. Let's see how you can use them to achieve particular designing goals.
 
-![The default structure of a new dialogue model – your starting point.](<../../../.gitbook/assets/image (42).png>)
+![](<../../../.gitbook/assets/image (42).png>)
 
 ## Begin the dialogue flow
 
