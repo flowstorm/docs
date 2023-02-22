@@ -2,21 +2,17 @@
 description: What you need to know beforehand.
 ---
 
-# \*Introduction
+# Introduction
 
 ## The graph representation
 
-A [dialogue model](create-dialogue.md) can be represented as a **graph structure**, which can be viewed and edited in the [Dialogue Designer](../../studio/main-menu/design/dialogue-designer.md). The structure consists of different types of **nodes**, which represent the stuff that happens during a conversation, such as speaking, listening, or decision-making. Nodes are interconnected by small arrows or "**transitions**", which define the possible paths of a dialogue. Such a visual structure will help you understand clearly the flow of the dialogue.
+A [dialogue model](create-dialogue.md) can be represented as a **graph structure**, which can be viewed and edited in the [Dialogues editor](../../studio/main-menu/design/dialogue-designer.md). The structure consists of different types of **nodes**, which represent the stuff that happens during a conversation, such as speaking, listening, or decision-making. Nodes are interconnected by small arrows or "**transitions**", which define the possible paths of a dialogue. Such a visual structure will help you understand clearly the flow of the dialogue.
 
 {% hint style="info" %}
 Before we continue, it must be mentioned that **dialogue models can be interconnected** (a model can be nested in another model) and create complex conversational structures. We will talk about this in [another article](dialogue-linking.md). Here, we will describe the designing process within **one dialogue model**.
 {% endhint %}
 
-## Work in the Dialogue Designer – basics
-
-{% hint style="info" %}
-These are just the basics. If you want to know more about working with the Dialogue Designer, read [this article](../../studio/main-menu/design/dialogue-designer.md).
-{% endhint %}
+## Work in the Dialogues editor – basics
 
 ### Drag and drop & connect nodes
 
@@ -28,10 +24,10 @@ To insert an item (usually a node) into the structure, just drag it from the lef
   * All node types have exactly one entrance point, except for _Enter_, which begins the flow.
 * The connection point **at the bottom** of a node serves as the **way out of the node**.
   * Most node types have just one way-out point at the bottom.
-  * _Functions_ and _UserInputs_, which can serve as forks, have two more way-out points **on the sides**. All 3 exiting points are equal, they can just help you design a more comprehensible structure.
+  * _Functions_ and _UserInputs_, which can serve as forks, have two more way-out points **on the sides**. All 3 points are equal, they can just help you design a more comprehensible structure.
   * _Exit_, _End_, and _GoBack_ interrupt the flow, so they don't have any way-out points.
 
-Most often, you will design the flow "falling down" through the graph - but that's definitely not a necessary rule! **Your flow can move in any direction** (see the illustration). Just keep in mind that the connection points on the nodes always work as described above.
+Most often, you will design the flow "falling down" through the graph – but that's definitely not a necessary rule! **Your flow can move in any direction** (see the illustration). Just keep in mind that the connection points on the nodes always work as described above.
 
 ![You can arrange your graph just as you wish. As long as it... makes some sense.](<../../.gitbook/assets/image (70).png>)
 

@@ -1,4 +1,4 @@
-# Design Complex Logic Using Code
+# \*Design complex logic using code
 
 More complex logic needs to be designed in code. Code is typically written in the _**init code**_ of the dialogue model, in _**Function**_ nodes, _**User Input**_ nodes, and _**Speech**_ nodes.
 
@@ -7,12 +7,12 @@ In Flowstorm, use the **KOTLIN** programming language: [https://kotlinlang.org/]
 {% endhint %}
 
 {% hint style="info" %}
-In most cases described below, you will need to know _**how to declare a variable**_. Read about it in [**this article**](remember-recall-reuse.md)!
+In most cases described below, you will need to know _**how to declare a variable**_. Read about it in [**this article**](work-with-variables.md)!
 {% endhint %}
 
 ## Init code of the dialogue model
 
-The init code is executed every time the dialogue model is launched. It is an integral part of the model, and typically contains declarations of **variables** (more about that [here](remember-recall-reuse.md)).
+The init code is executed every time the dialogue model is launched. It is an integral part of the model, and typically contains declarations of **variables** (more about that [here](work-with-variables.md)).
 
 The init code is defined in the **Code** tab of a dialogue model:
 
@@ -33,7 +33,7 @@ The Function and User Input nodes allow you, among other things, to:
 
 ### Simple conditions in Functions
 
-Here's an example of a simple if-then-else structure in a Function node (note: the variables `condition1` and `condition2` would have to be [defined](remember-recall-reuse.md) in the init code, otherwise it would cause a build error):
+Here's an example of a simple if-then-else structure in a Function node (note: the variables `condition1` and `condition2` would have to be [defined](work-with-variables.md) in the init code, otherwise it would cause a build error):
 
 ![](<../../../.gitbook/assets/image (88).png>)
 
@@ -67,8 +67,8 @@ You can also write code in Speech nodes if you want the digital persona to:
 Code in Speeches is written **inside `${}`**, for example:
 
 * _**`Hello, ${username}.`**_
-  * The persona will read the string value saved in the variable `username` (needs to be [declared](remember-recall-reuse.md)).
+  * The persona will read the string value saved in the variable `username` (needs to be [declared](work-with-variables.md)).
 * _**`Your favorite number is ${favoriteNumber}.`**_
-  * The persona will read the integer value saved in the variable `favoriteNumber` (needs to be [declared](remember-recall-reuse.md)).
+  * The persona will read the integer value saved in the variable `favoriteNumber` (needs to be [declared](work-with-variables.md)).
 * _**`The game is over. ${if (points > 10) "What a great game!" else if (points > 5) "That was a good game." else "Well, thanks for playing."}`**_
-  * If the value of `points` (needs to be [declared](remember-recall-reuse.md)) is greater than 10, the first string will be uttered, else if the value is at least greater than 5, the second string will be uttered, otherwise the third string will be uttered.
+  * If the value of `points` (needs to be [declared](work-with-variables.md)) is greater than 10, the first string will be uttered, else if the value is at least greater than 5, the second string will be uttered, otherwise the third string will be uttered.

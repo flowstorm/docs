@@ -4,34 +4,6 @@
 * [Basics of Conversational AI](basics.md)
 * [Quick start guide](quick-start.md)
 
-## How To
-
-* [Sign up & Log in](how-to/sign-up.md)
-* [\*Design a Dialogue](how-to/design/README.md)
-  * [\*Introduction](how-to/design/introduction.md)
-  * [\*Create a Dialogue Model](how-to/design/create-dialogue.md)
-  * [\*Design the Flow Graph](how-to/design/design-dialogue/README.md)
-    * [\*Insert a Group of Nodes](how-to/design/design-dialogue/speed-up-design.md)
-  * [\*Define More Properties](how-to/design/define-more-properties.md)
-  * [\*Build and Test Dialogues](how-to/design/build-and-test.md)
-  * [\*Interconnect Dialogue Models](how-to/design/dialogue-linking.md)
-  * [\*Detect Sentiment](how-to/design/analyze-sentiment.md)
-  * [\*Add Sounds and Images](how-to/design/multimedia.md)
-  * [\*Design Complex Logic Using Code](how-to/design/design-complex-logic-using-code/README.md)
-    * [\*Remember, Recall, Reuse](how-to/design/design-complex-logic-using-code/remember-recall-reuse.md)
-  * [\*Retrieve and Implement Fun Facts and Trivia](how-to/design/retrieve-and-implement-fun-facts-and-trivia.md)
-  * [+Use Generative Models](how-to/design/+use-generative-models.md)
-  * [\*Profanity Filter](how-to/design/profanity-filter.md)
-  * [\*Dialogue Selector](how-to/design/dialogue-selector/README.md)
-    * [\*Random Dialogue Selector](how-to/design/dialogue-selector/random-dialogue-selector.md)
-    * [\*Label Overlap Dialogue Selector](how-to/design/dialogue-selector/label-overlap-dialogue-selector.md)
-    * [\*Custom Dialogue Selector](how-to/design/dialogue-selector/custom-dialogue-selector.md)
-* [Create an Application](how-to/applications/README.md)
-  * [Define It](how-to/applications/define-app.md)
-  * [Share It](how-to/applications/share-app.md)
-* [Analyze Conversations & Errors](how-to/analyze-conversations-and-errors.md)
-* [Tips for Conversation Design](how-to/principles.md)
-
 ## Flowstorm Studio <a href="#studio" id="studio"></a>
 
 * [Main menu](studio/main-menu/README.md)
@@ -47,7 +19,35 @@
 * [Space switcher](studio/space-switcher.md)
 * [User menu](studio/user-menu.md)
 * [Interactive side-panel](studio/interactive-side-panel.md)
-* [Keyboard Shortcuts](studio/keyboard-shortcuts.md)
+* [Keyboard shortcuts](studio/keyboard-shortcuts.md)
+
+## How To
+
+* [Sign up & Log in](how-to/sign-up.md)
+* [\*Design a dialogue](how-to/design/README.md)
+  * [Introduction](how-to/design/introduction.md)
+  * [\*Create a dialogue model](how-to/design/create-dialogue.md)
+  * [\*Design the flow graph](how-to/design/design-dialogue/README.md)
+    * [\*Insert a group of nodes](how-to/design/design-dialogue/speed-up-design.md)
+  * [\*Design complex logic using code](how-to/design/design-complex-logic-using-code/README.md)
+    * [\*Work with variables](how-to/design/design-complex-logic-using-code/work-with-variables.md)
+  * [\*Define more properties](how-to/design/define-more-properties.md)
+  * [\*Interconnect dialogue models](how-to/design/dialogue-linking.md)
+  * [+Use generative models](how-to/design/+use-generative-models.md)
+  * [\*Add sounds and images](how-to/design/multimedia.md)
+  * [\*Detect sentiment](how-to/design/analyze-sentiment.md)
+  * [\*Implement fun facts and trivia](how-to/design/implement-fun-facts-and-trivia.md)
+  * [\*Detect profanities](how-to/design/detect-profanities.md)
+  * [\*Use the Dialogue Selector](how-to/design/use-the-dialogue-selector/README.md)
+    * [\*Random Dialogue Selector](how-to/design/use-the-dialogue-selector/random-dialogue-selector.md)
+    * [\*Label Overlap Dialogue Selector](how-to/design/use-the-dialogue-selector/label-overlap-dialogue-selector.md)
+    * [\*Custom Dialogue Selector](how-to/design/use-the-dialogue-selector/custom-dialogue-selector.md)
+* [Build and test dialogues](how-to/build-and-test.md)
+* [Create an application](how-to/applications/README.md)
+  * [Define it](how-to/applications/define-app.md)
+  * [Share it](how-to/applications/share-app.md)
+* [Analyze conversations & errors](how-to/analyze-conversations-and-errors.md)
+* [Tips for conversation design](how-to/principles.md)
 
 ## Clients and Channels <a href="#clients" id="clients"></a>
 

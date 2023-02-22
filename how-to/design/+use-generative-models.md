@@ -4,7 +4,13 @@ description: >-
   dialogue.
 ---
 
-# Use Generative Models
+# +Use generative models
+
+{% hint style="info" %}
+This article describes the use of **GPT-2**.
+
+**If you want to use **<mark style="background-color:green;">**GPT-3**</mark>** or another generative model, please contact our technical support.**
+{% endhint %}
 
 ## Why you need a generative model
 
