@@ -46,7 +46,7 @@
   * [Tools](studio/space/tools.md)
 * [Space switcher](studio/space-switcher.md)
 * [User menu](studio/user-menu.md)
-* [\*Interactive side-panel](studio/platform-assistant.md)
+* [Interactive side-panel](studio/platform-assistant.md)
 * [Keyboard Shortcuts](studio/keyboard-shortcuts.md)
 
 ## Clients and Channels <a href="#clients" id="clients"></a>

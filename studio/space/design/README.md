@@ -36,6 +36,8 @@ Read [this article](dialogue-mixin.md) for more details.
 
 Upload file assets (**images, sounds, JSON files**) that you will be able to reference and use in your dialogues.
 
+In case you need a direct URL of a file asset, you will find it in the Properties of the file in question.
+
 ## [Personas](https://app.flowstorm.ai/#!/space/personas)
 
 Design digital personas that will handle your dialogues. A persona is defined by a combination of certain features like voice, gender, or the **implicit dialogue** containing persona-specific reactions to relevant global intents.
