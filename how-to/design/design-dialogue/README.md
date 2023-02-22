@@ -120,7 +120,7 @@ There are some **global intents that you should never forget** to include in you
 
 ## Analyze the last message again
 
-There is one special node called **Re-input**. It works similar to the UserInput node but without listening to new input, so it allows you to initiate another intent recognition on the last input. This can be useful in some situations where multi-step analysis is convenient.
+There is one special node type called **Re-input**. It works similar to the UserInput node but without listening to new input, so it allows you to initiate another intent recognition on the last input. This can be useful in some situations where multi-step analysis is convenient.
 
 A simple example:
 
@@ -128,6 +128,6 @@ A simple example:
 
 ## Remember, recall, make decisions, search for information...
 
-We will talk about these advanced abilities in other sections of the documentation.
+We will talk about these advanced abilities in [other sections](../design-complex-logic-using-code/) of the documentation.
 
 Spoiler: to complete such tasks, you will use primarily the **Function** node. It might seem almost frightening – such a powerful node! But believe us, it will eventually become one of your best node friends.

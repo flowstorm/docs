@@ -5,7 +5,11 @@ description: >-
   allows a more dynamic flow than a fixed transit.
 ---
 
-# Dialogue Selector
+# Dynamize the flow (Dialogue Selector)
+
+{% hint style="warning" %}
+This article is more technical and requires basic programming knowledge.
+{% endhint %}
 
 ## Motivation
 
