@@ -1,4 +1,14 @@
-# \*Work with variables
+---
+description: >-
+  Save information into memory, and use it anytime you need. Make personas work
+  with context and remember details about the user.
+---
+
+# Use variables (memory & context)
+
+{% hint style="warning" %}
+This article is more technical – basic programming knowledge is recommended, but we tried to explain the principles as clearly as possible :relaxed:
+{% endhint %}
 
 {% hint style="info" %}
 In Flowstorm, **variables** are called **contextual attributes** (or just _attributes_).
@@ -10,7 +20,7 @@ Contextual attributes are usually declared in the **CODE tab** in the dialogue e
 
 ![](<../../../.gitbook/assets/image (83).png>)
 
-Alternatively, if you want to declare an attribute for multiple dialogue models, use an **INIT MIXIN** ([how to do it?](../define-more-properties.md)).
+Alternatively, if you want to declare an attribute for multiple dialogues, use an **INIT MIXIN** ([how to do it?](../define-dialogue-properties.md)).
 
 ## The syntax
 
@@ -53,7 +63,7 @@ The name of the attribute:
 
 * cannot start with a number,
 * cannot contain blank spaces or special characters (except for the underscore character `_`),
-* cannot be identical to the name of an implicit attribute (if it is the case, you will be alerted during the dialogue model [build](../build-and-test.md)).
+* cannot be identical to the name of an implicit attribute (if it is the case, you will be alerted during the dialogue [build](../build-and-test.md)).
 
 ### Scope
 
@@ -61,11 +71,18 @@ A scope is a region of code that constitutes a context in which attributes and t
 
 Flowstorm has the following context scopes:
 
-* **Session** – remember the value until the end of the session, then forget
-* **User** – remember the value for the particular user, don't forget
-* Turn _(advanced)_
-* Community _(advanced)_
-* Client _(advanced)_
+* **Session** (`by session`) – remember the value until the end of the session, then forget
+* **User** (`by user`) – remember the value for the particular user, don't forget
+* **Turn** (`by turn`) _–_ remember the value only during the current turn, then forget
+* **Community** (`by comunity`) – save the values from multiple users to one list of values
+  * here, the variable's namespace must be filled in and it equals the name of the "user community"
+  * the data from community attributes can be viewed in[ Data — Community attributes](https://docs.flowstorm.ai/studio/main-menu/data#community-attributes)
+* **Client** (`by client`) **** – expect the values from the client device _(advanced)_
+* **Loader** (`by loader`) – load the data from an external data source _(advanced)_
+
+{% hint style="warning" %}
+In this article, we explain in detail only the `session` and `user` scopes. For detailed information about the others, check out the technical documentation or contact our technical support.
+{% endhint %}
 
 #### THE SESSION SCOPE (_`by session`_)
 
@@ -77,7 +94,7 @@ You can use these attributes e.g. to count points in a game. Whenever the user g
 
 `currentPoints++` (add 1)
 
-When a new session starts, the variable is automatically reinitialized, and points are being counted again from zero.&#x20;
+When a new session starts, the variable is automatically reinitialized, and points are counted again from zero.&#x20;
 
 #### THE USER SCOPE (_`by user`_)
 
@@ -91,13 +108,13 @@ This is an **extremely useful way of personalizing your content**. The first exa
 
 ### Namespace
 
-The namespace is an **optional** parameter. A namespace helps to group together attributes from different dialogue models (similar to the [init mixin](../define-more-properties.md)). An attribute declared without an explicit namespace is accessible only in the dialogue where it is defined, except for attributes declared in init mixins.
+The namespace is an **optional** parameter (except for attributes `by community`, see above). A namespace helps to group together attributes from different dialogues (similar to the [init mixin](../define-dialogue-properties.md)). An attribute declared without an explicit namespace is accessible only in the dialogue where it is defined, except for attributes declared in init mixins.
 
 ### Initial value
 
 Attributes can be of many types, e.g. String, Int, List, DateTime... The type is automatically inferred from the initial value.
 
-You can even create your own data classes and declare attributes as instances of these classes. Here are some examples of defining attributes:&#x20;
+Here are some examples of defining attributes:&#x20;
 
 ```
 var lastSessionTimeStamp   by user                  { now }
@@ -105,6 +122,8 @@ val appOpeningsTimeStamps  by user                  { DateTimeMutableList() }
 var currentResponse        by session  ("games")    { "" }
 val allResponses           by user     ("games")    { StringMutableList() }
 ```
+
+You can even create your own data classes and declare attributes as instances of these classes.
 
 Here is a definition of a class Pet:
 

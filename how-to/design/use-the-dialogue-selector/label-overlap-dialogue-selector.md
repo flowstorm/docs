@@ -26,7 +26,7 @@ If there is no label overlap, the next dialogue is selected randomly from a list
 
 #### Pool
 
-With this strategy, a non-empty list called fallback pool must be provided (see the Usage section). If there is no label overlap, the next dialogue is selected randomly from the fallback pool.
+With this strategy, a non-empty list called _fallback pool_ must be provided (see the Usage section). If there is no label overlap, the next dialogue is selected randomly from the fallback pool.
 
 #### None
 
@@ -78,7 +78,7 @@ beforeSelect = {
 }
 ```
 
-The code above means that the corresponding node is selectable (with label "movies") only if the variable `someNumber` is greater than 5. You can use an arbitrary condition to modify the behavior.
+The code above means that the corresponding node is selectable (with the label "movies") only if the variable `someNumber` is greater than 5. You can use an arbitrary condition to modify the behavior.
 
 ## Advanced
 
@@ -103,4 +103,4 @@ val parentSelectorState by session(selectorDialogue) { SelectorState() }
 parentSelectorState.nodeRefs += LabelOverlapSelector.labelsToNodeRef("movie")
 ```
 
-The example above adds label "movie", so during the next selection step, the selector selects a dialogue with this label if available.
+The example above adds the label "movie", so during the next selection step, the selector selects a dialogue with this label if available.

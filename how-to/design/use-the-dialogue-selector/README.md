@@ -8,7 +8,7 @@ description: >-
 # Dynamize the flow (Dialogue Selector)
 
 {% hint style="warning" %}
-This article is more technical and requires basic programming knowledge.
+These articles are more technical and require basic programming knowledge.
 {% endhint %}
 
 ## Motivation
@@ -21,9 +21,9 @@ The Dialogue Selector is a tool that considers multiple information sources base
 
 ## Usage <a href="#motivation" id="motivation"></a>
 
-The Dialogue Selector is a (function) node in a dialogue where the next node is selected from a pool of selectable nodes.
+The Dialogue Selector is a (Function) node in a dialogue where the next node is selected from a pool of selectable nodes.
 
-### Dialogue Selector Node (Function)
+### Dialogue Selector node (Function)
 
 The Dialogue Selector node is a function where the actual selection is processed. Please note that only one selector per dialogue can be defined. It has no outgoing transitions and it is a good idea to choose a friendly name (without spaces) to reference it in the selectable nodes.
 
@@ -59,7 +59,7 @@ As the Subdialogue nodes need to have an outgoing transition, it is a good pract
 
 ### Optional
 
-In the "R-code" tab, you can optionally specify code that is triggered after the subdialogue is selected but before the actual subdialogue is triggered. You can define a logic, e.g., to save particular attributes right after you know which subdialogue was selected. See the following example that prints the ID of the selected node.
+In the "R-code" tab, you can optionally specify the code that is triggered after the subdialogue is selected but before the actual subdialogue is triggered. You can define a logic, e.g., to save particular attributes right after you know which subdialogue was selected. See the following example that prints the ID of the selected node.
 
 ```
 afterSelect = {
