@@ -4,11 +4,15 @@ description: >-
   saved in the Elasticsearch database.
 ---
 
-# Retrieve and Implement Fun Facts and Trivia
+# Implement fun facts and trivia
 
-The Flowstorm platform automatically looks for and gathers interesting trivia shared on the r/todayilearned subreddit. The trivia is then saved in the Elasticsearch database.
+{% hint style="warning" %}
+This article is more technical and requires basic programming knowledge.
+{% endhint %}
 
-Interaction designers are able to query the Elasticsearch database to retrieve the trivia and use it in dialogues. The Reddit connector implements the getTrivia() function:
+Flowstorm automatically looks for and gathers interesting trivia shared on the `r/todayilearned` subreddit. The trivia is then saved in the Elasticsearch database.
+
+Interaction designers are able to query the Elasticsearch database to retrieve the trivia and use it in dialogues. The Reddit connector implements the `getTrivia()` function:
 
 ```
 reddit.getTrivia() //returns a list of random trivia objects from the database

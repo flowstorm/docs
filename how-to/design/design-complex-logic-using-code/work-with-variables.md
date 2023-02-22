@@ -53,7 +53,7 @@ The name of the attribute:
 
 * cannot start with a number,
 * cannot contain blank spaces or special characters (except for the underscore character `_`),
-* cannot be identical to the name of an implicit attribute (if it is the case, you will be alerted during the dialogue model [build](../../build-and-test.md)).
+* cannot be identical to the name of an implicit attribute (if it is the case, you will be alerted during the dialogue model [build](../build-and-test.md)).
 
 ### Scope
 

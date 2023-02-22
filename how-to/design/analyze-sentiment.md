@@ -5,23 +5,23 @@ description: >-
   you tools to analyze the so-called "sentiment".
 ---
 
-# Detect Sentiment
+# Detect sentiment
 
-Imagine you would like to branch the flow based on what memories the user has of their hometown. More specifically, you don't care about what the memories are precisely about. You would just like to continue the "positive" flow if they have positive memories, the "sad" flow if they have negative memories, or the "neutral" flow if they don't have any particularly strong negative nor positive memories. For this purpose, you can use **sentiment analysis**.
+Imagine you would like to branch the flow based on what memories the user has of their hometown. More specifically, you don't care about what the memories are precisely about. You would just like to continue the "positive" flow if they have positive memories, the "sad" flow if they have negative memories, or the "neutral" flow if they don't have any particularly strong negative or positive memories. For this purpose, you can use **sentiment analysis**.
 
 Sentiment analysis classifies text into three categories: **positive**, **neutral**, and **negative**. We can use those categories to branch the dialogue flow.
 
 {% hint style="success" %}
 _"I loved the city in which I grew up"_ and _"I like you"_ have a **positive sentiment**.
 
-_"Prague is the capital of the Czech Republic"_ and _"I do sports"_ have a **neutral sentiment**.
+_"Prague is the capital of Czechia"_ and _"I do sports"_ have a **neutral sentiment**.
 
-_"I hated the street I lived on"_ and _"I don't enjoy loud music"_ have a **negative sentiment**.
+_"I hated the street"_ and _"I don't enjoy loud music"_ have a **negative sentiment**.
 {% endhint %}
 
 ## Sentiment snippet <a href="#sentiment-snippet" id="sentiment-snippet"></a>
 
-The easiest way to employ sentiment analysis is by using the predefined **Sentiment** [snippet](../../development/dialogue-model-coding/building-blocks/snippets.md). Drag-and-drop it from the snippet palette into your dialogue.
+The easiest way to employ sentiment analysis is by using the predefined **Sentiment** [snippet](../../development/dialogue-model-coding/building-blocks/snippets.md). Drag\&drop it from the snippet palette into your dialogue.
 
 ![Using a predefined "dialogue snippet" for sentiment analysis. ](https://gblobscdn.gitbook.com/assets%2F-MUs26EFFf\_IPxqoQh7r%2F-MUtDdbdhGN8LU4cXQWo%2F-MUtNeNW78y7FzFTElRW%2Fsentiment.gif?alt=media\&token=a4476432-b396-4880-bbc1-45c79a4beb5e)
 

@@ -1,16 +1,10 @@
----
-description: >-
-  There is nothing more sad than an empty dialogue model. So how do you fill it
-  with some content?
----
+# Design the flow graph
 
-# \*Design the Flow Graph
-
+{% hint style="warning" %}
 Before you go on, make sure you have read the [Introduction](../introduction.md) to the designing process.
+{% endhint %}
 
-Whenever a new dialogue model is [created](https://docs.promethist.ai/how-to/design/create-dialogue), it will open in the Dialogue Designer. In the main editing area, you will see a default built-in structure: _Enter --> Speech --> Exit_. But there are many more types of nodes. Let's see how you can use them to achieve particular designing goals.
-
-![](<../../../.gitbook/assets/image (42).png>)
+Whenever a new dialogue model is [created](https://docs.promethist.ai/how-to/design/create-dialogue), it will open in the editor. In the main editing area, you will see a default built-in structure. Let's see how to understand the nodes and how use can use them to achieve particular designing goals.
 
 ## Begin the dialogue flow
 
@@ -124,8 +118,16 @@ The following gif shows how to do it:
 There are some **global intents that you should never forget** to include in your application, like "stop", "repeat", or "help". We will talk about them [here](broken-reference).
 {% endhint %}
 
+## Analyze the last message again
+
+There is one special node called **Re-input**. It works similar to the UserInput node but without listening to new input, so it allows you to initiate another intent recognition on the last input. This can be useful in some situations where multi-step analysis is convenient.
+
+A simple example:
+
+<img src="../../../.gitbook/assets/image (13).png" alt="" data-size="original">
+
 ## Remember, recall, make decisions, search for information...
 
-We will talk about these advanced abilities in other sections ([Work with context](broken-reference), [Design more complex logic](broken-reference)).
+We will talk about these advanced abilities in other sections of the documentation.
 
 Spoiler: to complete such tasks, you will use primarily the **Function** node. It might seem almost frightening – such a powerful node! But believe us, it will eventually become one of your best node friends.
