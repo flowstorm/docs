@@ -37,6 +37,7 @@
   * [Use generative models](how-to/design/use-generative-models.md)
   * [Detect entities](how-to/design/detect-entities.md)
   * [Add sounds and images](how-to/design/multimedia.md)
+  * [Use GPT](how-to/design/use-gpt.md)
   * [Detect sentiment](how-to/design/analyze-sentiment.md)
   * [Implement fun facts and trivia](how-to/design/implement-fun-facts-and-trivia.md)
   * [Detect profanities](how-to/design/detect-profanities.md)

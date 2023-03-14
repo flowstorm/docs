@@ -78,7 +78,7 @@ if (profanityFilter.isProfane(tweet)){
 }
 ```
 
-![Example of isProfane function](<../../.gitbook/assets/image (4) (1).png>)
+![Example of isProfane function](<../../.gitbook/assets/image (4) (1) (1).png>)
 
 The two following codes show an example in which you want to read one of the Reddit fun facts randomly, but it needs to be one not containing any profanity. The first code is from the init code:
 
