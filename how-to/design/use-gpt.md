@@ -38,7 +38,7 @@ ${llm.complete("You are chatbot. Ask users how would they like to be called.")}
 
 <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-More complicated example usage in code follows:
+More complicated example how to use GPT in code follows:
 
 ```kotlin
 // Create a new instance of the LLMConfig data class with custom settings
