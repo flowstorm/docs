@@ -32,7 +32,8 @@ The library is imported by inserting the following code into your **app's** `bui
 </strong>    exclude("javax.activation", "activation")
     exclude("jakarta.ws.rs", "jakarta.ws.rs-api")
     exclude("jakarta.xml.bind", "jakarta.xml.bind-api")
-}</code></pre>
+}
+</code></pre>
 
 Or if you use the `build.gradle` file with the Java syntax:
 
@@ -274,7 +275,25 @@ To enable Sentry logging, add the following lines to the `AndroidManifest.xml` f
 
 ### Notifications
 
-The library contains support for receiving Firebase notifications. Add this to your `AndroidManifest.xml` file:
+The library contains support for receiving Firebase notifications. First, add the dependency to your project-level `build.gradle` file:
+
+```
+dependencies {
+    // Other dependencies...
+    classpath("com.google.gms:google-services:4.3.10")
+}
+```
+
+Then, add a plugin to your module-level `build.gradle` file:
+
+```
+plugins {
+    // Other plugins...
+    id("com.google.gms.google-services")
+}
+```
+
+Lastly, add this snippet to your `AndroidManifest.xml` file:
 
 ```xml
 <service
