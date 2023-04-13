@@ -1,10 +1,8 @@
 ---
-description: Use GPT in conversation
+description: Use GPT to complete prompt
 ---
 
-# Use GPT
-
-## Utilize GPT using Kotlin code
+# Complete
 
 You can use GPT in Kotlin code using function `llm.complete(prompt: String, stop: List, config: LLMConfig): String` This function acts as a connector to the GPT-3 API and generates text completion based on the provided prompt. The completion will be stopped if any of the stop words are encountered or if the maximum number of tokens is reached. The function takes in a prompt string, a list of stop words, and an instance of the LLMConfig data class that contains various settings for the GPT-3 model.
 
@@ -36,7 +34,7 @@ Minimal working example of using GPT in the dialogue is to use `llm.complete` fu
 ${llm.complete("You are chatbot. Ask users how would they like to be called.")}
 ```
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 More complicated example how to use GPT in code follows:
 

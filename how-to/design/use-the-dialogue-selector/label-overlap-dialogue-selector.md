@@ -10,7 +10,7 @@ Consider the following situation:
 
 Already triggered dialogue: `Dialogue1("labelA", "labelB", "labelC")`
 
-Dialogue candidates: **** `Dialogue2("labelA"), Dialogue3("labelB"), Dialogue4("labelC"), Dialogue5("labelA", labelB")`
+Dialogue candidates: `Dialogue2("labelA"), Dialogue3("labelB"), Dialogue4("labelC"), Dialogue5("labelA", labelB")`
 
 Given the candidates, Dialogue5 would be selected as it has the largest label overlap with the previous dialogue (labelA and labelB). In the next selection round, the rest of the candidates would be compared with Dialogue5, making Dialogue2 and Dialogue3 equal candidates. In a tie situation, the dialogue is selected randomly.
 

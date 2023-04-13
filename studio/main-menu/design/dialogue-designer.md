@@ -12,7 +12,7 @@ description: >-
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-02-22 at 10.27.36.png" alt=""><figcaption></figcaption></figure>
 
 1. **Tabs – different dialogues**\
-   ****    - You can work with multiple dialogues **** at once. Anytime you create/open a new dialogue, it will open in a new tab.\
+   &#x20;   \- You can work with multiple dialogues at once. Anytime you create/open a new dialogue, it will open in a new tab.\
    &#x20;   \- Dialogue name in bold = unsaved changes\
    &#x20;   \- Checkmark = the currently opened version is successfully built
 2.  **Tabs – current dialogue edits**
@@ -30,7 +30,7 @@ description: >-
     &#x20;   \- **Workflow** – here you can "publish" or "archive" the dialogue (both will lock the current version and make it non-editable), or see if anyone is currently working on it
 3. **Quick actions (editing)**: hover over a button to see what it does
 4. **Tabs – palettes and search**\
-   ****    - **Nodes** – drag\&drop different types of nodes\
+   &#x20;   \- **Nodes** – drag\&drop different types of nodes\
    &#x20;   \- **Nodes with mixins** – drag\&drop nodes with a pre-filled [mixin](dialogue-mixin.md) reference\
    &#x20;   \- **Files** – drag\&drop an image or a sound\
    &#x20;   \- **Snippets** – drag\&drop pre-made [snippets](snippet-designer.md)\
@@ -41,7 +41,7 @@ description: >-
 8. **Test run & client attributes settings**
 9. **Interactive side-panel**: where you can interact with the dialogue, also see [this article](../../interactive-side-panel.md)
 10. **Quick actions (model)**: most importantly _Edit mode_ (click on <img src="../../../.gitbook/assets/image (5).png" alt="" data-size="line"> to be able to edit the dialogue), _Build_ (click on <img src="../../../.gitbook/assets/image (10).png" alt="" data-size="line"> to build the dialogue), _Save changes_, _Refresh_, or _Create a new version_\
-    __    - hover over a button to see what it does
+    &#x20;   \- hover over a button to see what it does
 
 ## Controlling the graph canvas  <a href="#basic-controls" id="basic-controls"></a>
 

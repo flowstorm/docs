@@ -84,7 +84,7 @@ Users can say literally anything, so how do you cope with this? In most cases, y
 
 For each _User Input_, you will need to define **the most relevant intents** (each intent will have its own green _Intent_ node) by typing in **some example phrases**, and indicate what should be the reaction based on the detected intent.
 
-So, to your User Input node, connect as many _**Intents** _ as you want the bot to detect at this point of the flow (these "local" Intents will be active only where they are connected – unlike Global Intents). But how do you define the meaning of the intent? Let's take it step by step:
+So, to your User Input node, connect as many _**Intents**_ as you want the bot to detect at this point of the flow (these "local" Intents will be active only where they are connected – unlike Global Intents). But how do you define the meaning of the intent? Let's take it step by step:
 
 1. Insert an _Intent_ node and connect it to the _User Input_ node.
 2. Click on the _Intent_ to see the node details in the right panel. Open the "Examples" tab.
@@ -93,7 +93,7 @@ So, to your User Input node, connect as many _**Intents** _ as you want the bot 
 
 {% hint style="info" %}
 **How many example phrases should you type in?**\
-****It's not about sheer quantity. To best represent the semantic range, try to think of different formulations and synonymic expressions, rather than to list a lot of nearly identical sentences. We will talk about this more in detail in [another article](broken-reference).
+It's not about sheer quantity. To best represent the semantic range, try to think of different formulations and synonymic expressions, rather than to list a lot of nearly identical sentences. We will talk about this more in detail in [another article](broken-reference).
 {% endhint %}
 
 ![](../../../.gitbook/assets/intents-with-bar.gif)

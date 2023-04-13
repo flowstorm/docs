@@ -14,7 +14,7 @@ View and analyze the **user traffic** in the current Space – **sessions (conve
 
 ## [Dialogue Events](https://app.flowstorm.ai/#!/space/events)
 
-View and analyze dialogue events **** in the current Space – these are, most commonly, the **errors that occurred during runtime**.
+View and analyze dialogue events in the current Space – these are, most commonly, the **errors that occurred during runtime**.
 
 * _left panel:_ the **list of dialogue events**
 * _on the right:_ the **technical details** of the selected dialogue events

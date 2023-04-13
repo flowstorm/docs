@@ -9,7 +9,7 @@ Dialogue mixins allow conversation developers to **pre-define** unique texts / c
 Following types of mixins are currently supported:
 
 * _**Intent**_ to define example phrases. Can be used by both contextual and global intents. Use them to pre-define sets of phrases for repeating types of intents (e.g. expressing yes, no, not sure intents)
-* _**Speech**_** ** to define speech variations.
+* _**Speech**_ to define speech variations.
 * _**Init**_ to define init code. Useful to declare contextual attributes and/or data properties used by set of dialogues within one or more applications.
 * _**Function**_ and _**UserInput**_ to define functional code. Can contain imperative code (e.g. logging or metric counting) and/or lambda function - such lambda can work with set of parameters, including those defining possible transitions and should always express one of such transition - see example below:
 

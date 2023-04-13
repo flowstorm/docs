@@ -77,7 +77,7 @@ Flowstorm has the following context scopes:
 * **Community** (`by comunity`) – save the values from multiple users to one list of values
   * here, the variable's namespace must be filled in and it equals the name of the "user community"
   * the data from community attributes can be viewed in[ Data — Community attributes](https://docs.flowstorm.ai/studio/main-menu/data#community-attributes)
-* **Client** (`by client`) **** – expect the values from the client device _(advanced)_
+* **Client** (`by client`) – expect the values from the client device _(advanced)_
 * **Loader** (`by loader`) – load the data from an external data source _(advanced)_
 
 {% hint style="warning" %}

@@ -2,7 +2,7 @@
 description: Before sharing your app with the world, you must create it in Flowstorm.
 ---
 
-# Define It
+# Define it
 
 {% hint style="info" %}
 **Also see** [**this article**](../../studio/main-menu/access.md)**.**
@@ -17,7 +17,7 @@ To define a new application:
 
     &#x20;   a) Click on the **grey box "Main Dialogue"**.
 
-    &#x20;    ****     b) **Choose one of your dialogue models** from the list and click on Open.
+    &#x20;    b) **Choose one of your dialogue models** from the list and click on Open.
 5. If you want your app to be **public** (visible in the Flowstorm mobile app), tick the "Public" checkbox.n
 6. If you want your app to be **runnable by end-users who are not logged in** with a Flowstorm account, tick the "Anonymous Access Allowed" checkbox.
 7. **Click on Save**. Your application will be created and it will be assigned an application ID.
