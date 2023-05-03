@@ -70,11 +70,15 @@ The `CategoryScores` object contains the following double properties:
 
 #### Example
 
-Here's an example of how to use the `Moderation` class to analyze a given text:
+Here's an example of how to use the `Moderation API` to analyze a generated text:
 
 ```kotlin
-val inputText = "Some text to analyze"
-val moderationResponse = moderation.analyze(inputText)
+val response = llm.chat(
+    context, 
+    numTurns = 5, 
+    prompt = "You are digital persona Kai.", 
+    personaName = "Kai")
+val moderationResponse = moderation.analyze(response)
 
 println("Moderation ID: ${moderationResponse.id}")
 println("Model: ${moderationResponse.model}")
