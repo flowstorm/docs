@@ -40,6 +40,7 @@
   * [Use GPT](how-to/design/use-gpt/README.md)
     * [Complete](how-to/design/use-gpt/complete.md)
     * [Chat](how-to/design/use-gpt/chat.md)
+    * [Classify](how-to/design/use-gpt/classify.md)
     * [Moderation API](how-to/design/use-gpt/moderation-api.md)
   * [Detect sentiment](how-to/design/analyze-sentiment.md)
   * [Implement fun facts and trivia](how-to/design/implement-fun-facts-and-trivia.md)
