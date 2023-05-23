@@ -41,7 +41,7 @@ val ent = llm.detect(
     entityDescription = "emotions that the speaker is feeling",
     examples = listOf(
         Pair("I was sad and than I was angry", listOf("sad", "angry")),
-        Pair("I was so excited to see my friend again this year. At first I was really nervous because I changed a lot and I was unsure of how he would react, but then when I saw him, I actually just felt so relieved when he smiled at me and we hugged.", listOf("excited; nervous; unsure; relieved"))
+        Pair("I was so excited to see my friend again this year. At first I was really nervous because I changed a lot and I was unsure of how he would react, but then when I saw him, I actually just felt so relieved when he smiled at me and we hugged.", listOf("excited", "nervous", "unsure", "relieved"))
     )
 )
 ```
