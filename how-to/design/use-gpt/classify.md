@@ -22,7 +22,7 @@ fun classify(
 * `input` (String): The text input that needs to be classified.
 * `examples` (List\<Pair\<String, String>>): A list of example pairs, where each pair consists of an input text and its corresponding class label. The first element of pair is input text, the second element is class label.
 * `prompt` (String, optional): A custom prompt for the classification task. Default value is "Classify text.".
-* `config` (LLMConfig, optional): Configuration object for the GPT model. Uses default configuration if not provided.
+* `config` (LLMConfig, optional): Configuration object for the GPT model. Uses[ default configuration](https://docs.flowstorm.ai/how-to/design/use-gpt/complete) if not provided.
 
 ### Return Value
 
@@ -50,7 +50,7 @@ val inputText = "This movie is a masterpiece and deserves all the praise."
 You can call the `llm.classify` function with these values:
 
 ```kotlin
-val result = classify(inputText, examples)
+val result = llm.classify(inputText, examples)
 logger.info(result)  // Output: "Positive"
 ```
 
