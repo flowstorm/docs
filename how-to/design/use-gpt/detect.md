@@ -24,7 +24,7 @@ fun detect(
 * `prompt` (String): The custom prompt to initiate the detection process.
 * `entityDescription` (String): The description of entities to detect.
 * `examples` (List\<Pair\<String, List>>): A list of examples in the form of pairs. Each pair contains a text input and a list of entity outputs.
-* `config` (LLMConfig): The configuration object for controlling how GPT generates the output.
+* `config` (LLMConfig): The [configuration object](https://docs.flowstorm.ai/how-to/design/use-gpt/complete) for controlling how GPT generates the output.
 
 ### Return Value
 
