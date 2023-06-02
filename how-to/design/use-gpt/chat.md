@@ -26,7 +26,7 @@ The `chat()` function accepts the following parameters:
 * `numTurns`: The number of previous turns to consider when generating the response. Defaults to `5`.
 * `prompt`: The prompt text to display before the generated response. Defaults to `"The following is a conversation with an AI assistant. The assistant is helpful, creative, clever, and very friendly."`.
 * `personaName`: The name of the persona or system generating the response. Defaults to `"System"`.
-* `config`: A configuration object of type `LLMConfig`. This parameter is optional and defaults to the default configuration values.
+* `config`: A configuration object of type `LLMConfig`. This parameter is optional and defaults to the [default configuration values](https://docs.flowstorm.ai/how-to/design/use-gpt/complete).
 
 ### Return Value
 
