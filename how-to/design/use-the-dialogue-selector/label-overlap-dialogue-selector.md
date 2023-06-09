@@ -80,6 +80,43 @@ beforeSelect = {
 
 The code above means that the corresponding node is selectable (with the label "movies") only if the variable `someNumber` is greater than 5. You can use an arbitrary condition to modify the behavior.
 
+### Disabling Repeated Selection of Selectable Nodes
+
+By default, selectable nodes can be chosen multiple times. However, you may want to disable repeated selection of these nodes in certain scenarios. To accomplish this, follow the changes detailed below in your R-code.
+
+#### Locking Node Selection after Being Chosen
+
+To disable repeated selection of a selectable node after it's selected, add the following to R-code:
+
+```R
+afterSelect = {
+    it.isLocked = true
+}
+```
+
+By setting `it.isLocked` to `true`, you ensure that the node remains locked and cannot be selected again.
+
+#### Defining Scope of the Selection Lock
+
+You can also specify the scope of the selection lock: either within the session or indefinitely for the user. To do this, add the `scope` attribute to your R-code as follows:
+
+```R
+scope = Scope.User
+```
+
+By using this attribute, you define the extent of the selection lock for the node. Keep in mind that the default scope is set to the session (i.e., `Scope.Session`), meaning that the node will stay locked only during the session.
+
+Here's an example that combines the two pieces of R-code mentioned above:
+
+```R
+afterSelect = {
+    it.isLocked = true
+}
+scope = Scope.User
+```
+
+In this example, once the user selects the node, the selection will become locked, and the selector cannot select this node again in any future sessions as the scope is set to `Scope.User`.
+
 ## Advanced
 
 The mentioned fallback strategy is most suitable for situations where the fallback dialogues can estimate labels for the following dialogues. Imagine the following scenario:
