@@ -48,6 +48,7 @@
   * [Detect profanities](how-to/design/detect-profanities.md)
   * [Detect dialogue acts](how-to/design/detect-dialogue-acts.md)
   * [Detect Mentioned Emotions](how-to/design/detect-mentioned-emotions.md)
+  * [Detect Negative Thoughts](how-to/design/detect-negative-thoughts.md)
   * [Dynamize the flow (Dialogue Selector)](how-to/design/use-the-dialogue-selector/README.md)
     * [Random Dialogue Selector](how-to/design/use-the-dialogue-selector/random-dialogue-selector.md)
     * [Label Overlap Dialogue Selector](how-to/design/use-the-dialogue-selector/label-overlap-dialogue-selector.md)
