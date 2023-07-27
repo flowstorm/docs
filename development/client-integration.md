@@ -1,6 +1,6 @@
 # Client Integration
 
-Client integration is based on [web socket](../project/client-integrations/flowstorm-sockets/web-socket.md) provided by Core runner service.
+Client integration is based on [web socket](../components/client-integrations/flowstorm-sockets/web-socket.md) provided by Core runner service.
 
 ## Java/Android Client
 
@@ -106,7 +106,7 @@ val context = BotContext(
 
 ### Bot Client&#x20;
 
-Client is represented by [`BotClient`](https://github.com/PromethistAI/core/blob/master/client/lib/src/main/kotlin/org/promethist/client/BotClient.kt) class which implements network communication with the Core service using web socket, processing input audio and playing output audio. To understand better networking part of implementation please take a look on [web socket](../project/client-integrations/flowstorm-sockets/web-socket.md) page too.
+Client is represented by [`BotClient`](https://github.com/PromethistAI/core/blob/master/client/lib/src/main/kotlin/org/promethist/client/BotClient.kt) class which implements network communication with the Core service using web socket, processing input audio and playing output audio. To understand better networking part of implementation please take a look on [web socket](../components/client-integrations/flowstorm-sockets/web-socket.md) page too.
 
 #### State
 

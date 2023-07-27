@@ -124,7 +124,7 @@ There is one special node type called **Re-input**. It works similar to the User
 
 A simple example:
 
-<img src="../../../.gitbook/assets/image (13).png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/image (13) (1).png" alt="" data-size="original">
 
 ## Remember, recall, make decisions, search for information...
 

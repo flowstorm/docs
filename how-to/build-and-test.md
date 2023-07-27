@@ -5,17 +5,21 @@ description: >-
   smoothly?
 ---
 
-# Build and Test Dialogues
+# Build and test dialogues
 
 When you are editing a model, you can continuously save your changes, but it's not until you successfully **BUILD** the model that the resulting conversation will be updated. Once the model is built, you can also immediately **TEST RUN** it in the Dialogue Designer, to test if everything works the way you planned.
 
-![Design –> Build –> Test run ](../../.gitbook/assets/build.gif)
+![Design –> Build –> Test run ](../.gitbook/assets/build.gif)
 
 ## Build the model
 
 To build a model, just click the Build button – the cute little hammer.
 
-![](<../../.gitbook/assets/image (67).png>)
+<div align="center">
+
+<img src="../.gitbook/assets/image (67).png" alt="">
+
+</div>
 
 {% hint style="success" %}
 _Build_ always **saves automatically the current state** of the model, so you don't need to extra-click on _Save_.
@@ -44,7 +48,7 @@ You can just initiate the interaction without any input and let the bot start.
 * To do this, just click the **Test run** button (with the "play" icon).
 * In this case, the action `#intro` is sent – meaning "the user has initiated the interaction". _(NOTE: The hashtag is currently invisible in the chat bubbles, in contrast to the illustrative GIF below.)_
 
-![](../../.gitbook/assets/intro.gif)
+![](../.gitbook/assets/intro.gif)
 
 ### With initial input (the user starts)
 
@@ -54,7 +58,7 @@ You can also initiate the interaction by directly asking something.
 * In this case, the bot can react to your message right away.
 * _Note: this scenario only works if there is a User Input node right after the Enter node, and it will typically be used only in the main dialogue of an application._
 
-![](../../.gitbook/assets/intro2.gif)
+![](../.gitbook/assets/intro2.gif)
 
 {% hint style="info" %}
 _Test run_ always runs the current state of the model: if there have been changes to the model since the last build, _**Test run**_** will first save these changes and re-build the model**, then it will automatically start the interaction.

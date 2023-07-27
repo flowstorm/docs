@@ -35,7 +35,7 @@ Minimal working example of using GPT in the dialogue is to use `llm.complete` fu
 ${llm.complete("You are chatbot. Ask users how would they like to be called.")}
 ```
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (3).png" alt=""><figcaption></figcaption></figure>
 
 More complicated example how to use GPT in code follows:
 

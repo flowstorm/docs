@@ -20,7 +20,7 @@ View and analyze dialogue events in the current Space – these are, most common
 * _on the right:_ the **technical details** of the selected dialogue events
   * you can directly open the corresponding session details or the dialogue where the event occurred, by clicking on <img src="../../.gitbook/assets/Screenshot 2023-02-22 at 9.43.45.png" alt="" data-size="line">
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (105).png" alt=""><figcaption></figcaption></figure>
 
 ## [Metrics Reports](https://app.flowstorm.ai/#!/space/reports)
 

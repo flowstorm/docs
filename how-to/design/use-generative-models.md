@@ -28,7 +28,11 @@ Or you can use the generative model to handle out-of-domain examples. Imagine th
 
 Or you can use the generative model to enhance the conversation. Imagine that your digital persona presents a news snippet. You can include the news snippet in the context and let the generative model handle the conversation for several turns. The generated responses should be related to the topic of the news snippet, no matter what it is.
 
-![](../../.gitbook/assets/ProAničku.PNG)
+<div align="center">
+
+<img src="../../.gitbook/assets/ProAničku.PNG" alt="">
+
+</div>
 
 The generative model can also be used in a hybrid way, which combines hand-designed dialogue trees and generated responses. For this purpose, you can influence the generated response by specifying a few words with which the response should start. Alternatively, some models support generation controllable by dialogue act specification where you can influence whether a response will be a statement, question, or another supported dialogue act. This control option is essential in hybrid dialogues because the dialogue act of the generated response influences the structure of the dialogue flow. For example, if the generative model generates a question, you should give the user an opportunity to answer it by placing a user input node into the dialogue flow. If the generative model generates a statement, you can directly attach the following speech node.
 

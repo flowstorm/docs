@@ -25,7 +25,11 @@ Conveniently, each sound or image has its own node, so it can easily become part
 You can create a new file asset even more quickly through _Create_ (the big **+** on the main menu panel) >> _File Asset_. See the following screenshot. A simplified pop-up window will appear.
 {% endhint %}
 
-![](../../.gitbook/assets/sss.png)
+<div align="center">
+
+<img src="../../.gitbook/assets/sss.png" alt="">
+
+</div>
 
 ## Insert a file into a dialogue
 
