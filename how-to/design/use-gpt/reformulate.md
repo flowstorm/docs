@@ -1,5 +1,5 @@
 ---
-description: Reformulate your system responses using LLM.
+description: Reformulate your system responses using LLM
 ---
 
 # Reformulate
