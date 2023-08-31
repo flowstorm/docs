@@ -70,30 +70,6 @@ The `CategoryScores` object contains the following double properties:
 
 #### Example
 
-Here's an example of how to use the `Moderation API` to analyze a generated text and output all results:
-
-```kotlin
-val response = llm.chat(
-    context, 
-    numTurns = 5, 
-    prompt = "You are digital persona Kai.", 
-    personaName = "Kai")
-val moderationResponse = moderation.analyze(response)
-
-logger.info("Moderation ID: ${moderationResponse.id}")
-logger.info("Model: ${moderationResponse.model}")
-
-var result = moderationResponse.results.first() 
-logger.info("Flagged: ${result.flagged}")
-logger.info("Hate: ${result.categories.hate} (Score: ${result.categoryScores.hate})")
-logger.info("Hate/Threatening: ${result.categories.hateThreatening} (Score: ${result.categoryScores.hateThreatening})")
-logger.info("Self-Harm: ${result.categories.selfHarm} (Score: ${result.categoryScores.selfHarm})")
-logger.info("Sexual: ${result.categories.sexual} (Score: ${result.categoryScores.sexual})")
-logger.info("Sexual/Minors: ${result.categories.sexualMinors} (Score: ${result.categoryScores.sexualMinors})")
-logger.info("Violence: ${result.categories.violence} (Score: ${result.categoryScores.violence})")
-logger.info("Violence/Graphic: ${result.categories.violenceGraphic} (Score: ${result.categoryScores.violenceGraphic})")
-```
-
 Here's an example of how to use the `Moderation API` to branch a dialogue flow:
 
 ```kotlin
@@ -142,4 +118,28 @@ if (result.categories.hate) {
 } else {
     toSafe
 }
+```
+
+Here's an example of how to use the `Moderation API` to analyze a generated text and output all results:
+
+```kotlin
+val response = llm.chat(
+    context, 
+    numTurns = 5, 
+    prompt = "You are digital persona Kai.", 
+    personaName = "Kai")
+val moderationResponse = moderation.analyze(response)
+
+logger.info("Moderation ID: ${moderationResponse.id}")
+logger.info("Model: ${moderationResponse.model}")
+
+var result = moderationResponse.results.first() 
+logger.info("Flagged: ${result.flagged}")
+logger.info("Hate: ${result.categories.hate} (Score: ${result.categoryScores.hate})")
+logger.info("Hate/Threatening: ${result.categories.hateThreatening} (Score: ${result.categoryScores.hateThreatening})")
+logger.info("Self-Harm: ${result.categories.selfHarm} (Score: ${result.categoryScores.selfHarm})")
+logger.info("Sexual: ${result.categories.sexual} (Score: ${result.categoryScores.sexual})")
+logger.info("Sexual/Minors: ${result.categories.sexualMinors} (Score: ${result.categoryScores.sexualMinors})")
+logger.info("Violence: ${result.categories.violence} (Score: ${result.categoryScores.violence})")
+logger.info("Violence/Graphic: ${result.categories.violenceGraphic} (Score: ${result.categoryScores.violenceGraphic})")
 ```
