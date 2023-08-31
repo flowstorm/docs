@@ -134,7 +134,7 @@ if (result.categories.hate) {
 } else if (result.categories.sexualMinors) {
     toHandleSexualMinors
 } else if (result.categories.violence) {
-    toHandleCiolence
+    toHandleViolence
 } else if (result.categories.violenceGraphic) {
     toHandleViolenceGraphic
 } else if (result.flagged) {
