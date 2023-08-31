@@ -70,7 +70,7 @@ The `CategoryScores` object contains the following double properties:
 
 #### Example
 
-Here's an example of how to use the `Moderation API` to analyze a generated text:
+Here's an example of how to use the `Moderation API` to analyze a generated text and output all results:
 
 ```kotlin
 val response = llm.chat(
@@ -80,21 +80,65 @@ val response = llm.chat(
     personaName = "Kai")
 val moderationResponse = moderation.analyze(response)
 
-println("Moderation ID: ${moderationResponse.id}")
-println("Model: ${moderationResponse.model}")
+logger.info("Moderation ID: ${moderationResponse.id}")
+logger.info("Model: ${moderationResponse.model}")
 
 var result = moderationResponse.results.first() 
-println("Flagged: ${result.flagged}")
-println("Hate: ${result.categories.hate} (Score: ${result.categoryScores.hate})")
-println("Hate/Threatening: ${result.categories.hateThreatening} (Score: ${result.categoryScores.hateThreatening})")
-println("Self-Harm: ${result.categories.selfHarm} (Score: ${result.categoryScores.selfHarm})")
-println("Sexual: ${result.categories.sexual} (Score: ${result.categoryScores.sexual})")
-println("Sexual/Minors: ${result.categories.sexualMinors} (Score: ${result.categoryScores.sexualMinors})")
-println("Violence: ${result.categories.violence} (Score: ${result.categoryScores.violence})")
-println("Violence/Graphic: ${result.categories.violenceGraphic} (Score: ${result.categoryScores.violenceGraphic})")
+logger.info("Flagged: ${result.flagged}")
+logger.info("Hate: ${result.categories.hate} (Score: ${result.categoryScores.hate})")
+logger.info("Hate/Threatening: ${result.categories.hateThreatening} (Score: ${result.categoryScores.hateThreatening})")
+logger.info("Self-Harm: ${result.categories.selfHarm} (Score: ${result.categoryScores.selfHarm})")
+logger.info("Sexual: ${result.categories.sexual} (Score: ${result.categoryScores.sexual})")
+logger.info("Sexual/Minors: ${result.categories.sexualMinors} (Score: ${result.categoryScores.sexualMinors})")
+logger.info("Violence: ${result.categories.violence} (Score: ${result.categoryScores.violence})")
+logger.info("Violence/Graphic: ${result.categories.violenceGraphic} (Score: ${result.categoryScores.violenceGraphic})")
+```
+
+Here's an example of how to use the `Moderation API` to branch a dialogue flow:
+
+```kotlin
+val response = llm.chat(
+    context, 
+    numTurns = 5, 
+    prompt = "You are digital persona Kai.", 
+    personaName = "Kai")
+val moderationResponse = moderation.analyze(response) // response is a text we want to analyze
+var result = moderationResponse.results.first() // result is a helper function for easier access to flagged
 
 if (result.flagged){
     toHandleNotSafe
+} else {
+    toSafe
+}
+```
+
+Here's an example of how to use the `Moderation API` to branch a dialogue flow according to category:
+
+```kotlin
+val response = llm.chat(
+    context, 
+    numTurns = 5, 
+    prompt = "You are digital persona Kai.", 
+    personaName = "Kai")
+val moderationResponse = moderation.analyze(response) // response is a text we want to analyze
+var result = moderationResponse.results.first() // result is a helper function for easier access to categories
+
+if (result.categories.hate) {
+    toHandleHate
+} else if (result.categories.hateThreatening) {
+    toHandleHateThreatening
+} else if (result.categories.selfHarm) {
+    toHandleSelfHarm
+} else if (result.categories.sexual) {
+    toHandleSexual
+} else if (result.categories.sexualMinors) {
+    toHandleSexualMinors
+} else if (result.categories.violence) {
+    toHandleCiolence
+} else if (result.categories.violenceGraphic) {
+    toHandleViolenceGraphic
+} else if (result.flagged) {
+    toHandleNotSafe // added just to be safe
 } else {
     toSafe
 }
