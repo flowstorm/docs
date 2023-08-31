@@ -68,7 +68,7 @@ The `CategoryScores` object contains the following double properties:
 * `violence`
 * `violenceGraphic`
 
-### Example
+### Examples
 
 Here's an example of how to use the `Moderation API` to branch a dialogue flow:
 
