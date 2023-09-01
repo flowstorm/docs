@@ -152,7 +152,7 @@
     * [Client Attributes](development/dialoguescript/attributes/client-attributes.md)
     * [Map Attributes](development/dialoguescript/attributes/map-attributes.md)
     * [Sequence Attributes](development/dialoguescript/attributes/sequence-attributes.md)
-    * [Aggregates Attributes](development/dialoguescript/attributes/aggregates-attributes.md)
+    * [Aggregated Attributes](development/dialoguescript/attributes/aggregated-attributes.md)
     * [Entity Collections](development/dialoguescript/attributes/entity-collections.md)
   * [Parameters](development/dialoguescript/parameters.md)
   * [User Input](development/dialoguescript/user-input/README.md)

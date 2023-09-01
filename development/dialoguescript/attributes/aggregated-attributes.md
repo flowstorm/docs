@@ -1,4 +1,4 @@
-# Aggregates Attributes
+# Aggregated Attributes
 
 Aggregated attributes can be used to retrieve session and turn attributes from the previous sessions of the user. Additionally, the following methods allow you to retrieve specific information from aggregated attributes, such as the last recorded value, the first recorded value, the most common value, unique values, value counts, maximum value, minimum value, and average value.
 
