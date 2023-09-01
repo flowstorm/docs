@@ -43,6 +43,7 @@
     * [Classify](how-to/design/use-gpt/classify.md)
     * [Detect](how-to/design/use-gpt/detect.md)
     * [Reformulate](how-to/design/use-gpt/reformulate.md)
+    * [Knowledge Base QA and Search](how-to/design/use-gpt/knowledge-base-qa-and-search.md)
     * [Moderation API](how-to/design/use-gpt/moderation-api.md)
   * [Detect sentiment](how-to/design/analyze-sentiment.md)
   * [Implement fun facts and trivia](how-to/design/implement-fun-facts-and-trivia.md)
