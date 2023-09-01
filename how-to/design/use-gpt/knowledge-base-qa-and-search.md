@@ -1,12 +1,12 @@
 ---
-description: How to use knowledge base QA and search in the platform
+description: How to use knowledge base QA and search in the Platform
 ---
 
 # Knowledge Base QA and Search
 
 ### Introduction
 
-In this documentation, we will introduce two primary functions within the platform: `qa.search` and `qa.answer`. These functions are crucial for accessing the knowledge base and answering your questions. Additionally, we'll provide information about the `KBDocument` class, which is essential for understanding the data structure used by `qa.search`.
+In this documentation, we will introduce two primary functions within the Platform: `qa.search` and `qa.answer`. These functions are crucial for accessing the knowledge base and answering your questions. Additionally, we'll provide information about the `KBDocument` class, which is essential for understanding the data structure used by `qa.search`.
 
 ### Table of Contents
 
@@ -90,7 +90,7 @@ fun qa.answer(question: String, prompt: String): String {
 
 ### 3. Understanding the `KBDocument` Class
 
-The `KBDocument` class is a data structure used within the platform to represent information retrieved from the knowledge base. It contains the following properties:
+The `KBDocument` class is a data structure used within the Platform to represent information retrieved from the knowledge base. It contains the following properties:
 
 * `answer` (String): This field is empty in the current knowledge base configuration, as the answer generation is handled by an LLM.
 * `score` (Double): A numerical value representing the relevance or confidence level of the document.
