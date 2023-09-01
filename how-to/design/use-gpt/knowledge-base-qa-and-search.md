@@ -6,7 +6,7 @@ description: How to use knowledge base QA and search in the Platform
 
 ### Introduction
 
-In this documentation, we will introduce two primary functions within the Platform: `qa.search` and `qa.answer`. These functions are crucial for accessing the knowledge base and answering your questions. Additionally, we'll provide information about the `KBDocument` class, which is essential for understanding the data structure used by `qa.search`.
+`qa.search` and `qa.answer` functions access the knowledge base to answer user questions. Additionally, we provide information about the `KBDocument` class, which is essential for understanding the data structure used by `qa.search`.
 
 ### Table of Contents
 
