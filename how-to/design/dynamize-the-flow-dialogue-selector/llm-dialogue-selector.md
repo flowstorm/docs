@@ -118,7 +118,11 @@ The `ByeSpeech` refers to the name of Bye! speech node. This node serves as fall
 <figure><img src="../../../.gitbook/assets/image (111).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
+There is an optional parameter `additionalInfo` in the `selector.select()` function, which you can use to pass additional information into the prompt, like string representation of user profile for example.
 
+```kotlin
+selector.select(context, this as SelectorModel, relevantNodeRefs, additionalInfo="User likes ${favoriteFood}\nUser plays ${favoriteSport}")
+```
 {% endhint %}
 
 #### 5. Create Transition Back To Dialogue Selector Node
@@ -135,4 +139,42 @@ The `DialogueSelector` refers to the name of Dialogue Selector function from the
 
 
 
-###
+## LLMSelector Constructor
+
+The `LLMSelector` class provides a constructor that allows you to initialize a new instance with specific configurations. Below we break down each parameter that can be passed to the constructor and what it represents:
+
+#### Parameters
+
+* **`llmConfig: LLMConfig = LLMConfig()`**
+  * **Type**: `LLMConfig`
+  * **Default**: An instance with default settings
+  * **Description**: This parameter represents the configurations for the large language model (LLM). You can pass a custom `LLMConfig` object to alter the behavior of the LLM according to your requirements.
+* **`basePrompt: String = DEFAULT_BASE_PROMPT`**
+  * **Type**: `String`
+  * **Default**: The `DEFAULT_BASE_PROMPT` constant defined in the `LLMSelector` class
+  * **Description**: The base prompt is a pre-defined instruction that guides the LLM in selecting an optimal dialogue option. It emphasizes facilitating a meaningful, coherent, and engaging conversation. You can provide a custom string to use as the base prompt to guide the LLM in a specific direction.
+* **`numTurns: Int = 40`**
+  * **Type**: `Int`
+  * **Default**: 40
+  * **Description**: Represents the number of previous dialogue turns to be included in the transcript section of the prompt. Adjusting this parameter affects how much of the conversation history the LLM considers while making a selection.
+
+## Select Function
+
+The `select` function is a crucial part of the `LLMSelector` class, orchestrating the selection of an appropriate node for the ongoing dialogue by leveraging the Large Language Model (LLM). Here we dissect the parameters it accepts and how it operates:
+
+#### Parameters
+
+* **`context: Context`**
+  * **Type**: `Context`
+  * **Description**: This parameter is the context of the ongoing dialogue, holding information about the current state of the conversation. It needs to be an instance of the `Context` class or its derivatives.
+* **`model: SelectorModel`**
+  * **Type**: `SelectorModel`
+  * **Description**: This parameter represents the current model of the selector, containing the state and other relevant information needed for selection.
+* **`relevantNodeRefs: List<NodeRef>`**
+  * **Type**: `List<NodeRef>`
+  * **Description**: A list of node references that are considered relevant at the current point in the dialogue. The LLM uses this list to choose the next node in the conversation.
+* **`additionalInfo: String = ""`**
+  * **Type**: `String`
+  * **Default**: An empty string
+  * **Description**: An optional parameter where you can pass any additional information that might assist the LLM in making a more informed decision.
+
