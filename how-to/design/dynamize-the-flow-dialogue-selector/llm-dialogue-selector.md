@@ -57,7 +57,59 @@ As the dialogue manager for a digital persona, your objective is to select the o
 
 ## How to Use LLM Selector
 
+In this example, we will guide you through setup of LLM Selector that can select conversation about latest sports events, philosophical concept of time or summer holiday destinations.
 
+#### 1. Create a dialogue
+
+Create a dialogue according the picture below.
+
+<figure><img src="../../../.gitbook/assets/image (106).png" alt=""><figcaption></figcaption></figure>
+
+#### 2. Write Dialogue Descriptions
+
+Open each subdialogue node and create a description in R-code. Explain briefly what is the role, topic or goal of the dialogue. Prepend the description with `Des:`. LLM selector recognize this text as dialogue description thanks to this prefix.
+
+<figure><img src="../../../.gitbook/assets/image (107).png" alt=""><figcaption></figcaption></figure>
+
+```
+beforeSelect = { 
+  ref("Desc: Recommendations for summer holiday destinations")
+}
+```
+
+#### 3. Define LLM Selector in Init Code
+
+Open the Code and paste into it the following code:
+
+```kotlin
+val selector by lazy { LLMSelector() }
+```
+
+<figure><img src="../../../.gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+The `LLMSelector()` takes optional parameter `llmConfig` in which you can specify configuration of large language model that will make the selection of the dialogue. You can for example specify, that you want to use GPT-4:
+
+```kotlin
+val selector by lazy { LLMSelector(llmConfig=LLMConfig(model="gpt-4")) }
+```
+
+You can read more about LLMConfig in&#x20;
+{% endhint %}
+
+####
+
+#### 4. Create Transition Back To Dialogue Selector Node
+
+In order to make another selection after the selected dialogue ends, you have to make a transition back to Dialogue Selector Node. Open the bottom function and paste into it the following code:
+
+```kotlin
+Transition(DialogueSelector)
+```
+
+The `DialogueSelector` refers to the name of Dialogue Selector function from the previous step.
+
+<figure><img src="../../../.gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
 
 #### Method Overview
 
