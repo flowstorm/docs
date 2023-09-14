@@ -94,12 +94,34 @@ The `LLMSelector()` takes optional parameter `llmConfig` in which you can specif
 val selector by lazy { LLMSelector(llmConfig=LLMConfig(model="gpt-4")) }
 ```
 
-You can read more about LLMConfig in&#x20;
+[Read more about LLMConfig](https://docs.flowstorm.ai/how-to/design/use-gpt/complete)
+
+
+
+Moreover, LLMSelector() takes optional parameter `basePrompt` through which you can specify the base part of the prompt.
+
+```kotlin
+val selector by lazy { LLMSelector(basePrompt="You are a dialogue selector that selects id of only philosophical dialogues.") }
+```
 {% endhint %}
 
-####
+#### 4. Call LLM Selector in Function
 
-#### 4. Create Transition Back To Dialogue Selector Node
+Insert the following code into the upper function of the dialogue:
+
+```kotlin
+selectTransition(selector.select(context, this as SelectorModel, relevantNodeRefs))?:Transition(ByeSpeech)
+```
+
+The `ByeSpeech` refers to the name of Bye! speech node. This node serves as fallback if the selection fails.
+
+<figure><img src="../../../.gitbook/assets/image (111).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+
+{% endhint %}
+
+#### 5. Create Transition Back To Dialogue Selector Node
 
 In order to make another selection after the selected dialogue ends, you have to make a transition back to Dialogue Selector Node. Open the bottom function and paste into it the following code:
 
@@ -111,8 +133,6 @@ The `DialogueSelector` refers to the name of Dialogue Selector function from the
 
 <figure><img src="../../../.gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
 
-#### Method Overview
 
-* `select(context: Context, model: SelectorModel, relevantNodeRefs: List<NodeRef>, additionalInfo: String = ""): NodeRef?`: This method leverages the LLM to select an appropriate dialogue node based on the constructed prompt and the given context, model, and list of relevant node references. It returns the selected node reference or null if no appropriate node was found.
 
 ###
