@@ -54,6 +54,7 @@
   * [Dynamize the flow (Dialogue Selector)](how-to/design/use-the-dialogue-selector/README.md)
     * [Random Dialogue Selector](how-to/design/use-the-dialogue-selector/random-dialogue-selector.md)
     * [Label Overlap Dialogue Selector](how-to/design/use-the-dialogue-selector/label-overlap-dialogue-selector.md)
+    * [LLM Dialogue Selector](how-to/design/dynamize-the-flow-dialogue-selector/llm-dialogue-selector.md)
     * [Custom Dialogue Selector](how-to/design/use-the-dialogue-selector/custom-dialogue-selector.md)
   * [Retrieve previous sessions](how-to/design/retrieve-previous-sessions.md)
 * [Create an application](how-to/applications/README.md)
