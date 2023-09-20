@@ -1,8 +1,8 @@
-# Define more properties
+# Define dialogue properties
 
 Each dialogue has certain general properties, which can be set in the "**Properties**" tab:
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (103).png" alt=""><figcaption></figcaption></figure>
 
 The properties include:
 

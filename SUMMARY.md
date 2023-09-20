@@ -38,6 +38,7 @@
   * [Detect entities](how-to/design/detect-entities.md)
   * [Add sounds and images](how-to/design/multimedia.md)
   * [Use GPT](how-to/design/use-gpt/README.md)
+    * [Generated Speech Node](how-to/design/use-gpt/generated-speech-node.md)
     * [Complete](how-to/design/use-gpt/complete.md)
     * [Chat](how-to/design/use-gpt/chat.md)
     * [Classify](how-to/design/use-gpt/classify.md)
