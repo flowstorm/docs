@@ -87,7 +87,6 @@ val selector by lazy { LLMSelector() }
 
 <figure><img src="../../../.gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
 The `LLMSelector()` takes optional parameter `llmConfig` in which you can specify configuration of large language model that will make the selection of the dialogue. You can for example specify, that you want to use GPT-4:
 
 ```kotlin
@@ -96,32 +95,35 @@ val selector by lazy { LLMSelector(llmConfig=LLMConfig(model="gpt-4")) }
 
 [Read more about LLMConfig](https://docs.flowstorm.ai/how-to/design/use-gpt/complete)
 
-
-
 Moreover, LLMSelector() takes optional parameter `basePrompt` through which you can specify the base part of the prompt.
 
 ```kotlin
 val selector by lazy { LLMSelector(basePrompt="You are a dialogue selector that selects id of only philosophical dialogues.") }
 ```
-{% endhint %}
+
+And finally, the LLMSelector() takes optional parameter `numTurns` that specify number of turns it uses to construct the transcript of dialogue.
+
+```kotlin
+val selector by lazy { LLMSelector(numTurns=10) }
+```
 
 #### 4. Call LLM Selector in Function
 
 Insert the following code into the upper function of the dialogue:
 
 ```kotlin
-selectTransition(selector.select(context, this as SelectorModel, relevantNodeRefs))?:Transition(ByeSpeech)
+selectTransition(selector, context)?:Transition(ByeSpeech)
 ```
 
 The `ByeSpeech` refers to the name of Bye! speech node. This node serves as fallback if the selection fails.
 
-<figure><img src="../../../.gitbook/assets/image (111).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-There is an optional parameter `additionalInfo` in the `selector.select()` function, which you can use to pass additional information into the prompt, like string representation of user profile for example.
+There is an optional parameter `additionalInfo` in the `selectTransition()` function, which you can use to pass additional information into the prompt, like string representation of user profile for example.
 
 ```kotlin
-selector.select(context, this as SelectorModel, relevantNodeRefs, additionalInfo="User likes ${favoriteFood}\nUser plays ${favoriteSport}")
+selectTransition(selector, context, "User likes ${favoriteFood}\nUser plays ${favoriteSport}")
 ```
 {% endhint %}
 
@@ -157,24 +159,4 @@ The `LLMSelector` class provides a constructor that allows you to initialize a n
   * **Type**: `Int`
   * **Default**: 40
   * **Description**: Represents the number of previous dialogue turns to be included in the transcript section of the prompt. Adjusting this parameter affects how much of the conversation history the LLM considers while making a selection.
-
-## Select Function
-
-The `select` function is a crucial part of the `LLMSelector` class, orchestrating the selection of an appropriate node for the ongoing dialogue by leveraging the Large Language Model (LLM). Here we dissect the parameters it accepts and how it operates:
-
-#### Parameters
-
-* **`context: Context`**
-  * **Type**: `Context`
-  * **Description**: This parameter is the context of the ongoing dialogue, holding information about the current state of the conversation. It needs to be an instance of the `Context` class or its derivatives.
-* **`model: SelectorModel`**
-  * **Type**: `SelectorModel`
-  * **Description**: This parameter represents the current model of the selector, containing the state and other relevant information needed for selection.
-* **`relevantNodeRefs: List<NodeRef>`**
-  * **Type**: `List<NodeRef>`
-  * **Description**: A list of node references that are considered relevant at the current point in the dialogue. The LLM uses this list to choose the next node in the conversation.
-* **`additionalInfo: String = ""`**
-  * **Type**: `String`
-  * **Default**: An empty string
-  * **Description**: An optional parameter where you can pass any additional information that might assist the LLM in making a more informed decision.
 

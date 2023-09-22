@@ -19,7 +19,7 @@ Important to note:
 You can also **try the application by clicking on the "Test run" button** in the lower part of the screen (similar to the Dialogues editor).
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 More about creating an application [here](../../how-to/applications/define-app.md).
 
