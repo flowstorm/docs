@@ -36,6 +36,6 @@ Context is the key to creating **personalized and adaptive dialogues**. Your Flo
 
 ### Deploy open-source runtime on-premise
 
-We provide open-source for the Core and a template for clients. The **Core** is the **major runtime component**. It can be installed in any cloud or on-premise. The client template is a starting point to write integrations for any device.
+We provide open-source for the Core and a template for clients. The **Core** is the **major runtime component**. It can be installed in any cloud or on-premise. The client template is a starting point to write integrations for any device
 
 ## [**Get started for free**](https://app.flowstorm.ai/) **and** [**make your first steps**](quick-start.md) **with Flowstorm!**
