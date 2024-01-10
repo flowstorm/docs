@@ -1,10 +1,10 @@
 # Table of contents
 
-* [What is Flowstorm](README.md)
+* [What is Promethist Platform](README.md)
 * [Basics of Conversational AI](basics.md)
 * [Quick start guide](quick-start.md)
 
-## Flowstorm Studio <a href="#studio" id="studio"></a>
+## Promethist Studio <a href="#studio" id="studio"></a>
 
 * [Main menu](studio/main-menu/README.md)
   * [Flowstorm](studio/main-menu/flowstorm.md)
@@ -78,7 +78,7 @@
 * [Google Assistant App](clients/google.md)
 * [Phone Calls via Twilio.com](clients/phone.md)
 
-## Flowstorm Components <a href="#components" id="components"></a>
+## Platform Components <a href="#components" id="components"></a>
 
 * [Core Library](components/core-library/README.md)
   * [Built-In Voices](components/core-library/built-in-voices.md)
