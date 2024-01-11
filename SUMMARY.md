@@ -50,7 +50,7 @@
   * [Implement fun facts and trivia](how-to/design/implement-fun-facts-and-trivia.md)
   * [Detect profanities](how-to/design/detect-profanities.md)
   * [Detect dialogue acts](how-to/design/detect-dialogue-acts.md)
-  * [Detect Mentioned Emotions](how-to/design/detect-mentioned-emotions.md)
+  * [Detect Mentioned Emotion](how-to/design/detect-mentioned-emotion.md)
   * [Detect Negative Thoughts](how-to/design/detect-negative-thoughts.md)
   * [Dynamize the flow (Dialogue Selector)](how-to/design/use-the-dialogue-selector/README.md)
     * [Random Dialogue Selector](how-to/design/use-the-dialogue-selector/random-dialogue-selector.md)
