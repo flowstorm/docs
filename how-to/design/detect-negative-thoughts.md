@@ -4,9 +4,11 @@ description: Detect that user mentioned some negative thought
 
 # Detect Negative Thoughts
 
-## Negative Thought Detection
-
 The Negative Thought Detection feature is used to identify negative thoughts in a conversation.&#x20;
+
+{% hint style="info" %}
+Negative Thoughts detection is available in 🇺🇸 English, 🇨🇿 Czech, 🇩🇪 German, and 🇪🇸 Spanish dialogues
+{% endhint %}
 
 ### Accessing Detected Negative Thoughts
 
