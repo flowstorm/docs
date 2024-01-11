@@ -12,23 +12,26 @@ Also, some users use foul language when talking to digital personas. If you want
 
 In summary, the Profanity Filter is a component that searches for and filters out profane words in texts. The text is typically the input message of the user or a response of the digital persona over which the dialogue designer doesn't have full control.
 
-![Profanity filter applied to tweets, Reddit fun facts and output of Generative model](../../.gitbook/assets/ProfanityFilter.png)
+<figure><img src="broken-reference" alt=""><figcaption><p>Profanity filter applied to tweets, Reddit fun facts and output of Generative model</p></figcaption></figure>
 
 ## How does the Profanity Filter work?
 
-The Profanity filter searches for words from a list of profanities using regular expressions.&#x20;
+The Profanity filter searches for profane, hateful or toxic inputs. It recognizes several classes of problems: isProfane, isHate, isHateThreatening, isHarassment, isHarassmentThreatening, isSelfHarm, isSelfHarmIntent, isSelfHarmInstructions, isSexual, isSexualMinors, isViolence, and isViolenceGraphic. The isProfane is the overarching profanity class. Is Profane is true if any of `isHate, isHateThreatening, isHarassment, isHarassmentThreatening, isSexual, isSexualMinors, isViolence and isViolenceGraphic` is detected and none of `isSelfHarm, isSelfHarmIntent, and isSelfHarmInstructions` is detected.
 
-{% hint style="info" %}
-You can see the list of profanities here [⚠ sensitive content](https://core.flowstorm.ai/file/assets/spaces/61e589c079e5143f41f6a083).
-{% endhint %}
-
-For example, it finds that the line "_Boys have a **penis** and girls have a **vagina**._" from the movie Kindergarten Cop contains profanities and it can bleep out those words. Thus, the output to the user will be _"Boys have a **BLEEP** and girls have a **BLEEP**."_ The search for profane words is case-insensitive, meaning that the Profanity Filter considers words `vagina`, `Vagina` and `VAGINA` all the same.
-
-However, the abilities of the Profanity Filter based on the list of profane words are limited. It doesn't consider the context of the text or recognize more advanced profanities that work on the pragmatic level. Thus, the previous example from Kindergarten Cop can be considered OK in some contexts, but the Profanity Filter filters it out anyway. Even though the words "penis" and "vagina" are not profane as such, they are included in the profanity list because their usage is problematic and the situations in which they might occur are sensitive. The efficiency of the Profanity Filter depends on which words are considered profane and included on the list. On the other hand, some rude texts can pass the filter if they don't contain profane words. Keep those limitations in mind.
-
-{% hint style="warning" %}
-Rude texts can pass the filter if they don't contain profane words!
-{% endhint %}
+| Class                   | Description                                                                                                                                                                                                                                    |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| isProfane               | Content that contains any hate, harassment, sexual or violence, excluding self harm.                                                                                                                                                           |
+| isHate                  | Content that expresses, incites, or promotes hate based on race, gender, ethnicity, religion, nationality, sexual orientation, disability status, or caste. Hateful content aimed at non-protected groups (e.g., chess players) is harassment. |
+| isHateThreatening       | Hateful content that also includes violence or serious harm towards the targeted group based on race, gender, ethnicity, religion, nationality, sexual orientation, disability status, or caste.                                               |
+| isHarassment            | Content that expresses, incites, or promotes harassing language towards any target.                                                                                                                                                            |
+| isHarassmentThreatening | Harassment content that also includes violence or serious harm towards any target.                                                                                                                                                             |
+| isSelfHarm              | Content that promotes, encourages, or depicts acts of self-harm, such as suicide, cutting, and eating disorders.                                                                                                                               |
+| isSelfHarmIntent        | Content where the speaker expresses that they are engaging or intend to engage in acts of self-harm, such as suicide, cutting, and eating disorders.                                                                                           |
+| isSelfHarmInstructions  | Content that encourages performing acts of self-harm, such as suicide, cutting, and eating disorders, or that gives instructions or advice on how to commit such acts.                                                                         |
+| isSexual                | Content meant to arouse sexual excitement, such as the description of sexual activity, or that promotes sexual services (excluding sex education and wellness).                                                                                |
+| isSexualMinors          | Sexual content that includes an individual who is under 18 years old.                                                                                                                                                                          |
+| isViolence              | Content that depicts death, violence, or physical injury.                                                                                                                                                                                      |
+| isViolenceGraphic       | Content that depicts death, violence, or physical injury in graphic detail.                                                                                                                                                                    |
 
 ## Using the Profanity Filter
 
@@ -36,80 +39,53 @@ The Profanity Filter can be used in two contexts: to detect when **users utter p
 
 ### Profanities in the user input
 
-The Profanity Filter checks all user input automatically. If it detects any profane words, it saves the corresponding information into a Boolean variable `input.isProfane`. An example of how to use it in the input node follows:
+The Profanity Filter checks all user input automatically. If it detects any problem, it saves the corresponding information into a Boolean variable `input.isProfane`, `input.isHate` or other class mentioned above. An example of how to use it in the input node follows:
 
-```
-processPipeline() //run pipeline
+```kotlin
 if (input.isProfane){
     toProfanityHandling
 } else {
-    pass //proceed acording to intent
+    toNormalContent
 }
 ```
 
-![Example of how to handle profanities in user input](<../../.gitbook/assets/image (3) (1) (1).png>)
-
 ### Profanities in responses
 
-You can use two functions to handle profanities in responses: `isProfane()` and `bleepProfanities()`.
+You can use `analyze()` function to handle profanities in responses of digital persona.
 
-#### The isProfane() function
-
-```
-profanityFilter.isProfane(text: String): Boolean
-```
-
-The `profanityFilter.isProfane(text: String): Boolean` function takes a text as input and returns `True` if the text contains any word from the list of profanities and `False` if it doesn't contain any. This function is useful if you want to check that a text doesn't contain any profanities or if you have several alternative texts and you want to filter out those containing profanities.
-
-{% hint style="info" %}
-The generative model uses the `isProfane()` function to automatically filter the alternatives it generates.
-{% endhint %}
-
-The following code is an example of a function that checks if a tweet contains profanities. If it does, it continues to a speech node that doesn't include the tweet. If it doesn't contain a profane word, it continues to the speech node that does include the tweet.
+#### The analyze() function
 
 ```
-// You probably get this tweet from a large database of tweets automatically
-val tweet = "We have prepared a new update of Flowstorm! The new version includes many changes that will make working in Flowstorm a lot easier."
+profanityFilter.analyze(text: String): Response
+```
 
-if (profanityFilter.isProfane(tweet)){
+The `profanityFilter.analyze(text: String): Response` function takes a text as input and returns `Response` object. The response object contains results of the analysis under the following attributes:
+
+```
+val response = profanityFilter.analyze("Some text")
+
+val isHate = response.results[0].categories.hate
+val isHateThreatening = response.results[0].categories.hateThreatening
+val isHarassment = response.results[0].categories.harassment
+val isHarassmentThreatening = response.results[0].categories.harassmentThreatening
+val isSelfHarm = response.results[0].categories.selfHarm
+val isSelfHarmIntent = response.results[0].categories.selfHarmIntent
+val isSelfHarmInstructions = response.results[0].categories.selfHarmInstructions
+val isSexual = response.results[0].categories.sexual
+val isSexualMinors = response.results[0].categories.sexualMinors
+val isViolence = response.results[0].categories.violence
+val isViolenceGraphic = response.results[0].categories.violenceGraphic
+```
+
+To test if the text is problematic:
+
+```kotlin
+val text = "We have prepared a new update of Flowstorm! The new version includes many changes that will make working in Flowstorm a lot easier."
+val response = profanityFilter.analyze(text)
+
+if (!response.results[0].categories.hate && !response.results[0].categories.harassment){
     toSay
 }else{
     toDoNotSay
 }
 ```
-
-![Example of isProfane function](<../../.gitbook/assets/image (4) (1).png>)
-
-The two following codes show an example in which you want to read one of the Reddit fun facts randomly, but it needs to be one not containing any profanity. The first code is from the init code:
-
-```
-// List of fun facts you get from a large database
-val funfacts = listOf("Did you know that Pennsylvania grass spiders are more likely to approach a female for sex if she has recently killed and eaten another male.", "Did you know that James Webb telescope is so powerful it could see a bumblebee 240,000 miles away?")
-```
-
-![List of fun facts in init code. In reality, those fun facts would be crawled automatically from the web or retrieved from a database.](<../../.gitbook/assets/image (5) (1) (1).png>)
-
-The second code is from the content of the speech node:
-
-```
-${funfacts.filter{!profanityFilter.isProfane(it)}.random()}
-```
-
-![Example of filtering by isProfane function](<../../.gitbook/assets/image (6) (1).png>)
-
-#### The bleepProfanities() function
-
-```
-profanityFilter.bleepProfanities(text: String): String
-```
-
-The `profanityFilter.bleepProfanities(text: String): String` function takes a text as input and returns a text in which all profanity words are replaced with the word **`BLEEP`**. This function is helpful if you want to read a fun fact containing profane words but you don't want your digital persona to say them.
-
-```
-${profanityFilter.bleepProfanities("Boys have a penis and girls have a vagina.")}
-```
-
-![Example of bleepProfanities function](<../../.gitbook/assets/image (7) (1) (1).png>)
-
-
-
