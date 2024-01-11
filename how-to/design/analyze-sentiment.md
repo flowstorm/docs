@@ -1,13 +1,17 @@
 ---
 description: >-
   At some point in the interaction, you might care more about the user's
-  emotions rather than the exact content. For such situations, Flowstorm offers
-  you tools to analyze the so-called "sentiment".
+  emotions rather than the exact content. For such situations, we offer you
+  tools to analyze the sentiment.
 ---
 
 # Detect sentiment
 
 Imagine you would like to branch the flow based on what memories the user has of their hometown. More specifically, you don't care about what the memories are precisely about. You would just like to continue the "positive" flow if they have positive memories, the "sad" flow if they have negative memories, or the "neutral" flow if they don't have any particularly strong negative or positive memories. For this purpose, you can use **sentiment analysis**.
+
+{% hint style="info" %}
+Sentiment analysis is available in 🇺🇸 English, 🇨🇿 Czech, 🇩🇪 German, and 🇪🇸 Spanish dialogues
+{% endhint %}
 
 Sentiment analysis classifies text into three categories: **positive**, **neutral**, and **negative**. We can use those categories to branch the dialogue flow.
 
@@ -34,9 +38,6 @@ Don't forget to **modify the names of the transitions** according to the transit
 {% endhint %}
 
 ```kotlin
-// process input
-processPipeline()
-
 // user said something positive
 if (input.sentiment.name == Sentiment.POSITIVE.toString()){
     toPOSITIVE_sentiment // MODIFY THE TRANSITION NAME
