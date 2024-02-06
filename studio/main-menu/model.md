@@ -7,4 +7,4 @@ This menu item is only active when you are working in the **Dialogues** or **Sni
 * **Save:** save the current model
 * **Save as:** save the current model under a new name
 
-![](<../../.gitbook/assets/image (3) (1).png>)
+![](<../../.gitbook/assets/image (3) (1) (2).png>)
