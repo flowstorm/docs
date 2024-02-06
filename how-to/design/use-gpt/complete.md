@@ -4,13 +4,14 @@ description: Use GPT to complete prompt
 
 # Complete
 
-You can use GPT in Kotlin code using function `llm.complete(prompt: String, stop: List, config: LLMConfig): String` This function acts as a connector to the GPT API and generates text completion based on the provided prompt. The completion will be stopped if any of the stop words are encountered or if the maximum number of tokens is reached. The function takes in a prompt string, a list of stop words, and an instance of the LLMConfig data class that contains various settings for the GPT model.
+You can use GPT in Kotlin code using function `llm.complete(prompt: String, stop: List, config: LLMConfig, taskName: String): String` This function acts as a connector to the GPT API and generates text completion based on the provided prompt. The completion will be stopped if any of the stop words are encountered or if the maximum number of tokens is reached. The function takes in a prompt string, a list of stop words, and an instance of the LLMConfig data class that contains various settings for the GPT model.
 
 **Parameters:**
 
 * `prompt`: A string representing the starting prompt for text generation.
 * `stop`: A list of strings representing words that, if encountered during text generation, will stop the generation process.
 * `config`: An instance of the `LLMConfig` data class that contains various settings for the GPT model.
+* `taskName`: A string intended for analytical purposes.
 
 **Return Value:**
 
