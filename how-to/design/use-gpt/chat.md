@@ -13,8 +13,10 @@ fun chat(
     context: Context,
     numTurns: Int = 5,
     prompt: String = "The following is a conversation with an AI assistant. The assistant is helpful, creative, clever, and very friendly.",
-    personaName: String = "System",
-    config: LLMConfig = LLMConfig()
+    personaName: String = context.currentPersona.name,
+    systemPrompt: String = "",
+    config: LLMConfig = LLMConfig(),
+    taskName: String = ""
 ): String
 ```
 
@@ -24,8 +26,9 @@ The `chat()` function accepts the following parameters:
 
 * `context`: The current context of the conversation, represented as a `Context` object.
 * `numTurns`: The number of previous turns to consider when generating the response. Defaults to `5`.
-* `prompt`: The prompt text to display before the generated response. Defaults to `"The following is a conversation with an AI assistant. The assistant is helpful, creative, clever, and very friendly."`.
-* `personaName`: The name of the persona or system generating the response. Defaults to `"System"`.
+* `prompt`: The prompt text to direct the generated response. Defaults to `"The following is a conversation with an AI assistant. The assistant is helpful, creative, clever, and very friendly."`.
+* `systemPrompt`: The system prompt text. It describes the overall properties of conversation or personality of digital persona.
+* `personaName`: The name of the persona or system generating the response. Defaults to name of current persona.
 * `config`: A configuration object of type `LLMConfig`. This parameter is optional and defaults to the [default configuration values](https://docs.flowstorm.ai/how-to/design/use-gpt/complete).
 
 ### Return Value
@@ -41,6 +44,7 @@ val response = llm.chat(
     context, 
     numTurns = 5, 
     prompt = "You are digital persona Kai", 
+    systemPrompt = "You answer in riddles",
     personaName = "Kai")
 logger.info(response)
 ```
