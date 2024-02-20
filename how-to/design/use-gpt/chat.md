@@ -30,6 +30,7 @@ The `chat()` function accepts the following parameters:
 * `systemPrompt`: The system prompt text. It describes the overall properties of conversation or personality of digital persona.
 * `personaName`: The name of the persona or system generating the response. Defaults to name of current persona.
 * `config`: A configuration object of type `LLMConfig`. This parameter is optional and defaults to the [default configuration values](https://docs.flowstorm.ai/how-to/design/use-gpt/complete).
+* `taskName`: A string intended for analytical purposes.
 
 ### Return Value
 
