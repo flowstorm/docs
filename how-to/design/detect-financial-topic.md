@@ -50,3 +50,4 @@ The `FinancialTopic` enum includes a list of predefined topics that can be detec
 * `VACATION`: Planning and saving for vacations or travel-related expenses.
 * `LIFE_PLANS`: Financial planning related to life events, such as weddings, education, or retirement.
 * `ENJOYMENT`: Spending on leisure, entertainment, or hobbies.
+* `UNSPECIFIED`: No financial topic.
