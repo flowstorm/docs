@@ -55,6 +55,7 @@
   * [Detect Mentioned People](how-to/design/detect-mentioned-people.md)
   * [Detect Life Events](how-to/design/detect-life-events.md)
   * [Detect Financial Topic](how-to/design/detect-financial-topic.md)
+  * [Detect Language](how-to/design/detect-language.md)
   * [Dynamize the flow (Dialogue Selector)](how-to/design/use-the-dialogue-selector/README.md)
     * [Random Dialogue Selector](how-to/design/use-the-dialogue-selector/random-dialogue-selector.md)
     * [Label Overlap Dialogue Selector](how-to/design/use-the-dialogue-selector/label-overlap-dialogue-selector.md)
