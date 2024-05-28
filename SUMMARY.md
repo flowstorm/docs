@@ -39,6 +39,7 @@
   * [Add sounds and images](how-to/design/multimedia.md)
   * [Use GPT](how-to/design/use-gpt/README.md)
     * [Generated Speech Node](how-to/design/use-gpt/generated-speech-node.md)
+    * [Using Functions in Generated Speech Nodes](how-to/design/use-gpt/using-functions-in-generated-speech-nodes.md)
     * [Complete](how-to/design/use-gpt/complete.md)
     * [Chat](how-to/design/use-gpt/chat.md)
     * [Classify](how-to/design/use-gpt/classify.md)

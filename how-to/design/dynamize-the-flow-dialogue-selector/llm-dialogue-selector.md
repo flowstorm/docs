@@ -117,7 +117,7 @@ selectTransition(selector, context)?:Transition(ByeSpeech)
 
 The `ByeSpeech` refers to the name of Bye! speech node. This node serves as fallback if the selection fails.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 There is an optional parameter `additionalInfo` in the `selectTransition()` function, which you can use to pass additional information into the prompt, like string representation of user profile for example.

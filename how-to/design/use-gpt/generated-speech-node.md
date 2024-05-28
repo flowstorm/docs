@@ -2,7 +2,7 @@
 
 The Generated Speech Node is a fundamental component of the drag-n-drop editor for digital personas operated by Conversational AI. This node allows you to generate speech or text within a dialogue. It's a powerful tool for crafting dynamic and engaging conversations. In this documentation, we'll explore the various aspects of the Generated Speech Node, including its configuration options.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Generated speech node</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Generated speech node</p></figcaption></figure>
 
 The Generated Speech Node is designed to generate text or speech based on the provided input prompt. It leverages advanced language models, such as ChatGPT and GPT-4, to generate responses that can be used in your conversational applications. Underneath, it uses [llm.chat function](chat.md).
 
@@ -10,13 +10,13 @@ The Generated Speech Node is designed to generate text or speech based on the pr
 
 The "Prompt" configuration panel is where you define the input that guides the node's response generation. You can write a detailed prompt describing what the node should generate in the dialogue. The quality and relevance of your prompt will greatly influence the generated output.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Prompt panel</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Prompt panel</p></figcaption></figure>
 
 #### System Panel
 
 The "System" panel is where you define the system prompt that describes the properties of the overall conversation or character of digital persona.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>System prompt panel</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>System prompt panel</p></figcaption></figure>
 
 #### Config Panel
 
@@ -42,4 +42,4 @@ The "Config" panel contains several important settings that allow you to fine-tu
 
 
 
-    <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Config panel</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Config panel</p></figcaption></figure>
